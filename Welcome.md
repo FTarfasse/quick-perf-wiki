@@ -95,7 +95,7 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
 	}
 ```
 ### @MaxSqlInsert
-### Parameters
+#### Parameters
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Maximum number of inserts  |        0       |
