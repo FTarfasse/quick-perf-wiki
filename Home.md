@@ -104,7 +104,7 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Maximum number of updates  |        0       |
-#### @MaxSqlDelete
+### @MaxSqlDelete
 #### Parameters
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
