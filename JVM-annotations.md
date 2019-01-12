@@ -1,4 +1,3 @@
-# JVM annotations
 ## @MaxAllocation
 This annotation is based on ByteWatcher (https://github.com/danielshaya/ByteWatcher, https://www.javaspecialists.eu/archive/Issue232.html).
 ### Parameters 
