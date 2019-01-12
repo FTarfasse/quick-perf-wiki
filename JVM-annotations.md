@@ -46,19 +46,30 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
 | -------- |:--------------:|:------------------------:| :-------------:|
 | value    | long           |Heap size value (Xms=Xmx) |        -       |
 | unit     | AllocationUnit |Allocation unit           |        -       |
+### Example
+ ```java
+   @HeapSize(value = 20, unit = AllocationUnit.MEGA_BYTE)
+  ```
 ## @Xms
 ### Parameters 
 |Parameter  |Type           | Meaning                            | Default value |
 | -------- |:--------------:|:----------------------------------:|:-------------:|
 | value    | long           |Initial and minimum heap size value |        -      |
 | unit     | AllocationUnit |Allocation unit                     |        -      |
+### Example
+  ```java
+   @Xms(value = 20, unit = AllocationUnit.MEGA_BYTE)
+  ```
 ## @Xmx
 ### Parameters 
 |Parameter  |Type           | Meaning                 | Default value |
 | -------- |:--------------:|:-----------------------:|:-------------:|
 | value    | long           |Maximum heap size value  |        -      |
 | unit     | AllocationUnit |Allocation unit          |        -      |
-
+### Example
+  ```java
+   @Xmx(value = 20, unit = AllocationUnit.MEGA_BYTE)
+  ```
 ## @JvmOptions
 |Parameter  |Type           | Meaning       | Default value |
 | -------- |:--------------:|:-------------:|:-------------:|
