@@ -93,7 +93,8 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
     @MaxSqlSelect(1)
     @Test
     public void should_retrieve_all_cars() {	
-	}
+     //...
+    }
 ```
 ### @MaxSqlInsert
 #### Parameters
