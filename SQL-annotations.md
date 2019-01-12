@@ -4,6 +4,10 @@
 |Parameter  |Type| Meaning                             | Default value  |
 | --------  |:---:|:----------------------------------:|:--------------:|
 | value     | int |Maximum number of returned columns  |        0       |
+### Example
+```java
+    @MaxReturnedSqlColumns(5)
+```
 ## @MaxSqlSelect
 ### Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
