@@ -58,11 +58,10 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
 
     @MeasureAllocation
     @JvmOptions("-XX:+UseCompressedOops -XX:+UseCompressedClassPointers")
-    // JVM options written as documentation. Indeed, QuickPerf works
-    // with JDK >= 7u40 where UseCompressedOops is enabled by default.
+    // Allocation value depends on UseCompressedOops and UseCompressedClassPointers.
+    // QuickPerf works with JDK >= 7u40 where UseCompressedOops is enabled by default.
     // UseCompressedClassPointers was introduced in JDK 8 and is
     // enabled by default.
-    // MaxAllocation depends on UseCompressedOops and UseCompressedClassPointers.
     @Test
     public void array_list_with_size_100_should_allocate_440_bytes() {
         // java.util.ArrayList: 24 bytes
