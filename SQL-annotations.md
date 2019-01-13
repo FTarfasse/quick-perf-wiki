@@ -1,13 +1,3 @@
-
-## @MaxReturnedSqlColumns
-### Parameters 
-|Parameter  |Type| Meaning                             | Default value  |
-| --------  |:---:|:----------------------------------:|:--------------:|
-| value     | int |Maximum number of returned columns  |        0       |
-### Example
-```java
-    @MaxReturnedSqlColumns(5)
-```
 ## @MaxSqlSelect
 ### Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
@@ -38,6 +28,15 @@
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Maximum number of deletes  |        0       |
 
+## @MaxReturnedSqlColumns
+### Parameters 
+|Parameter  |Type| Meaning                             | Default value  |
+| --------  |:---:|:----------------------------------:|:--------------:|
+| value     | int |Maximum number of returned columns  |        0       |
+### Example
+```java
+    @MaxReturnedSqlColumns(5)
+```
 ## @NoCrossJoin
  The [cartesian product induced by a cross join can be very inefficient](https://vladmihalcea.com/hibernate-facts-always-check-criteria-api-sql-queries/). Although most database engines will try to remove a cross join, we can decide to remove cross join to not have to check if a database engine version will really remove it.
  
