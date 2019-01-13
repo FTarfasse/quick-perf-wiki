@@ -1,3 +1,39 @@
+## @HeapSize
+### Parameters 
+|Parameter  |Type           | Meaning                  | Default value  |
+| -------- |:--------------:|:------------------------:| :-------------:|
+| value    | long           |Heap size value (Xms=Xmx) |        -       |
+| unit     | AllocationUnit |Allocation unit           |        -       |
+### Example
+ ```java
+   @HeapSize(value = 20, unit = AllocationUnit.MEGA_BYTE)
+  ```
+## @Xms
+### Parameters 
+|Parameter  |Type           | Meaning                            | Default value |
+| -------- |:--------------:|:----------------------------------:|:-------------:|
+| value    | long           |Initial and minimum heap size value |        -      |
+| unit     | AllocationUnit |Allocation unit                     |        -      |
+### Example
+  ```java
+   @Xms(value = 20, unit = AllocationUnit.MEGA_BYTE)
+  ```
+## @Xmx
+### Parameters 
+|Parameter  |Type           | Meaning                 | Default value |
+| -------- |:--------------:|:-----------------------:|:-------------:|
+| value    | long           |Maximum heap size value  |        -      |
+| unit     | AllocationUnit |Allocation unit          |        -      |
+### Example
+  ```java
+   @Xmx(value = 20, unit = AllocationUnit.MEGA_BYTE)
+  ```
+## @JvmOptions
+### Parameters 
+|Parameter  |Type           | Meaning       | Default value |
+| -------- |:--------------:|:-------------:|:-------------:|
+| value    | String           |JVM options  |      -        |
+
 ## @MaxAllocation
 This annotation is based on ByteWatcher (https://github.com/danielshaya/ByteWatcher, https://www.javaspecialists.eu/archive/Issue232.html).
 ### Parameters 
@@ -39,42 +75,6 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
 }
 ```
 ## @NoAllocation
-
-## @HeapSize
-### Parameters 
-|Parameter  |Type           | Meaning                  | Default value  |
-| -------- |:--------------:|:------------------------:| :-------------:|
-| value    | long           |Heap size value (Xms=Xmx) |        -       |
-| unit     | AllocationUnit |Allocation unit           |        -       |
-### Example
- ```java
-   @HeapSize(value = 20, unit = AllocationUnit.MEGA_BYTE)
-  ```
-## @Xms
-### Parameters 
-|Parameter  |Type           | Meaning                            | Default value |
-| -------- |:--------------:|:----------------------------------:|:-------------:|
-| value    | long           |Initial and minimum heap size value |        -      |
-| unit     | AllocationUnit |Allocation unit                     |        -      |
-### Example
-  ```java
-   @Xms(value = 20, unit = AllocationUnit.MEGA_BYTE)
-  ```
-## @Xmx
-### Parameters 
-|Parameter  |Type           | Meaning                 | Default value |
-| -------- |:--------------:|:-----------------------:|:-------------:|
-| value    | long           |Maximum heap size value  |        -      |
-| unit     | AllocationUnit |Allocation unit          |        -      |
-### Example
-  ```java
-   @Xmx(value = 20, unit = AllocationUnit.MEGA_BYTE)
-  ```
-## @JvmOptions
-### Parameters 
-|Parameter  |Type           | Meaning       | Default value |
-| -------- |:--------------:|:-------------:|:-------------:|
-| value    | String           |JVM options  |      -        |
 
 ## @CheckJvm
 With this annotation, JVM is profiled with Java Flight Recorder (JFR).<br><br>
