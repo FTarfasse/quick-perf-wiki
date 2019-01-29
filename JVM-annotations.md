@@ -89,6 +89,12 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
 }
 ```
 ## @NoAllocation
+With this annotation, the test will fail if allocation is detected. <br><br>
+The test will be executed in a specific JVM.
+<br><br>
+Under the hood, QuickPerf uses ByteWatcher:
+* https://github.com/danielshaya/ByteWatcher
+* https://www.javaspecialists.eu/archive/Issue232.html
 
 ## @CheckJvm
 With this annotation, JVM is profiled with Java Flight Recorder (JFR).<br><br>
