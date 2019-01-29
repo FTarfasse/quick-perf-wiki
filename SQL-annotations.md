@@ -1,4 +1,5 @@
 ## @MaxSqlSelect
+With this annotation, the test will fail is the number of select requests is greater than expected. 
 ### Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
@@ -13,6 +14,7 @@
     }
 ```
 ## @MaxSqlInsert
+With this annotation, the test will fail is the number of SQL inserts is greater than expected. 
 ### Parameters
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
