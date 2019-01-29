@@ -32,6 +32,7 @@ With this annotation, the test is executed in a specific JVM having the given ma
    @Xmx(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
 ## @JvmOptions
+With this annotation, the test is executed in a specific JVM having the given JVM options.
 ### Parameters 
 |Parameter  |Type           | Meaning       | Default value |
 | -------- |:--------------:|:-------------:|:-------------:|
