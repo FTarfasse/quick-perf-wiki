@@ -16,10 +16,12 @@ With this annotation, the test is executed in a specific JVM having the given he
 | value    | long           |Initial and minimum heap size value |        -      |
 | unit     | AllocationUnit |Allocation unit                     |        -      |
 ### Example
+With this annotation, the test is executed in a specific JVM having the given initial and minimum heap size value.
   ```java
    @Xms(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
 ## @Xmx
+With this annotation, the test is executed in a specific JVM having the given maximum heap size value.
 ### Parameters 
 |Parameter  |Type           | Meaning                 | Default value |
 | -------- |:--------------:|:-----------------------:|:-------------:|
