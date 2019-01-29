@@ -39,7 +39,7 @@ With this annotation, the test is executed in a specific JVM having the given JV
 | value    | String           |JVM options  |      -        |
 
 ## @MaxAllocation
-With this annotation, the test will fail is allocation is greater than expected. <br><br>
+With this annotation, the test will fail if allocation is greater than expected. <br><br>
 The test will be executed in a specific JVM.
 <br><br>
 Under the hood, QuickPerf uses ByteWatcher:
