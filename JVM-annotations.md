@@ -1,4 +1,5 @@
 ## @HeapSize
+With this annotation, the test is executed in a specific JVM having the given heap size.
 ### Parameters 
 |Parameter  |Type           | Meaning                  | Default value  |
 | -------- |:--------------:|:------------------------:| :-------------:|
