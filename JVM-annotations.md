@@ -35,7 +35,11 @@
 | value    | String           |JVM options  |      -        |
 
 ## @MaxAllocation
-This annotation is based on ByteWatcher (https://github.com/danielshaya/ByteWatcher, https://www.javaspecialists.eu/archive/Issue232.html).
+With this annotation, the test will fail is allocation is greater than expected. <br>
+<br>
+Under the hood, QuickPerf uses ByteWatcher:
+* https://github.com/danielshaya/ByteWatcher
+* https://www.javaspecialists.eu/archive/Issue232.html
 ### Parameters 
 |Parameter  |Type           | Meaning          | Default value  |
 | -------- |:--------------:|:----------------:| :-------------:|
@@ -50,6 +54,11 @@ This annotation is based on ByteWatcher (https://github.com/danielshaya/ByteWatc
     }
   ```
 ## @MeasureAllocation
+You can measure allocation using this annotation. <br>
+<br>
+Under the hood, QuickPerf uses ByteWatcher:
+* https://github.com/danielshaya/ByteWatcher
+* https://www.javaspecialists.eu/archive/Issue232.html
 This annotation is based on ByteWatcher (https://github.com/danielshaya/ByteWatcher, https://www.javaspecialists.eu/archive/Issue232.html).
 ### Example
 ```java
