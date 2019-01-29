@@ -59,7 +59,7 @@ You can measure allocation using this annotation. <br>
 Under the hood, QuickPerf uses ByteWatcher:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
-This annotation is based on ByteWatcher (https://github.com/danielshaya/ByteWatcher, https://www.javaspecialists.eu/archive/Issue232.html).
+
 ### Example
 ```java
 @RunWith(QuickPerfJUnitRunner.class)
