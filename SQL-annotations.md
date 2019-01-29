@@ -33,6 +33,8 @@ With this annotation, the test will fail is the number of DELETE requests is gre
 | value    | int |Maximum number of deletes  |        0       |
 
 ## @MaxReturnedSqlColumns
+
+With this annotation, the test will fail is the number of returned columns is greater than expected.
 ### Parameters 
 |Parameter  |Type| Meaning                             | Default value  |
 | --------  |:---:|:----------------------------------:|:--------------:|
