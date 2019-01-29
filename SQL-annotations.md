@@ -1,5 +1,5 @@
 ## @MaxSqlSelect
-With this annotation, the test will fail is the number of SELECT requests is greater than expected. 
+With this annotation, the test will fail if the number of SELECT requests is greater than expected. 
 ### Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
@@ -14,19 +14,19 @@ With this annotation, the test will fail is the number of SELECT requests is gre
     }
 ```
 ## @MaxSqlInsert
-With this annotation, the test will fail is the number of INSERT requests is greater than expected. 
+With this annotation, the test will fail if the number of INSERT requests is greater than expected. 
 ### Parameters
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Maximum number of inserts  |        0       |
 ## @MaxSqlUpdate
-With this annotation, the test will fail is the number of UPDATE requests is greater than expected. 
+With this annotation, the test will fail if the number of UPDATE requests is greater than expected. 
 ### Parameters
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Maximum number of updates  |        0       |
 ## @MaxSqlDelete
-With this annotation, the test will fail is the number of DELETE requests is greater than expected. 
+With this annotation, the test will fail if the number of DELETE requests is greater than expected. 
 ### Parameters
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
@@ -34,7 +34,7 @@ With this annotation, the test will fail is the number of DELETE requests is gre
 
 ## @MaxReturnedSqlColumns
 
-With this annotation, the test will fail is the number of returned columns is greater than expected.
+With this annotation, the test will fail if the number of returned columns is greater than expected.
 ### Parameters 
 |Parameter  |Type| Meaning                             | Default value  |
 | --------  |:---:|:----------------------------------:|:--------------:|
