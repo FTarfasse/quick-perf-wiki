@@ -7,9 +7,7 @@ A JUnit 4 version is going to be released in February 2019.<br>
 A Spring-JUnit 4 version will be available around February 2019.<br>
 A JUnit 5 version will be available around March 2019.<br>
 
-Twitter: [@QuickPerf](https://twitter.com/quickperf)
-
-*Click below to see annotations.*
-
+## [JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
 ## [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations)
 ## [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations)
+## [Twitter: @QuickPerf](https://twitter.com/quickperf)
