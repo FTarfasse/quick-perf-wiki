@@ -1,4 +1,4 @@
-Use QuickPerfJUnitRunner.
+Use **QuickPerfJUnitRunner**.
 
 ### Example
 ```java
