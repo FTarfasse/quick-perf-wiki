@@ -1,0 +1,1 @@
+If you use the [QuickPerfSpringRunner](https://github.com/quick-perf/doc/wiki/JUnit-4--&-Spring) and [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations), you need to have an instance of **QuickPerfProxyBeanPostProcessor** in your spring context.
