@@ -96,6 +96,8 @@ Under the hood, QuickPerf uses ByteWatcher:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
 
+## @ProfileJvmWithJavaFlightRecorder
+
 ## @CheckJvm
 With this annotation, JVM is profiled with Java Flight Recorder (JFR).<br><br>
 The JFR file location is shown in the console:
