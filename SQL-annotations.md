@@ -43,8 +43,8 @@ With this annotation, the test will fail if the number of returned columns is gr
 ```java
     @MaxReturnedSqlColumns(5)
 ```
-## @NoCrossJoin
+## @DisableSqlCrossJoin
  The [cartesian product induced by a cross join can be very inefficient](https://vladmihalcea.com/hibernate-facts-always-check-criteria-api-sql-queries/). Although most database engines will try to remove a cross join, we can decide to remove cross join to not have to check if a database engine version will really remove it.
  
 ## @EnableSqlCrossJoin
-To decide to enable a cross join in a specific case if you add @NoSqlCrossJoin check for every test or at test class level.
+To decide to enable a cross join in a specific case if you add @DisableSqlCrossJoin check for every test or at test class level.
