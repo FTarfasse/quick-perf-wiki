@@ -48,3 +48,27 @@ With this annotation, the test will fail if the number of returned columns is gr
  
 ## @EnableSqlCrossJoin
 To decide to enable a cross join in a specific case if you add @DisableSqlCrossJoin check for every test or at test class level.
+
+## @DisableExactlySameSqlSelects
+
+## @EnableExactlySameSqlSelects
+
+## @DisableSameSelectTypesWithDifferentParams
+
+## @EnableSameSelectTypesWithDifferentParams
+
+## @DisableSelectDistinct
+
+## @EnableSelectDistinct
+
+## @EnableLikeStartingWithWildcard
+
+## @SqlBatched
+
+## @DisableSqlBatched
+
+
+
+## @DisplaySql
+
+## @DisplayAllSql
