@@ -1,4 +1,4 @@
-## @DisplayQuickPerfInfos
+## @DisplayAppliedAnnotations
 
 ## @DisableDefaultAnnotations
 
