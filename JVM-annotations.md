@@ -44,13 +44,14 @@ With this annotation, the test is executed in a specific JVM having the given JV
 | value    | String           |JVM options  |      -        |
 
 # Accurately verify heap allocation
-## @MeasureAllocation
-You can measure allocation using this annotation. <br><br>
-The test will be executed in a specific JVM.
-<br><br>
-Under the hood, QuickPerf uses ByteWatcher:
+The following annotation use ByteWatcher under the hood:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
+
+## @MeasureAllocation
+You can measure allocation using this annotation. <br><br>
+The measured allocation is displayed in the console. <br><br>
+The test will be executed in a specific JVM.
 
 ### Example
 ```java
@@ -61,8 +62,7 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
     @JvmOptions("-XX:+UseCompressedOops -XX:+UseCompressedClassPointers")
     // Allocation value depends on UseCompressedOops and UseCompressedClassPointers.
     // QuickPerf works with JDK >= 7u40 where UseCompressedOops is enabled by default.
-    // UseCompressedClassPointers was introduced in JDK 8 and is
-    // enabled by default.
+    // UseCompressedClassPointers was introduced in JDK 8 and is enabled by default.
     @Test
     public void array_list_with_size_100_should_allocate_440_bytes() {
         // java.util.ArrayList: 24 bytes
@@ -77,10 +77,7 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
 ## @MaxAllocation
 With this annotation, the test will fail if allocation is greater than expected. <br><br>
 The test will be executed in a specific JVM.
-<br><br>
-Under the hood, QuickPerf uses ByteWatcher:
-* https://github.com/danielshaya/ByteWatcher
-* https://www.javaspecialists.eu/archive/Issue232.html
+
 ### Parameters 
 |Parameter  |Type           | Meaning          | Default value  |
 | -------- |:--------------:|:----------------:| :-------------:|
@@ -97,10 +94,6 @@ Under the hood, QuickPerf uses ByteWatcher:
 ## @NoAllocation
 With this annotation, the test will fail if allocation is detected. <br><br>
 The test will be executed in a specific JVM.
-<br><br>
-Under the hood, QuickPerf uses ByteWatcher:
-* https://github.com/danielshaya/ByteWatcher
-* https://www.javaspecialists.eu/archive/Issue232.html
 
 # Profile or check your JVM
 ## @ProfileJvmWithJavaFlightRecorder
