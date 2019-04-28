@@ -1,3 +1,5 @@
+# Outline
+
 [**Configure your JVM**](#Configure-your-JVM) <br> @HeapSize, @Xms, @Xmx, @JvmOptions <br><br>
 [**Accurately verify heap allocation**](#Accurately-verify-heap-allocation)<br> @MeasureAllocation, @MaxAllocation, @NoAllocation <br><br>
 [**Profile or check your JVM**](#Profile-or-check-your-JVM) <br> @ProfileJvmWithJavaFlightRecorder, @CheckJvm
