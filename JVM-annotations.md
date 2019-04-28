@@ -1,3 +1,8 @@
+[**Configure your JVM**](#Configure-your-JVM) <br> @HeapSize, @Xms, @Xmx, @JvmOptions <br><br>
+[**Accurately verify heap allocation**](#Accurately-verify-heap-allocation)<br> @MeasureAllocation, @MaxAllocation, @NoAllocation <br><br>
+[**Profile or check your JVM**](#Profile-or-check-your-JVM) <br> @ProfileJvmWithJavaFlightRecorder, @CheckJvm
+
+# Configure your JVM
 ## @HeapSize
 With this annotation, the test is executed in a specific JVM having the given heap size.
 ### Parameters 
@@ -38,26 +43,7 @@ With this annotation, the test is executed in a specific JVM having the given JV
 | -------- |:--------------:|:-------------:|:-------------:|
 | value    | String           |JVM options  |      -        |
 
-## @MaxAllocation
-With this annotation, the test will fail if allocation is greater than expected. <br><br>
-The test will be executed in a specific JVM.
-<br><br>
-Under the hood, QuickPerf uses ByteWatcher:
-* https://github.com/danielshaya/ByteWatcher
-* https://www.javaspecialists.eu/archive/Issue232.html
-### Parameters 
-|Parameter  |Type           | Meaning          | Default value  |
-| -------- |:--------------:|:----------------:| :-------------:|
-| value    | long           |Allocation value  |        -       |
-| unit     | AllocationUnit |Allocation unit   |        -       |
-### Example
- ```java
-    @MaxAllocation(value = 440, unit = AllocationUnit.BYTE)
-    @Test
-    public void array_list_with_size_100_should_allocate_440_bytes() {
-        ArrayList<Object> data = new ArrayList<>(100);
-    }
-  ```
+# Accurately verify heap allocation
 ## @MeasureAllocation
 You can measure allocation using this annotation. <br><br>
 The test will be executed in a specific JVM.
@@ -88,6 +74,26 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
 
 }
 ```
+## @MaxAllocation
+With this annotation, the test will fail if allocation is greater than expected. <br><br>
+The test will be executed in a specific JVM.
+<br><br>
+Under the hood, QuickPerf uses ByteWatcher:
+* https://github.com/danielshaya/ByteWatcher
+* https://www.javaspecialists.eu/archive/Issue232.html
+### Parameters 
+|Parameter  |Type           | Meaning          | Default value  |
+| -------- |:--------------:|:----------------:| :-------------:|
+| value    | long           |Allocation value  |        -       |
+| unit     | AllocationUnit |Allocation unit   |        -       |
+### Example
+ ```java
+    @MaxAllocation(value = 440, unit = AllocationUnit.BYTE)
+    @Test
+    public void array_list_with_size_100_should_allocate_440_bytes() {
+        ArrayList<Object> data = new ArrayList<>(100);
+    }
+  ```
 ## @NoAllocation
 With this annotation, the test will fail if allocation is detected. <br><br>
 The test will be executed in a specific JVM.
@@ -96,6 +102,7 @@ Under the hood, QuickPerf uses ByteWatcher:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
 
+# Profile or check your JVM
 ## @ProfileJvmWithJavaFlightRecorder
 
 ## @CheckJvm
