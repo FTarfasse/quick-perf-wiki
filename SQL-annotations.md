@@ -105,6 +105,18 @@ To decide to enable a cross join in a specific case if you add @DisableSqlCrossJ
 
 ## @SqlBatch
 
+### Parameters 
+|Parameter  |Type| Meaning           | Default value  |
+| -------- |:---:|:-----------------:|:--------------:|
+| batchSize| int |JDBC batch size    |      -         |
+
+A 0 batch size means that JDBC batching is disabled.
+
+### Example
+```java
+    @MaxReturnedSqlColumns(5)
+```
+
 ## @DisplaySql
 
 ## @DisplayAllSql
