@@ -105,8 +105,6 @@ To decide to enable a cross join in a specific case if you add @DisableSqlCrossJ
 
 ## @SqlBatch
 
-## @DisableSqlBatch
-
 ## @DisplaySql
 
 ## @DisplayAllSql
