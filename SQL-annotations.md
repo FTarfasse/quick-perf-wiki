@@ -118,11 +118,15 @@ A 0 batch size means that JDBC batching is disabled.
 ```
 
 ## @DisplaySql
-With this annotation the SQL requests are diplayed in the console during the test execution.
-SQL requests are displayed step by step during debugging.
+With this annotation the SQL order are diplayed in the console during the test execution.<br>
+This annotation is useful during *debugging*. <br>
+*It is not recommended to commit your test with this annotation. Indeed, the displaying of SQL orders would pollute the logs of your continuous integration build and it may slow down your continuous integration build.*
+
 
 ## @DisplaySqlOfTestMethodBody
 With this annotation the SQL order are diplayed in the console during the execution of the test method body, not just after if a SQL property is not respected.  <br>
-Compared to @DisplaySql, this annotation does not diplay SQL order before (JUnit 4: @Before, @BeforeClass) and after (JUnit 4: @After, @AfterClass) the execution of the test method body.
+Compared to @DisplaySql, this annotation does not diplay SQL order before (JUnit 4: @Before, @BeforeClass) and after (JUnit 4: @After, @AfterClass) the execution of the test method body. <br>
+This annotation is useful during *debugging*. <br>
+*It is not recommended to commit your test with this annotation. Indeed, the displaying of SQL orders would pollute the logs of your continuous integration build and it may slow down your continuous integration build.*
 
 
