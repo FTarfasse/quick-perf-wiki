@@ -65,9 +65,9 @@ To decide to enable a cross join in a specific case if you add @DisableSqlCrossJ
 
 ## @EnableLikeStartingWithWildcard
 
-## @SqlBatched
+## @SqlBatch
 
-## @DisableSqlBatched
+## @DisableSqlBatch
 
 ## @DisplaySql
 
