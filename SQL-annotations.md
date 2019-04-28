@@ -1,3 +1,12 @@
+## @SqlSelectNumber
+
+## @SqlInsertNumber
+
+
+## @SqlUpdateNumber
+
+## @SqlDeleteNumber
+
 ## @MaxSqlSelect
 With this annotation, the test will fail if the number of SELECT requests is greater than expected. 
 ### Parameters 
