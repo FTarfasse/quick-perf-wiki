@@ -1,3 +1,57 @@
+[**Worflow**](#Worflow)<br>
+
+[**Recommended default annotations**](#Recommended-default-annotations)<br>
+
+[**Disable some default annotations**](#Disable-some-default-annotations)<br>
+
+[**Recommended method annotations**](#Recommended-method-annotations)<br>
+
+[**Debug annotations**](#Debug-annotations)<br>
+
+# Worflow
+
+# Recommended default annotations
+## @DisableExactlySameSqlSelects
+
+## @DisableSameSelectTypesWithDifferentParams
+
+## @DisableSqlCrossJoin
+ The [cartesian product induced by a cross join can be very inefficient](https://vladmihalcea.com/hibernate-facts-always-check-criteria-api-sql-queries/). Although most database engines will try to remove a cross join, we can decide to remove cross join to not have to check if a database engine version will really remove it.
+ 
+## @DisableLikeStartingWithWildcard
+
+## @DisableSelectDistinct
+
+## @SqlBatch
+
+### Parameters 
+|Parameter  |Type| Meaning           | Default value  |
+| -------- |:---:|:-----------------:|:--------------:|
+| batchSize| int |JDBC batch size    |      -         |
+
+A 0 batch size means that JDBC batching is disabled.
+
+### Example
+```java
+    @SqlBatch(batchSize = 30)
+```
+
+# Disable some default annotations
+## @EnableSqlCrossJoin
+To decide to enable a cross join in a specific case if you add @DisableSqlCrossJoin check for every test or at test class level.
+
+## @EnableExactlySameSqlSelects
+
+
+## @EnableSameSelectTypesWithDifferentParams
+
+
+## @EnableSelectDistinct
+
+
+## @EnableLikeStartingWithWildcard
+
+# Recommended method annotations
 ## @SqlSelectNumber
 
 ### Parameters 
@@ -81,41 +135,12 @@ With this annotation, the test will fail if the number of returned columns is gr
 ```java
     @MaxReturnedSqlColumns(5)
 ```
-## @DisableSqlCrossJoin
- The [cartesian product induced by a cross join can be very inefficient](https://vladmihalcea.com/hibernate-facts-always-check-criteria-api-sql-queries/). Although most database engines will try to remove a cross join, we can decide to remove cross join to not have to check if a database engine version will really remove it.
- 
-## @EnableSqlCrossJoin
-To decide to enable a cross join in a specific case if you add @DisableSqlCrossJoin check for every test or at test class level.
 
-## @DisableExactlySameSqlSelects
 
-## @EnableExactlySameSqlSelects
 
-## @DisableSameSelectTypesWithDifferentParams
 
-## @EnableSameSelectTypesWithDifferentParams
-
-## @DisableSelectDistinct
-
-## @EnableSelectDistinct
-
-## @DisableLikeStartingWithWildcard
-
-## @EnableLikeStartingWithWildcard
-
-## @SqlBatch
-
-### Parameters 
-|Parameter  |Type| Meaning           | Default value  |
-| -------- |:---:|:-----------------:|:--------------:|
-| batchSize| int |JDBC batch size    |      -         |
-
-A 0 batch size means that JDBC batching is disabled.
-
-### Example
-```java
-    @SqlBatch(batchSize = 30)
-```
+# Debug annotations
+## [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/wiki/Base-annotations)
 
 ## @DisplaySql
 With this annotation the SQL order are diplayed in the console during the test execution.<br>
