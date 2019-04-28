@@ -118,5 +118,8 @@ A 0 batch size means that JDBC batching is disabled.
 ```
 
 ## @DisplaySql
+With this annotation the SQL requests are diplayed in the console during the execution of the test method body. <br>
+If you use a debugger the SQL requests are displayed step by step.
 
 ## @DisplayAllSql
+Compared to @DisplaySql, this annotation also diplayed SQL requests before (JUnit 4: @Before, @BeforeClass) and after (JUnit 4: @After, @AfterClass) the execution of the test method body.
