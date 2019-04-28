@@ -24,7 +24,7 @@
 
 ## @DisableSelectDistinct
 
-## @SqlBatch
+## @JdbcBatches
 
 ### Parameters 
 |Parameter  |Type| Meaning           | Default value  |
