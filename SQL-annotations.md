@@ -123,6 +123,6 @@ SQL requests are displayed step by step during debugging.
 
 ## @DisplaySqlOfTestMethodBody
 With this annotation the SQL order are diplayed in the console during the execution of the test method body, not just after if a SQL property is not respected.  <br>
-Compared to @DisplaySql, this annotation dozq not diplay SQL order before (JUnit 4: @Before, @BeforeClass) and after (JUnit 4: @After, @AfterClass) the execution of the test method body.
+Compared to @DisplaySql, this annotation does not diplay SQL order before (JUnit 4: @Before, @BeforeClass) and after (JUnit 4: @After, @AfterClass) the execution of the test method body.
 
 
