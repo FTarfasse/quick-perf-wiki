@@ -1,6 +1,6 @@
-## @DisableQuickPerf or @FunctionalIteration
-
 ## @DisableDefaultAnnotations
+
+## @DisableQuickPerf or @FunctionalIteration
 
 ## @DisplayQuickPerfInfos
 
