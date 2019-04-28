@@ -7,8 +7,9 @@
 ## [JUnit 4 & Spring](https://github.com/quick-perf/doc/wiki/JUnit-4--&-Spring)
 
 # Use QuickPerf annotations
-Each annotation can be applied at class level, at method level or for each test.
-An annotation configured at method level overrides the configuration of this annotation defined at class level. An annotation configured for each test is overridden by the same annotation defined at class level or method level. <br>
+Each annotation can be applied at *method level*, at *class level* or *for each test*. <br>
+An annotation configured at method level overrides the configuration of this annotation defined at class level. <br>
+An annotation configured for each test is overridden by the same annotation defined at class level or method level.
 
 ## [Base annotations](https://github.com/quick-perf/doc/wiki/base-annotations)
 ## [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations)
