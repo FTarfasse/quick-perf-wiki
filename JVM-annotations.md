@@ -2,7 +2,7 @@
 
 [**Configure your JVM**](#Configure-your-JVM) <br> @HeapSize, @Xms, @Xmx, @JvmOptions <br><br>
 [**Accurately verify heap allocation**](#Accurately-verify-heap-allocation)<br> @MeasureAllocation, @MaxAllocation, @NoAllocation <br><br>
-[**Profile or check your JVM**](#Profile-or-check-your-JVM) <br> @ProfileJvmWithJavaFlightRecorder, @CheckJvm
+[**Profile or check your JVM**](#Profile-or-check-your-JVM) <br> @ProfileJvm, @CheckJvm
 
 # Configure your JVM
 ## @HeapSize
@@ -98,7 +98,7 @@ With this annotation, the test will fail if allocation is detected. <br><br>
 The test will be executed in a specific JVM.
 
 # Profile or check your JVM
-## @ProfileJvmWithJavaFlightRecorder
+## @ProfileJvm
 
 ## @CheckJvm
 With this annotation, JVM is profiled with Java Flight Recorder (JFR).<br><br>
