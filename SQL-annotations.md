@@ -1,11 +1,32 @@
 ## @SqlSelectNumber
 
+### Parameters 
+|Parameter  |Type| Meaning                   | Default value  |
+| -------- |:---:|:-------------------------:|:--------------:|
+| value    | int |Number of select requests  |        0       |
+
+
 ## @SqlInsertNumber
+
+### Parameters 
+|Parameter  |Type| Meaning                   | Default value  |
+| -------- |:---:|:-------------------------:|:--------------:|
+| value    | int |Number of insert requests  |        0       |
 
 
 ## @SqlUpdateNumber
 
+### Parameters 
+|Parameter  |Type| Meaning                   | Default value  |
+| -------- |:---:|:-------------------------:|:--------------:|
+| value    | int |Number of update requests  |        0       |
+
 ## @SqlDeleteNumber
+
+|Parameter  |Type| Meaning                   | Default value  |
+| -------- |:---:|:-------------------------:|:--------------:|
+| value    | int |Number of delete requests  |        0       |
+
 
 ## @MaxSqlSelect
 With this annotation, the test will fail if the number of SELECT requests is greater than expected. 
