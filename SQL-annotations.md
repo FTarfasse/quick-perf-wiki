@@ -35,7 +35,7 @@ A 0 batch size means that JDBC batching is disabled.
 
 ### Example
 ```java
-    @SqlBatch(batchSize = 30)
+    @JdbcBatches(batchSize = 30)
 ```
 
 # Disable some default annotations
