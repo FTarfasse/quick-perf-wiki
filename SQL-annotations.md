@@ -114,7 +114,7 @@ A 0 batch size means that JDBC batching is disabled.
 
 ### Example
 ```java
-    @MaxReturnedSqlColumns(5)
+    @SqlBatch(batchSize = 30)
 ```
 
 ## @DisplaySql
