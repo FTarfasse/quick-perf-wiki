@@ -76,6 +76,10 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
 
 }
 ```
+In console:
+```
+Measured allocation: 440.0 bytes
+```
 ## @MaxAllocation
 With this annotation, the test will fail if allocation is greater than expected. <br><br>
 The test will be executed in a specific JVM.
