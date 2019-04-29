@@ -114,7 +114,7 @@ You can open it with Java Mission Control (JMC).
 ## @CheckJvm
 With this annotation, JVM is profiled with Java Flight Recorder (JFR).<br><br>
 The JFR file location is shown in the console:
-```java
+```
 JFR file: C:\Users\UserName~1\AppData\Local\Temp\QuickPerf-1969922557\profiling.jfr
 ```
 So, you can open the produced JFR file with Java Mission Control.<br><br>
