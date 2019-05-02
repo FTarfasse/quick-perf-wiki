@@ -46,7 +46,7 @@ With this annotation, the test is executed in a specific JVM having the given JV
 | value    | String           |JVM options  |      -        |
 
 # Accurately verify heap allocation
-The following annotation use ByteWatcher under the hood:
+The following annotations use ByteWatcher under the hood:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
 
@@ -102,6 +102,9 @@ With this annotation, the test will fail if allocation is detected. <br><br>
 The test will be executed in a specific JVM.
 
 # Profile or check your JVM
+The following annotations use Java Flight Recorder under the hood. <br>
+Java Flight Recorder profiling is available for Oracle JDK >= 1.7u40 and OpenJDK >=11.
+
 ## @ProfileJvm
 To profile JVM with Java Flight Recorder (JFR).<br>
 <br>
