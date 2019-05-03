@@ -13,6 +13,8 @@
 # Worflow
 
 # Recommended default annotations
+We recommend to apply the following SQL annotations by default, that is to say for each test.
+
 ## @DisableExactlySameSqlSelects
 
 ## @DisableSameSelectTypesWithDifferentParams
@@ -38,6 +40,36 @@ A 0 batch size means that JDBC batching is disabled.
     @JdbcBatches(batchSize = 30)
 ```
 
+## Configure default annotations
+A SqlAnnotationBuilder class is available to easily implement SpecifiableAnnotations.
+
+```java
+package org.quickperf;
+
+import org.quickperf.config.user.SpecifiableAnnotations;
+
+import java.lang.annotation.Annotation;
+import java.util.Arrays;
+import java.util.Collection;
+
+import static org.quickperf.sql.annotation.SqlAnnotationBuilder.*;
+
+public class QuickPerfConfiguration implements SpecifiableAnnotations {
+
+    public Collection<Annotation> specifyDefaultAnnotations() {
+        int batchSize = 30; // set the expected batch size
+        return Arrays.asList(  disableExactlySameSqlSelects()
+                             , disableSameDeleteTypesWithDifferentParams()
+                             , jdbcBatches(batchSize)
+                             , disableSqlCrossJoin()
+                             , disableLikeStartingWithWildcard()
+                             , disableSelectDistinct()
+                             );
+    }
+
+}
+```
+
 # Disable some default annotations
 ## @EnableSqlCrossJoin
 To decide to enable a cross join in a specific case if you add @DisableSqlCrossJoin check for every test or at test class level.
@@ -49,7 +81,6 @@ To decide to enable a cross join in a specific case if you add @DisableSqlCrossJ
 
 
 ## @EnableSelectDistinct
-
 
 ## @EnableLikeStartingWithWildcard
 
