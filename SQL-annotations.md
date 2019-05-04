@@ -47,6 +47,7 @@ A SqlAnnotationBuilder class is available to easily implement SpecifiableAnnotat
 package org.quickperf;
 
 import org.quickperf.config.user.SpecifiableAnnotations;
+import org.quickperf.sql.annotation.SqlAnnotationBuilder;
 
 import java.lang.annotation.Annotation;
 import java.util.Arrays;
@@ -59,7 +60,7 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
     public Collection<Annotation> specifyDefaultAnnotations() {
         int batchSize = 30; // set the expected batch size
         return Arrays.asList(  disableExactlySameSqlSelects()
-                             , disableSameDeleteTypesWithDifferentParams()
+                             , disableSameSelectTypesWithDifferentParams()
                              , jdbcBatches(batchSize)
                              , disableSqlCrossJoin()
                              , disableLikeStartingWithWildcard()
