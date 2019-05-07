@@ -10,12 +10,11 @@
 ## Annotation scopes
 An annotation can have three scopes :
 * Global
+An annotation defined at global level is applied on each test.
 * Class
+An annotation defined at class level overrides the configuration of the same annotation defined at global level.
 * Method
-
-Each annotation can be applied at *method level*, at *class level* or *for each test*. <br>
-An annotation configured at method level overrides the configuration of this annotation defined at class level. <br>
-An annotation configured for each test is overridden by the same annotation defined at class level or method level.
+An annotation defined at method level overrides the configuration of the same annotation defined at class and global levels.
 
 [Example to understand how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-to-understand-how-annotation-scopes-work) 
 
