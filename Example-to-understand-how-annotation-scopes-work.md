@@ -38,7 +38,7 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 ```java
 import org.junit.Test;
 
-public class AClassWithDefaultAnnotationAppliedTest {
+public class AClassWithGlobalScopeAnnotationAppliedTest {
 
      //@MaxSqlSelect(3) default annotation is applied
      @Test
