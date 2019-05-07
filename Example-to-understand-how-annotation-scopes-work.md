@@ -55,17 +55,19 @@ package org.mycompany;
 import org.junit.Test;
 import org.quickperf.sql.annotation.MaxSqlSelect;
 
-@MaxSqlSelect(2) //This annotation overrides the default annotation
-                 // defined in QuickPerfConfiguration class
+@MaxSqlSelect(2) // CLASS SCOPE
+                 // This annotation overrides the annotation
+                 // defined in QuickPerfConfiguration class (GLOBAL SCOPE)
 public class AClassWithAnnotationsTest {
 
-    //@MaxSqlSelect(2) annotation placed on class is applied
+    // @MaxSqlSelect(2) annotation placed on class is applied
     @Test
     public void a_test_method() {
         //...
     }
 
-    @MaxSqlSelect(1) //This annotation overrides the annotation placed
+    @MaxSqlSelect(1) // METHOD SCOPE
+                     // This annotation overrides the annotation placed
                      // on class
     @Test
     public void a_test_method_with_quick_perf_annotation() {
