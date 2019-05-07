@@ -11,7 +11,7 @@ import java.util.Collections;
 /*The configuration class has to be in org.quickperf package*/
 public class QuickPerfConfiguration implements SpecifiableAnnotations {
 
-    public Collection<Annotation> specifyDefaultAnnotations() {
+    public Collection<Annotation> specifyAnnotationsAppliedOnEachTest() {
 
         /* To build an instance of MaxSqlSelect annotation without SqlAnnotationBuilder
         MaxSqlSelect maxSqlSelect = new MaxSqlSelect() {
