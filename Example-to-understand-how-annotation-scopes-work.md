@@ -35,6 +35,11 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 }
 ```
 
+**The class implementing SpecifiableAnnotations has to be in org.quickperf package.**
+
+<p><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Scopes.PNG"</p>
+
+
 ```java
 import org.junit.Test;
 
