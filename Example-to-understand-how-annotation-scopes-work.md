@@ -40,7 +40,7 @@ import org.junit.Test;
 
 public class AClassWithGlobalScopeAnnotationAppliedTest {
 
-     //@MaxSqlSelect(3) default annotation is applied
+     //@MaxSqlSelect(3) annotation is applied
      @Test
      public void a_test_method() {
          //...
