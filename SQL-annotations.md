@@ -2,9 +2,9 @@
 
 [**Worflow**](#Worflow)<br>
 
-[**Recommended default annotations**](#Recommended-default-annotations)<br>
+[**Recommended global annotations**](#Recommended-global-annotations)<br>
 
-[**Disable some default annotations**](#Disable-some-default-annotations)<br>
+[**Disable some global annotations**](#Disable-some-global-annotations)<br>
 
 [**Recommended method annotations**](#Recommended-method-annotations)<br>
 
@@ -12,7 +12,7 @@
 
 # Worflow
 
-# Recommended default annotations
+# Recommended global annotations
 We recommend to apply the following SQL annotations by default, that is to say for each test.
 
 ## @DisableExactlySameSqlSelects
@@ -40,7 +40,7 @@ A 0 batch size means that JDBC batching is disabled.
     @JdbcBatches(batchSize = 30)
 ```
 
-## Configure default annotations
+## Configure global annotations
 A SqlAnnotationBuilder class is available to easily implement SpecifiableAnnotations.
 
 ```java
@@ -71,7 +71,7 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 }
 ```
 
-# Disable some default annotations
+# Disable some global annotations
 ## @EnableSqlCrossJoin
 To decide to enable a cross join in a specific case if you add @DisableSqlCrossJoin check for every test or at test class level.
 
