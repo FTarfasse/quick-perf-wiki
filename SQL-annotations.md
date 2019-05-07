@@ -57,7 +57,7 @@ import static org.quickperf.sql.annotation.SqlAnnotationBuilder.*;
 
 public class QuickPerfConfiguration implements SpecifiableAnnotations {
 
-    public Collection<Annotation> specifyDefaultAnnotations() {
+    public Collection<Annotation> specifyAnnotationsAppliedOnEachTest() {
         int batchSize = 30; // set the expected batch size
         return Arrays.asList(  disableExactlySameSqlSelects()
                              , disableSameSelectTypesWithDifferentParams()
