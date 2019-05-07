@@ -16,6 +16,9 @@ An annotation can have three scopes :
 Each annotation can be applied at *method level*, at *class level* or *for each test*. <br>
 An annotation configured at method level overrides the configuration of this annotation defined at class level. <br>
 An annotation configured for each test is overridden by the same annotation defined at class level or method level.
+
+[Example to understand how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-to-understand-how-annotation-scopes-work) 
+
 ## [Base annotations](https://github.com/quick-perf/doc/wiki/base-annotations)
 ## [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations)
 ## [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations)
