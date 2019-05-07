@@ -9,11 +9,11 @@
 # Use QuickPerf annotations
 ## Annotation scopes
 An annotation can have three scopes :
-* Global
+* Global <br>
 An annotation defined at global level is applied on each test.
-* Class
+* Class <br>
 An annotation defined at class level overrides the configuration of the same annotation defined at global level.
-* Method
+* Method <br>
 An annotation defined at method level overrides the configuration of the same annotation defined at class and global levels.
 
 [Example to understand how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-to-understand-how-annotation-scopes-work) 
