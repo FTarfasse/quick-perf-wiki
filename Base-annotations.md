@@ -1,4 +1,10 @@
 ## @DisplayAppliedAnnotations
+Display applied QuickPerf annotations.
+In console:
+```
+[QUICK PERF] Applied annotations: @JdbcBatches(batchSize=30), @DisableSameSelectTypesWithDifferentParams
+             Class specifying global annotations: org.quickperf.QuickPerfConfiguration
+```
 
 ## @DisableDefaultAnnotations
 
