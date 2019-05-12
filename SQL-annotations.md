@@ -1,5 +1,7 @@
 ***Take control of SQL requests sent to the database.***
 
+[**Configuration**](#Configuration)<br>
+
 [**Worflow**](#Worflow)<br>
 
 [**Recommended global annotations**](#Recommended-global-annotations)<br>
@@ -9,6 +11,8 @@
 [**Recommended method annotations**](#Recommended-method-annotations)<br>
 
 [**Debug annotations**](#Debug-annotations)<br>
+
+# Configuration
 
 # Worflow
 Below, we try to describe a way to efficiently use SQL annotation during development.
