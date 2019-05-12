@@ -1,10 +1,10 @@
 # Outline
 
-[**Configure your JVM**](#Configure-your-JVM) <br> @HeapSize, @Xms, @Xmx, @JvmOptions <br><br>
+[**Configure your test JVM**](#Configure-your-test-JVM) <br> @HeapSize, @Xms, @Xmx, @JvmOptions <br><br>
 [**Accurately verify heap allocation**](#Accurately-verify-heap-allocation)<br> @MeasureAllocation, @MaxAllocation, @NoAllocation <br><br>
 [**Profile or check your JVM**](#Profile-or-check-your-JVM) <br> @ProfileJvm, @CheckJvm
 
-# Configure your JVM
+# Configure your test JVM
 ## @HeapSize
 With this annotation, the test is executed in a specific JVM having the given heap size.
 ### Parameters 
