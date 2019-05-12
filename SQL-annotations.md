@@ -13,6 +13,7 @@
 [**Debug annotations**](#Debug-annotations)<br>
 
 # Configuration
+[Configuration with JUnit 4 (without Spring)](https://github.com/quick-perf/doc/wiki/QuickPerfRunner-&-SQL-annotations)<br><br>
 [Configuration with JUnit 4 and Spring](https://github.com/quick-perf/doc/wiki/QuickPerfSpringRunner-&-SQL-annotations)
 
 The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot* framewoks. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it.
