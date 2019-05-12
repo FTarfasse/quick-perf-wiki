@@ -1,3 +1,4 @@
+A class implementing SpecifiableAnnotations provides global annotations, that is to say annotations applying on each test.
 ```java
 package org.quickperf;
 
