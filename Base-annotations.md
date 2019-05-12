@@ -18,3 +18,5 @@ To disable QuickPerf functionalities.<br>
 [This worflow example](SQL-annotations#Worflow) illustrates how to use  @DisableQuickPerf or @FunctionalIteration with SQL annotations.
 
 ## @DebugQuickPerf
+This annotation is addressed to developers working on the conception of QuickPerf annotations.<br>
+It displays information in console for debugging purpose.
