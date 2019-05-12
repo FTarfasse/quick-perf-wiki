@@ -7,7 +7,8 @@ In console:
              Class specifying global annotations: org.quickperf.QuickPerfConfiguration
 ```
 
-## @DisableDefaultAnnotations
+## @DisableGlobalAnnotations
+To disable global annotations on test method or test class level.
 
 ## @DisableQuickPerf or @FunctionalIteration
 To disable QuickPerf functionalities.<br>
