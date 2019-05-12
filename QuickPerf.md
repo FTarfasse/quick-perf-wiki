@@ -10,12 +10,12 @@
 ## Annotation scopes
 An annotation can have three **scopes**:
 * **Global** <br>
-An annotation defined at global level is applied on each test.<br>
-You can define annotations with global levels by creating a class implementing SpecifiableAnnotations interface. This class has to be in org.quickperf package.
+An annotation having global scope is applied on each test.<br>
+You can define annotations with global scope by creating a class implementing SpecifiableAnnotations interface. This class has to be in org.quickperf package.
 * **Test class** <br>
-An annotation defined at class level overrides the configuration of the same annotation defined at global level.
+An annotation having a test class scope overrides the configuration of the same annotation with global scope.
 * **Test method** <br>
-An annotation defined at method level overrides the configuration of the same annotation defined at class and global levels.
+An annotation having a test method scope overrides the configuration of the same annotation with test class and global scopes.
 
 **[Example illustrating how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-to-understand-how-annotation-scopes-work)**
 
