@@ -17,7 +17,7 @@ An annotation defined at class level overrides the configuration of the same ann
 * **Test method** <br>
 An annotation defined at method level overrides the configuration of the same annotation defined at class and global levels.
 
-**[Example to understand how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-to-understand-how-annotation-scopes-work)**
+**[Example illustrating how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-to-understand-how-annotation-scopes-work)**
 
 ## [Base annotations](https://github.com/quick-perf/doc/wiki/base-annotations)
 ## [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations)
