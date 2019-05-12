@@ -21,6 +21,7 @@ An annotation defined at method level overrides the configuration of the same an
 
 ## [Base annotations](https://github.com/quick-perf/doc/wiki/base-annotations)
 ## [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations)
+[**Configure your test JVM**](JVM-annotations#Configure-your-test-JVM)
 ## [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations)
 Easily detect N+1 select, bad use of Hibernate session and other things.
 
