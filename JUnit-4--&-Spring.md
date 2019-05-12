@@ -10,7 +10,6 @@ Use **QuickPerfSpringRunner** which adds QuickPerf functionalities to SpringRunn
 
 	}
 ```
-*Each test is executed in a specific JVM with the QuickPerfSpringRunner.* <br>
 You can use some [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations) to configure the JVM.
 
 ## [QuickPerfSpringRunner & SQL annotations](https://github.com/quick-perf/doc/wiki/QuickPerfSpringRunner-&-SQL-annotations)
