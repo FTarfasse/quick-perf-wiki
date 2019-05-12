@@ -1,5 +1,5 @@
 ## @DisplayAppliedAnnotations
-Display applied QuickPerf annotations.
+Display applied QuickPerf annotations on console.
 ### Example
 In console:
 ```
