@@ -11,7 +11,7 @@ In console:
 ```
 
 ## @DisableGlobalAnnotations
-To disable global annotations on test method or test class level.
+To disable global annotations on test method or test class.
 
 ## @DisableQuickPerf or @FunctionalIteration
 To disable QuickPerf functionalities.<br>
