@@ -11,6 +11,6 @@ In console:
 
 ## @DisableQuickPerf or @FunctionalIteration
 To disable QuickPerf functionalities.<br>
-See [this example](SQL-annotations#Worflow) on how to use this annotation with SQL annotations.
+See [this worflow example](SQL-annotations#Worflow) illustration how to use  @DisableQuickPerf or @FunctionalIteration with SQL annotations.
 
 ## @DebugQuickPerf
