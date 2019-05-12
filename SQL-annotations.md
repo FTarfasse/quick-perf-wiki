@@ -1,4 +1,4 @@
-**Take control of SQL requests sent to the database.**
+***Take control of SQL requests sent to the database.***
 
 # Outline
 
