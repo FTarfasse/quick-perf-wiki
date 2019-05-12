@@ -13,6 +13,7 @@
 [**Debug annotations**](#Debug-annotations)<br>
 
 # Configuration
+[Configuration with JUnit 4 and Spring](https://github.com/quick-perf/doc/wiki/QuickPerfSpringRunner-&-SQL-annotations)
 
 # Worflow
 Below, we try to describe a way to efficiently use SQL annotation during development.
