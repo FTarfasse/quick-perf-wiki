@@ -1,7 +1,5 @@
 ***Take control of SQL requests sent to the database.***
 
-# Outline
-
 [**Worflow**](#Worflow)<br>
 
 [**Recommended global annotations**](#Recommended-global-annotations)<br>
