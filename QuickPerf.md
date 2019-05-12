@@ -14,7 +14,7 @@ An annotation defined at global level is applied on each test.<br>
 You can define annotations with global levels by creating a class implementing SpecifiableAnnotations interface. This class has to be in org.quickperf package.
 * **Class** <br>
 An annotation defined at class level overrides the configuration of the same annotation defined at global level.
-* **Method** <br>
+* **Test method** <br>
 An annotation defined at method level overrides the configuration of the same annotation defined at class and global levels.
 
 **[Example to understand how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-to-understand-how-annotation-scopes-work)**
