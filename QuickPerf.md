@@ -25,7 +25,7 @@ An annotation defined at method level overrides the configuration of the same an
 [**Accurately verify heap allocation**](JVM-annotations#Accurately-verify-heap-allocation)<br><br>
 [**Profile or check your JVM**](JVM-annotations#Profile-or-check-your-JVM)
 ## [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations)
-Easily detect N+1 select, bad use of Hibernate session and other things.
+Easily detect **N+1 select**, bad use of Hibernate session and other things.
 
 # Disable QuickPerf
 To disable QuickPerf functionalities you can pass *-DdisableQuickPerf=true* to your JVM or use [annotations](https://github.com/quick-perf/doc/wiki/base-annotations).
