@@ -60,7 +60,7 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
         int batchSize = 30; // set the expected batch size
         return Arrays.asList(  disableExactlySameSqlSelects()
                              , disableSameSelectTypesWithDifferentParams()
-                             , jdbcBatches(batchSize)
+                             , jdbcBatching(batchSize)
                              , disableSqlCrossJoin()
                              , disableLikeStartingWithWildcard()
                              );
@@ -74,7 +74,7 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 
 ## @DisableSameSelectTypesWithDifferentParams
 
-## @JdbcBatches
+## @JdbcBatching
 
 Verify that inserts and updates are processed in JDBC batches.
 
