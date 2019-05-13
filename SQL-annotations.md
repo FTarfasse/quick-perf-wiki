@@ -34,6 +34,7 @@ Configure once some global annotations [recommended global annotations](#Recomme
 ## **Work on performance behavior**
 * **Remove @DisableQuickPerf or @FunctionalIteration to enable QuickPerf annotations** 
 * **Fix or ignore issues reported by global annotations**
+In some specific cases, you can [disable some global annotations](#Disable-some-global-annotations).
 * **Possibly add QuickPerf annotation on method to document the code** 
 
 # Recommended global annotations
