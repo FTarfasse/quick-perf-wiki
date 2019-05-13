@@ -68,16 +68,11 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 
 }
 ```
+**The class implementing SpecifiableAnnotations has to be in org.quickperf package.**
+
 ## @DisableExactlySameSqlSelects
 
 ## @DisableSameSelectTypesWithDifferentParams
-
-## @DisableSqlCrossJoin
- The [cartesian product induced by a cross join can be very inefficient](https://vladmihalcea.com/hibernate-facts-always-check-criteria-api-sql-queries/). Although most database engines will try to remove a cross join, we can decide to remove cross join to not have to check if a database engine version will really remove it.
- 
-## @DisableLikeStartingWithWildcard
-
-## @DisableSelectDistinct
 
 ## @JdbcBatches
 
@@ -93,7 +88,13 @@ A 0 batch size means that JDBC batching is disabled.
     @JdbcBatches(batchSize = 30)
 ```
 
-**The class implementing SpecifiableAnnotations has to be in org.quickperf package.**
+## @DisableSqlCrossJoin
+ The [cartesian product induced by a cross join can be very inefficient](https://vladmihalcea.com/hibernate-facts-always-check-criteria-api-sql-queries/). Although most database engines will try to remove a cross join, we can decide to remove cross join to not have to check if a database engine version will really remove it.
+ 
+## @DisableLikeStartingWithWildcard
+
+## @DisableSelectDistinct
+
 
 # Disable some global annotations
 ## @EnableSqlCrossJoin
