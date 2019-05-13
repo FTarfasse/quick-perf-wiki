@@ -19,7 +19,8 @@
 The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot* framewoks. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it.
 
 # Worflow
-Below, we try to describe a way to efficiently use SQL annotations during development.
+Below, we try to describe a way to efficiently use SQL annotations during development.<br>
+First, configure [recommended global annotations](#Recommended-global-annotations).
 
 # Recommended global annotations
 We recommend to apply the following SQL annotations by default, that is to say for each test.
