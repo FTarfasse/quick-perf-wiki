@@ -21,7 +21,7 @@ The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot*
 # Worflow
 Below, we try to describe a way to efficiently use SQL annotations during development.<br>
 
-Configure once some global annotations [recommended global annotations](#Configure-recommended-global-annotations). These annotations are applied to all test methods.<br><br>
+Configure once some global annotations [recommended global annotations](#Configure-recommended-global-annotations). These annotations are applied to every test method. The idea is to systematically apply some performance checks to avoid some classical performance bottlenecks. <br><br>
 ## **Focus on functional behavior** <br>
 * **Write a test describing and verifying the *functional behavior*.** <br> 
 * **Annotate this test with *@DisableQuickPerf* or *@FunctionalIteration* to disable the QuickPerf annotations.** <br>So, we disable annotations having global or class scopes. <br>
