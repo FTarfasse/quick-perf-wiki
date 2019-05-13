@@ -89,7 +89,7 @@ A 0 batch size means that JDBC batching is disabled.
 
 ### Example
 ```java
-    @JdbcBatches(batchSize = 30)
+    @JdbcBatching(batchSize = 30)
 ```
 
 ## @DisableSqlCrossJoin
