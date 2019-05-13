@@ -63,7 +63,6 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
                              , jdbcBatches(batchSize)
                              , disableSqlCrossJoin()
                              , disableLikeStartingWithWildcard()
-                             , disableSelectDistinct() // If you use JPA (Hibernate)
                              );
     }
 
@@ -94,8 +93,6 @@ A 0 batch size means that JDBC batching is disabled.
  
 ## @DisableLikeStartingWithWildcard
 
-## @DisableSelectDistinct
-
 # Disable some global annotations
 
 ## @EnableExactlySameSqlSelects
@@ -110,9 +107,6 @@ To decide to enable a cross join in a specific case if you add @DisableSqlCrossJ
 
 ## @EnableLikeStartingWithWildcard
 Cancel behavior of [@DisableLikeStartingWithWildcard](#DisableLikeStartingWithWildcard).
-
-## @EnableSelectDistinct
-Cancel behavior of [@DisableSelectDistinct](#DisableSelectDistinct).
 
 # Recommended method annotations
 ## @SqlSelectNumber
