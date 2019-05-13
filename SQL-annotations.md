@@ -76,6 +76,10 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 
 ## @JdbcBatches
 
+Verify that inserts and updates are processed in JDBC batches.
+
+You may sometimes think that you are using JDBC batching but in fact not ([Paper 1](https://abramsm.wordpress.com/2008/04/23/hibernate-batch-processing-why-you-may-not-be-using-it-even-if-you-think-you-are/), [Paper 2](https://stackoverflow.com/questions/27697810/hibernate-disabled-insert-batching-when-using-an-identity-identifier)).
+
 ### Parameters 
 |Parameter  |Type| Meaning           | Default value  |
 | -------- |:---:|:-----------------:|:--------------:|
