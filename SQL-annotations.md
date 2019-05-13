@@ -98,7 +98,7 @@ A 0 batch size means that JDBC batching is disabled.
 # Disable some global annotations
 
 ## @EnableExactlySameSqlSelects
-Disable behavior of [@DisableExactlySameSqlSelects](#@EnableSameSelectTypesWithDifferentParams).
+Disable behavior of [@DisableExactlySameSqlSelects](#Configuration).
 
 ## @EnableSameSelectTypesWithDifferentParams
 
