@@ -98,18 +98,20 @@ A 0 batch size means that JDBC batching is disabled.
 # Disable some global annotations
 
 ## @EnableExactlySameSqlSelects
-Disable behavior of [@DisableExactlySameSqlSelects](#DisableExactlySameSqlSelects).
+Cancel behavior of [@DisableExactlySameSqlSelects](#DisableExactlySameSqlSelects).
 
 ## @EnableSameSelectTypesWithDifferentParams
+Cancel behavior of [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams).
 
 ## @EnableSqlCrossJoin
+Cancel behavior of [@DisableSqlCrossJoin](#DisableSqlCrossJoin).
 To decide to enable a cross join in a specific case if you add @DisableSqlCrossJoin check for every test or at test class level.
 
 ## @EnableLikeStartingWithWildcard
+Cancel behavior of [@DisableLikeStartingWithWildcard](#DisableLikeStartingWithWildcard).
 
 ## @EnableSelectDistinct
-
-
+Cancel behavior of [@DisableSelectDistinct](#DisableSelectDistinct).
 
 # Recommended method annotations
 ## @SqlSelectNumber
