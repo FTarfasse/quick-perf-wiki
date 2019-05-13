@@ -63,7 +63,7 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
                              , jdbcBatches(batchSize)
                              , disableSqlCrossJoin()
                              , disableLikeStartingWithWildcard()
-                             , disableSelectDistinct()
+                             , disableSelectDistinct() // If you use JPA (Hibernate)
                              );
     }
 
