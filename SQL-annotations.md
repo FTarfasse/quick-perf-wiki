@@ -20,7 +20,16 @@ The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot*
 
 # Worflow
 Below, we try to describe a way to efficiently use SQL annotations during development.<br>
-First, configure [recommended global annotations](#Recommended-global-annotations).
+
+Configure once some global annotations [recommended global annotations](#Configure-recommended-global-annotations). These annotations are applied to all test methods.<br><br>
+1. **Focus on functional behavior** <br>
+* **Write a test describing and verifying the *functional behavior*.** <br> 
+* **Annotate this test with *@DisableQuickPerf* or *@FunctionalIteration* to disable the QuickPerf annotations.** <br>So, we disable annotations having global or class scopes. <br>
+The goal is to have something working without worrying about performances. *We try to do one thing at a time.*  <br>Firstly, we focus our work and attention on the functional behavior. After, we check some performance properties.
+* **Make the functional behavior working.** <br>
+  You can do this applying a TDD workflow (Red/Green/Refactor).
+2. 
+
 
 # Recommended global annotations
 We recommend to apply the following SQL annotations by default, that is to say for each test.
@@ -50,7 +59,7 @@ A 0 batch size means that JDBC batching is disabled.
     @JdbcBatches(batchSize = 30)
 ```
 
-## Configure global annotations
+## Configure recommended global annotations
 A SqlAnnotationBuilder class is available to easily implement SpecifiableAnnotations.
 
 ```java
