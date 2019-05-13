@@ -19,45 +19,24 @@
 The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot* framewoks. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it.
 
 # Worflow
-Below, we try to describe a way to efficiently use SQL annotations during development.<br>
+Below, we try to propose a way to efficiently use SQL annotations during development.<br>
 
-Configure once some global annotations [recommended global annotations](#Configure-recommended-global-annotations). These annotations are applied to every test method. The idea is to systematically apply some performance checks to avoid some classical performance bottlenecks. <br><br>
-## **Focus on functional behavior** <br>
-* **Write a test describing and verifying the *functional behavior*.** <br> 
-* **Annotate this test with *@DisableQuickPerf* or *@FunctionalIteration* to disable the QuickPerf annotations.** <br>So, we disable annotations having global or class scopes. <br>
-The goal is to have something working without worrying about performances. *We try to do one thing at a time.*  <br>Firstly, we focus our work and attention on the functional behavior. After, we check some performance properties.
-* **Make the functional behavior working.** <br>
-  You can do this applying a TDD workflow (Red/Green/Refactor).
-## **Focus on performance behavior**
+Firstly, we focus our work and attention on the functional behavior. The goal is to have something working without worrying about performances. *We try to do one thing at a time.* After, we check some performance properties.
 
+## Configure global annotations
+Configure once some global annotations [recommended global annotations](#Configure-recommended-global-annotations). These annotations are applied to every test method.<br> The idea is to systematically apply some performance checks to avoid some classical performance bottlenecks.
+
+## **Work on functional behavior** <br>
+* **Write a test describing and verifying the *functional behavior*** <br> 
+* **Annotate this test with *@DisableQuickPerf* or *@FunctionalIteration* to disable the QuickPerf annotations** <br>So, we disable annotations having global or class scopes. <br>
+* **Make the functional behavior working** <br>
+  You can do this applying a TDD approach (Red/Green/Refactor).
+## **Work on performance behavior**
+* **Remove @DisableQuickPerf or @FunctionalIteration to enable QuickPerf annotations** 
+* **Fix or ignore issues reported by global annotations**
+* **Possibly add QuickPerf annotation on method to document the code** 
 
 # Recommended global annotations
-We recommend to apply the following SQL annotations by default, that is to say for each test.
-
-## @DisableExactlySameSqlSelects
-
-## @DisableSameSelectTypesWithDifferentParams
-
-## @DisableSqlCrossJoin
- The [cartesian product induced by a cross join can be very inefficient](https://vladmihalcea.com/hibernate-facts-always-check-criteria-api-sql-queries/). Although most database engines will try to remove a cross join, we can decide to remove cross join to not have to check if a database engine version will really remove it.
- 
-## @DisableLikeStartingWithWildcard
-
-## @DisableSelectDistinct
-
-## @JdbcBatches
-
-### Parameters 
-|Parameter  |Type| Meaning           | Default value  |
-| -------- |:---:|:-----------------:|:--------------:|
-| batchSize| int |JDBC batch size    |      -         |
-
-A 0 batch size means that JDBC batching is disabled.
-
-### Example
-```java
-    @JdbcBatches(batchSize = 30)
-```
 
 ## Configure recommended global annotations
 A SqlAnnotationBuilder class is available to easily implement SpecifiableAnnotations.
@@ -89,6 +68,31 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 
 }
 ```
+## @DisableExactlySameSqlSelects
+
+## @DisableSameSelectTypesWithDifferentParams
+
+## @DisableSqlCrossJoin
+ The [cartesian product induced by a cross join can be very inefficient](https://vladmihalcea.com/hibernate-facts-always-check-criteria-api-sql-queries/). Although most database engines will try to remove a cross join, we can decide to remove cross join to not have to check if a database engine version will really remove it.
+ 
+## @DisableLikeStartingWithWildcard
+
+## @DisableSelectDistinct
+
+## @JdbcBatches
+
+### Parameters 
+|Parameter  |Type| Meaning           | Default value  |
+| -------- |:---:|:-----------------:|:--------------:|
+| batchSize| int |JDBC batch size    |      -         |
+
+A 0 batch size means that JDBC batching is disabled.
+
+### Example
+```java
+    @JdbcBatches(batchSize = 30)
+```
+
 **The class implementing SpecifiableAnnotations has to be in org.quickperf package.**
 
 # Disable some global annotations
