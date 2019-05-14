@@ -99,27 +99,27 @@ A 0 batch size means that JDBC batching is disabled.
 ```
 
 ## @DisableSqlCrossJoin
- The [cartesian product induced by a cross join can be very inefficient](https://vladmihalcea.com/hibernate-facts-always-check-criteria-api-sql-queries/). Although most database engines will try to remove a cross join, we can decide to remove cross join to not have to check if a database engine version will really remove it.
+The [cartesian product induced by a cross join can be very inefficient](https://vladmihalcea.com/hibernate-facts-always-check-criteria-api-sql-queries/). Although most database engines will try to remove a cross join, we can decide to remove cross join to not have to check if a database engine version will really remove it.
  
 ## @DisableLikeStartingWithWildcard
 
 # Disable some global annotations
 
 ## @EnableExactlySameSqlSelects
-Cancel behavior of [@DisableExactlySameSqlSelects](#DisableExactlySameSqlSelects).
+Cancels behavior of [@DisableExactlySameSqlSelects](#DisableExactlySameSqlSelects).
 
 ## @EnableSameSelectTypesWithDifferentParams
-Cancel behavior of [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams).
+Cancels behavior of [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams).
 
 ## @EnableSqlCrossJoin
-Cancel behavior of [@DisableSqlCrossJoin](#DisableSqlCrossJoin).
+Cancels behavior of [@DisableSqlCrossJoin](#DisableSqlCrossJoin).
 To decide to enable a cross join in a specific case if you add @DisableSqlCrossJoin check for every test or at test class level.
 
 ## @EnableLikeStartingWithWildcard
-Cancel behavior of [@DisableLikeStartingWithWildcard](#DisableLikeStartingWithWildcard).
+Cancels behavior of [@DisableLikeStartingWithWildcard](#DisableLikeStartingWithWildcard).
 
 ## @JdbcBatching(batchSize=0)
-Indicate disabling of JDBC batching
+Indicates disabling of JDBC batching.
 
 # Recommended method annotations
 ## @SqlSelectNumber
