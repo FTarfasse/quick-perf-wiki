@@ -118,6 +118,9 @@ To decide to enable a cross join in a specific case if you add @DisableSqlCrossJ
 ## @EnableLikeStartingWithWildcard
 Cancel behavior of [@DisableLikeStartingWithWildcard](#DisableLikeStartingWithWildcard).
 
+# @JdbcBatching(batchSize=0)
+Indicate disabling of JDBC batching
+
 # Recommended method annotations
 ## @SqlSelectNumber
 
