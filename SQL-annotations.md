@@ -2,7 +2,7 @@
 
 [**Configuration to do before using SQL annotations**](#Configuration-to-do-before-using-SQL-annotations)<br>
 
-[**Worflow**](#Worflow)<br>
+[**Worflow with SQL annotations**](#Worflow-with-SQL-annotations)<br>
 
 [**Recommended global annotations**](#Recommended-global-annotations)<br>
 
@@ -18,7 +18,7 @@
 
 The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot* framewoks. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it.
 
-# Worflow
+# Worflow with SQL annotations
 Below, we try to propose a way to efficiently use SQL annotations during development.<br>
 
 ## Configure global annotations
