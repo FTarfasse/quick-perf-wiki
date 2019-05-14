@@ -26,16 +26,19 @@ Firstly, we focus our work and attention on the functional behavior. The goal is
 ## Configure global annotations
 Configure once some [recommended global annotations](#Recommended-global-annotations). These annotations are applied to every test method.<br> The idea is to systematically apply some performance checks to avoid some classical performance bottlenecks.
 
-## **Work on functional behavior** <br>
+## Implementation of a new business use case
+### **Work on functional behavior** <br>
 * **Write a test describing and verifying the *functional behavior*** <br> 
 * **Annotate this test with *@DisableQuickPerf* or *@FunctionalIteration* to disable the QuickPerf annotations** <br>So, we disable annotations having global or class scopes. <br>
 * **Make the functional behavior working** <br>
   You can do this applying a TDD approach (Red/Green/Refactor).
-## **Work on performance behavior**
+### **Work on performance behavior**
 * **Remove @DisableQuickPerf or @FunctionalIteration to enable QuickPerf annotations** 
 * **Fix or ignore issues reported by global annotations**
 <br>In some specific cases, you can [disable some global annotations](#Disable-some-global-annotations).
 * **Possibly add QuickPerf annotation on method to document the code** 
+
+## Add some performance checks to existing tests
 
 # Recommended global annotations
 
