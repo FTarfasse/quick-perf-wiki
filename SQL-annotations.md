@@ -1,6 +1,6 @@
 ***Take control of SQL requests sent to the database.***
 
-[**Configuration**](#Configuration)<br>
+[**Configuration to do before using SQL annotations**](#Configuration-to-do-before-using-SQL-annotations)<br>
 
 [**Worflow**](#Worflow)<br>
 
@@ -12,7 +12,7 @@
 
 [**Debug annotations**](#Debug-annotations)<br>
 
-# Configuration
+# Configuration to do before using SQL annotations
 [Configuration with JUnit 4 (without Spring)](https://github.com/quick-perf/doc/wiki/QuickPerfRunner-&-SQL-annotations)<br><br>
 [Configuration with JUnit 4 and Spring](https://github.com/quick-perf/doc/wiki/QuickPerfSpringRunner-&-SQL-annotations)
 
