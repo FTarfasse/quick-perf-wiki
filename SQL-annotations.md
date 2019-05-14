@@ -37,7 +37,9 @@ Firstly, we focus our work and attention on the functional behavior. The goal is
 <br>In some specific cases, you can [disable some global annotations](#Disable-some-global-annotations).
 * **Possibly add QuickPerf annotation on method to document the code** 
 
-## Add some performance checks to existing tests
+## Add some performance checks to existing database tests
+You can introduce QuickPerf in a project having some database tests. 
+After [the configuration of global annotations](#Recommended-global-annotations), some tests may fail because of some not respected performance properties.
 
 # Recommended global annotations
 
