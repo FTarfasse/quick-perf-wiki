@@ -13,9 +13,18 @@ In console:
 ## @DisableGlobalAnnotations
 To disable global annotations on test method or test class.
 
-## @DisableQuickPerf or @FunctionalIteration
+## @DisableQuickPerf
 To disable QuickPerf functionalities.<br>
-[This worflow example](SQL-annotations#Worflow) illustrates how to use  @DisableQuickPerf or @FunctionalIteration with SQL annotations.
+[This worflow example](SQL-annotations#Worflow) illustrates how to use  @DisableQuickPerf with SQL annotations.
+
+### Parameters 
+|Parameter|Type    | Meaning                        | Default value  |
+| --------|:------:|:-------------------------------|:--------------:|
+| reason  | String |Reason why QuickPerf is disabled|      -         |
+
+## @FunctionalIteration
+To disable QuickPerf functionalities.<br>
+[This worflow example](SQL-annotations#Worflow) illustrates how to use @FunctionalIteration with SQL annotations.
 
 ## @DebugQuickPerf
 This annotation is addressed to developers working on the conception of QuickPerf annotations.<br>
