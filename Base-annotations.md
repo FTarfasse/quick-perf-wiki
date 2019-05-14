@@ -13,6 +13,12 @@ In console:
 ## @DisableGlobalAnnotations
 To disable global annotations on test method or test class.
 
+### Parameters 
+|Parameter|Type    | Meaning                                 | Default value  |
+| --------|:------:|:----------------------------------------|:--------------:|
+| reason  | String |Reason why global annotations are disabled|      -         |
+
+
 ## @DisableQuickPerf
 To disable QuickPerf functionalities.<br><br>
 [This worflow example](SQL-annotations#Worflow) illustrates how to use  @DisableQuickPerf with SQL annotations.
