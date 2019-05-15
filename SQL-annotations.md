@@ -40,7 +40,7 @@ Firstly, we focus our work and attention on the functional behavior. The goal is
 ## Add some performance checks to existing database tests
 You can introduce QuickPerf in a project having some database tests.<br>
 After [the configuration of global annotations](#Recommended-global-annotations), some tests may fail because of some not respected performance properties.<br>
-If you may want to progressively fix these failing tests. To do this, you could annotate the failing tests with @DisableGlobalAnnotations. After that, you could progressively remove the annotation and see why the tests are failing.
+If you may want to progressively fix these failing tests. To do this, you could annotate the failing tests with @DisableGlobalAnnotations with a reason, for example @DisableGlobalAnnotations(reason="Perhaps to fix later"). After that, you could progressively remove the annotation and see why the tests are failing.
 
 
 # Recommended global annotations
