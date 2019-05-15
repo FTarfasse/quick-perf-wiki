@@ -137,6 +137,17 @@ Indicates disabling of JDBC batching.
      //...
     }
 ```
+## @MaxReturnedSqlColumns
+
+With this annotation, the test will fail if the number of returned columns is greater than expected.
+### Parameters 
+|Parameter  |Type| Meaning                             | Default value  |
+| --------  |:---:|:----------------------------------:|:--------------:|
+| value     | int |Maximum number of returned columns  |        0       |
+### Example
+```java
+    @MaxReturnedSqlColumns(5)
+```
 
 ## @SqlInsertNumber
 
@@ -193,21 +204,6 @@ With this annotation, the test will fail if the number of DELETE requests is gre
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Maximum number of deletes  |        0       |
-
-## @MaxReturnedSqlColumns
-
-With this annotation, the test will fail if the number of returned columns is greater than expected.
-### Parameters 
-|Parameter  |Type| Meaning                             | Default value  |
-| --------  |:---:|:----------------------------------:|:--------------:|
-| value     | int |Maximum number of returned columns  |        0       |
-### Example
-```java
-    @MaxReturnedSqlColumns(5)
-```
-
-
-
 
 # Debug annotations
 ## [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/wiki/Base-annotations)
