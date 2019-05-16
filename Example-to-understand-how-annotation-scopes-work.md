@@ -14,11 +14,11 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 
     public Collection<Annotation> specifyAnnotationsAppliedOnEachTest() {
 
-        /* To build an instance of MaxSqlSelect annotation without SqlAnnotationBuilder
-        MaxSqlSelect maxSqlSelect = new MaxSqlSelect() {
+        /* To build an instance of MaxOfSelects annotation without SqlAnnotationBuilder
+        MaxSqlSelect maxOfSelects = new MaxOfSelects() {
             @Override
             public Class<? extends Annotation> annotationType() {
-                return MaxSqlSelect.class;
+                return MaxOfSelects.class;
             }
             @Override
             public int value() {
@@ -27,9 +27,9 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
         };
         */
 
-        Annotation maxSqlSelect = SqlAnnotationBuilder.maxSqlSelect(3);
+        Annotation maxOfSelects = SqlAnnotationBuilder.maxOfSelects(3);
 
-        return Collections.singletonList(maxSqlSelect);
+        return Collections.singletonList(maxOfSelects);
 
     }
 
@@ -46,7 +46,7 @@ import org.junit.Test;
 
 public class AClassWithGlobalScopeAnnotationAppliedTest {
 
-     //@MaxSqlSelect(3) annotation is applied
+     //@MaxOfSelects(3) annotation is applied
      @Test
      public void a_test_method() {
          //...
@@ -61,18 +61,18 @@ package org.mycompany;
 import org.junit.Test;
 import org.quickperf.sql.annotation.MaxSqlSelect;
 
-@MaxSqlSelect(2) // CLASS SCOPE
+@MaxOfSelects(2) // CLASS SCOPE
                  // This annotation overrides the annotation
                  // defined in QuickPerfConfiguration class (GLOBAL SCOPE)
 public class AClassWithAnnotationsTest {
 
-    // @MaxSqlSelect(2) annotation placed on class is applied
+    // @MaxOfSelects(2) annotation placed on class is applied
     @Test
     public void a_test_method() {
         //...
     }
 
-    @MaxSqlSelect(1) // METHOD SCOPE
+    @MaxOfSelects(1) // METHOD SCOPE
                      // This annotation overrides the annotation placed
                      // on class
     @Test
