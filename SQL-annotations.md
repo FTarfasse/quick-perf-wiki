@@ -140,7 +140,7 @@ Indicates disabling of JDBC batching.
 
 ### Example
 ```java
-    @SelectedColumnsNumber(5)
+    @SelectedColumnsNumber(3)
 ```
 
 ## @MaxOfSelectedColumns
