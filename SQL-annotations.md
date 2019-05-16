@@ -91,7 +91,7 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 
 ## @JdbcBatching
 
-Verify that inserts and updates are processed in JDBC batches.
+Verifies that inserts and updates are processed in JDBC batches.
 
 You may sometimes think that you are using JDBC batching but in fact not ([Paper 1](https://abramsm.wordpress.com/2008/04/23/hibernate-batch-processing-why-you-may-not-be-using-it-even-if-you-think-you-are/), [Paper 2](https://stackoverflow.com/questions/27697810/hibernate-disabled-insert-batching-when-using-an-identity-identifier)).
 
@@ -129,9 +129,17 @@ Cancels behavior of [@DisableLikeStartingWithWildcard](#DisableLikeStartingWithW
 ## @JdbcBatching(batchSize=0)
 Indicates disabling of JDBC batching.
 
+
 # Recommended method annotations
 
 ## @SelectedColumnsNumber
+
+Verifies the number of selected columns. <br>
+
+Selected columns that you don't need can impact performances, particularly when you select all columns.<br>
+
+Unwanted columns can prevents [index-only scan](https://use-the-index-luke.com/sql/clustering/index-only-scan-covering-index) that avoids table access, and so saves a lot of IO. [This can seriously degrades performances](https://use-the-index-luke.com/blog/2013-08/its-not-about-the-star-stupid).
+
 
 ### Parameters 
 |Parameter  |Type| Meaning                     | Default value  |
