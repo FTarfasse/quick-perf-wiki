@@ -4,7 +4,7 @@ Several antipatterns can be revealed by SQL annotations:
 * **N+1 selects** by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SqlSelectNumber](#SqlSelectNumber) or [@MaxSqlSelect](#MaxSqlSelect)  
 * SQL requests containing a LIKE having a pattern starting with a wildcard by using [@DisableLikeStartingWithWildcard](#DisableLikeStartingWithWildcard)
 * No JDBC batching by using [@JdbcBatching](#JdbcBatching)
-* 
+* Bad use of Hibernate session by using [@DisableExactlySameSqlSelects](#DisableExactlySameSqlSelects)
 * ...
 
 [**Configuration to do before using SQL annotations**](#Configuration-to-do-before-using-SQL-annotations)<br>
