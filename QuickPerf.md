@@ -26,7 +26,7 @@ An annotation having a test method scope overrides the configuration of the same
 [**Accurately verify heap allocation**](JVM-annotations#Accurately-verify-heap-allocation)<br><br>
 [**Profile or check your JVM**](JVM-annotations#Profile-or-check-your-JVM)
 ## [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations)
-Easily detect **N+1 select**, no JDBC batching and other things.
+Easily detect **N+1 select**, JDBC batching disabled and other things.
 
 # Disable QuickPerf
 To disable QuickPerf functionalities you can pass *-DdisableQuickPerf=true* to your JVM or use [annotations](https://github.com/quick-perf/doc/wiki/base-annotations) (@DisableQuickPerf, @FunctionalIteration, 
