@@ -130,6 +130,19 @@ Cancels behavior of [@DisableLikeStartingWithWildcard](#DisableLikeStartingWithW
 Indicates disabling of JDBC batching.
 
 # Recommended method annotations
+
+## @MaxOfSelectedColumns
+
+With this annotation, the test will fail if the number of returned columns is greater than expected.
+### Parameters 
+|Parameter  |Type| Meaning                             | Default value  |
+| --------  |:---:|:----------------------------------:|:--------------:|
+| value     | int |Maximum number of returned columns  |        0       |
+### Example
+```java
+    @MaxOfSelectedColumns(5)
+```
+
 ## @SqlSelectNumber
 
 ### Parameters 
@@ -160,18 +173,6 @@ With this annotation, the test will fail if the number of SELECT requests is gre
      //...
     }
 ```
-## @MaxOfSelectedColumns
-
-With this annotation, the test will fail if the number of returned columns is greater than expected.
-### Parameters 
-|Parameter  |Type| Meaning                             | Default value  |
-| --------  |:---:|:----------------------------------:|:--------------:|
-| value     | int |Maximum number of returned columns  |        0       |
-### Example
-```java
-    @MaxOfSelectedColumns(5)
-```
-
 ## @SqlInsertNumber
 
 ### Parameters 
