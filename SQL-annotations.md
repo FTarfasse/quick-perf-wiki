@@ -133,11 +133,11 @@ Indicates disabling of JDBC batching.
 
 ## @SelectedColumnsNumber
 
-With this annotation, the test will fail if the number of returned columns is greater than expected.
 ### Parameters 
-|Parameter  |Type| Meaning                             | Default value  |
-| --------  |:---:|:----------------------------------:|:--------------:|
-| value     | int |Maximum number of returned columns  |        0       |
+|Parameter  |Type| Meaning                     | Default value  |
+| --------  |:---:|:--------------------------:|:--------------:|
+| value     | int |Number of selected columns  |        0       |
+
 ### Example
 ```java
     @SelectedColumnsNumber(5)
