@@ -161,8 +161,6 @@ So, when you need some read-only data, as it is the case with DTO, it is recomme
 
 With this annotation, the test will fail if the number of returned columns is greater than expected.
 
-### [Why limit the number of selected columns ?](#SelectedColumnsNumber#Why-limit-the-number-of-selected-columns-?)
-
 ### Parameters 
 |Parameter  |Type| Meaning                             | Default value  |
 | --------  |:---:|:----------------------------------:|:--------------:|
