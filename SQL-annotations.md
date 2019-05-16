@@ -136,6 +136,7 @@ Indicates disabling of JDBC batching.
 
 Verifies the number of selected columns. <br>
 
+### Why limit the number of selected columns ?
 Selected columns that you don't need can impact performances, particularly when you select all columns.<br>
 
 Unwanted columns can prevents [index-only scan](https://use-the-index-luke.com/sql/clustering/index-only-scan-covering-index) that avoids table access, and so saves a lot of IO. [This can seriously degrades performances](https://use-the-index-luke.com/blog/2013-08/its-not-about-the-star-stupid).<br>
@@ -159,6 +160,9 @@ So, when you need some read-only data, as it is the case with DTO, it is recomme
 ## @MaxOfSelectedColumns
 
 With this annotation, the test will fail if the number of returned columns is greater than expected.
+
+### [Why limit the number of selected columns ?](#Why-limit-the-number-of-selected-columns ?)
+
 ### Parameters 
 |Parameter  |Type| Meaning                             | Default value  |
 | --------  |:---:|:----------------------------------:|:--------------:|
