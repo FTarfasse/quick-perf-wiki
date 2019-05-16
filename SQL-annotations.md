@@ -1,4 +1,10 @@
 ***Take control of SQL requests sent to the database.***
+<br><br>
+Several antipatterns can be revealed by SQL annotations:
+* **N+1 selects** by using [@DisableSameSelectTypesWithDifferentParams](#@DisableSameSelectTypesWithDifferentParams), [@SqlSelectNumber](#@SqlSelectNumber) or [@MaxSqlSelect](#@MaxSqlSelect)  
+* ...
+
+
 
 [**Configuration to do before using SQL annotations**](#Configuration-to-do-before-using-SQL-annotations)<br>
 
