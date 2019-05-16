@@ -4,6 +4,7 @@ Several antipatterns can be revealed by SQL annotations:
 * **N+1 selects** by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SqlSelectNumber](#SqlSelectNumber) or [@MaxSqlSelect](#MaxSqlSelect)  
 * SQL requests containing a LIKE having a pattern starting with a wildcard by using [@DisableLikeStartingWithWildcard](#DisableLikeStartingWithWildcard)
 * No JDBC batching by using [@JdbcBatching](#JdbcBatching)
+* 
 * ...
 
 [**Configuration to do before using SQL annotations**](#Configuration-to-do-before-using-SQL-annotations)<br>
@@ -119,7 +120,6 @@ Cancels behavior of [@DisableSameSelectTypesWithDifferentParams](#DisableSameSel
 
 ## @EnableSqlCrossJoin
 Cancels behavior of [@DisableSqlCrossJoin](#DisableSqlCrossJoin).
-To decide to enable a cross join in a specific case if you add @DisableSqlCrossJoin check for every test or at test class level.
 
 ## @EnableLikeStartingWithWildcard
 Cancels behavior of [@DisableLikeStartingWithWildcard](#DisableLikeStartingWithWildcard).
