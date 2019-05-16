@@ -1,6 +1,6 @@
 ***Take control of SQL requests sent to the database.***
 <br><br>
-Several antipatterns can be revealed by SQL annotations:
+Several antipatterns can be detected with SQL annotations:
 * **N+1 selects** by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SqlSelectNumber](#SqlSelectNumber) or [@MaxSqlSelect](#MaxSqlSelect)  
 * SQL requests containing a LIKE having a pattern starting with a wildcard by using [@DisableLikeStartingWithWildcard](#DisableLikeStartingWithWildcard)
 * No JDBC batching by using [@JdbcBatching](#JdbcBatching)
