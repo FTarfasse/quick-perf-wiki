@@ -1,7 +1,7 @@
 ***Take control of SQL requests sent to the database.***
 <br><br>
 Several antipatterns can be detected with SQL annotations:
-* N+1 selects by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SqlSelectNumber](#SqlSelectNumber) or [@MaxSqlSelect](#MaxSqlSelect)
+* N+1 selects by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SqlSelectNumber](#SqlSelectNumber) or [@MaxOfSqlSelects](#MaxOfSqlSelects)
 * JDBC batching disabled by using [@JdbcBatching](#JdbcBatching)
 * SQL requests containing a LIKE having a pattern starting with a wildcard by using [@DisableLikeStartingWithWildcard](#DisableLikeStartingWithWildcard)
 * Too many returned SQL columns by using [@MaxReturnedSqlColumns](#MaxReturnedSqlColumns)
@@ -145,7 +145,7 @@ Indicates disabling of JDBC batching.
      //...
     }
 ```
-## @MaxSqlSelect
+## @MaxOfSqlSelects
 With this annotation, the test will fail if the number of SELECT requests is greater than expected. 
 ### Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
@@ -154,7 +154,7 @@ With this annotation, the test will fail if the number of SELECT requests is gre
 
 ### Example
 ```java
-    @MaxSqlSelect(1)
+    @MaxOfSqlSelects(1)
     @Test
     public void should_retrieve_all_cars() {	
      //...
