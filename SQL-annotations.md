@@ -2,9 +2,8 @@
 <br><br>
 Several antipatterns can be revealed by SQL annotations:
 * **N+1 selects** by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SqlSelectNumber](#SqlSelectNumber) or [@MaxSqlSelect](#MaxSqlSelect)  
+* No JDBC batching by using [@JdbcBatching](#JdbcBatching)
 * ...
-
-
 
 [**Configuration to do before using SQL annotations**](#Configuration-to-do-before-using-SQL-annotations)<br>
 
