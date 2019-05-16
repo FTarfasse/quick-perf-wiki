@@ -138,7 +138,8 @@ Verifies the number of selected columns. <br>
 
 Selected columns that you don't need can impact performances, particularly when you select all columns.<br>
 
-Unwanted columns can prevents [index-only scan](https://use-the-index-luke.com/sql/clustering/index-only-scan-covering-index) that avoids table access, and so saves a lot of IO. [This can seriously degrades performances](https://use-the-index-luke.com/blog/2013-08/its-not-about-the-star-stupid).
+Unwanted columns can prevents [index-only scan](https://use-the-index-luke.com/sql/clustering/index-only-scan-covering-index) that avoids table access, and so saves a lot of IO. [This can seriously degrades performances](https://use-the-index-luke.com/blog/2013-08/its-not-about-the-star-stupid).<br>
+In addition, [according to Markus Winand](https://use-the-index-luke.com/blog/2013-04/the-two-top-performance-problems-caused-by-ORM-tools): "Besides Index-Only Scans, not selecting everything can also improve sorting, grouping and join performance because the database can save memory that way."
 
 
 ### Parameters 
