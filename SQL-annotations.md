@@ -135,7 +135,7 @@ Indicates disabling of JDBC batching.
 
 Verifies the number of selected columns. <br>
 
-### [Why limit the number of selected columns](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F)?
+[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F)
 
 ### Parameters 
 |Parameter  |Type| Meaning                     | Default value  |
