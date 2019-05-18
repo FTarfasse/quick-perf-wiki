@@ -1,5 +1,5 @@
-***Take control of SQL requests sent to the database.***
-<br><br>
+***<p align="center">Take control of SQL requests sent to the database.</p>***
+<br>
 Several antipatterns can be detected with SQL annotations:
 * N+1 selects by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SelectNumber](#SelectNumber) or [@MaxOfSelects](#MaxOfSelects)
 * JDBC batching disabled by using [@JdbcBatching](#JdbcBatching)
