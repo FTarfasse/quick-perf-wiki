@@ -31,9 +31,9 @@ The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot*
 # Worflow with SQL annotations
 Below, propose ways to use SQL annotations during development.<br>
 
-[Configure global annotations)(#Configure-global-annotations)
-[Implementation of a new business use case](#Implementation-of-a-new-business-use-case)
-[Add some performance checks to existing database tests](#Add-some-performance-checks-to-existing-database-tests)
+[Configure global annotations](#Configure-global-annotations)<br>
+[Implementation of a new business use case](#Implementation-of-a-new-business-use-case)<br>
+[Add some performance checks to existing database tests](#Add-some-performance-checks-to-existing-database-tests)<br>
 
 ## Configure global annotations
 Configure once some [recommended global annotations](#Recommended-global-annotations). These annotations are applied to every test method.<br> The idea is to systematically apply some performance checks to avoid some classical performance bottlenecks.
