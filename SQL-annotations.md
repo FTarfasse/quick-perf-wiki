@@ -137,7 +137,7 @@ Cancels behavior of [@DisableSameSelectTypesWithDifferentParams](#DisableSameSel
 ### Parameters 
 |Parameter|Type    | Meaning                                                               | Default value  |
 | --------|:------:|:----------------------------------------------------------------------|:--------------:|
-| comment | String |Comment why exactly same select types with different params are enabled|      -         |
+| comment | String |Comment why exactly same select types with different parameters are enabled|      -         |
 
 ## @EnableCrossJoin
 Cancels behavior of [@DisableCrossJoin](#DisableCrossJoin).
