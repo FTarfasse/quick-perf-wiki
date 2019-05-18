@@ -29,7 +29,7 @@ Several antipatterns can be detected with SQL annotations:
 The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot* framewoks. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it with *Hibernate* or *Spring Boot*.
 
 # Worflow with SQL annotations
-Below, we try to propose a way to efficiently use SQL annotations during development.<br>
+Below, propose ways to use SQL annotations during development.<br>
 
 ## Configure global annotations
 Configure once some [recommended global annotations](#Recommended-global-annotations). These annotations are applied to every test method.<br> The idea is to systematically apply some performance checks to avoid some classical performance bottlenecks.
