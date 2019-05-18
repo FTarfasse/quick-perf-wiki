@@ -26,7 +26,7 @@ To disable QuickPerf functionalities.<br><br>
 ### Parameters 
 |Parameter|Type    | Meaning                         | Default value  |
 | --------|:------:|:--------------------------------|:--------------:|
-| Comment | String |Comment why QuickPerf is disabled|      -         |
+| comment | String |Comment why QuickPerf is disabled|      -         |
 
 ## @FunctionalIteration
 To disable QuickPerf functionalities.<br><br>
