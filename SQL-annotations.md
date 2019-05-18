@@ -1,4 +1,4 @@
-***<p align="center">Take control of SQL requests sent to the database.</p>***
+***<p align="center">Take control of SQL requests sent to the database</p>***
 <br>
 Several antipatterns can be detected with SQL annotations:
 * N+1 selects by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SelectNumber](#SelectNumber) or [@MaxOfSelects](#MaxOfSelects)
