@@ -126,14 +126,34 @@ A 0 batch size means that JDBC batching is disabled.
 ## @EnableExactlySameSelects
 Cancels behavior of [@DisableExactlySameSelects](#DisableExactlySameSelects).
 
+### Parameters 
+|Parameter|Type    | Meaning                                    | Default value  |
+| --------|:------:|:-------------------------------------------|:--------------:|
+| comment | String |Comment why exactly same selects are enabled|      -         |
+
 ## @EnableSameSelectTypesWithDifferentParams
 Cancels behavior of [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams).
+
+### Parameters 
+|Parameter|Type    | Meaning                                                               | Default value  |
+| --------|:------:|:----------------------------------------------------------------------|:--------------:|
+| comment | String |Comment why exactly same select types with different params are enabled|      -         |
 
 ## @EnableCrossJoin
 Cancels behavior of [@DisableCrossJoin](#DisableCrossJoin).
 
+### Parameters 
+|Parameter|Type    | Meaning                                    | Default value  |
+| --------|:------:|:-------------------------------------------|:--------------:|
+| comment | String |Comment why cross join is enabled   |      -         |
+
 ## @EnableLikeWithLeadingWildcard
 Cancels behavior of [@DisableLikeWithLeadingWildcard](#DisableLikeWithLeadingWildcard).
+
+### Parameters 
+|Parameter|Type    | Meaning                                         | Default value  |
+| --------|:------:|:------------------------------------------------|:--------------:|
+| comment | String |Comment why like with leading wildcard is enabled|      -         |
 
 ## @JdbcBatching(batchSize=0)
 Indicates disabling of JDBC batching.
