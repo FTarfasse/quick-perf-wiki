@@ -3,7 +3,7 @@
 Several antipatterns can be detected with SQL annotations:
 * N+1 selects by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SelectNumber](#SelectNumber) or [@MaxOfSelects](#MaxOfSelects)
 * JDBC batching disabled by using [@JdbcBatching](#JdbcBatching)
-* SQL requests containing a LIKE having a pattern starting with a wildcard by using [@DisableLikeWithLeadingWildcard](#DisableLikeWithLeadingWildcard)
+* SQL requests having a LIKE pattern starting with a wildcard by using [@DisableLikeWithLeadingWildcard](#DisableLikeWithLeadingWildcard)
 * Too many selected columns by using [@SelectedColumnsNumber](#SelectedColumnsNumber) or [@MaxOfSelectedColumns](#MaxOfSelectedColumns)<br>
 *[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F)*
 * Bad use of Hibernate session by using [@DisableExactlySameSelects](#DisableExactlySameSelects)
