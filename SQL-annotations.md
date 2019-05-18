@@ -35,6 +35,7 @@ Below, propose ways to use SQL annotations during development.<br>
 [Configure global annotations](#Configure-global-annotations)<br>
 [Implementation of a new business use case](#Implementation-of-a-new-business-use-case)<br>
 [Add some performance checks to existing database tests](#Add-some-performance-checks-to-existing-database-tests)<br>
+[Play with QuickPerf: test your assumptions](Play-with-QuickPerf:-test-your-assumptions)
 
 ## Configure global annotations
 Configure once some [recommended global annotations](#Recommended-global-annotations). These annotations are applied to every test method.<br> The idea is to systematically apply some performance checks to avoid some classical performance bottlenecks.
@@ -56,6 +57,8 @@ Firstly, we focus our work and attention on the functional behavior. The goal is
 You can introduce QuickPerf in a project having some database tests.<br>
 After [the configuration of global annotations](#Recommended-global-annotations), some tests may fail because of some not respected performance properties.<br>
 If you may want to progressively fix these failing tests. To do this, you could annotate the failing tests with @DisableGlobalAnnotations with a comment, for example @DisableGlobalAnnotations(comment="Investigate why global annotations are failing). After that, you could progressively remove the annotation and see why the tests are failing.
+
+## Play with QuickPerf: test your assumptions
 
 # Recommended global annotations
 
