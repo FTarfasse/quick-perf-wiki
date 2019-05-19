@@ -5,6 +5,8 @@ QuickPerf works with a JDK 1.7+.
 
 # Why use QuickPerf
 
+### Premature optimization is the root of all evil...
+
 > Premature optimization is the root of all evil 
 
  Daniel Knuth
@@ -18,18 +20,21 @@ Daniel Knuth
 
 Daniel Knuth
 
+### Test your performance assumptions
 <br>
 <p><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_tpierrain.PNG" width="60%" heigth="60%"></p>
 
+### Environmental cost of ignoring performance
 <br>
 <p>
 <img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_mjpt777.PNG" width="60%" heigth="60%"></p>
 
-Easy to use (based on annotations)
-<br>
-Works with existing tests
-<br>
-Works with Spring and Spring Boot tests
+### Easy to use 
+Based on annotation
+
+### Works with existing tests
+
+### Works with Spring and Spring Boot tests
 
 # Run QuickPerf
 ## [JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
