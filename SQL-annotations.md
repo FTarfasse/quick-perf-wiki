@@ -60,6 +60,7 @@ After [the configuration of global annotations](#Recommended-global-annotations)
 If you may want to progressively fix these failing tests. To do this, you could annotate the failing tests with @DisableGlobalAnnotations with a comment, for example @DisableGlobalAnnotations(comment="Investigate why global annotations are failing). After that, you could progressively remove the annotation and see why the tests are failing.
 
 ## Play with QuickPerf: test your assumptions
+<p><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Play-with-QuickPerf.PNG" width="80%" heigth="80%"></p>
 
 # Recommended global annotations
 
