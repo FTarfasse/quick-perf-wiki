@@ -6,4 +6,4 @@ In addition, [according to Markus Winand](https://use-the-index-luke.com/blog/20
 
 We can add that reducing selected columns to what you need can reduce the memory presssure on JVM side together with the IO between the JVM and the database.<br>
 
-So, when you need some read-only data, as it is the case with DTO, it is recommended to project the needed columns.  Examples can be found [here](https://github.com/AnghelLeonard/Hibernate-SpringBoot) to do this with JPA, Hibernate or Spring.
+So, when you need some specific read-only data, as it could be the case with DTOs, it is recommended to project the needed columns.  Examples can be found [here](https://github.com/AnghelLeonard/Hibernate-SpringBoot) to do this with JPA, Hibernate or Spring.
