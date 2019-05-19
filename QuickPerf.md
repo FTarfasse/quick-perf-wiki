@@ -15,11 +15,7 @@ Graeme Rocher, Grails Founder
 <p  align="center">
 <img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_mjpt777.PNG" width="60%" heigth="60%"></p>
 
-### Investigation and re-testing cost of considering later the evaluation of performance properties 
-
-### Test your performance assumptions
-<br>
-<p align="center"><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_tpierrain.PNG" width="60%" heigth="60%"></p>
+### Investigation and re-testing cost of considering later the evaluation of some performance properties 
 
 ### Premature optimization is the root of all evil...
 
@@ -35,6 +31,10 @@ Daniel Knuth
 > We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.
 
 Daniel Knuth
+
+### Test your performance assumptions
+<br>
+<p align="center"><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_tpierrain.PNG" width="60%" heigth="60%"></p>
 
 
 ### QuickPerf can help you to improve performance
