@@ -20,14 +20,19 @@ Daniel Knuth
 
 Daniel Knuth
 
-### Test your performance assumptions
-<br>
-<p><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_tpierrain.PNG" width="60%" heigth="60%"></p>
+### Hardware cost
+> [Ultimately, your application is going to consume resources—and resources equal money.](https://www.forbes.com/sites/oracle/2019/01/07/grails-founder-what-java-developers-dont-know-about-memory-can-cost-them-money-in-the-cloud/#5e858ae644e1)
+
+Graeme Rocher, Grails Founder
 
 ### Environmental cost of ignoring performance
 <br>
 <p>
 <img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_mjpt777.PNG" width="60%" heigth="60%"></p>
+
+### Test your performance assumptions
+<br>
+<p><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_tpierrain.PNG" width="60%" heigth="60%"></p>
 
 ### QuickPerf can help you to improve performance
 
