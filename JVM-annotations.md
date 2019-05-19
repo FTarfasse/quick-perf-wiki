@@ -1,4 +1,4 @@
-
+With JVM annotations, the test method is executed in a dedicated JVM.
 # Outline
 [**Configure your test JVM**](#Configure-your-test-JVM) <br> @HeapSize, @Xms, @Xmx, @JvmOptions <br><br>
 [**Accurately verify heap allocation**](#Accurately-verify-heap-allocation)<br> @MeasureAllocation, @MaxAllocation, @NoAllocation <br><br>
