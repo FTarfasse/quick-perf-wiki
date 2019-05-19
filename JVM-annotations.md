@@ -50,7 +50,10 @@ The following annotations use ByteWatcher under the hood:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
 
-You can  for example use [@MeasureAllocation](#MeasureAllocation) and  [@MaxAllocation](#MeasureAllocation) to check the heap allocation of a data stucture having a given size.
+You can  for example use @MeasureAllocation and @MaxAllocation to check the heap allocation of a data stucture having a given size.<br>
+
+@NoAllocation can be used to verify that the tested code does not allocate on heap.
+
 
 ## @MeasureAllocation
 You can measure allocation using this annotation. <br><br>
