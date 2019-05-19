@@ -25,10 +25,16 @@ You can use QuickPerfSpringRunner to evaluate the SQL properties of your databas
 	
 	@RunWith(QuickPerfSpringRunner.class)
 	@SpringBootTest(classes = { //...,
-                           QuickPerfProxyBeanPostProcessor.class
+                                    QuickPerfProxyBeanPostProcessor.class
                           }
                 )
 	public class PlayerControllerTest {
+
+            @SelectNumber(1)
+            @Test
+            public void should_find_one_player() {
+                //...
+            }
 		
 	}
 ```
