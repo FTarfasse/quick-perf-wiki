@@ -15,7 +15,7 @@ Graeme Rocher, Grails Founder
 <p  align="center">
 <img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_mjpt777.PNG" width="60%" heigth="60%"></p>
 
-### Investigation and re-testing cost of considering later the performance aspects
+### Investigation and re-testing costs of considering later the performance aspects
 
 ### Premature optimization is the root of all evil... ;)
 
