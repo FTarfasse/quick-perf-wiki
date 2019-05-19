@@ -110,14 +110,14 @@ To profile JVM with Java Flight Recorder (JFR).<br>
 
 The JFR file location is shown in the console. You can open it with Java Mission Control.
 <br>
-In console:
+
 ```
 [QUICK PERF] JVM was profiled with Java File Recorder (JFR).
 The recording file can be found here: C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-46868616\jvm-profiling.jfr
 You can open it with Java Mission Control (JMC).
 ```
 ## @CheckJvm
-With this annotation, JVM is profiled with Java Flight Recorder (JFR).<br><br>
+With this annotation, JVM is profiled with Java Flight Recorder (JFR).<br>
 
 Based on the profiling, some [JMC rules](http://hirt.se/blog/?p=920) are evaluated. For each rule a score is attributed. The maximum score value is 100. The test will fail if one rule has a score greater than this expected (by default 60)<br><br> 
 Things like significant primitives to object conversions can be detected:
