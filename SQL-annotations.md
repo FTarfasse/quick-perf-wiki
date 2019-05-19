@@ -27,7 +27,7 @@ Several antipatterns can be detected with SQL annotations:
 [Configuration with JUnit 4 (without Spring)](https://github.com/quick-perf/doc/wiki/QuickPerfRunner-&-SQL-annotations)<br><br>
 [Configuration with JUnit 4 and Spring](https://github.com/quick-perf/doc/wiki/QuickPerfSpringRunner-&-SQL-annotations)
 
-The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot* framewoks. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it with *Hibernate* or *Spring BoAdd some performance checks to existing database testsot*.
+The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot* framewoks. You have no configuration to do. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it with these frameworks.
 
 # Worflow with SQL annotations
 Below, propose ways to use SQL annotations during development.<br>
@@ -57,7 +57,7 @@ Firstly, we focus our work and attention on the functional behavior. The goal is
 ## Add some performance checks to existing database tests
 You can introduce QuickPerf in a project having some database tests.<br>
 After [the configuration of global annotations](#Recommended-global-annotations), some tests may fail because of some not respected performance properties.<br>
-If you may want to progressively fix these failing tests. To do this, you could annotate the failing tests with @DisableGlobalAnnotations with a comment, for example @DisableGlobalAnnotations(comment="Investigate why global annotations are failing). After that, you could progressively remove the annotation and see why the tests are failing.
+If you may want to progressively fix these failing tests. To do this, you could annotate the failing tests with @DisableGlobalAnnotations with a comment, for example @DisableGlobalAnnotations(comment="Investigate why global annotations are failing"). After that, you could progressively remove the annotation and see why the tests are failing.
 
 ## Play with QuickPerf: test your assumptions
 <p><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Play-with-QuickPerf.PNG" width="80%" heigth="80%"></p>
