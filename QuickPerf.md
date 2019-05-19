@@ -19,11 +19,11 @@ Daniel Knuth
 Daniel Knuth
 
 <br>
-<p><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_tpierrain.PNG" width="40%" heigth="40%"></p>
+<p><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_tpierrain.PNG" width="60%" heigth="60%"></p>
 
 <br>
 <p>
-<img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_mjpt777.PNG" width="40%" heigth="40%"></p>
+<img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_mjpt777.PNG" width="60%" heigth="60%"></p>
 
 Easy to use (based on annotations)
 <br>
