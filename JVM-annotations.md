@@ -102,11 +102,13 @@ With this annotation, the test will fail if allocation is detected. <br><br>
 The test will be executed in a specific JVM.
 
 # Profile or check your JVM
-The following annotations use Java Flight Recorder under the hood. <br>
-Java Flight Recorder profiling is available for Oracle JDK >= 1.7u40 and OpenJDK >=11.
+The following annotations use *Java Flight Recorder* (JFR) under the hood. <br><br>
+*Java Flight Recorder profiling is available for Oracle JDK >= 1.7u40 and OpenJDK >=11.*
 
 ## @ProfileJvm
 To profile JVM with Java Flight Recorder (JFR).<br>
+
+The JFR file location is shown in the console. You can open it with Java Mission Control.
 <br>
 In console:
 ```
@@ -116,11 +118,7 @@ You can open it with Java Mission Control (JMC).
 ```
 ## @CheckJvm
 With this annotation, JVM is profiled with Java Flight Recorder (JFR).<br><br>
-The JFR file location is shown in the console:
-```
-JFR file: C:\Users\UserName~1\AppData\Local\Temp\QuickPerf-1969922557\profiling.jfr
-```
-So, you can open the produced JFR file with Java Mission Control.<br><br>
+
 Based on the profiling, some [JMC rules](http://hirt.se/blog/?p=920) are evaluated. For each rule a score is attributed. The maximum score value is 100. The test will fail if one rule has a score greater than this expected (by default 60)<br><br> 
 Things like significant primitives to object conversions can be detected:
 <p align="center">
