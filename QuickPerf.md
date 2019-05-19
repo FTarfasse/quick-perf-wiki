@@ -10,7 +10,7 @@ QuickPerf works with a JDK 1.7+.
 ### Cost of hardware usage
 Some examples... <br>
 
-Reduce huge heap allocation could reduce your cost with your cloud provider in term of memory usage.
+Reduce *huge* heap allocation could reduce your cost with your cloud provider in term of memory usage.
 > [Ultimately, your application is going to consume resources—and resources equal money.](https://www.forbes.com/sites/oracle/2019/01/07/grails-founder-what-java-developers-dont-know-about-memory-can-cost-them-money-in-the-cloud/#5e858ae644e1)
 Graeme Rocher, Grails Founder
 
