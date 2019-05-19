@@ -17,7 +17,7 @@ Graeme Rocher, Grails Founder
 In addition, reduce heap allocation could alleviate the Garbage Collector activity and so reduce the CPU usage, and so its cost.
 <br>
 
-Fetching more data that you need from a SQL database can induce memory pressure on database and JVM sides. For examples, look at [these explanations](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F) regarding the column selection of a SQL table. So you may need more memory and CPU... 
+Fetching more data that you need from a SQL database can induce memory pressure on database and JVM sides. For examples, look at [these explanations](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F) regarding the column selection of a SQL table. So you may need more memory and more CPU to process this memory... 
 
 ### Environmental cost of ignoring performance
 <br>
