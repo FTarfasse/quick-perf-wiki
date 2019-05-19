@@ -1,7 +1,7 @@
 With JVM annotations, the test method is executed in a dedicated JVM.
 # Outline
 [**Configure your test JVM**](#Configure-your-test-JVM) <br> @HeapSize, @Xms, @Xmx, @JvmOptions <br><br>
-[**Accurately verify heap allocation**](#Accurately-verify-heap-allocation)<br> @MeasureAllocation, @MaxAllocation, @NoAllocation <br><br>
+[**Verify heap allocation**](#Verify-heap-allocation)<br> @MeasureAllocation, @MaxAllocation, @NoAllocation <br><br>
 [**Profile or check your JVM**](#Profile-or-check-your-JVM) <br> @ProfileJvm, @CheckJvm
 
 # Configure your test JVM
@@ -45,7 +45,7 @@ With this annotation, the test is executed in a specific JVM having the given JV
 | -------- |:--------------:|:-------------:|:-------------:|
 | value    | String           |JVM options  |      -        |
 
-# Accurately verify heap allocation
+# Verify heap allocation
 The following annotations use ByteWatcher under the hood:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
