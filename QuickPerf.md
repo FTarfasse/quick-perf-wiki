@@ -5,7 +5,7 @@ QuickPerf works with a JDK 1.7+.
 
 # Why use QuickPerf
 
-### Hardware cost
+### Cost of hardware usage
 Some examples... <br>
 
 Reduce heap allocation could reduce your cost with your cloud provider in term of memory usage.
@@ -15,7 +15,7 @@ Graeme Rocher, Grails Founder
 In addition, reduce heap allocation could alleviate the Garbage Collector activity and so reduce the CPU usage, and so its cost.
 <br>
 
-Fetching more data that you need from a SQL database can induce memory pressure on database and JVM sides. For examples, look at [these explanations](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F) regarding the column selection of a SQL table. 
+Fetching more data that you need from a SQL database can induce memory pressure on database and JVM sides. For examples, look at [these explanations](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F) regarding the column selection of a SQL table. So you may need more memory and CPU... 
 
 ### Environmental cost of ignoring performance
 <br>
@@ -35,6 +35,13 @@ Daniel Knuth
 
 > We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.
 Daniel Knuth
+
+So, what could be these cases where early optimisations must be considered ?
+
+Some examples...
+
+We could take of heap allocation because of [the cost of hardware usage](#Cost-of-hardware-usage), [environmental considerations](#Environmental-cost-of-ignoring-performance) or because your application should should be low latency (your could also use a low-latency GC such as  C4 GC, ZGC or Shenandoah but not that the activity if these GCs will also consume CPU).
+
 
 ### Test your performance assumptions
 <br>
