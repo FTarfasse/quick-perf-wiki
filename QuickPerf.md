@@ -12,14 +12,14 @@ Graeme Rocher, Grails Founder
 
 ### Environmental cost of ignoring performance
 <br>
-<p>
+<p  align="center">
 <img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_mjpt777.PNG" width="60%" heigth="60%"></p>
 
 ### Investigation and re-testing cost of considering later the evaluation of performance properties 
 
 ### Test your performance assumptions
 <br>
-<p><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_tpierrain.PNG" width="60%" heigth="60%"></p>
+<p align="center"><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_tpierrain.PNG" width="60%" heigth="60%"></p>
 
 ### Premature optimization is the root of all evil...
 
