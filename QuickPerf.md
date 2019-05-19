@@ -57,7 +57,7 @@ Sometimes, QuickPerf gives web or file ressources in console.<br>
 It is useful to have a plugin in your IDE allowing to open these links by a simple click.<br>
 In IntelliJ, you can for example use [Awesome console](https://plugins.jetbrains.com/plugin/7677-awesome-console).
 <br>
-<p align="center"><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Web_ressource.PNG" width="90%" heigth="90%"></p>
+<p align="center"><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Web_ressource.PNG"></p>
 
 # Use QuickPerf annotations
 ## Annotation scopes
