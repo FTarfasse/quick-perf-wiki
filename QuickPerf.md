@@ -27,7 +27,8 @@ Daniel Knuth
 
 Easy to use (based on annotations)
 <br>
-
+Works with existing tests
+<br>
 Works with Spring and Spring Boot tests
 
 # Run QuickPerf
