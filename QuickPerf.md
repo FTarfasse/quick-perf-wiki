@@ -29,14 +29,14 @@ Fetching more data that you need from a SQL database can induce memory pressure 
 ### Premature optimization is the root of all evil... ;)
 
 > Premature optimization is the root of all evil.
-Daniel Knuth
+Donald Knuth
 
 But...
 >The real problem is that programmers have spent far too much time worrying about efficiency in the wrong places and at the wrong times; premature optimization is the root of all evil (or at least most of it) in programming.
-Daniel Knuth 
+Donald Knuth 
 
 > We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.
-Daniel Knuth
+Donald Knuth
 
 So, what could be these cases where early optimisations can be considered?
 
