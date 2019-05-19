@@ -17,7 +17,7 @@ Graeme Rocher, Grails Founder
 
 ### Investigation and re-testing cost of considering later the evaluation of some performance properties 
 
-### Premature optimization is the root of all evil...
+### Premature optimization is the root of all evil... ;)
 
 > Premature optimization is the root of all evil 
 
