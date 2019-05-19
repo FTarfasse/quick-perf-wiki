@@ -1,5 +1,5 @@
 **QuickPerf** is a test Java open source library (Apache License, Version 2.0) that provides annotations to quickly evaluate some performance properties. <br><br>
-This library works with a JDK 1.7+.
+QuickPerf works with a JDK 1.7+.
 
 ### [Twitter: @QuickPerf](https://twitter.com/quickperf)
 
