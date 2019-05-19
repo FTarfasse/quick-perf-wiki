@@ -1,3 +1,5 @@
+
+***
 **QuickPerf** is a test Java open source library (Apache License, Version 2.0) that provides annotations to quickly evaluate some performance properties. <br><br>
 QuickPerf works with a JDK 1.7+.
 
@@ -36,12 +38,12 @@ Daniel Knuth
 > We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.
 Daniel Knuth
 
-So, what could be these cases where early optimisations can be considered ?
+So, what could be these cases where early optimisations can be considered?
 
 Some examples...
 
 We could take care of huge heap allocation because of your application has to work without an OutOfMemoryError ;), [the cost of hardware usage](#Cost-of-hardware-usage), [environmental considerations](#Environmental-cost-of-ignoring-performance) or because your application should be low latency (your could also use a low-latency GC such as  C4 GC, ZGC or Shenandoah but note that the activity if these GCs will also consume CPU). <br>
-Imagine also the case where you are developping a batch. You may not fix the JVM heap size in your IDE in your first tests. Imagine now you fix the JVM heap size for your test method execution and you realize that you neeed a JVM of several Gigabytes to avoid an OutOfMemoryError, with only one tenth of the production data volume... What do you do ? Why to wait for testing with all the production data volume to see it is possible to reduce heap allocation ? QuickPerf [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations) could help you to notice that your code allocates a lot and to investigate the cause of this allocation.
+Imagine also the case where you are developping a batch. You may not fix the JVM heap size in your IDE in your first tests. Imagine now you fix the JVM heap size for your test method execution and you realize that you neeed a JVM of several Gigabytes to avoid an OutOfMemoryError, with only one tenth of the production data volume... What do you do? Why to wait for testing with all the production data volume to see it is possible to reduce heap allocation? QuickPerf [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations) could help you to notice that your code allocates a lot and to investigate the cause of this allocation.
 
 
 ### Test your performance assumptions
