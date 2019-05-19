@@ -5,66 +5,6 @@ QuickPerf works with a JDK 1.7+.
 
 ### [Twitter: @QuickPerf](https://twitter.com/quickperf)
 
-# Why use QuickPerf
-
-### Cost of hardware usage
-Some examples... <br>
-
-Reduce *huge* heap allocation could reduce your cost with your cloud provider in term of memory usage.
-> [Ultimately, your application is going to consume resources—and resources equal money.](https://www.forbes.com/sites/oracle/2019/01/07/grails-founder-what-java-developers-dont-know-about-memory-can-cost-them-money-in-the-cloud/#5e858ae644e1)
-Graeme Rocher, Grails Founder
-
-In addition, reduce heap allocation could alleviate the Garbage Collector activity and so reduce the CPU usage, and so its cost.
-<br>
-
-Fetching more data that you need from a SQL database can induce memory pressure on database and JVM sides. For examples, look at [these explanations](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F) regarding the column selection of a SQL table. So you may need more memory and more CPU to process this memory... 
-
-### Environmental cost of ignoring performance
-<br>
-<p  align="center">
-<img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_mjpt777.PNG" width="60%" heigth="60%"></p>
-
-### Investigation and re-testing costs of considering later the performance aspects
-
-### Premature optimization is the root of all evil...
-
-> Premature optimization is the root of all evil.
-Donald Knuth
-
-But...
->The real problem is that programmers have spent far too much time worrying about efficiency in the wrong places and at the wrong times; premature optimization is the root of all evil (or at least most of it) in programming.
-Donald Knuth 
-
-> We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.
-Donald Knuth
-
-So, what could be these cases where early optimisations can be considered?
-
-Some examples...
-
-We could take care of important heap allocation because of your application has to work without an OutOfMemoryError ;), [the cost of hardware usage](#Cost-of-hardware-usage), [environmental considerations](#Environmental-cost-of-ignoring-performance) or because your application should be low latency (your could also use a low-latency GC such as  C4 GC, ZGC or Shenandoah but note that the activity if these GCs will also consume CPU). <br>
-Imagine also the case where you are developping a batch. You may not fix the JVM heap size in your IDE in your first tests. Imagine now you fix the JVM heap size for your test method execution and you realize that you neeed a JVM of several Gigabytes to avoid an OutOfMemoryError, with only one tenth of the production data volume... What do you do? Why to wait for testing with all the production data volume to see it is possible to reduce heap allocation? QuickPerf [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations) could help you to notice that your code allocates a lot and to investigate the cause of this allocation.
-
-<p align="center">
-<img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_donald_knuth.PNG" width="60%" heigth="60%"></p>
-
-### Test your performance assumptions
-<br>
-<p align="center"><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_tpierrain.PNG" width="60%" heigth="60%"></p>
-
-
-### QuickPerf can help you to improve performance
-
-QuickPerf can profile the JVM and detect things like an object type frequently allocated or primitive to object conversion. Look at [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations).<br>
-
-QuickPerf automatically detects if the application uses *Hibernate* or *Spring Boot* and suggest you ways to fix things like N+1 selects or JDBC batching disabled. Look at [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations).
-
-### Easy to use: based on annotations
-
-### Works with existing tests
-
-### Works with Spring and Spring Boot tests
-
 # Run QuickPerf
 ## [JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
 ## [JUnit 4 & Spring](https://github.com/quick-perf/doc/wiki/JUnit-4--&-Spring)
