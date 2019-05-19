@@ -41,7 +41,7 @@ Daniel Knuth
 
 QuickPerf can profile the JVM and detect things like an object type frequently allocated or primitive to object conversion. Look at [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations).<br>
 
-QuickPerf automatically detect if you use Hibernate and Spring Boot and suggest you ways to fix things like N+1 selects or JDBC batching disabled. Look at [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations).
+QuickPerf automatically detects if the application uses Hibernate or Spring Boot and suggest you ways to fix things like N+1 selects or JDBC batching disabled. Look at [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations).
 
 ### Easy to use: based on annotations
 
