@@ -30,8 +30,10 @@ Daniel Knuth
 <img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_mjpt777.PNG" width="60%" heigth="60%"></p>
 
 ### QuickPerf can help you to improve performance
-QuickPerf automatically detect if you use Hibernate and Spring Boot and suggest you ways to fix things like N+1 selects or JDBC batching disabled. Look at [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations).<br><br>
-QuickPerf can profile the JVM and detect things like an object type frequently allocated or primitive to object conversion. Look at [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations).
+
+QuickPerf can profile the JVM and detect things like an object type frequently allocated or primitive to object conversion. Look at [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations).<br><br>
+
+QuickPerf automatically detect if you use Hibernate and Spring Boot and suggest you ways to fix things like N+1 selects or JDBC batching disabled. Look at [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations).
 
 ### Easy to use: based on annotations
 
