@@ -53,9 +53,12 @@ QuickPerf automatically detects if the application uses *Hibernate* or *Spring B
 ## [JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
 ## [JUnit 4 & Spring](https://github.com/quick-perf/doc/wiki/JUnit-4--&-Spring)
 ## Have clickable links in your IDE
-Sometimes, QuickPerf gives web or file ressources in console.
-It is useful to have a plugin in your IDE allowing to open these links by a simple click.
+Sometimes, QuickPerf gives web or file ressources in console.<br>
+It is useful to have a plugin in your IDE allowing to open these links by a simple click.<br>
 In IntelliJ, you can for example use [Awesome console](https://plugins.jetbrains.com/plugin/7677-awesome-console).
+<br>
+<p align="center"><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Web_ressource.PNG" width="90%" heigth="90%"></p>
+
 # Use QuickPerf annotations
 ## Annotation scopes
 An annotation can have three scopes:
