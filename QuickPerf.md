@@ -40,7 +40,7 @@ So, what could be these cases where early optimisations must be considered ?
 
 Some examples...
 
-We could take care of heap allocation because of [the cost of hardware usage](#Cost-of-hardware-usage), [environmental considerations](#Environmental-cost-of-ignoring-performance) or because your application should should be low latency (your could also use a low-latency GC such as  C4 GC, ZGC or Shenandoah but not that the activity if these GCs will also consume CPU).
+We could take care of heap allocation because of [the cost of hardware usage](#Cost-of-hardware-usage), [environmental considerations](#Environmental-cost-of-ignoring-performance) or because your application should be low latency (your could also use a low-latency GC such as  C4 GC, ZGC or Shenandoah but not that the activity if these GCs will also consume CPU).
 
 
 ### Test your performance assumptions
