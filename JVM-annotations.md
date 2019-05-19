@@ -121,7 +121,7 @@ The JFR file location is shown in the console:
 JFR file: C:\Users\UserName~1\AppData\Local\Temp\QuickPerf-1969922557\profiling.jfr
 ```
 So, you can open the produced JFR file with Java Mission Control.<br><br>
-Based on the profiling, some [JMC rules](http://hirt.se/blog/?p=920) are evaluated. For each rule a score is attributed. The maximum score value is 100.<br><br>
+Based on the profiling, some [JMC rules](http://hirt.se/blog/?p=920) are evaluated. For each rule a score is attributed. The maximum score value is 100. The test will fail if one rule has a score greater than this expected (by default 60)<br><br> 
 Things like significant primitives to object conversions can be detected:
 <p align="center">
 <img src="https://github.com/quick-perf/doc/blob/master/doc/images/JMC-PrimitiveToObjectConversion.PNG" width="944" heigth="191"></p>
