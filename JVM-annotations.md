@@ -53,7 +53,6 @@ The following annotations use ByteWatcher under the hood:
 ## @MeasureAllocation
 You can measure allocation using this annotation. <br><br>
 The measured allocation is displayed in the console. <br><br>
-The test will be executed in a specific JVM.
 
 ### Example
 ```java
@@ -82,7 +81,6 @@ Measured allocation: 440.0 bytes
 ```
 ## @MaxAllocation
 With this annotation, the test will fail if allocation is greater than expected. <br><br>
-The test will be executed in a specific JVM.
 
 ### Parameters 
 |Parameter  |Type           | Meaning          | Default value  |
@@ -99,7 +97,6 @@ The test will be executed in a specific JVM.
   ```
 ## @NoAllocation
 With this annotation, the test will fail if allocation is detected. <br><br>
-The test will be executed in a specific JVM.
 
 # Profile or check your JVM
 The following annotations use *Java Flight Recorder* (JFR) under the hood. <br><br>
