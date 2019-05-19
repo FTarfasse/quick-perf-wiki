@@ -103,7 +103,7 @@ The test will be executed in a specific JVM.
 
 # Profile or check your JVM
 The following annotations use *Java Flight Recorder* (JFR) under the hood. <br><br>
-*Java Flight Recorder profiling works with Oracle JDK >= 1.7u40 and OpenJDK >=11.*
+*JFR profiling works with Oracle JDK >= 1.7u40 and OpenJDK >=11.*
 
 ## @ProfileJvm
 To profile JVM with Java Flight Recorder (JFR).<br>
