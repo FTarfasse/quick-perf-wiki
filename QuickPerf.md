@@ -29,8 +29,7 @@ Daniel Knuth
 <p>
 <img src="https://github.com/quick-perf/doc/blob/master/doc/images/Tweet_mjpt777.PNG" width="60%" heigth="60%"></p>
 
-### Easy to use 
-Based on annotation
+### Easy to use: based on annotations
 
 ### Works with existing tests
 
