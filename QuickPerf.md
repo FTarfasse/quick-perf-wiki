@@ -6,6 +6,7 @@ QuickPerf works with a JDK 1.7+.
 # Why use QuickPerf
 
 > Premature optimization is the root of all evil 
+
  Daniel Knuth
 
 But...
