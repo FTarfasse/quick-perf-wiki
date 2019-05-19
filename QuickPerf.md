@@ -26,7 +26,7 @@ Fetching more data that you need from a SQL database can induce memory pressure 
 
 ### Investigation and re-testing costs of considering later the performance aspects
 
-### Premature optimization is the root of all evil... ;)
+### Premature optimization is the root of all evil...
 
 > Premature optimization is the root of all evil.
 Donald Knuth
