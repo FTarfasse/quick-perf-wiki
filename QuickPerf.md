@@ -12,7 +12,7 @@ Reduce heap allocation could reduce your cost with your cloud provider in term o
 > [Ultimately, your application is going to consume resources—and resources equal money.](https://www.forbes.com/sites/oracle/2019/01/07/grails-founder-what-java-developers-dont-know-about-memory-can-cost-them-money-in-the-cloud/#5e858ae644e1)
 Graeme Rocher, Grails Founder
 
-In addition, reduce heap allocation could alleviate the Garbage Collector activity and so reduce the CPU usage, and so the cost its cost.
+In addition, reduce heap allocation could alleviate the Garbage Collector activity and so reduce the CPU usage, and so its cost.
 
 ### Environmental cost of ignoring performance
 <br>
