@@ -119,6 +119,9 @@ The recording file can be found here: C:\Users\JEANBI~1\AppData\Local\Temp\Quick
 You can open it with Java Mission Control (JMC).
 ```
 ## @CheckJvm
+
+*Today we considrer this annotation as experimental.*
+
 With this annotation, JVM is profiled with Java Flight Recorder (JFR).<br>
 
 Based on the profiling, some [JMC rules](http://hirt.se/blog/?p=920) are evaluated. For each rule a score is attributed. The maximum score value is 100. The test will fail if one rule has a score greater than this expected (by default 60)<br><br> 
