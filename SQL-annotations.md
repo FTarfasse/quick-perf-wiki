@@ -179,6 +179,37 @@ Indicates disabling of JDBC batching.
 
 # Recommended method annotations
 
+## @SelectNumber
+
+### Parameters 
+|Parameter  |Type| Meaning                   | Default value  |
+| -------- |:---:|:-------------------------:|:--------------:|
+| value    | int |Number of select requests  |        0       |
+
+### Example
+```java
+    @SelectNumber(1)
+    @Test
+    public void should_retrieve_all_cars() {	
+     //...
+    }
+```
+## @MaxOfSelects
+With this annotation, the test will fail if the number of SELECT requests is greater than expected. 
+### Parameters 
+|Parameter  |Type| Meaning                   | Default value  |
+| -------- |:---:|:-------------------------:|:--------------:|
+| value    | int |Maximum number of selects  |        0       |
+
+### Example
+```java
+    @MaxOfSelects(1)
+    @Test
+    public void should_retrieve_all_cars() {	
+     //...
+    }
+```
+
 ## @SelectedColumnsNumber
 
 Verifies the number of selected columns. <br>
@@ -210,36 +241,6 @@ With this annotation, the test will fail if the number of returned columns is gr
     @MaxOfSelectedColumns(5)
 ```
 
-## @SelectNumber
-
-### Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
-| -------- |:---:|:-------------------------:|:--------------:|
-| value    | int |Number of select requests  |        0       |
-
-### Example
-```java
-    @SelectNumber(1)
-    @Test
-    public void should_retrieve_all_cars() {	
-     //...
-    }
-```
-## @MaxOfSelects
-With this annotation, the test will fail if the number of SELECT requests is greater than expected. 
-### Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
-| -------- |:---:|:-------------------------:|:--------------:|
-| value    | int |Maximum number of selects  |        0       |
-
-### Example
-```java
-    @MaxOfSelects(1)
-    @Test
-    public void should_retrieve_all_cars() {	
-     //...
-    }
-```
 ## @InsertNumber
 
 ### Parameters 
