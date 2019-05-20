@@ -93,7 +93,7 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 
     public Collection<Annotation> specifyAnnotationsAppliedOnEachTest() {
         int batchSize = 30; // set the expected batch size
-        return Arrays.asList(  disableSameSelectTypesWithDifferentParams() // can reveal N+1 selects
+        return Arrays.asList(  disableSameSelectTypesWithDifferentParams() // can reveal some N+1 selects
                              , disableExactlySameSelects() // can reveal a bad use of Hibernate session
                              , jdbcBatching(batchSize)
                            //, disableCrossJoin() // if you use JPA Criteria API
