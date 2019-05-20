@@ -2,7 +2,8 @@
 <br>
 You can take care of several things about SQL requests to favor performance and scalability at the beginning of application development.
 * Limit JDBC roundtrips
-  * Detect N+1 selects by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SelectNumber](#SelectNumber) or [@MaxOfSelects](#MaxOfSelects)
+  * Detect N+1 selects by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SelectNumber](#SelectNumber) or [@MaxOfSelects](#MaxOfSelects)<br>
+   *[Use QuickPerf annotations to detect N+1 selects](#Use-QuickPerf-annotations-to-detect-N+1-selects)*
   * Detect JDBC batching disabled by using [@JdbcBatching](#JdbcBatching)
   * Detect exactly same selects by using [@DisableExactlySameSelects](#DisableExactlySameSelects)
 
