@@ -16,6 +16,8 @@ With this annotation, the test is executed in a specific JVM having the given he
  ```java
    @HeapSize(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
+### [Fixing maximum heap size as a threshold test](#Fixing-maximum-heap-size-as-a-threshold-test)
+
 ## @Xms
 ### Parameters 
 |Parameter  |Type           | Meaning                            | Default value |
@@ -38,6 +40,9 @@ With this annotation, the test is executed in a specific JVM having the given ma
   ```java
    @Xmx(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
+### Fixing maximum heap size as a threshold test
+The principle of a *threshold test* is to compare a value in the current build to a threshold. If this value exceeds the threshold, the test will fail and were are alerted of a possible performance degradation. In this [paper](https://martinfowler.com/bliki/ThresholdTest.html), Martin Fowler gives the example of the amount of time taken by a test. When you set maximum heap size for a test, the test may fail one day because of an OutOfMemoryError. You may consider this as a performance issue or if not increase maximum heap size. So, fixing maximum heap size could be seen as a threshold test. A significant increase of heap allocation may also lead to a significant increase of the test time length because of garbage collection activity. So your build duration could increase, possibly alerting you of a significant increase of heap allocation for a test. [@CheckJvm](#CheckJvm) can help you to check that most of the test time is spent to garbage collect objects.
+
 ## @JvmOptions
 With this annotation, the test is executed in a specific JVM having the given JVM options.
 ### Parameters 
