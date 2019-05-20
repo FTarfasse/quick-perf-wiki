@@ -17,7 +17,7 @@ You can take care of several things about SQL requests to favor performance and 
 * ...
 
 # Outline
-[**Quick start**](#Quik-start)<br>
+[**Quick start**](#Quick-start)<br>
 
 [**Worflow with SQL annotations**](#Worflow-with-SQL-annotations)<br>
 
