@@ -16,4 +16,4 @@ _QuickPerf annotations are executed after the loading of the SpringContext._ <br
 	}
 ```
 
-## [QuickPerfSpringRunner & SQL annotations](https://github.com/quick-perf/doc/wiki/QuickPerfSpringRunner-&-SQL-annotations)
+## [JUnit 4 & Spring & SQL annotations](https://github.com/quick-perf/doc/wiki/QuickPerfSpringRunner-&-SQL-annotations)
