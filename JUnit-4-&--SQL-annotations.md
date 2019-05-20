@@ -1,4 +1,4 @@
-To use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations) in JUnit 4 tests, you need first of all add *quick-perf-sql* and *quick-perf-junit4 dependencies*:<br>
+To use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations) in JUnit 4 tests, you need first of all add *quick-perf-junit4* and *quick-perf-sql* dependencies:<br>
 ...
 
 You also need to use *QuickPerfJUnitRunner*, to build a datasource proxy with *QuickPerfSqlDataSourceBuilder* and to use this proxy in your test. Look at the example below.
