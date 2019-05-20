@@ -1,4 +1,16 @@
 # The problem
+Suppose that you have an Hibernate Book entity having a many to one Shef attribute:
+```java
+@ManyToOne(fetch = FetchType.LAZY)
+private Shelf shelf;
+```
+Imagine we request a set of Book, for example with this query:
+
+```java
+List<Book> books = entityManager.createQuery("FROM Book", Book.class)
+                                .getResultList();
+```
+
 
 # How to detect N+1 select with QuickPerf annotations
 A N+1 select will lead to have at most N select with different parameters.
