@@ -2,7 +2,7 @@
 
 # How to detect N+1 select with QuickPerf annotations
 A N+1 select will lead to have at most N select with different parameters.
-So, you can use the @DisableSameSelectTypesWithDifferentParams annotation with a global scope (the annotation is applied to each test) to try to detect them.
+So, you can use the *@DisableSameSelectTypesWithDifferentParams* annotation with a global scope (the annotation is applied to each test) to try to detect them.
 
 ```java
 package org.quickperf;
@@ -27,6 +27,6 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 ```
 ***The class implementing SpecifiableAnnotations has to be in org.quickperf package.***
 
-@SelectNumber
+*@SelectNumber*
 
-@MaxOfSelects
+*@MaxOfSelects*
