@@ -1,4 +1,7 @@
-To use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations) in Spring tests, you need *[QuickPerfSpringRunner](https://github.com/quick-perf/doc/wiki/JUnit-4--&-Spring)* and an instance of *QuickPerfProxyBeanPostProcessor* in your spring context. Look at the example below.<br> 
+To use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations) in Spring tests, you need first of all to add a QuickPerf Spring dependency (following your Spring version: *quick-perf-junit4-spring3*, *quick-perf-junit4-spring4*, *quick-perf-junit4-spring5*) and a *quick-perf-sql* dependency:<br>
+...
+
+You also need to annotate your test class with @RunWith(QuickPerfSpringRunner.class) and to suplly an instance of *QuickPerfProxyBeanPostProcessor* to your spring context. Look at the example below.<br> 
 
 After that, you can evaluate the SQL properties of your database repositories, of your services or of your web services.
 
