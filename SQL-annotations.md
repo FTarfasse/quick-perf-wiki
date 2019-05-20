@@ -3,8 +3,11 @@
 Several antipatterns can be detected with SQL annotations.
 * Limit roundtrips
   * Detect N+1 selects by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SelectNumber](#SelectNumber) or [@MaxOfSelects](#MaxOfSelects)
-  * Detert JDBC batching disabled by using [@JdbcBatching](#JdbcBatching)
+  * Detect JDBC batching disabled by using [@JdbcBatching](#JdbcBatching)
   * Bad use of Hibernate session by using [@DisableExactlySameSelects](#DisableExactlySameSelects)
+
+  *[Why limit roundtrips?](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/)*
+
 * Limit fetched data
   * Detect too many selected columns by using [@SelectedColumnsNumber](#SelectedColumnsNumber) or [@MaxOfSelectedColumns](#MaxOfSelectedColumns)<br><br>
 *[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F)*
