@@ -16,7 +16,7 @@ With this annotation, the test is executed in a specific JVM having the given he
  ```java
    @HeapSize(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
-### [Fixing maximum heap size as a threshold test](#Xmx#Fixing-maximum-heap-size-as-a-threshold-test)
+### [Fixing maximum heap size as a threshold test](#Xmx)
 
 ## @Xms
 ### Parameters 
