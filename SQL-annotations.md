@@ -33,6 +33,8 @@ You can take care of several things about SQL requests to favor performance and 
 [Configuration with JUnit 4 (without Spring)](https://github.com/quick-perf/doc/wiki/QuickPerfRunner-&-SQL-annotations)<br><br>
 [Configuration with JUnit 4 and Spring](https://github.com/quick-perf/doc/wiki/QuickPerfSpringRunner-&-SQL-annotations)
 
+Add [global annotations](#Configure-global-annotations) or [method](#Recommended-method-annotations) annotations. See [the workflow part](#Worflow-with-SQL-annotations) to see ways to work with SQL annotations.
+
 The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot* framewoks. You have no configuration to do. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it with these frameworks.
 
 # Worflow with SQL annotations
