@@ -4,7 +4,7 @@ You can take care of several things about SQL requests to favor performance and 
 * Limit JDBC roundtrips
   * Detect N+1 selects by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SelectNumber](#SelectNumber) or [@MaxOfSelects](#MaxOfSelects)
   * Detect JDBC batching disabled by using [@JdbcBatching](#JdbcBatching)
-  * [@DisableExactlySameSelects](#DisableExactlySameSelects)
+  * Detect exactly same selects by using [@DisableExactlySameSelects](#DisableExactlySameSelects)
 
   *[Why limit JDBC roundtrips?](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/)*
 
