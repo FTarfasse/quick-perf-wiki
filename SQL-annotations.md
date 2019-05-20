@@ -1,6 +1,6 @@
 ***<p align="center">Take control of SQL requests sent to the database</p>***
 <br>
-Several antipatterns can be detected with SQL annotations.
+You can take care of several things about SQL requests to favor performance and scalability at the beginning of application development.
 * Limit roundtrips
   * Detect N+1 selects by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@SelectNumber](#SelectNumber) or [@MaxOfSelects](#MaxOfSelects)
   * Detect JDBC batching disabled by using [@JdbcBatching](#JdbcBatching)
