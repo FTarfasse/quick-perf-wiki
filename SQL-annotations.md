@@ -17,7 +17,7 @@ You can take care of several things about SQL requests to favor performance and 
 * ...
 
 # Outline
-[**Configuration to do before using SQL annotations**](#Configuration-to-do-before-using-SQL-annotations)<br>
+[**Quick start**](#Quik-start)<br>
 
 [**Worflow with SQL annotations**](#Worflow-with-SQL-annotations)<br>
 
@@ -29,7 +29,7 @@ You can take care of several things about SQL requests to favor performance and 
 
 [**Debug annotations**](#Debug-annotations)<br>
 
-# Configuration to do before using SQL annotations
+# Quick start
 [Configuration with JUnit 4 (without Spring)](https://github.com/quick-perf/doc/wiki/QuickPerfRunner-&-SQL-annotations)<br><br>
 [Configuration with JUnit 4 and Spring](https://github.com/quick-perf/doc/wiki/QuickPerfSpringRunner-&-SQL-annotations)
 
