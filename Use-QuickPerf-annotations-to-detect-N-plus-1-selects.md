@@ -4,6 +4,8 @@
 A N+1 select will lead to have at most N select with different parameters.
 So, you can use the [@DisableSameSelectTypesWithDifferentParams](https://github.com/quick-perf/doc/wiki/SQL-annotations#DisableSameSelectTypesWithDifferentParams) annotation with a global scope (the annotation is applied to each test) to try to detect them.
 
+[@SelectNumber](https://github.com/quick-perf/doc/wiki/SQL-annotations#SelectNumber)
+
 ```java
 package org.quickperf;
 
