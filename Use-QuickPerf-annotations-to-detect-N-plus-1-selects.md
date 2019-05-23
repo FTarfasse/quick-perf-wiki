@@ -1,3 +1,4 @@
+**Documentation in progress**
 # The problem
 Suppose that you have an Hibernate Book entity having a many to one Shef attribute:
 ```java
