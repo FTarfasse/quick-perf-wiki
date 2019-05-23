@@ -1,4 +1,14 @@
-With JVM annotations, the test method is executed in a dedicated JVM.
+JVM annotations can help you to 
+* *Design your code for performance* <br>
+  Example: evaluate heap cost of a data structure
+* *Investigate and improve performance with quick iterations on your computer*<br>
+  Example: huge allocation in pre-production when a given functionality is called => reproduce the issue on your computer
+            => apply quick performance iterations on your computer (investigate, apply code modification, assess code modification) until having acceptable allocation => re-test in preproduction
+* *Add automatic tests verifying performance*<br>
+Example: verify allocation of performance-sensitive functionnalities, check allocation to control [financial cost of memory usage in cloud](https://www.forbes.com/sites/oracle/2019/01/07/grails-founder-what-java-developers-dont-know-about-memory-can-cost-them-money-in-the-cloud/#5c3c7bd444e1)
+
+*With JVM annotations, the test method is executed in a dedicated JVM.*
+
 # Outline
 [**Configure your test JVM**](#Configure-your-test-JVM) <br> @HeapSize, @Xms, @Xmx, @JvmOptions <br><br>
 [**Verify heap allocation**](#Verify-heap-allocation)<br> @MeasureAllocation, @MaxAllocation, @NoAllocation <br><br>
@@ -56,7 +66,7 @@ The following annotations use ByteWatcher under the hood:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
 
-You can  for example use @MeasureAllocation and @MaxAllocation to check the heap allocation cost of a large data stucture (containing 1 000 000 elements for example) .<br>
+You can  for example use @MeasureAllocation and @MaxAllocation to check the heap allocation cost of a large data structure (containing 1 000 000 elements for example) .<br>
 
 @NoAllocation can be used to verify that the tested code does not allocate on heap.
 
