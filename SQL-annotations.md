@@ -62,7 +62,7 @@ Firstly, we focus our work and attention on the functional behavior. The goal is
 * **Remove @DisableQuickPerf or @FunctionalIteration to enable QuickPerf annotations** 
 * **Fix or ignore issues reported by global annotations**
 <br>In some specific cases, you can [disable some global annotations](#Disable-some-global-annotations).
-* **Possibly add QuickPerf annotation on method to document the code** 
+* **Add QuickPerf annotations on method to add some performance checks or document the code** 
 
 ## Add some performance checks to existing database tests
 You can introduce QuickPerf in a project having some database tests.<br>
