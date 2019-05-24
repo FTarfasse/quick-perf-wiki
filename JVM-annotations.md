@@ -5,7 +5,7 @@ JVM annotations can help you to
   Example: huge allocation in pre-production when a given functionality or a batch is called => reproduce the issue on your computer
             => apply quick performance iterations on your computer (investigate, apply code modification, assess code modification) until having acceptable allocation => re-test in preproduction
 * *Add automatic tests verifying performance*<br>
-Example: verify allocation of performance-sensitive functionnalities, check allocation to control [financial cost of memory usage in cloud](https://www.forbes.com/sites/oracle/2019/01/07/grails-founder-what-java-developers-dont-know-about-memory-can-cost-them-money-in-the-cloud/#5c3c7bd444e1)
+Example: verify allocation of performance-sensitive functionnalities, check allocation to control financial cost of memory usage in cloud
 
 *With JVM annotations, the test method is executed in a dedicated JVM.*
 
