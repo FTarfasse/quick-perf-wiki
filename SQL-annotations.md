@@ -40,37 +40,7 @@ Use [global annotations](#Recommended-global-annotations) or [method](#Recommend
 The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot* framewoks. You have no configuration to do. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it with these frameworks.
 
 # Worflow with SQL annotations
-Below, propose ways to use SQL annotations during development.<br>
 
-## Outline
-[Configure global annotations](#Configure-global-annotations)<br><br>
-[Implementation of a new business use case](#Implementation-of-a-new-business-use-case)<br><br>
-[Add some performance checks to existing database tests](#Add-some-performance-checks-to-existing-database-tests)<br><br>
-[Play with QuickPerf: test your assumptions](#Play-with-QuickPerf-test-your-assumptions)
-
-## Configure global annotations
-Configure once some [recommended global annotations](#Recommended-global-annotations). These annotations are applied to every test method.<br> The idea is to systematically apply some performance checks to avoid some classical performance bottlenecks.
-
-## Implementation of a new business use case
-Firstly, we focus our work and attention on the functional behavior. The goal is to have something working without worrying about performances. *We try to do one thing at a time.* After, we check some performance properties.
-### **Work on functional behavior** <br>
-* **Write a test describing and verifying the *functional behavior*** <br> 
-* **Annotate this test with *@DisableQuickPerf* or *@FunctionalIteration* to disable the QuickPerf annotations** <br>So, we disable annotations having global or class scopes. <br>
-* **Make the functional behavior working** <br>
-  You can do this applying a TDD approach (Red/Green/Refactor).
-### **Work on performance behavior**
-* **Remove @DisableQuickPerf or @FunctionalIteration to enable QuickPerf annotations** 
-* **Fix or ignore issues reported by global annotations**
-<br>In some specific cases, you can [disable some global annotations](#Disable-some-global-annotations).
-* **Add QuickPerf annotations on method to add some performance checks or document the code** 
-
-## Add some performance checks to existing database tests
-You can introduce QuickPerf in a project having some database tests.<br>
-After [the configuration of global annotations](#Recommended-global-annotations), some tests may fail because of some not respected performance properties.<br>
-If you may want to progressively fix these failing tests. To do this, you could annotate the failing tests with @DisableGlobalAnnotations with a comment, for example @DisableGlobalAnnotations(comment="Investigate why global annotations are failing"). After that, you could progressively remove this annotation and see why the tests are failing.
-
-## Play with QuickPerf: test your assumptions
-<p><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Play-with-QuickPerf.PNG" width="80%" heigth="80%"></p>
 
 # Recommended global annotations
 
