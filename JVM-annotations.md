@@ -11,8 +11,8 @@ Example: verify allocation of performance-sensitive functionnalities, check allo
 
 # Outline
 [**Configure your test JVM**](#Configure-your-test-JVM) <br> @HeapSize, @Xms, @Xmx, @JvmOptions <br><br>
-[**Verify heap allocation**](#Verify-heap-allocation)<br> @MeasureAllocation, @MaxAllocation, @NoAllocation <br><br>
-[**Profile or check your JVM**](#Profile-or-check-your-JVM) <br> @ProfileJvm, @CheckJvm
+[**Verify heap allocation**](#Verify-heap-allocation)<br> @MeasureAllocation, @ExpectMaxAllocation, @ExpectNoAllocation <br><br>
+[**Profile or check your JVM**](#Profile-or-check-your-JVM) <br> @ProfileJvm, @ExpectNoJvmIssue
 
 # Configure your test JVM
 ## @HeapSize
@@ -52,7 +52,7 @@ With this annotation, the test is executed in a specific JVM having the given ma
    @Xmx(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
 ### Fixing maximum heap size as a threshold test
-The principle of a *threshold test* is to compare a value in the current build to a threshold. If this value exceeds the threshold, the test will fail and were are alerted of a possible performance degradation. In this [paper](https://martinfowler.com/bliki/ThresholdTest.html), Martin Fowler gives the example of the amount of time taken by a test. When you set maximum heap size for a test, the test may fail one day because of an OutOfMemoryError. You may consider this as a performance issue or if not increase maximum heap size. So, fixing maximum heap size could be seen as a threshold test. A significant increase of heap allocation may also lead to a significant increase of the test time length because of garbage collection activity. So your build duration could increase, possibly alerting you of a significant increase of heap allocation for a test. [@CheckJvm](#CheckJvm) can help you to check that most of the test time is spent to garbage collect objects.
+The principle of a *threshold test* is to compare a value in the current build to a threshold. If this value exceeds the threshold, the test will fail and were are alerted of a possible performance degradation. In this [paper](https://martinfowler.com/bliki/ThresholdTest.html), Martin Fowler gives the example of the amount of time taken by a test. When you set maximum heap size for a test, the test may fail one day because of an OutOfMemoryError. You may consider this as a performance issue or if not increase maximum heap size. So, fixing maximum heap size could be seen as a threshold test. A significant increase of heap allocation may also lead to a significant increase of the test time length because of garbage collection activity. So your build duration could increase, possibly alerting you of a significant increase of heap allocation for a test. [@ExpectNoJvmIssue](#ExpectNoJvmIssue) can help you to check that most of the test time is spent to garbage collect objects.
 
 ## @JvmOptions
 With this annotation, the test is executed in a specific JVM having the given JVM options.
@@ -66,9 +66,9 @@ The following annotations use ByteWatcher under the hood:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
 
-You can  for example use @MeasureAllocation and @MaxAllocation to check the heap allocation cost of a large data structure (containing 1 000 000 elements for example) .<br>
+You can  for example use @MeasureAllocation and @ExpectMaxAllocation to check the heap allocation cost of a large data structure (containing 1 000 000 elements for example) .<br>
 
-@NoAllocation can be used to verify that the tested code does not allocate on heap.
+@ExpectNoAllocation can be used to verify that the tested code does not allocate on heap.
 
 
 ## @MeasureAllocation
@@ -100,7 +100,7 @@ In console:
 ```
 Measured allocation: 440.0 bytes
 ```
-## @MaxAllocation
+## @ExpectMaxAllocation
 With this annotation, the test will fail if allocation is greater than expected.
 
 ### Parameters 
@@ -110,13 +110,13 @@ With this annotation, the test will fail if allocation is greater than expected.
 | unit     | AllocationUnit |Allocation unit   |        -       |
 ### Example
  ```java
-    @MaxAllocation(value = 440, unit = AllocationUnit.BYTE)
+    @ExpectMaxAllocation(value = 440, unit = AllocationUnit.BYTE)
     @Test
     public void array_list_with_size_100_should_allocate_440_bytes() {
         ArrayList<Object> data = new ArrayList<>(100);
     }
   ```
-## @NoAllocation
+## @ExpectNoAllocation
 With this annotation, the test will fail if allocation is detected.
 
 # Profile or check your JVM
@@ -134,7 +134,7 @@ The JFR file location is shown in the console. You can open it with Java Mission
 The recording file can be found here: C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-46868616\jvm-profiling.jfr
 You can open it with Java Mission Control (JMC).
 ```
-## @CheckJvm
+## @ExpectNoJvmIssue
 
 *Today we considrer this annotation as experimental.*
 
