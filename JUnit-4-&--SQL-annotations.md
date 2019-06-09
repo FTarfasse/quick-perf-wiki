@@ -51,7 +51,7 @@ Look at the example below.
                                                    , Book.class);
          }
 
-         @SelectNumber(1)
+         @ExpectMaxSelectNumber(1)
          @Test
          public void should_retrieve_books_from_database() {
          // ... 
