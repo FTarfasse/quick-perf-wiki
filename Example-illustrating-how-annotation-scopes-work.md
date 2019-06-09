@@ -14,11 +14,11 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 
     public Collection<Annotation> specifyAnnotationsAppliedOnEachTest() {
 
-        /* To build an instance of MaxOfSelects annotation without SqlAnnotationBuilder
-        MaxSqlSelect maxOfSelects = new MaxOfSelects() {
+        /* To build an instance of ExpectSelectNumber annotation without SqlAnnotationBuilder
+        ExpectSelectNumber expectedSelectNumber = new ExpectSelectNumber() {
             @Override
             public Class<? extends Annotation> annotationType() {
-                return MaxOfSelects.class;
+                return ExpectSelectNumber.class;
             }
             @Override
             public int value() {
@@ -27,9 +27,9 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
         };
         */
 
-        Annotation maxOfSelects = SqlAnnotationBuilder.maxOfSelects(3);
+        Annotation expectedSelectNumber = SqlAnnotationBuilder.expectSelectNumber(3);
 
-        return Collections.singletonList(maxOfSelects);
+        return Collections.singletonList(expectedSelectNumber);
 
     }
 
@@ -46,7 +46,7 @@ import org.junit.Test;
 
 public class AClassWithGlobalScopeAnnotationAppliedTest {
 
-     //@MaxOfSelects(3) annotation is applied
+     //@ExpectSelectNumber(3) annotation is applied
      @Test
      public void a_test_method() {
          //...
@@ -61,20 +61,20 @@ package org.mycompany;
 import org.junit.Test;
 import org.quickperf.sql.annotation.MaxSqlSelect;
 
-@MaxOfSelects(2) // CLASS SCOPE
-                 // This annotation overrides the annotation
-                 // defined in QuickPerfConfiguration class (GLOBAL SCOPE)
+@ExpectSelectNumber(2) // CLASS SCOPE
+                      // This annotation overrides the annotation
+                      // defined in QuickPerfConfiguration class (GLOBAL SCOPE)
 public class AClassWithAnnotationsTest {
 
-    // @MaxOfSelects(2) annotation placed on class is applied
+    // @ExpectSelectNumber(2) annotation placed on class is applied
     @Test
     public void a_test_method() {
         //...
     }
 
-    @MaxOfSelects(1) // METHOD SCOPE
-                     // This annotation overrides the annotation placed
-                     // on class
+    @ExpectSelectNumber(1) // METHOD SCOPE
+                          // This annotation overrides the annotation placed
+                          // on class
     @Test
     public void a_test_method_with_quick_perf_annotation() {
         //...
