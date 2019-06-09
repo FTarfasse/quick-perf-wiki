@@ -37,7 +37,7 @@ After that, you can evaluate the SQL properties of your database repositories, o
                 )
 	public class PlayerControllerTest {
 
-            @ExpectSelectNumber(1)
+            @ExpectSelect(1)
             @Test
             public void should_find_one_player() {
                 //...
