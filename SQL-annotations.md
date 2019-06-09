@@ -2,14 +2,14 @@
 <br>
 You can take care of several things about SQL requests to favor performance and scalability at the beginning of application development.
 * Limit JDBC roundtrips
-  * Detect N+1 selects by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@ExpectSelectNumber](#ExpectSelectNumber) or [@ExpectMaxSelectNumber](#MaxOfSelects)<br>
+  * Detect N+1 selects by using [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams), [@ExpectSelect](#ExpectSelect) or [@ExpectMaxSelect](#ExpectMaxSelect)<br>
   * Detect JDBC batching disabled by using [@ExpectJdbcBatching](#ExpectJdbcBatching)
   * Detect exactly same selects by using [@DisableExactlySameSelects](#DisableExactlySameSelects)
 
   *[Why limit JDBC roundtrips?](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/)*
 
 * Limit fetched data
-  * Detect too many selected columns by using [@ExpectSelectedColumnNumber](#ExpectSelectedColumnNumber) or [@ExpectMaxSelectedColumnNumber](#ExpectMaxSelectedColumnNumber)<br><br>
+  * Detect too many selected columns by using [@ExpectSelectedColumn](#ExpectSelectedColumn) or [@ExpectMaxSelectedColumn](#ExpectMaxSelectedColumn)<br><br>
 *[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns%3F)*
 * Avoid SQL requests having a LIKE pattern starting with a wildcard by using [@DisableLikeWithLeadingWildcard](#DisableLikeWithLeadingWildcard)
 
@@ -151,7 +151,7 @@ Indicates disabling of JDBC batching.
 
 # Recommended method annotations
 
-## @ExpectMaxSelectNumber
+## @ExpectMaxSelect
 
 ### Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
@@ -160,13 +160,13 @@ Indicates disabling of JDBC batching.
 
 ### Example
 ```java
-    @ExpectSelectNumber(1)
+    @ExpectSelect(1)
     @Test
     public void should_retrieve_all_cars() {	
      //...
     }
 ```
-## @ExpectMaxSelectNumber
+## @ExpectMaxSelect
 With this annotation, the test will fail if the number of SELECT requests is greater than expected. 
 ### Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
@@ -175,14 +175,14 @@ With this annotation, the test will fail if the number of SELECT requests is gre
 
 ### Example
 ```java
-    @ExpectMaxSelectNumber(1)
+    @ExpectMaxSelect(1)
     @Test
     public void should_retrieve_all_cars() {	
      //...
     }
 ```
 
-## @ExpectSelectedColumnNumber
+## @ExpectSelectedColumn
 
 Verifies the number of selected columns. <br>
 
@@ -195,10 +195,10 @@ Verifies the number of selected columns. <br>
 
 ### Example
 ```java
-    @ExpectSelectedColumnNumber(3)
+    @ExpectSelectedColumn(3)
 ```
 
-## @ExpectMaxSelectedColumnNumber
+## @ExpectMaxSelectedColumn
 
 With this annotation, the test will fail if the number of returned columns is greater than expected.
 
@@ -210,24 +210,24 @@ With this annotation, the test will fail if the number of returned columns is gr
 | value     | int |Maximum number of returned columns  |        0       |
 ### Example
 ```java
-    @ExpectMaxSelectedColumnNumber(5)
+    @ExpectMaxSelectedColumn(5)
 ```
 
-## @ExpectInsertNumber
+## @ExpectInsert
 
 ### Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Number of insert requests  |        0       |
 
-## @ExpectUpdateNumber
+## @ExpectUpdate
 
 ### Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Number of update requests  |        0       |
 
-## @ExpectDeleteNumber
+## @ExpectDelete
 
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
