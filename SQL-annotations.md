@@ -151,7 +151,7 @@ Indicates disabling of JDBC batching.
 
 # Recommended method annotations
 
-## @ExpectMaxSelect
+## @ExpectSelect
 
 ### Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
