@@ -186,7 +186,7 @@ With this annotation, the test will fail if the number of SELECT requests is gre
 
 Verifies the number of selected columns. <br>
 
-**_[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F)_**
+**_[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns%3F)_**
 
 ### Parameters 
 |Parameter  |Type| Meaning                     | Default value  |
@@ -202,7 +202,7 @@ Verifies the number of selected columns. <br>
 
 With this annotation, the test will fail if the number of returned columns is greater than expected.
 
-**_[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F)_**
+**_[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns%3F)_**
 
 ### Parameters 
 |Parameter  |Type| Meaning                             | Default value  |
