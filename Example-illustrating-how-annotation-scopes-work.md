@@ -2,7 +2,7 @@ A class implementing SpecifiableAnnotations provides global annotations, that is
 ```java
 package org.quickperf;
 
-import org.quickperf.config.user.SpecifiableAnnotations;
+import org.quickperf.config.SpecifiableAnnotations;
 import org.quickperf.sql.annotation.SqlAnnotationBuilder;
 
 import java.lang.annotation.Annotation;
