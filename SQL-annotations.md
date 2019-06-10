@@ -62,10 +62,9 @@ import static org.quickperf.sql.annotation.SqlAnnotationBuilder.*;
 public class QuickPerfConfiguration implements SpecifiableAnnotations {
 
     public Collection<Annotation> specifyAnnotationsAppliedOnEachTest() {
-        int batchSize = 30; // set the expected batch size
         return Arrays.asList(  disableSameSelectTypesWithDifferentParams() // can reveal some N+1 selects
                              , disableExactlySameSelects() // can reveal a bad use of Hibernate session
-                             , expectJdbcBatching(batchSize)
+                             , expectJdbcBatching()
                            //, disableCrossJoin() // if you use JPA Criteria API
                              , disableLikeWithLeadingWildcard()
                              );
@@ -99,7 +98,9 @@ You can decide to batch all inserts, updates, delete. Prior to Hibernate 5.2, ba
 ### Parameters 
 |Parameter  |Type| Meaning           | Default value  |
 | -------- |:---:|:-----------------:|:--------------:|
-| batchSize| int |JDBC batch size    |      -         |
+| batchSize| int |JDBC batch size   |      -         |
+
+_batchSize is optional._
 
 A 0 batch size means that JDBC batching is disabled.
 
