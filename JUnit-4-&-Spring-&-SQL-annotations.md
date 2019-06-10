@@ -30,18 +30,17 @@ After that, you can evaluate the SQL properties of your database repositories, o
 	import quickperf.spring.QuickPerfProxyBeanPostProcessor;
         import quickperf.spring.QuickPerfSpringRunner;
 	
-	@RunWith(QuickPerfSpringRunner.class)
-	@SpringBootTest(classes = { //...,
-                                    QuickPerfProxyBeanPostProcessor.class
-                          }
-                )
+         @SpringBootTest(classes = {FootballApplication.class}
+                       , webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
+         )
 	public class PlayerControllerTest {
 
-            @ExpectSelect(1)
-            @Test
-            public void should_find_one_player() {
-                //...
-            }
-		
-	}
+           @ExpectSelect(1)
+           @HeapSize(value = 50, unit = AllocationUnit.MEGA_BYTE)
+           @Test
+           public void should_find_all_players() {
+
+	   }
+
+       }
 ```
