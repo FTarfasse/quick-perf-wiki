@@ -3,7 +3,7 @@ JVM annotations can help you to
   Example: evaluate heap cost of a data structure
 * *Investigate and improve performance with quick iterations on your computer*<br>
   Example: huge allocation in pre-production when a given functionality or a batch is called => reproduce the issue on your computer
-            => apply quick performance iterations on your computer (investigate, apply code modification, assess code modification) until having acceptable allocation => re-test in preproduction
+            => apply quick performance iterations on your computer (investigate, apply code modification, assess code modification) until having acceptable allocation => re-test in pre-production
 * *Add automatic tests verifying performance*<br>
 Example: verify allocation of performance-sensitive functionnalities, check allocation to control financial cost of memory usage in cloud
 
