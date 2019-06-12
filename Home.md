@@ -1,1 +1,1 @@
-Welcome to the doc wiki!
+**[QuickPerf documentation](https://github.com/quick-perf/doc/wiki/QuickPerf)**
