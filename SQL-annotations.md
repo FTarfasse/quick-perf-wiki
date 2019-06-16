@@ -116,7 +116,7 @@ A 0 batch size means that JDBC batching is disabled.
 # Cancel the behavior of global annotations
 
 ## @EnableExactlySameSelects
-Cancels behavior of [@DisableExactlySameSelects](#DisableExactlySameSelects).
+Cancel behavior of [@DisableExactlySameSelects](#DisableExactlySameSelects).
 
 ### Parameters 
 |Parameter|Type    | Meaning                                    | Default value  |
@@ -124,7 +124,7 @@ Cancels behavior of [@DisableExactlySameSelects](#DisableExactlySameSelects).
 | comment | String |Comment why exactly same selects are enabled|      -         |
 
 ## @EnableSameSelectTypesWithDifferentParams
-Cancels behavior of [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams).
+Cancel behavior of [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams).
 
 ### Parameters 
 |Parameter|Type    | Meaning                                                               | Default value  |
@@ -132,7 +132,7 @@ Cancels behavior of [@DisableSameSelectTypesWithDifferentParams](#DisableSameSel
 | comment | String |Comment why exactly same select types with different parameters are enabled|      -         |
 
 ## @EnableCrossJoin
-Cancels behavior of [@DisableCrossJoin](#DisableCrossJoin).
+Cancel behavior of [@DisableCrossJoin](#DisableCrossJoin).
 
 ### Parameters 
 |Parameter|Type    | Meaning                                    | Default value  |
@@ -140,7 +140,7 @@ Cancels behavior of [@DisableCrossJoin](#DisableCrossJoin).
 | comment | String |Comment why cross join is enabled   |      -         |
 
 ## @EnableLikeWithLeadingWildcard
-Cancels behavior of [@DisableLikeWithLeadingWildcard](#DisableLikeWithLeadingWildcard).
+Cancel behavior of [@DisableLikeWithLeadingWildcard](#DisableLikeWithLeadingWildcard).
 
 ### Parameters 
 |Parameter|Type    | Meaning                                         | Default value  |
@@ -148,7 +148,7 @@ Cancels behavior of [@DisableLikeWithLeadingWildcard](#DisableLikeWithLeadingWil
 | comment | String |Comment why like with leading wildcard is enabled|      -         |
 
 ## @ExpectJdbcBatching(batchSize=0)
-Indicates disabling of JDBC batching.
+Indicate disabling of JDBC batching.
 
 # Recommended method annotations
 
