@@ -79,7 +79,7 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 ## @DisableSameSelectTypesWithDifferentParams
 
 ## @DisableLikeWithLeadingWildcard
-Verifies that SQL requests do not contain LIKE with leading wildcard (% or _).<br>
+Verify that SQL requests do not contain LIKE with leading wildcard (% or _).<br>
 
 You can read this [article](https://use-the-index-luke.com/sql/where-clause/searching-for-ranges/like-performance-tuning) explaining why LIKE with leading wildcard could be a bad idea in term of performance.<br>
 
