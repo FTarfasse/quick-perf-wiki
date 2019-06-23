@@ -87,7 +87,7 @@ A code sending to the database a like with leading wilcard may be fast in a test
 
 ## @ExpectJdbcBatching
 
-Verifies that inserts, deletes and updates are processed in JDBC batches having *batchSize* elements.
+Verify that inserts, deletes and updates are processed in JDBC batches having *batchSize* elements.
 
 You may sometimes think that you are using JDBC batching but in fact not ([Paper 1](https://abramsm.wordpress.com/2008/04/23/hibernate-batch-processing-why-you-may-not-be-using-it-even-if-you-think-you-are/), [Paper 2](https://stackoverflow.com/questions/27697810/hibernate-disabled-insert-batching-when-using-an-identity-identifier))!
 
