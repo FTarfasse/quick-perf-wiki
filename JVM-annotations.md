@@ -11,7 +11,7 @@ Example: verify allocation of performance-sensitive functionnalities, check allo
 
 # Outline
 [**Configure your test JVM**](#Configure-your-test-JVM) <br> @HeapSize, @Xms, @Xmx, @JvmOptions <br><br>
-[**Verify heap allocation**](#Verify-heap-allocation)<br> @MeasureAllocation, @ExpectMaxAllocation, @ExpectNoAllocation <br><br>
+[**Verify heap allocation**](#Verify-heap-allocation)<br> @MeasureHeapAllocation, @ExpectMaxHeapAllocation, @ExpectNoHeapAllocation <br><br>
 [**Profile or check your JVM**](#Profile-or-check-your-JVM) <br> @ProfileJvm, @ExpectNoJvmIssue
 
 # Configure your test JVM
@@ -66,12 +66,12 @@ The following annotations use ByteWatcher under the hood:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
 
-You can  for example use @MeasureAllocation and @ExpectMaxAllocation to check the heap allocation cost of a large data structure (containing 1 000 000 elements for example) .<br>
+You can  for example use @MeasureHeapAllocation and @ExpectMaxHeapAllocation to check the heap allocation cost of a large data structure (containing 1 000 000 elements for example) .<br>
 
-@ExpectNoAllocation can be used to verify that the tested code does not allocate on heap.
+@ExpectNoHeapAllocation can be used to verify that the tested code does not allocate on heap.
 
 
-## @MeasureAllocation
+## @MeasureHeapAllocation
 You can measure allocation using this annotation. <br><br>
 The measured allocation is displayed in the console.
 
@@ -80,9 +80,9 @@ The measured allocation is displayed in the console.
 @RunWith(QuickPerfJUnitRunner.class)
 public class ClassWithMethodAnnotatedWithMeasureAllocation {
 
-    @MeasureAllocation
+    @MeasureHeapAllocation
     @JvmOptions("-XX:+UseCompressedOops -XX:+UseCompressedClassPointers")
-    // Allocation value depends on UseCompressedOops and UseCompressedClassPointers.
+    // Heap allocation value depends on UseCompressedOops and UseCompressedClassPointers.
     // QuickPerf works with JDK >= 7u40 where UseCompressedOops is enabled by default.
     // UseCompressedClassPointers was introduced in JDK 8 and is enabled by default.
     @Test
@@ -98,10 +98,10 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
 ```
 In console:
 ```
-Measured allocation: 440.0 bytes
+Measured heap allocation: 440.0 bytes
 ```
-## @ExpectMaxAllocation
-With this annotation, the test will fail if allocation is greater than expected.
+## @ExpectMaxHeapAllocation
+With this annotation, the test will fail if heap allocation is greater than expected.
 
 ### Parameters 
 |Parameter  |Type           | Meaning          | Default value  |
@@ -110,14 +110,14 @@ With this annotation, the test will fail if allocation is greater than expected.
 | unit     | AllocationUnit |Allocation unit   |        -       |
 ### Example
  ```java
-    @ExpectMaxAllocation(value = 440, unit = AllocationUnit.BYTE)
+    @ExpectMaxHeapAllocation(value = 440, unit = AllocationUnit.BYTE)
     @Test
     public void array_list_with_size_100_should_allocate_440_bytes() {
         ArrayList<Object> data = new ArrayList<>(100);
     }
   ```
-## @ExpectNoAllocation
-With this annotation, the test will fail if allocation is detected.
+## @ExpectNoHeapAllocation
+With this annotation, the test will fail if heap allocation is detected.
 
 # Profile or check your JVM
 The following annotations use *Java Flight Recorder* (JFR) under the hood. <br><br>
