@@ -5,6 +5,8 @@ QuickPerf works with a JDK 1.7+.
 
 ### [Twitter: @QuickPerf](https://twitter.com/quickperf)
 
+### [**Contributing**](https://github.com/quick-perf/quickperf/blob/master/CONTRIBUTING.md)
+
 # Run QuickPerf
 ## [JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
 ## [JUnit 4 & Spring](https://github.com/quick-perf/doc/wiki/JUnit-4--&-Spring)
