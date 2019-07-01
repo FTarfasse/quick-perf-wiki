@@ -21,7 +21,7 @@ In IntelliJ, you can for example use [Awesome console](https://plugins.jetbrains
 ## Annotation scopes
 An annotation can have three scopes:
 * **Global scope** <br>
-An annotation having a global scope is applied on each test.<br>
+An annotation having a global scope applies on each test.<br>
 You can define annotations with global scope by creating a class implementing SpecifiableAnnotations interface. This class has to be in org.quickperf package.
 * **Test class scope** <br>
 An annotation having a test class scope overrides the configuration of the same annotation with global scope.
