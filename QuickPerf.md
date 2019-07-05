@@ -1,5 +1,5 @@
+![](https://pbs.twimg.com/profile_banners/926219963333038086/1518645789)
 
-***
 **QuickPerf** is a testing library for Java providing annotations to quickly evaluate some performance properties.<br><br>
 QuickPerf works with a JDK 1.7+.
 
