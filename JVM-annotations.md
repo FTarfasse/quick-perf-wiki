@@ -136,7 +136,7 @@ You can open it with Java Mission Control (JMC).
 ```
 ## @ExpectNoJvmIssue
 
-*Today we considrer this annotation as experimental.*
+*Today we consider this annotation as experimental.*
 
 With this annotation, JVM is profiled with Java Flight Recorder (JFR).<br>
 
