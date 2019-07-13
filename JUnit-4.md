@@ -31,7 +31,7 @@ To use it, you have to add dependency below.
 
 # SQL annotations
 
-In addition to the dependency mentioned in the [QuickPerfRunner](#QuickPerfRunner) part, you have to add the dependency below to can use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations).
+In addition to the dependency mentioned in the [QuickPerfJUnitRunner](#QuickPerfJUnitRunner) part, you have to add the dependency below to can use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations).
 ```xml
 <dependency>
   <groupId>org.quickperf</groupId>
