@@ -34,7 +34,7 @@ You can take care of several things about SQL requests to favor performance and 
 # Quick start
 [**Configuration with JUnit 4 *and* Spring**](https://github.com/quick-perf/doc/wiki/JUnit-4--&-Spring)
 
-[**Configuration with JUnit 4 *without* Spring**](https://github.com/quick-perf/doc/wiki/JUnit-4-&--SQL-annotations)
+[**Configuration with JUnit 4 *without* Spring**](https://github.com/quick-perf/doc/wiki/JUnit-4--&-Spring)
 
 Use [global annotations](#Recommended-global-annotations) or [method](#Recommended-method-annotations) annotations. See [the workflow part](#Worflow-with-SQL-annotations) to see ways to work with SQL annotations.
 
