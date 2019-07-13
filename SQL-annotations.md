@@ -37,7 +37,7 @@ You can take care of several things about SQL requests to favor performance and 
 
 Use [global annotations](#Recommended-global-annotations) or [method](#Recommended-method-annotations) annotations. See [the workflow part](#Worflow-with-SQL-annotations) to see ways to work with SQL annotations.
 
-The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot* framewoks. You have no configuration to do. If a SQL property is not respected, the SQL annotation can suggest you solutions to fix it with these frameworks.
+The SQL annotations automatically detect if you use *Hibernate* or *Spring Boot* framewoks. You have no configuration to do. If a SQL property is unrespected, the SQL annotation can suggest you solutions to fix it with these frameworks.
 
 # Worflow with SQL annotations
 
