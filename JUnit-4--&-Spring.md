@@ -1,3 +1,32 @@
+## Dependencies
+Following your Spring version, you have to add one of the dependencies below.
+
+**Spring 5**
+```xml
+<dependency>
+  <groupId>org.quickperf</groupId>
+  <artifactId>quick-perf-junit4-spring5</artifactId>
+  <version>1.0-SNAPSHOT</version>
+</dependency>
+```
+
+**Spring 4**
+```xml
+<dependency>
+  <groupId>org.quickperf</groupId>
+  <artifactId>quick-perf-junit4-spring4</artifactId>
+  <version>1.0-SNAPSHOT</version>
+</dependency>
+```
+
+**Spring 3**
+```xml
+<dependency>
+  <groupId>org.quickperf</groupId>
+  <artifactId>quick-perf-junit4-spring3</artifactId>
+  <version>1.0-SNAPSHOT</version>
+</dependency>
+```
 ## QuickPerfSpringRunner
 **QuickPerfSpringRunner** adds QuickPerf features to SpringRunner (also called SpringJUnit4ClassRunner). <br>
 
