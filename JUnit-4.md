@@ -7,7 +7,7 @@
 
 *QuickPerfJUnitRunner* adds QuickPerf features to default JUnit runner. <br>
 
-To use it, you have to add dependency below.
+To use it, you have to this dependency
 
 ```xml
 <dependency>
