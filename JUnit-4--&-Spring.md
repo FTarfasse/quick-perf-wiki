@@ -6,7 +6,7 @@
 [**Spring Boot examples**](#Spring-Boot-examples)
 
 # QuickPerfSpringRunner
-*QuickPerfSpringRunner* adds QuickPerf features to *SpringRunner* (also called *SpringJUnit4ClassRunner*). <br>
+**QuickPerfSpringRunner** adds QuickPerf features to *SpringRunner* (also called *SpringJUnit4ClassRunner*). <br>
 
 To use it, following your Spring version, you have to add one of the dependencies below.
 
