@@ -16,7 +16,7 @@ To use it, you have to this dependency
   <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
-***With this dependency, you have also access to to [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations).***
+***With this dependency, you have also access to [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations).***
 
 *Java code example with QuickPerfSpringRunner*
 ```java
