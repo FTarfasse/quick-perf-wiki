@@ -54,4 +54,5 @@ After that, you can evaluate the SQL properties of your database repositories, o
        }
 ```
 
-## [Spring Boot examples](https://github.com/quick-perf/springboot-junit4-examples)
+## Spring Boot examples
+See the code of [this repository](https://github.com/quick-perf/springboot-junit4-examples).
