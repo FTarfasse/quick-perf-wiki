@@ -3,7 +3,7 @@
 **QuickPerf** is a testing library for Java providing annotations to quickly evaluate some performance properties.<br><br>
 QuickPerf works with a JDK 1.7+.
 
-# Execute QuickPerf annotations
+# Execute QuickPerf
 ## [With JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
 ## [With Spring](https://github.com/quick-perf/doc/wiki/JUnit-4--&-Spring)
 ## Have clickable links in your IDE
