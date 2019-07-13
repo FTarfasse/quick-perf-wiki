@@ -1,4 +1,4 @@
-## Dependencies
+## Dependency
 Following your Spring version, you have to add one of the dependencies below.
 
 **Spring 5**
