@@ -64,7 +64,7 @@ In addition to the dependency mentioned in the [QuickPerfSpringRunner](#QuickPer
 </dependency>
 ```
 
-You also have to suplly an instance of *QuickPerfProxyBeanPostProcessor* to your spring context.<br>
+You also have to supply an instance of *QuickPerfProxyBeanPostProcessor* to your spring context.<br>
 To do this, you can look at the Java code examples below or in [this Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples).<br> 
 
 After that, you can evaluate the SQL properties of the database repositories, the Spring services or the Spring controller.
