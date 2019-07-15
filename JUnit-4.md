@@ -13,7 +13,7 @@ To use it, you have to this dependency
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-junit4</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0-RC2</version>
 </dependency>
 ```
 ***With this dependency, you have also access to [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations).***
@@ -36,7 +36,7 @@ In addition to the dependency mentioned in the [QuickPerfJUnitRunner](#QuickPerf
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-sql-annotations</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0-RC2</version>
 </dependency>
 ```
 
