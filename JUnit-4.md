@@ -14,6 +14,7 @@ To use it, you have to this dependency
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-junit4</artifactId>
   <version>1.0.0-RC2</version>
+  <scope>test</scope>
 </dependency>
 ```
 ***With this dependency, you have also access to [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations).***
