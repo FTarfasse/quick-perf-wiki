@@ -41,6 +41,14 @@ Use [global annotations](#Recommended-global-annotations) or [method](#Recommend
 *The SQL annotations automatically detect if *Hibernate* or *Spring Boot* are used. You have no configuration to do.<br>
  If a SQL property is unrespected, the SQL annotation can suggest you solutions to fix it with these frameworks.*
 
+For example, the following message is diplayed when a N+1 select is presumed and Spring Data JPA is detected:
+```
+	* With Spring Data JPA, you may fix it by adding
+	@EntityGraph(attributePaths = { "..." }) on repository method.
+	https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.entity-graph
+```
+
+
 # Worflow with SQL annotations
 
 
