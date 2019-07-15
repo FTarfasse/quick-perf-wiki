@@ -38,6 +38,7 @@ In addition to the dependency mentioned in the [QuickPerfJUnitRunner](#QuickPerf
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-sql-annotations</artifactId>
   <version>1.0.0-RC2</version>
+  <scope>test</scope>
 </dependency>
 ```
 
