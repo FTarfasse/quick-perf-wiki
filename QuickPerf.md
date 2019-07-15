@@ -5,7 +5,7 @@ QuickPerf works with a JDK 1.7+.
 
 # Execute QuickPerf
 ## [With JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
-## [With Spring](https://github.com/quick-perf/doc/wiki/JUnit-4--&-Spring)
+## [With Spring](https://github.com/quick-perf/doc/wiki/Spring)
 ## Have clickable links in your IDE
 Sometimes, QuickPerf gives web or file ressources in console.<br>
 It is useful to have a plugin in your IDE allowing to open these links by a simple click.<br>
