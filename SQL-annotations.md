@@ -32,9 +32,9 @@ You can take care of several things about SQL requests to favor performance and 
 [**Debug annotations**](#Debug-annotations)<br>
 
 # Quick start
-[**Configuration with Spring](https://github.com/quick-perf/doc/wiki/Spring)
+[**Configuration with Spring**](https://github.com/quick-perf/doc/wiki/Spring)
 
-[**Configuration with JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
+[**Configuration with JUnit 4**](https://github.com/quick-perf/doc/wiki/JUnit-4)
 
 Use [global annotations](#Recommended-global-annotations) or [method](#Recommended-method-annotations) annotations. See [the workflow part](#Worflow-with-SQL-annotations) to see ways to work with SQL annotations.
 
