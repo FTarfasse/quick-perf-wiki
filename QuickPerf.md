@@ -7,10 +7,9 @@ QuickPerf works with a JDK 1.7+.
 ## [With JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
 ## [With Spring](https://github.com/quick-perf/doc/wiki/Spring)
 ## Have clickable links in your IDE
-Sometimes, QuickPerf gives web or file ressources in console.<br>
-It is useful to have a plugin in your IDE allowing to open these links by a simple click.<br>
-In IntelliJ, you can for example use [Awesome console](https://plugins.jetbrains.com/plugin/7677-awesome-console).
-<br>
+Sometimes, QuickPerf can display a web url or a file url in the console. It is useful to have a plugin in your IDE to open it by a simple click. In IntelliJ, you can for example use [Awesome console](https://plugins.jetbrains.com/plugin/7677-awesome-console).
+
+_Example of a clickable link with Awasome console_
 <p align="center"><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Web_ressource.PNG"></p>
 
 # Use QuickPerf annotations
