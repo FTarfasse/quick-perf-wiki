@@ -1,7 +1,7 @@
 # Outline
 [**QuickPerfSpringRunner**](#QuickPerfSpringRunner)<br>
 
-[**SQL annotations**](#SQL-annotations)<br>
+[**Configuration for SQL annotations**](#Configuration-for-SQL-annotations)<br>
 
 [**Spring Boot examples**](#Spring-Boot-examples)
 
@@ -15,7 +15,7 @@ To use it, following your Spring version, you have to add one of the dependencie
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-junit4-spring5</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0-RC2</version>
 </dependency>
 ```
 
@@ -24,7 +24,7 @@ To use it, following your Spring version, you have to add one of the dependencie
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-junit4-spring4</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0-RC2</version>
 </dependency>
 ```
 
@@ -33,11 +33,11 @@ To use it, following your Spring version, you have to add one of the dependencie
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-junit4-spring3</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0-RC2</version>
 </dependency>
 ```
 
-***With one of these dependencies, you have also access to [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations).***
+***With one of these dependencies, you have access to [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations) and [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations).***
 
 _QuickPerf annotations are executed after the loading of the SpringContext._ <br>
 So, for example, if you profile your JVM with [@ProfileJvm](https://github.com/quick-perf/doc/wiki/JVM-annotations#Profile-or-check-your-JVM), the profiling starts just after the loading of the Spring context.
@@ -53,18 +53,9 @@ So, for example, if you profile your JVM with [@ProfileJvm](https://github.com/q
 	}
 ```
 
-# SQL annotations
+# Configuration for SQL annotations
 
-In addition to the dependency mentioned in the [QuickPerfSpringRunner](#QuickPerfSpringRunner) part, you have to add the dependency below to can use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations).
-```xml
-<dependency>
-  <groupId>org.quickperf</groupId>
-  <artifactId>quick-perf-sql-annotations</artifactId>
-  <version>1.0-SNAPSHOT</version>
-</dependency>
-```
-
-You also have to supply an instance of *QuickPerfProxyBeanPostProcessor* to your spring context.<br>
+To can use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations), you have to supply an instance of *QuickPerfProxyBeanPostProcessor* to your spring context.<br>
 To do this, you can look at the Java code examples below or in [this Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples).<br> 
 
 After that, you can evaluate the SQL properties of the database repositories, the Spring services or the Spring controller.
