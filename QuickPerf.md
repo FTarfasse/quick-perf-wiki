@@ -35,5 +35,5 @@ An annotation having a test method scope overrides the configuration of the same
 Easily detect **N+1 select**, JDBC batching disabled and other things.
 
 # Disable QuickPerf
-To disable QuickPerf functionalities you can pass *-DdisableQuickPerf=true* to your JVM or use [annotations](https://github.com/quick-perf/doc/wiki/base-annotations) (@DisableQuickPerf, @FunctionalIteration, 
+To disable QuickPerf functionalities you can pass *-DdisableQuickPerf=true* to your JVM or use [some core annotations](https://github.com/quick-perf/doc/wiki/core-annotations) (@DisableQuickPerf, @FunctionalIteration, 
 @DisableGlobalAnnotations).
