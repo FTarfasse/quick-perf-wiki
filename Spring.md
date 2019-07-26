@@ -57,12 +57,12 @@ _QuickPerf annotations are executed after the loading of the SpringContext._ So,
 
 # Configuration for SQL annotations
 
-To can use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations), you have to supply an instance of *QuickPerfProxyBeanPostProcessor* to your spring context.<br>
-To do this, you can look at the Java code examples below or in [this Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples).<br> 
+To can use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations), you have to add a *QuickPerfProxyBeanPostProcessor* bean.<br>
+To do this, you can look at the Java code examples below or [this Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples).<br> 
 
 After that, you can evaluate the SQL properties of the database repositories, the Spring services or the Spring controller.
 
-*Java code examples with QuickPerfSpringRunner and a SQL annotation*
+*Addition of a QuickPerfProxyBeanPostProcessor bean with @Bean*
 ```java
 	import org.springframework.context.annotation.Bean;
 	import org.springframework.context.annotation.Configuration;
@@ -79,23 +79,9 @@ After that, you can evaluate the SQL properties of the database repositories, th
 	}
 ```
 	
-```java
-	import quickperf.spring.QuickPerfProxyBeanPostProcessor;
-        import quickperf.spring.QuickPerfSpringRunner;
-	
-         @SpringBootTest(classes = {FootballApplication.class}
-                       , webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
-         )
-	public class PlayerControllerTest {
-
-           @ExpectSelect(1)
-           @HeapSize(value = 50, unit = AllocationUnit.MEGA_BYTE)
-           @Test
-           public void should_find_all_players() {
-
-	   }
-
-       }
+*Addition of a QuickPerfProxyBeanPostProcessor bean in a Spring XML file*
+```xml
+<bean id="QuickPerfProxyBeanPostProcessor" class = "org.quickperf.spring.sql.QuickPerfProxyBeanPostProcessor" />
 ```
 
 # Spring Boot examples
