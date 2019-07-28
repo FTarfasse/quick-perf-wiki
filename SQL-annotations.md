@@ -1,6 +1,6 @@
 ***<p align="center">Take control of SQL requests sent to the database</p>***
 <br>
-You can take care of several things about SQL requests to favor performance and scalability at the beginning of application development.
+You can take care of several things about SQL requests to promote performance and scalability at the beginning of application development.
 * Limit JDBC roundtrips
   * Detect N+1 selects by using [@ExpectSelect](#ExpectSelect), [@ExpectMaxSelect](#ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams)<br> 
   * Detect JDBC batching disabled by using [@ExpectJdbcBatching](#ExpectJdbcBatching)
@@ -32,14 +32,34 @@ You can take care of several things about SQL requests to favor performance and 
 [**Debug annotations**](#Debug-annotations)<br>
 
 # Quick start
-[**Configuration with Spring**](https://github.com/quick-perf/doc/wiki/Spring)
+## Add configuration 
+### [Configuration for Spring](https://github.com/quick-perf/doc/wiki/Spring)
+### [Configuration for JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
 
-[**Configuration with JUnit 4**](https://github.com/quick-perf/doc/wiki/JUnit-4)
+## Check the configuration
+To check that the configuration is properly done, you can try to add an annotation on a test method in order to make it fail. For example, add @ExpectSelect(0) on a test method that is supposed to send one or several selects to the database.
+In case you seem to have twice more (or several times more) requests than expected, check that you don't have this messsage in the console:
+```
+[WARNING] QuickPerf has built several datasource proxies
+```
+For example, you may have declared twice a QuickPerfProxyBeanPostProcessor bean in your Spring configuration:
+```   
+    @Bean
+    public QuickPerfProxyBeanPostProcessor quickPerfProxyBeanPostProcessor1() {
+        return new QuickPerfProxyBeanPostProcessor();
+    }
 
+    @Bean
+    public QuickPerfProxyBeanPostProcessor quickPerfProxyBeanPostProcessor2() {
+        return new QuickPerfProxyBeanPostProcessor();
+    }
+```
+
+## Use SQL annotations
 Use [global annotations](#Recommended-global-annotations) or [method](#Recommended-method-annotations) annotations. See [the workflow part](#Worflow-with-SQL-annotations) to see ways to work with SQL annotations.
 
-*The SQL annotations automatically detect if *Hibernate* or *Spring Boot* are used. You have no configuration to do.<br>
- If a SQL property is unrespected, the SQL annotation can suggest you solutions to fix it with these frameworks.*
+## Automatic framework detection
+The SQL annotations automatically detect if *Hibernate* or *Spring* frameworks are used. You don't have any configuration to do. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it with these frameworks.
 
 For example, the following message is diplayed when a N+1 select is presumed and Spring Data JPA is detected:
 ```
