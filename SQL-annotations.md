@@ -38,7 +38,7 @@ You can take care of several things about SQL requests to promote performance an
 
 ## Check the configuration
 To check that the configuration is properly done, you can try to add an annotation on a test method in order to make it fail. For example, add @ExpectSelect(0) on a test method that is supposed to send one or several selects to the database.
-In case you seem to have twice more (or several times more) requests than expected, check that you don't have this messsage in the console:
+If you seem to have twice more (or several times more) requests than expected, check that you don't have this messsage in the console:
 ```
 [WARNING] QuickPerf has built several datasource proxies
 ```
