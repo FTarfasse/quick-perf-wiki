@@ -17,7 +17,7 @@ _Example of a clickable link with Awasome console_
 An annotation can have three scopes:
 * **Global scope** <br>
 An annotation having a global scope applies on each test.<br>
-You can define annotations with global scope by creating a class implementing SpecifiableAnnotations interface. This class has to be in org.quickperf package.
+You can define annotations with global scope by creating a class implementing SpecifiableGlobalAnnotations interface. This class has to be in org.quickperf package.
 * **Test class scope** <br>
 An annotation having a test class scope overrides the configuration of the same annotation with global scope.
 * **Test method scope** <br>
