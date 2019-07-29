@@ -1,8 +1,8 @@
-A class implementing SpecifiableAnnotations provides global annotations, that is to say annotations applying on each test.
+A class implementing SpecifiableGlobalAnnotations provides global annotations, that is to say annotations applying on each test.
 ```java
 package org.quickperf;
 
-import org.quickperf.config.SpecifiableAnnotations;
+import org.quickperf.config.SpecifiableGlobalAnnotations;
 import org.quickperf.sql.annotation.SqlAnnotationBuilder;
 
 import java.lang.annotation.Annotation;
@@ -10,7 +10,7 @@ import java.util.Collection;
 import java.util.Collections;
 
 /*The configuration class has to be in org.quickperf package*/
-public class QuickPerfConfiguration implements SpecifiableAnnotations {
+public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 
     public Collection<Annotation> specifyAnnotationsAppliedOnEachTest() {
 
@@ -36,7 +36,7 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 }
 ```
 
-**The class implementing SpecifiableAnnotations has to be in org.quickperf package.**
+**The class implementing SpecifiableGlobalAnnotations has to be in org.quickperf package.**
 
 <p><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Scopes.PNG"</p>
 
