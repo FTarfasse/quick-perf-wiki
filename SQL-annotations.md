@@ -75,12 +75,12 @@ For example, the following message is diplayed when a N+1 select is presumed and
 # Recommended global annotations
 
 ## Configure recommended global annotations
-A SqlAnnotationBuilder class is available to easily implement SpecifiableAnnotations.
+A SqlAnnotationBuilder class is available to easily implement SpecifiableGlobalAnnotations.
 
 ```java
 package org.quickperf;
 
-import org.quickperf.config.user.SpecifiableAnnotations;
+import org.quickperf.config.user.SpecifiableGlobalAnnotations;
 import org.quickperf.sql.annotation.SqlAnnotationBuilder;
 
 import java.lang.annotation.Annotation;
@@ -89,7 +89,7 @@ import java.util.Collection;
 
 import static org.quickperf.sql.annotation.SqlAnnotationBuilder.*;
 
-public class QuickPerfConfiguration implements SpecifiableAnnotations {
+public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 
     public Collection<Annotation> specifyAnnotationsAppliedOnEachTest() {
         return Arrays.asList(  disableSameSelectTypesWithDifferentParams() // can reveal some N+1 selects
@@ -102,7 +102,7 @@ public class QuickPerfConfiguration implements SpecifiableAnnotations {
 
 }
 ```
-**The class implementing SpecifiableAnnotations has to be in org.quickperf package.**
+**A class implementing SpecifiableGlobalAnnotations has to be in org.quickperf package.**
 
 ## @DisableExactlySameSelects
 
