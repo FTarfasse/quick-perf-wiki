@@ -63,7 +63,7 @@ Look at the example below.
         import java.util.HashMap;
         import java.util.Properties;
 
-        import org.quickperf.sql.QuickPerfSqlDataSourceBuilder;
+        import org.quickperf.sql.config.QuickPerfSqlDataSourceBuilder;
 
         import org.quickperf.sql.annotation.SelectNumber;
 
