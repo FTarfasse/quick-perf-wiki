@@ -17,7 +17,7 @@ To use it, you have to this dependency
   <scope>test</scope>
 </dependency>
 ```
-***With this dependency, you have also access to [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations).***
+With this dependency, you have access to [core](https://github.com/quick-perf/doc/wiki/Core-annotations) and [JVM](https://github.com/quick-perf/doc/wiki/JVM-annotations) annotations.
 
 *Java code example with QuickPerfSpringRunner*
 ```java
