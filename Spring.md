@@ -1,4 +1,4 @@
-# Outline
+# 🚩 Table of contents
 [**QuickPerfSpringRunner**](#QuickPerfSpringRunner)<br>
 
 [**Configuration for SQL annotations**](#Configuration-for-SQL-annotations)<br>
