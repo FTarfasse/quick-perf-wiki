@@ -1,7 +1,13 @@
+# 🚩 Table of contents
+[**@DisplayAppliedAnnotations**](#@DisplayAppliedAnnotations) <br><br>
+[**@DisplayAppliedAnnotations**](#@DisplayAppliedAnnotations) <br><br>
+[**@DisableGlobalAnnotations**](#@DisableGlobalAnnotations) <br><br>
+[**@@FunctionalIteration**](#@FunctionalIteration) <br><br>
+[**@DebugQuickPerf**](#@DebugQuickPerf) <br><br>
+
 ## @DisplayAppliedAnnotations
 Display applied QuickPerf annotations in console.<br><br>
 An annotation can have three [scopes](https://github.com/quick-perf/doc/wiki/QuickPerf#Use-QuickPerf-annotations) (*gobal*, *test class*, *test method*). This annotation is useful to see which are the annotations applied on a test method.
-
 
 ### Example
 In console:
