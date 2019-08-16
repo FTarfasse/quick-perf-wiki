@@ -1,9 +1,9 @@
 # 🚩 Table of contents
-[**QuickPerfSpringRunner**](#QuickPerfSpringRunner)<br>
+[QuickPerfSpringRunner](#QuickPerfSpringRunner)<br>
 
-[**Configuration for SQL annotations**](#Configuration-for-SQL-annotations)<br>
+[Configuration for SQL annotations](#Configuration-for-SQL-annotations)<br>
 
-[**Spring Boot examples**](#Spring-Boot-examples)
+[Spring Boot examples](#Spring-Boot-examples)
 
 # QuickPerfSpringRunner
 **QuickPerfSpringRunner** adds QuickPerf features to *SpringRunner* (also called *SpringJUnit4ClassRunner*). <br>
