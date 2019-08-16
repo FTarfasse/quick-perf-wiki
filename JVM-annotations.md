@@ -5,7 +5,7 @@
 [**Profile or check your JVM**](#Profile-or-check-your-JVM) <br> @ProfileJvm, @ExpectNoJvmIssue
 
 # One JVM by test method
-⚠️ *If you use one of the VM annotations, the test method is executed in a dedicated JVM.*
+⚠️ *If you use one of the JVM annotations, the test method is executed in a dedicated JVM.*
 
 # Configure your test JVM
 ## @HeapSize
