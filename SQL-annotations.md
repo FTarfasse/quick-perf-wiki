@@ -126,7 +126,7 @@ You may sometimes think that you are using JDBC batching but in fact not ([Paper
 
 You can decide to batch all inserts, updates, delete. Prior to Hibernate 5.2, batching, when enabled with a hibernate.jdbc.batch_size property stricly positive, was applied to all inserts, updates and deletes (from Hibernate 5.2 it is also possible to override the batch size value for a given session).
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type| Meaning           | Default value  |
 | -------- |:---:|:-----------------:|:--------------:|
 | batchSize| int |JDBC batch size   |      -         |
@@ -135,7 +135,7 @@ _batchSize is optional._
 
 A 0 batch size means that JDBC batching is disabled.
 
-### Example
+### :mag_right: Example
 ```java
     @ExpectJdbcBatching(batchSize = 30)
 ```
@@ -149,7 +149,7 @@ A 0 batch size means that JDBC batching is disabled.
 ## @EnableExactlySameSelects
 Cancel behavior of [@DisableExactlySameSelects](#DisableExactlySameSelects).
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter|Type    | Meaning                                    | Default value  |
 | --------|:------:|:-------------------------------------------|:--------------:|
 | comment | String |Comment why exactly same selects are enabled|      -         |
@@ -157,7 +157,7 @@ Cancel behavior of [@DisableExactlySameSelects](#DisableExactlySameSelects).
 ## @EnableSameSelectTypesWithDifferentParams
 Cancel behavior of [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams).
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter|Type    | Meaning                                                               | Default value  |
 | --------|:------:|:----------------------------------------------------------------------|:--------------:|
 | comment | String |Comment why exactly same select types with different parameters are enabled|      -         |
@@ -165,7 +165,7 @@ Cancel behavior of [@DisableSameSelectTypesWithDifferentParams](#DisableSameSele
 ## @EnableCrossJoin
 Cancel behavior of [@DisableCrossJoin](#DisableCrossJoin).
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter|Type    | Meaning                                    | Default value  |
 | --------|:------:|:-------------------------------------------|:--------------:|
 | comment | String |Comment why cross join is enabled   |      -         |
@@ -173,7 +173,7 @@ Cancel behavior of [@DisableCrossJoin](#DisableCrossJoin).
 ## @EnableLikeWithLeadingWildcard
 Cancel behavior of [@DisableLikeWithLeadingWildcard](#DisableLikeWithLeadingWildcard).
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter|Type    | Meaning                                         | Default value  |
 | --------|:------:|:------------------------------------------------|:--------------:|
 | comment | String |Comment why like with leading wildcard is enabled|      -         |
@@ -185,12 +185,12 @@ Indicate disabling of JDBC batching.
 
 ## @ExpectSelect
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Number of select statements|        0       |
 
-### Example
+### :mag_right: Example
 ```java
     @ExpectSelect(1)
     @Test
@@ -200,12 +200,12 @@ Indicate disabling of JDBC batching.
 ```
 ## @ExpectMaxSelect
 With this annotation, the test will fail if the number of SELECT statements is greater than expected. 
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Maximum number of selects  |        0       |
 
-### Example
+### :mag_right: Example
 ```java
     @ExpectMaxSelect(1)
     @Test
@@ -220,12 +220,12 @@ Verifies the number of selected columns. <br>
 
 **_[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F)_**
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type| Meaning                     | Default value  |
 | --------  |:---:|:--------------------------:|:--------------:|
 | value     | int |Number of selected columns  |        0       |
 
-### Example
+### :mag_right: Example
 ```java
     @ExpectSelectedColumn(3)
 ```
@@ -236,31 +236,32 @@ With this annotation, the test will fail if the number of returned columns is gr
 
 **_[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns-%3F)_**
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type| Meaning                             | Default value  |
 | --------  |:---:|:----------------------------------:|:--------------:|
 | value     | int |Maximum number of returned columns  |        0       |
-### Example
+### :mag_right: Example
 ```java
     @ExpectMaxSelectedColumn(5)
 ```
 
 ## @ExpectInsert
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Number of insert statements  |        0       |
 
 ## @ExpectUpdate
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Number of update statements|        0       |
 
 ## @ExpectDelete
 
+### :wrench: Parameters 
 |Parameter  |Type| Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Number of delete statements|        0       |
