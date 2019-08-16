@@ -1,7 +1,7 @@
 # 🚩 Table of contents
-[**QuickPerfJUnitRunner**](#QuickPerfJUnitRunner)<br>
+[QuickPerfJUnitRunner](#QuickPerfJUnitRunner)<br>
 
-[**SQL annotations**](#SQL-annotations)<br>
+[SQL annotations](#SQL-annotations)<br>
 
 # QuickPerfJUnitRunner
 
