@@ -1,8 +1,13 @@
-![](https://pbs.twimg.com/profile_banners/926219963333038086/1518645789)
+<div align="center">
+<img src="https://pbs.twimg.com/profile_banners/926219963333038086/1518645789" alt="QuickPerf"/>
+</div><br>
 
-**QuickPerf** is a testing library for Java providing annotations to quickly evaluate some performance properties.<br><br>
+>***QuickPerf is a testing library for Java providing annotations to quickly evaluate some performance properties.***
+
+<br>
 QuickPerf works with a JDK 1.7+.
 <br><br>
+
 :octocat: Github repository [here](https://github.com/quick-perf/quickperf)
 
 # Execute QuickPerf
