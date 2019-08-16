@@ -1,9 +1,11 @@
-*With JVM annotations, the test method is executed in a dedicated JVM.*
-
 # 🚩 Table of contents
+[**One JVM by test method**](#One-JVM-by-test-method) <br><br>
 [**Configure your test JVM**](#Configure-your-test-JVM) <br> @HeapSize, @Xms, @Xmx, @JvmOptions <br><br>
 [**Verify heap allocation**](#Verify-heap-allocation)<br> @MeasureHeapAllocation, @ExpectMaxHeapAllocation, @ExpectNoHeapAllocation <br><br>
 [**Profile or check your JVM**](#Profile-or-check-your-JVM) <br> @ProfileJvm, @ExpectNoJvmIssue
+
+# One JVM by test method
+⚠️ *If you use one of the VM annotations, the test method is executed in a dedicated JVM.*
 
 # Configure your test JVM
 ## @HeapSize
