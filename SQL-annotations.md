@@ -267,7 +267,7 @@ With this annotation, the test will fail if the number of returned columns is gr
 | value    | int |Number of delete statements|        0       |
 
 # Debug annotations
-## [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/wiki/Base-annotations)
+## [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/wiki/Core-annotations#DisplayAppliedAnnotations)
 
 ## @DisplaySqlOfTestMethodBody
 With this annotation the SQL statements are diplayed in the console during the execution of the test method body. <br>
