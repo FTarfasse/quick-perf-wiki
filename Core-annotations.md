@@ -9,7 +9,7 @@
 Display applied QuickPerf annotations in console.<br><br>
 An annotation can have three [scopes](https://github.com/quick-perf/doc/wiki/QuickPerf#Use-QuickPerf-annotations) (*gobal*, *test class*, *test method*). This annotation is useful to see which annotations are applied on a test method.
 
-### Example
+### :mag_right: Example
 In console
 ```
 [QUICK PERF] Applied annotations: @JdbcBatches(batchSize=30), @DisableSameSelectTypesWithDifferentParams
@@ -19,7 +19,7 @@ In console
 ## @DisableGlobalAnnotations
 Disable global annotations on test method or test class.
 
-### Parameters 
+### :wrench:  Parameters 
 |Parameter|Type    | Meaning                                   | Default value  |
 | --------|:------:|:----------------------------------------  |:--------------:|
 | comment | String |Comment why global annotations are disabled|      -         |
@@ -29,7 +29,7 @@ Disable global annotations on test method or test class.
 Disable QuickPerf features.<br><br>
 [This worflow example](SQL-annotations#Worflow-with-SQL-annotations) illustrates how to use  @DisableQuickPerf with SQL annotations.
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter|Type    | Meaning                         | Default value  |
 | --------|:------:|:--------------------------------|:--------------:|
 | comment | String |Comment why QuickPerf is disabled|      -         |
