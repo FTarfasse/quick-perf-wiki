@@ -1,5 +1,6 @@
-***<p align="center">Take control of SQL statements sent to the database</p>***
+>**<p align="center">Take control of SQL statements sent to the database</p>**
 <br>
+
 You can take care of several things about SQL statements to promote performance and scalability at the beginning of application development.
 * Limit JDBC roundtrips
   * Detect N+1 selects by using [@ExpectSelect](#ExpectSelect), [@ExpectMaxSelect](#ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams)<br> 
