@@ -10,12 +10,12 @@
 # Configure your test JVM
 ## @HeapSize
 With this annotation, the test is executed in a specific JVM having the given heap size.
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type           | Meaning                  | Default value  |
 | -------- |:--------------:|:------------------------:| :-------------:|
 | value    | long           |Heap size value (Xms=Xmx) |        -       |
 | unit     | AllocationUnit |Allocation unit           |        -       |
-### Example
+### :mag_right: Example
  ```java
    @HeapSize(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
@@ -23,24 +23,24 @@ With this annotation, the test is executed in a specific JVM having the given he
 See [@Xmx](#Xmx).
 
 ## @Xms
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type           | Meaning                            | Default value |
 | -------- |:--------------:|:----------------------------------:|:-------------:|
 | value    | long           |Initial and minimum heap size value |        -      |
 | unit     | AllocationUnit |Allocation unit                     |        -      |
-### Example
+### :mag_right: Example
 With this annotation, the test is executed in a specific JVM having the given initial and minimum heap size value.
   ```java
    @Xms(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
 ## @Xmx
 With this annotation, the test is executed in a specific JVM having the given maximum heap size value.
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type           | Meaning                 | Default value |
 | -------- |:--------------:|:-----------------------:|:-------------:|
 | value    | long           |Maximum heap size value  |        -      |
 | unit     | AllocationUnit |Allocation unit          |        -      |
-### Example
+### :mag_right: Example
   ```java
    @Xmx(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
@@ -50,7 +50,7 @@ The principle of a *threshold test* is to compare a value in the current build t
 
 ## @JvmOptions
 With this annotation, the test is executed in a specific JVM having the given JVM options.
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type           | Meaning       | Default value |
 | -------- |:--------------:|:-------------:|:-------------:|
 | value    | String           |JVM options  |      -        |
@@ -69,7 +69,7 @@ You can  for example use @MeasureHeapAllocation and @ExpectMaxHeapAllocation to 
 You can measure allocation using this annotation. <br><br>
 The measured allocation is displayed in the console.
 
-### Example
+### :mag_right: Example
 ```java
 @RunWith(QuickPerfJUnitRunner.class)
 public class ClassWithMethodAnnotatedWithMeasureAllocation {
@@ -97,12 +97,12 @@ Measured heap allocation: 440.0 bytes
 ## @ExpectMaxHeapAllocation
 With this annotation, the test will fail if heap allocation is greater than expected.
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type           | Meaning          | Default value  |
 | -------- |:--------------:|:----------------:| :-------------:|
 | value    | long           |Allocation value  |        -       |
 | unit     | AllocationUnit |Allocation unit   |        -       |
-### Example
+### :mag_right: Example
  ```java
     @ExpectMaxHeapAllocation(value = 440, unit = AllocationUnit.BYTE)
     @Test
@@ -122,7 +122,7 @@ To profile JVM with Java Flight Recorder (JFR).<br>
 
 The JFR file location is shown in the console. You can open it with Java Mission Control.
 <br>
-
+### :mag_right: Example
 ```
 [QUICK PERF] JVM was profiled with Java File Recorder (JFR).
 The recording file can be found here: C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-46868616\jvm-profiling.jfr
@@ -140,7 +140,7 @@ Things like significant primitives to object conversions can be detected:
 <img src="https://github.com/quick-perf/doc/blob/master/doc/images/JMC-PrimitiveToObjectConversion.PNG" width="944" heigth="191"></p>
 With this annotation you can also detect that most of the time is spent to do garbage collection in your test.
 
-### Parameters 
+### :wrench: Parameters 
 |Parameter  |Type           | Meaning           | Default value |
 | -------- |:--------------:|:-----------------:|:-------------:|
 | score    | int            |Rule score (<=100) |      60       |
