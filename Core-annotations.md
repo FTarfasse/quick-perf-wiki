@@ -10,7 +10,6 @@ Display applied QuickPerf annotations in console.<br><br>
 An annotation can have three [scopes](https://github.com/quick-perf/doc/wiki/QuickPerf#Use-QuickPerf-annotations) (*gobal*, *test class*, *test method*). This annotation is useful to see which annotations are applied on a test method.
 
 ### :mag_right: Example
-In console
 ```
 [QUICK PERF] Applied annotations: @JdbcBatches(batchSize=30), @DisableSameSelectTypesWithDifferentParams
              Class specifying global annotations: org.quickperf.QuickPerfConfiguration
