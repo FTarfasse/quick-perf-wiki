@@ -18,7 +18,7 @@ You can take care of several things about SQL statements to promote performance 
 
 ***Do little configuration described in [**Quick start**](#Quick-start) before using SQL annotations.***
 
-# Outline
+# 🚩 Table of contents
 [**Quick start**](#Quick-start)<br>
 
 [**Worflow with SQL annotations**](#Worflow-with-SQL-annotations)<br>
