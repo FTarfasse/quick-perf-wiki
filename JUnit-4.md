@@ -1,4 +1,4 @@
-# Outline
+# 🚩 Table of contents
 [**QuickPerfJUnitRunner**](#QuickPerfJUnitRunner)<br>
 
 [**SQL annotations**](#SQL-annotations)<br>
