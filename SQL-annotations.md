@@ -5,6 +5,7 @@
 [Quick start](#Quick-start)<br>
 
 [Interesting checks](#Interesting-checks)<br>
+
 [Worflow with SQL annotations](#Worflow-with-SQL-annotations)<br>
 
 [Recommended global annotations](#Recommended-global-annotations)<br>
