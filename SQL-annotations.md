@@ -96,7 +96,7 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
     }
 }
 ```
-**A class implementing SpecifiableGlobalAnnotations has to be in org.quickperf package.**
+***The class implementing SpecifiableGlobalAnnotations has to be in org.quickperf package.***
 
 ## @DisableExactlySameSelects
 
