@@ -21,13 +21,13 @@
     <img src="https://travis-ci.com/quick-perf/quickperf.svg?branch=master"
          alt = "Build Status">
   </a>
+  <a href="https://gitter.im/quickperf">
+      <img src="https://img.shields.io/gitter/room/quick-perf/quickperf?color=orange"
+           alt = "Gitter">
+    </a>
 </p>
 
 <p align="center">
-  <a href="https://gitter.im/quickperf">
-    <img src="https://img.shields.io/gitter/room/quick-perf/quickperf?color=orange"
-         alt = "Gitter">
-  </a>
   <a href="https://twitter.com/quickperf">
     <img src="https://img.shields.io/twitter/follow/QuickPerf.svg?label=Follow%20%40QuickPerf&style=social"
          alt = "Twitter Follow">
