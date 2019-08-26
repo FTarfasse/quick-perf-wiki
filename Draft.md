@@ -8,7 +8,7 @@
 </blockquote>
 </div>
 
-<p align="left">
+<p align="center">
   <a href="https://search.maven.org/search?q=org.quickperf">
     <img src="https://maven-badges.herokuapp.com/maven-central/org.quickperf/quick-perf/badge.svg"
          alt="Maven Central">
@@ -21,6 +21,9 @@
     <img src="https://travis-ci.com/quick-perf/quickperf.svg?branch=master"
          alt = "Build Status">
   </a>
+</p>
+
+<p align="center">
   <a href="https://gitter.im/quickperf">
     <img src="https://img.shields.io/gitter/room/quick-perf/quickperf?color=orange"
          alt = "Gitter">
