@@ -2,9 +2,11 @@ In this page, you will learn the principles to create a QuickPerf annotation fro
 
 # 🚩 Table of contents
 [Principles to create a QuickPerf annotation](#Principles-to-create-a-QuickPerf-annotation)
-* [Declare your SPI implementation](#Declare-your-SPI-implementation)
-* [QuickPerfConfigLoader implementation](#QuickPerfConfigLoader-implementation)
-* [Configuration of an annotation](#Configuration-of-an-annotation)
+* [Declare a SPI implementation](#Declare-a-SPI-implementation)
+* [Implement QuickPerfConfigLoader](#Implement-QuickPerfConfigLoader)
+* [Configuration an annotation](#Configure-an-annotation)
+
+[Principles to create a QuickPerf annotation](#Principles-to-create-a-QuickPerf-annotation)
 
 [Define your custom annotations in a specific Maven module](#Define-your-custom-annotations-in-a-specific-Maven-module)
 
@@ -17,7 +19,7 @@ In this page, you will learn the principles to create a QuickPerf annotation fro
 
 *The code examples below come from [sql-annotations Maven module](https://github.com/quick-perf/quickperf/tree/master/sql-annotations).*
 
-## Declare your SPI implementation
+## Declare a SPI implementation
 QuickPerf uses the Service Provider Interface ([SPI](https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html)) to dynamically load the configurations of annotations.
 
 A file named *org.quickperf.config.library.QuickPerfConfigLoader* has to be in src/main/resources/META-INF/services:
@@ -27,7 +29,7 @@ A file named *org.quickperf.config.library.QuickPerfConfigLoader* has to be in s
 
 The Content of org.quickperf.config.library.QuickPerfConfigLoader file is here: ```org.quickperf.sql.config.library.SqlConfigLoader```
 
-## QuickPerfConfigLoader implementation 
+## Implement QuickPerfConfigLoader
 
 An implementation of QuickPerfConfigLoader has to define three methods:
 * *loadAnnotationConfigs()*: returns the configurations of annotations
@@ -63,7 +65,7 @@ public class SqlConfigLoader implements QuickPerfConfigLoader {
 }
 ```
 
-## Configuration of an annotation
+## Configuration an annotation
 
 The configuration of an annotation is defined with the help of an instance of AnnotationConfig.Builder().
 
@@ -95,7 +97,7 @@ An example for @Xmx:
 The code of XmxAnnotToJvmOptionConverter can be found [here](https://github.com/quick-perf/quickperf/blob/master/jvm-annotations/src/main/java/org/quickperf/jvm/config/library/XmxAnnotToJvmOptionConverter.java).
 
 # Define your custom annotations in a specific Maven module
-You can develop custom QuickPerf annotations and gather them in a Maven module. To use them, you simply have to use this Maven dependency together with one QuickPerf dependency (see [here](https://github.com/quick-perf/doc/wiki/JUnit-4) for JUnit4 or [here](https://github.com/quick-perf/doc/wiki/Spring) for Spring). Don't hesitate to propose a [feature request](https://github.com/quick-perf/quickperf/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=) and a PR to integrate your annotations in the QuickPerf project!
+You can develop custom QuickPerf annotations and gather them in a Maven module. To develop the annotations, you can follow the [principles described above](#Principles-to-create-a-QuickPerf-annotation). To use them, you simply have to use the developed Maven dependency together with one QuickPerf dependency (see [here](https://github.com/quick-perf/doc/wiki/JUnit-4) for JUnit4 or [here](https://github.com/quick-perf/doc/wiki/Spring) for Spring). Don't hesitate to propose a [feature request](https://github.com/quick-perf/quickperf/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=) and a PR to integrate your annotations in the QuickPerf project!
 
 
 # Test your new annotation
