@@ -8,7 +8,7 @@
 </blockquote>
 </div>
 
-<p align="center">
+<p align="left">
   <a href="https://search.maven.org/search?q=org.quickperf">
     <img src="https://maven-badges.herokuapp.com/maven-central/org.quickperf/quick-perf/badge.svg"
          alt="Maven Central">
