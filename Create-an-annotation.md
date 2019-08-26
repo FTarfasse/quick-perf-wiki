@@ -4,11 +4,11 @@ In this page, you will learn the principles to create a QuickPerf annotation fro
 [Principles to create a QuickPerf annotation](#Principles-to-create-a-QuickPerf-annotation)
 * [Declare a SPI implementation](#Declare-a-SPI-implementation)
 * [Implement QuickPerfConfigLoader](#Implement-QuickPerfConfigLoader)
-* [Configuration an annotation](#Configure-an-annotation)
+* [Define the configuration of an annotation](#Define-the-configuration-of-a-given-annotation)
 
-[Principles to create a QuickPerf annotation](#Principles-to-create-a-QuickPerf-annotation)
+[Create a core, a JVM or a SQL annotation](#Create-a-core-a-JVM-or-a-SQL-annotation)
 
-[Define your custom annotations in a specific Maven module](#Define-your-custom-annotations-in-a-specific-Maven-module)
+[Define custom annotations in a specific Maven module](#Define-custom-annotations-in-a-specific-Maven-module)
 
 [Test your new annotation](#Test-your-new-annotation)
 * [Test your new annotation with JUnit 4](#Test-your-new-annotation-with-JUnit-4)
@@ -16,6 +16,8 @@ In this page, you will learn the principles to create a QuickPerf annotation fro
 [Debug an annotation](#Debug-an-annotation)
 
 # Principles to create a QuickPerf annotation
+
+⚠️ *You can follow all the instructions below if you create a new annotation type (that is to say not a core, a JVM or a SQL annotation) or if [you define annotations in a specific Maven module](#Define-custom-annotations-in-a-specific-Maven-module). Otherwise, you can read this part and follow the instructions given [here](#Create-a-core-a-JVM-or-a-SQL-annotation).*
 
 *The code examples below come from [sql-annotations Maven module](https://github.com/quick-perf/quickperf/tree/master/sql-annotations).*
 
@@ -65,8 +67,7 @@ public class SqlConfigLoader implements QuickPerfConfigLoader {
 }
 ```
 
-## Configuration an annotation
-
+## Define the configuration of a given annotation
 The configuration of an annotation is defined with the help of an instance of AnnotationConfig.Builder().
 
 ```java
@@ -96,7 +97,15 @@ An example for @Xmx:
 ```
 The code of XmxAnnotToJvmOptionConverter can be found [here](https://github.com/quick-perf/quickperf/blob/master/jvm-annotations/src/main/java/org/quickperf/jvm/config/library/XmxAnnotToJvmOptionConverter.java).
 
-# Define your custom annotations in a specific Maven module
+# Create a core, a JVM or a SQL annotation
+You need to:
+1) [Define the configuration of the annotation](#Define-the-configuration-of-a-given-annotation)
+2) Declare a new annotation configuration in loadAnnotationConfigs() method of [QuickPerfConfigLoader implementation](#Implement-QuickPerfConfigLoader)
+3) If you have defined a new recorder type, you have to complete the loadRecorderExecutionOrdersBeforeTestMethod()
+loadRecorderExecutionOrdersAfterTestMethod() methods of [QuickPerfConfigLoader implementation](#Implement-QuickPerfConfigLoader)
+
+
+# Define custom annotations in a specific Maven module
 You can develop custom QuickPerf annotations and gather them in a Maven module. To develop the annotations, you can follow the [principles described above](#Principles-to-create-a-QuickPerf-annotation). To use them, you simply have to use the developed Maven dependency together with one QuickPerf dependency (see [here](https://github.com/quick-perf/doc/wiki/JUnit-4) for JUnit4 or [here](https://github.com/quick-perf/doc/wiki/Spring) for Spring). Don't hesitate to propose a [feature request](https://github.com/quick-perf/quickperf/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=) and a PR to integrate your annotations in the QuickPerf project!
 
 
