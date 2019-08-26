@@ -2,7 +2,12 @@
 <img src="https://pbs.twimg.com/profile_banners/926219963333038086/1518645789" alt="QuickPerf"/>
 </div><br>
 
-<br>
+<div align="left">
+<blockquote>
+<p><h3>QuickPerf is a testing library for Java providing annotations to quickly evaluate some performance properties.</h3></p>
+</blockquote>
+</div>
+
 <p align="center">
   <a href="https://search.maven.org/search?q=org.quickperf">
     <img src="https://maven-badges.herokuapp.com/maven-central/org.quickperf/quick-perf/badge.svg"
@@ -30,9 +35,6 @@
   </a>
 </p>
 
->***QuickPerf is a testing library for Java providing annotations to quickly evaluate some performance properties.***
-
-
 <p align="center">
   <a href="#Demo">Demo</a> •
   <a href="#Examples">Examples</a> •
@@ -46,15 +48,7 @@
   <a href="#Licence">Licence</a>
 </p>
 
-
-
-
-
-<h4 align="center">QuickPerf is a testing library for Java providing annotations to quickly evaluate some performance properties.</h4>
-
-
 https://github.com/amitmerchant1990/electron-markdownify/blob/master/README.md
-
 
 ## ✨ Demo
 
@@ -157,3 +151,5 @@ Many thanks Zenika for sponsoring this project! <br><br>
 
 ## 📜 License
 [Apache License 2.0](/LICENSE.txt)
+
+
