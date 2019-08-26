@@ -38,21 +38,6 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="#Demo">Demo</a> •
-  <a href="#Examples">Examples</a> •
-  <a href="#Key-features">Key Features</a> •
-  <a href="#Documentation">Documentation</a> •
-  <a href="#Something-to-ask-us?">Something to ask us?</a> •
-  <a href="#Show-your-support">Show your support</a> •
-  <a href="#Contributing">Contributing</a> •
-  <a href="#Contributors">Contributors</a> •
-  <a href="#Sponsors">Sponsors</a> •
-  <a href="#Licence">Licence</a>
-</p>
-
-https://github.com/amitmerchant1990/electron-markdownify/blob/master/README.md
-
 ## ✨ Demo
 
 2 animations GIF
@@ -153,3 +138,18 @@ Many thanks Zenika for sponsoring this project! <br><br>
 
 ## 📜 License
 [Apache License 2.0](/LICENSE.txt)
+
+<p align="center">
+  <a href="#Demo">Demo</a> •
+  <a href="#Examples">Examples</a> •
+  <a href="#Key-features">Key Features</a> •
+  <a href="#Documentation">Documentation</a> •
+  <a href="#Something-to-ask-us?">Something to ask us?</a> •
+  <a href="#Show-your-support">Show your support</a> •
+  <a href="#Contributing">Contributing</a> •
+  <a href="#Contributors">Contributors</a> •
+  <a href="#Sponsors">Sponsors</a> •
+  <a href="#Licence">Licence</a>
+</p>
+
+https://github.com/amitmerchant1990/electron-markdownify/blob/master/README.md
