@@ -140,9 +140,8 @@ Many thanks to all our contributors!
             <a href="https://github.com/quick-perf/quickperf/commits?author=ablanchard" title="Code">💻</a>
         </td>
     </tr>
-</table>[emoji key](https://allcontributors.org/docs/en/emoji-key)
-
-[emoji key](https://allcontributors.org/docs/en/emoji-key)
+</table>
+<a href = "https://allcontributors.org/docs/en/emoji-key">emoji key</a>
 
 ## ❤ Sponsors
 
@@ -151,5 +150,3 @@ Many thanks Zenika for sponsoring this project! <br><br>
 
 ## 📜 License
 [Apache License 2.0](/LICENSE.txt)
-
-
