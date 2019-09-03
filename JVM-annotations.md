@@ -139,7 +139,20 @@ Based on the profiling, some [JMC rules](http://hirt.se/blog/?p=920) are evaluat
 Things like significant primitives to object conversions can be detected:
 <p align="center">
 <img src="https://github.com/quick-perf/doc/blob/master/doc/images/JMC-PrimitiveToObjectConversion.PNG" width="944" heigth="191"></p>
-With this annotation you can also detect that most of the time is spent to do garbage collection in your test.
+
+:bulb: With this annotation you can also detect that most of the time is spent to do garbage collection in your test.
+
+:bulb: If you have the follwing message in the console
+```
+Rule: Stackdepth Setting
+Severity: WARNING
+Score: 97
+Message: Some stack traces were truncated in this recording.
+```
+then you can increase the stack depth value in this way:
+```java
+@JvmOptions("-XX:FlightRecorderOptions=stackdepth=128")
+```
 
 ### :wrench: Parameters 
 |Parameter  |Type           | Meaning           | Default value |
