@@ -59,6 +59,8 @@ The following annotations use ByteWatcher under the hood:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
 
+*They measure heap allocation of the thread running the method annotated @Test*.
+
 You can  for example use @MeasureHeapAllocation and @ExpectMaxHeapAllocation to check the heap allocation cost of a large data structure (containing 1 000 000 elements for example) .<br>
 
 @ExpectNoHeapAllocation can be used to verify that the tested code does not allocate on heap.
