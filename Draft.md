@@ -66,15 +66,11 @@
 ```java
 @JvmOptions("-XX:FlightRecorderOptions=stackdepth=128")
 ```
-📙 [All the JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations)
-
-:mag_right: [Heap allocation of Apache Maven](https://github.com/quick-perf/maven-test-bench)
+📙 [All the JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations) &nbsp;&nbsp; :mag_right: [Heap allocation of Apache Maven](https://github.com/quick-perf/maven-test-bench)
 
 👉 **SQL annotations**
 
-📙 [All the SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations)
-
-:mag_right: [QuickPerf in a Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples)
+📙 [All the SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations) &nbsp;&nbsp; :mag_right: [QuickPerf in a Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples)
 
 ## 📙 Documentation
 The full documentation is available here
