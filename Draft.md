@@ -52,7 +52,8 @@
 
 ---
 
-## ![](https://github.com/quick-perf/doc/blob/master/doc/images/quickperf-icone.ico) Usage
+<h2 id = "uage"><img src="https://github.com/quick-perf/doc/blob/master/doc/images/quickperf-icone.ico"/>Usage</h2>
+
 #### ✨ JVM annotations
 
 ```java
