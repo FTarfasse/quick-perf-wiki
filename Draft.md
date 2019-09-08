@@ -45,7 +45,7 @@
 
 <p align="center">
   <a href="#Usage">Usage</a> •
-  <a href="#doc>Documentation</a> •
+  <a href="#doc">Documentation</a> •
   <a href="#Something-to-ask-us?">Something to ask us?</a>
 </p>
 <p align="center">
