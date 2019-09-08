@@ -52,7 +52,7 @@
 
 ---
 
-<h2 id = "uage"><img src="https://github.com/quick-perf/doc/blob/master/doc/images/quickperf-icone.ico"/>Usage</h2>
+<h2 id = "usage"><img src="https://github.com/quick-perf/doc/blob/master/doc/images/quickperf-icone.ico"/>&nbsp;Usage</h2>
 
 #### ✨ JVM annotations
 
