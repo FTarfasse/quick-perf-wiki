@@ -151,6 +151,7 @@ Many thanks Zenika for sponsoring this project! <br><br>
 [![with love by zenika](https://img.shields.io/badge/With%20%E2%9D%A4%EF%B8%8F%20by-Zenika-b51432.svg)](https://oss.zenika.com)
 
 <h2 id="license">📜 License</h2>
+
 [Apache License 2.0](/LICENSE.txt)
 
 
