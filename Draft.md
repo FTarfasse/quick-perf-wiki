@@ -31,26 +31,6 @@
       <img src="https://img.shields.io/twitter/follow/QuickPerf.svg?label=Follow%20%40QuickPerf&style=social"
            alt = "Twitter Follow">
     </a>
-    <a href="https://twitter.com/intent/tweet?text=You%20can%20use%20%40QuickPerf%20to%20quickly%20evaluate%20some%20Java%20performance%20properties%0Ahttps%3A%2F%2Fgithub.com%2Fquick-perf%2Fquickperf%0A">
-      <img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Tweet%20to%20support%20QuickPerf"
-           alt = "Tweet">
-    </a>
-</p>
-
-<p align="center">
-  <a href="https://gitter.im/quickperf">
-      <img src="https://img.shields.io/gitter/room/quick-perf/quickperf?color=orange"
-           alt = "Gitter">
-  </a>
-  <a href="https://twitter.com/quickperf">
-    <img src="https://img.shields.io/twitter/follow/QuickPerf.svg?label=Follow%20%40QuickPerf&style=social"
-         alt = "Twitter Follow">
-  </a>
-  <a href="https://twitter.com/intent/tweet?text=You%20can%20use%20%40QuickPerf%20to%20quickly%20evaluate%20some%20Java%20performance%20properties%0Ahttps%3A%2F%2Fgithub.com%2Fquick-perf%2Fquickperf%0A">
-    <img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Tweet%20to%20support%20QuickPerf"
-         alt = "Tweet">
-  </a>
-
 </p>
 
 ---
