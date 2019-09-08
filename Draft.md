@@ -70,7 +70,7 @@
 
 📙 [All the SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations) &nbsp;&nbsp; :mag_right: [QuickPerf in a Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples)
 
-## 📙 Documentation {#custom-id}
+## 📙 Documentation {#1}
 The full documentation is available here
 
 ## ❓ Something to ask us?
