@@ -61,7 +61,7 @@
 ---
 
 ## ![](https://github.com/quick-perf/doc/blob/master/doc/images/quickperf-icone.ico) Usage
-**JVM annotations**
+👉 **JVM annotations**
 
 ```java
 @JvmOptions("-XX:FlightRecorderOptions=stackdepth=128")
@@ -71,6 +71,7 @@
 :mag_right: [Heap allocation of Apache Maven](https://github.com/quick-perf/maven-test-bench)
 
 👉 **SQL annotations**
+
 📙 [All the SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations)
 
 :mag_right: [QuickPerf in a Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples)
