@@ -49,6 +49,7 @@
   <a href="#sponsors">Sponsors</a> •
   <a href="#license">Licence</a>
 </p>
+
 ---
 
 ## ![](https://github.com/quick-perf/doc/blob/master/doc/images/quickperf-icone.ico) Usage
