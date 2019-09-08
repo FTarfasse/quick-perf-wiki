@@ -89,7 +89,7 @@ Suggest improvements on documentation
 
 Don't hesitate!
 
-<h2 id = "contributors"👏 Contributors</h2>
+<h2 id = "contributors">👏 Contributors</h2>
 
 Many thanks to all our contributors! 
 
