@@ -45,7 +45,7 @@
 
 <p align="center">
   <a href="#Usage">Usage</a> •
-  <a href="#Documentation">Documentation</a> •
+  <a href="#1">Documentation</a> •
   <a href="#Something-to-ask-us?">Something to ask us?</a>
 </p>
 <p align="center">
@@ -70,7 +70,7 @@
 
 📙 [All the SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations) &nbsp;&nbsp; :mag_right: [QuickPerf in a Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples)
 
-## 📙 Documentation
+## 📙 Documentation {#custom-id}
 The full documentation is available here
 
 ## ❓ Something to ask us?
@@ -144,10 +144,9 @@ Many thanks to all our contributors!
 <a href = "https://allcontributors.org/docs/en/emoji-key">emoji key</a>
 
 ## ❤ Sponsors
+
 Many thanks Zenika for sponsoring this project! <br><br>
 [![with love by zenika](https://img.shields.io/badge/With%20%E2%9D%A4%EF%B8%8F%20by-Zenika-b51432.svg)](https://oss.zenika.com)
-
-## Sponsors
 
 ## 📜 License
 [Apache License 2.0](/LICENSE.txt)
