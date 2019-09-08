@@ -46,10 +46,10 @@
 <p align="center">
   <a href="#Usage">Usage</a> •
   <a href="#Documentation">Documentation</a> •
-  <a href="#Something-to-ask-us?">Something to ask us?</a> •
-  <a href="#Show-your-support">Show your support</a> •
+  <a href="#Something-to-ask-us?">Something to ask us?</a>
 </p>
 <p align="center">
+  <a href="#Show-your-support">Show your support</a> •
   <a href="#Contributing">Contributing</a> •
   <a href="#Contributors">Contributors</a> •
   <a href="#Sponsors">Sponsors</a> •
