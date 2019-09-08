@@ -74,6 +74,7 @@
 The full documentation is available here
 
 <h2 id="question">❓ Something to ask us?</h2>
+
 💬 Want to chat with us? Join us on [gitter](https://gitter.im/quickperf)
 
 :octocat: You prefer to use a Github issue to ask a question? [Create a question issue](https://github.com/quick-perf/quickperf/issues/new?assignees=&labels=question&template=question.md&title=)
