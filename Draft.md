@@ -46,14 +46,14 @@
 <p align="center">
   <a href="#Usage">Usage</a> •
   <a href="#doc">Documentation</a> •
-  <a href="#Something-to-ask-us?">Something to ask us?</a>
+  <a href="#question">Something to ask us?</a>
 </p>
 <p align="center">
-  <a href="#Show-your-support">Show your support</a> •
-  <a href="#Contributing">Contributing</a> •
-  <a href="#Contributors">Contributors</a> •
-  <a href="#Sponsors">Sponsors</a> •
-  <a href="#Licence">Licence</a>
+  <a href="#support">Show your support</a> •
+  <a href="#contributing">Contributing</a> •
+  <a href="#contributors">Contributors</a> •
+  <a href="#sponsors">Sponsors</a> •
+  <a href="#licence">Licence</a>
 </p>
 
 ---
@@ -70,18 +70,18 @@
 
 📙 [All the SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations) &nbsp;&nbsp; :mag_right: [QuickPerf in a Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples)
 
-<h2 id="doc"> 📙 Documentation</h2>
+<h2 id="doc">📙 Documentation</h2>
 The full documentation is available here
 
-## ❓ Something to ask us?
+<h2 id="question">❓ Something to ask us?</h2>
 💬 Want to chat with us? Join us on [gitter](https://gitter.im/quickperf)
 
 :octocat: You prefer to use a Github issue to ask a question? [Create a question issue](https://github.com/quick-perf/quickperf/issues/new?assignees=&labels=question&template=question.md&title=)
 
-## 🙏 Show your support
+<h2 id = "support">🙏 Show your support<h2>
 Please <a href="https://github.com/quick-perf/quickperf/stargazers">⭐</a> this repository or [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Tweet%20to%20support%20QuickPerf)](https://twitter.com/intent/tweet?text=You%20can%20use%20%40QuickPerf%20to%20quickly%20evaluate%20some%20Java%20performance%20properties%0Ahttps%3A%2F%2Fgithub.com%2Fquick-perf%2Fquickperf%0A)  if this project helped you!
 
-## 🤝 [Contributing](/CONTRIBUTING.md)
+<h2 id = "contributing">🤝 [Contributing](/CONTRIBUTING.md)</h2>
 Code of Conduct
 Contributing guideline
 
@@ -89,7 +89,7 @@ Suggest improvements on documentation
 
 Don't hesitate!
 
-## 👏 Contributors 
+<h2 id = "contributors"👏 Contributors</h2W 
 
 Many thanks to all our contributors! 
 
@@ -143,12 +143,12 @@ Many thanks to all our contributors!
 </table>
 <a href = "https://allcontributors.org/docs/en/emoji-key">emoji key</a>
 
-## ❤ Sponsors
+<h2 id="sponsors">❤ Sponsors</h2>
 
 Many thanks Zenika for sponsoring this project! <br><br>
 [![with love by zenika](https://img.shields.io/badge/With%20%E2%9D%A4%EF%B8%8F%20by-Zenika-b51432.svg)](https://oss.zenika.com)
 
-## 📜 License
+<h2 id="license">📜 License</h2>
 [Apache License 2.0](/LICENSE.txt)
 
 
