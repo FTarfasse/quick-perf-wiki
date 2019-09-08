@@ -60,7 +60,7 @@
 
 ---
 
-## ![](https://github.com/quick-perf/doc/quickperf-icone.ico) Usage
+## ![](https://github.com/quick-perf/doc/blob/master/doc/images/quickperf-icone.ico) Usage
 ### 👉 JVM annotations
 
 ```java
