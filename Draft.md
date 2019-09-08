@@ -45,7 +45,7 @@
 
 <p align="center">
   <a href="#Usage">Usage</a> •
-  <a href="#1">Documentation</a> •
+  <a href="#doc>Documentation</a> •
   <a href="#Something-to-ask-us?">Something to ask us?</a>
 </p>
 <p align="center">
@@ -70,7 +70,7 @@
 
 📙 [All the SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations) &nbsp;&nbsp; :mag_right: [QuickPerf in a Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples)
 
-##{#1} 📙 Documentation 
+<h2> <div id="doc">📙 Documentation</div></h2>
 The full documentation is available here
 
 ## ❓ Something to ask us?
