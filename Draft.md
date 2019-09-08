@@ -78,6 +78,8 @@
 ## 📙 Documentation
 The full documentation is available here
 
+<br>
+
 ## ❓ Something to ask us?
 💬 Want to chat with us? Join us on [gitter](https://gitter.im/quickperf)
 
