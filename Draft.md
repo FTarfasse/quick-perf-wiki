@@ -78,7 +78,7 @@ The full documentation is available here
 
 :octocat: You prefer to use a Github issue to ask a question? [Create a question issue](https://github.com/quick-perf/quickperf/issues/new?assignees=&labels=question&template=question.md&title=)
 
-<h2 id = "support">🙏 Show your support<h2>
+<h2 id = "support">🙏 Show your support</h2>
 Please <a href="https://github.com/quick-perf/quickperf/stargazers">⭐</a> this repository or [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Tweet%20to%20support%20QuickPerf)](https://twitter.com/intent/tweet?text=You%20can%20use%20%40QuickPerf%20to%20quickly%20evaluate%20some%20Java%20performance%20properties%0Ahttps%3A%2F%2Fgithub.com%2Fquick-perf%2Fquickperf%0A)  if this project helped you!
 
 <h2 id = "contributing">🤝 [Contributing](/CONTRIBUTING.md)</h2>
