@@ -38,21 +38,17 @@
 <p align="center">
   <a href="#Usage">Usage</a> •
   <a href="#doc">Documentation</a> •
-  <a href="#question">Something to ask us?</a> •
-    <a href="#support">Show your support</a> •
-    <a href="#contributing">Contributing</a> •
-    <a href="#contributors">Contributors</a> •
-    <a href="#sponsors">Sponsors</a> •
-    <a href="#license">Licence</a>
+  <a href="#question">Something to ask us?</a>
 </p>
 <p align="center">
   <a href="#support">Show your support</a> •
   <a href="#contributing">Contributing</a> •
-  <a href="#contributors">Contributors</a> •
+  <a href="#contributors">Contributors</a>
+</p>
+<p align="center">
   <a href="#sponsors">Sponsors</a> •
   <a href="#license">Licence</a>
 </p>
-
 ---
 
 ## ![](https://github.com/quick-perf/doc/blob/master/doc/images/quickperf-icone.ico) Usage
