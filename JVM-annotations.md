@@ -23,13 +23,13 @@ With this annotation, the test is executed in a specific JVM having the given he
 ### :point_right: [Fixing maximum heap size as a threshold test](https://github.com/quick-perf/doc/wiki/Fixing-maximum-heap-size-as-a-threshold-test)
 
 ## @Xms
+With this annotation, the test is executed in a specific JVM having the given initial and minimum heap size value.
 ### :wrench: Parameters 
 |Parameter  |Type           | Meaning                            | Default value |
 | -------- |:--------------:|:----------------------------------:|:-------------:|
 | value    | long           |Initial and minimum heap size value |        -      |
 | unit     | AllocationUnit |Allocation unit                     |        -      |
 ### :mag_right: Example
-With this annotation, the test is executed in a specific JVM having the given initial and minimum heap size value.
   ```java
    @Xms(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
