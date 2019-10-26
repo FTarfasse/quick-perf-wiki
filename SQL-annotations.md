@@ -28,7 +28,7 @@ If you seem to have twice more (or several times more) statements than expected,
 [WARNING] QuickPerf has built several datasource proxies
 ```
 For example, you may have declared twice a QuickPerfProxyBeanPostProcessor bean in your Spring configuration:
-```   
+```java   
     @Bean
     public QuickPerfProxyBeanPostProcessor quickPerfProxyBeanPostProcessor1() {
         return new QuickPerfProxyBeanPostProcessor();
