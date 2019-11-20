@@ -19,7 +19,7 @@
 :point_right: &nbsp;**[Spring Boot - JUnit 5](https://github.com/quick-perf/springboot-junit5-examples)**
 
 ### **Miscellaneous**
-:point_right: &nbsp;**QuickPerf code](https://github.com/quick-perf/quickperf)**<br><br>
+:point_right: &nbsp;**[QuickPerf code](https://github.com/quick-perf/quickperf)**<br><br>
 :point_right: &nbsp;**[Gradle users](https://github.com/quick-perf/doc/wiki/Gradle-users)**
 
 
