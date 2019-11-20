@@ -1,9 +1,8 @@
 <p align="center">
 <strong > :octocat: <a href="https://github.com/quick-perf/quickperf"> Code</strong></a></strong>
-</p>
-<p align="center">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <a href="https://twitter.com/quickperf">       
-    <img src="https://img.shields.io/twitter/follow/QuickPerf.svg?label=Follow%20%40QuickPerf&style=social"  
-         alt = "Twitter Follow">    
+   <img alt="Twitter URL" src="https://img.shields.io/twitter/url?label=Twitter&style=social&url=https%3A%2F%2Ftwitter.com%2Fquickperf">
+   
 </a>
 </p>
