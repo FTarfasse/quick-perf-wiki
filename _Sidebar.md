@@ -14,8 +14,7 @@
 ### **[Spring]()**
 
 ### **Miscellaneous**
-** [Gradle users]()**
----
+**[Gradle users]()**
 
 
 
