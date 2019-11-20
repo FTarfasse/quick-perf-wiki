@@ -7,7 +7,7 @@
 :point_right: **[Annotation scopes]()**<br><br>
 :point_right: **[Create an annotation]()**
 
-### **[JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4))**
+### **[JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)**
 
 ### **[JUnit 5](https://github.com/quick-perf/doc/wiki/JUnit-5)**
 
