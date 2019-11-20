@@ -1,7 +1,7 @@
 # [QuickPerf]()
 
-Annotations
- * [Core annotations]()
+# Annotations
+## [Core annotations]()
  * [JVM annotations]()
  * [SQL annotations]()
  * [Annotation scopes]()
