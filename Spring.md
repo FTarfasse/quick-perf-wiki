@@ -42,6 +42,8 @@ To use it, following your Spring version, you have to add one of the dependencie
 
 ***With one of these dependencies, you have access to [core](https://github.com/quick-perf/doc/wiki/Core-annotations), [JVM](https://github.com/quick-perf/doc/wiki/JVM-annotations) and [SQL](https://github.com/quick-perf/doc/wiki/SQL-annotations) annotations.***
 
+⚠️ If you use Gradle, please read [this](https://github.com/quick-perf/doc/wiki/Gradle-users).
+
 _QuickPerf annotations are executed after the loading of the SpringContext._ So, for example, if you profile your JVM with [@ProfileJvm](https://github.com/quick-perf/doc/wiki/JVM-annotations#Profile-or-check-your-JVM), the profiling starts just after the loading of the Spring context.
 
 *Java code example with QuickPerfSpringRunner*
