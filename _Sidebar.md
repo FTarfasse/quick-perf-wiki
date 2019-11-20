@@ -1,7 +1,7 @@
 ### **[QuickPerf](https://github.com/quick-perf/doc/wiki/QuickPerf)**
 
 ### **Annotations**
-:point_right: &nbsp;**[Core annotations](https://github.com/quick-perf/doc/wiki/core-annotations)**
+:point_right: &nbsp;**[Core annotations](https://github.com/quick-perf/doc/wiki/core-annotations)**<br><br>
 :point_right: &nbsp;**[JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations)**<br><br>
 :point_right: &nbsp;**[SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations)**<br><br>
 :point_right: &nbsp;**[Annotation scopes]()**<br><br>
