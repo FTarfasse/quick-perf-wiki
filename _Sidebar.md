@@ -2,10 +2,10 @@
 
 # Annotations
 ### [Core annotations]()
-###  [JVM annotations]()
-###  [SQL annotations]()
-###  [Annotation scopes]()
-###  [Create an annotation]()
+### [JVM annotations]()
+### [SQL annotations]()
+### [Annotation scopes]()
+### [Create an annotation]()
 
 # [JUnit 4]()
 
@@ -13,7 +13,8 @@
 
 # [Spring]()
 
-# [Gradle users]()
+# Miscellaneous
+### [Gradle users]()
 
 
 
