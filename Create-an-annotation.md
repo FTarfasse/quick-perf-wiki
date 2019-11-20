@@ -12,6 +12,7 @@ In this page, you will learn the principles to create a QuickPerf annotation. Af
 
 [Test your new annotation](#Test-your-new-annotation)
 * [Test your new annotation with JUnit 4](#Test-your-new-annotation-with-JUnit-4)
+* [Test your new annotation with JUnit 5](#Test-your-new-annotation-with-JUnit-5)
 
 [Debug an annotation](#Debug-an-annotation)
 
@@ -112,6 +113,9 @@ You can develop custom QuickPerf annotations and gather them in a Maven module. 
 # Test your new annotation
 ## Test your new annotation with JUnit 4
 [Example of JUnit4 test class](https://github.com/quick-perf/quickperf/blob/master/junit4-sql-test/src/test/java/org/quickperf/sql/DisableExactlySameSqlSelectTest.java).
+
+## Test your new annotation with JUnit 5
+[Example of JUnit5 test class](https://github.com/quick-perf/quickperf/blob/master/junit5-sql-test/src/test/java/org/quickperf/sql/QuickPerfJUnit5SqlTest.java)
 
 # Debug an annotation
 You can add [@DebugQuickPerf](https://github.com/quick-perf/doc/wiki/Core-annotations#DebugQuickPerf) on a test method to get debug data.
