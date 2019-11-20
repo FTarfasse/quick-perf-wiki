@@ -4,7 +4,7 @@
 :point_right: &nbsp;**[Core annotations](https://github.com/quick-perf/doc/wiki/core-annotations)**<br><br>
 :point_right: &nbsp;**[JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations)**<br><br>
 :point_right: &nbsp;**[SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations)**<br><br>
-:point_right: &nbsp;**[Annotation scopes]()**<br><br>
+:point_right: &nbsp;**[Annotation scopes](https://github.com/quick-perf/doc/wiki/QuickPerf#annotation-scopes)**<br><br>
 :point_right: &nbsp;**[Create an annotation](https://github.com/quick-perf/doc/wiki/Create-an-annotation)**
 
 ### **[JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)**
