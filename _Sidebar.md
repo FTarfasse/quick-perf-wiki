@@ -1,11 +1,11 @@
 ### **[QuickPerf]()**
 
 ### **Annotations**
-**[Core annotations]()** <br><br>
-**[JVM annotations]()**<br><br>
-**[SQL annotations]()**<br><br>
-**[Annotation scopes]()**<br><br>
-**[Create an annotation]()**
+:point_right: **[Core annotations]()** <br><br>
+:point_right: **[JVM annotations]()**<br><br>
+:point_right: **[SQL annotations]()**<br><br>
+:point_right: **[Annotation scopes]()**<br><br>
+:point_right: **[Create an annotation]()**
 
 ### **[JUnit 4]()**
 
@@ -14,7 +14,7 @@
 ### **[Spring]()**
 
 ### **Miscellaneous**
-**[Gradle users]()**
+:point_right: **[Gradle users]()**
 
 
 
