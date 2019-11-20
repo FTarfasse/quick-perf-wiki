@@ -19,6 +19,8 @@ To use it, you have to this dependency
 ```
 With this dependency, you have access to [core](https://github.com/quick-perf/doc/wiki/Core-annotations) and [JVM](https://github.com/quick-perf/doc/wiki/JVM-annotations) annotations.
 
+If you use Gradle, please read [this](https://github.com/quick-perf/doc/wiki/Gradle-users).
+
 *Java code example with QuickPerfSpringRunner*
 ```java
 	import org.junit.runner.RunWith;
