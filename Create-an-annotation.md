@@ -1,4 +1,4 @@
-In this page, you will learn the principles to create a QuickPerf annotation from scratch. So, after reading it, you should be able to create a QuickPerf annotation in the QuickPerf project or in your own project. In addition, you will learn how to create your own Maven module defining your custom QuickPerf annotations.
+In this page, you will learn the principles to create a QuickPerf annotation. After reading it, you should be able to create a QuickPerf annotation in the QuickPerf project or in your own project. In addition, you will learn how to create your own Maven module defining your custom QuickPerf annotations.
 
 # 🚩 Table of contents
 [Principles to create a QuickPerf annotation](#Principles-to-create-a-QuickPerf-annotation)
