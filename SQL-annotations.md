@@ -115,6 +115,7 @@ You can decide to batch all inserts, updates, delete. Prior to Hibernate 5.2, ba
 |Parameter  |Type| Meaning           | Default value  |
 | -------- |:---:|:-----------------:|:--------------:|
 | batchSize| int |JDBC batch size   |      -         |
+
 _batchSize is optional._
 
 A 0 batch size means that JDBC batching is disabled.
