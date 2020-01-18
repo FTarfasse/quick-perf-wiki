@@ -142,7 +142,7 @@ Things like significant primitives to object conversions can be detected:
 
 :bulb: With this annotation you can also detect that most of the time is spent to do garbage collection in your test.
 
-:bulb: If you have the follwing message in the console
+:bulb: If you have the following message in the console
 ```
 Rule: Stackdepth Setting
 Severity: WARNING
