@@ -1,5 +1,8 @@
+<p align="center">
+  <a href="https://chanind.github.io/2020/01/13/awesome-orms.html">ORMs Are Awesome</a>
+</p>
+
 >**<p align="center">Take control of SQL statements sent to the database</p>**
-<br>
 
 # 🚩 Table of contents
 [Quick start](#Quick-start)<br>
