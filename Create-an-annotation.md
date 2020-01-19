@@ -105,6 +105,13 @@ You need to:
 3) If you have defined a new recorder type, you have to complete the loadRecorderExecutionOrdersBeforeTestMethod()
 loadRecorderExecutionOrdersAfterTestMethod() methods of [QuickPerfConfigLoader implementation](#Implement-QuickPerfConfigLoader)
 
+## Steps to follow to add a SQL annotation to QuickPerf
+1) Add the SQL annotation [here](https://github.com/quick-perf/quickperf/tree/master/sql/sql-annotations/src/main/java/org/quickperf/sql/annotation)
+2) Add a test [here](https://github.com/quick-perf/quickperf/tree/master/sql/sql-integration-test/src/test/java)
+3) Add a new package in [sql-annotations Maven module](https://github.com/quick-perf/quickperf/tree/master/sql/sql-annotations/src/main/java/org/quickperf/sql)
+4) In this new package add a performance measure extractor and a performance issue verifier. You can look at [these examples](https://github.com/quick-perf/quickperf/tree/master/sql/sql-annotations/src/main/java/org/quickperf/sql/insert).
+5) Add an AnnotationConfig [here](https://github.com/quick-perf/quickperf/blob/master/sql/sql-annotations/src/main/java/org/quickperf/sql/config/library/SqlAnnotationsConfigs.java) (most of the time you are going to use the `PersistenceSqlRecorder.class` performance recorder class)
+6) Use the new AnnotationConfig in `loadAnnotationConfigs()` method of [SqlConfigLoader](https://github.com/quick-perf/quickperf/blob/master/sql/sql-annotations/src/main/java/org/quickperf/sql/config/library/SqlConfigLoader.java) 
 
 # Define custom annotations in a specific Maven module
 You can develop custom QuickPerf annotations and gather them in a Maven module. To develop the annotations, you can follow the [principles described above](#Principles-to-create-a-QuickPerf-annotation). To use them, you simply have to use the developed Maven dependency together with one QuickPerf dependency (see [here](https://github.com/quick-perf/doc/wiki/JUnit-4) for JUnit4 or [here](https://github.com/quick-perf/doc/wiki/Spring) for Spring). Don't hesitate to propose a [feature request](https://github.com/quick-perf/quickperf/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=) and a PR to integrate your annotations in the QuickPerf project!
