@@ -11,7 +11,8 @@ In this page, you will learn the principles to create a QuickPerf annotation. Af
 [Define custom annotations in a specific Maven module](#Define-custom-annotations-in-a-specific-Maven-module)
 
 [Test your new annotation](#Test-your-new-annotation)
-* [Test your new annotation with JUnit 4](#Test-your-new-annotation-with-JUnit-4)
+* Test your SQL annotation
+  See [SQL integration tests](https://github.com/quick-perf/quickperf/tree/master/sql/sql-integration-test/src/test/java).
 * [Test your new annotation with JUnit 5](#Test-your-new-annotation-with-JUnit-5)
 
 [Debug an annotation](#Debug-an-annotation)
