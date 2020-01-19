@@ -11,9 +11,8 @@ In this page, you will learn the principles to create a QuickPerf annotation. Af
 [Define custom annotations in a specific Maven module](#Define-custom-annotations-in-a-specific-Maven-module)
 
 [Test your new annotation](#Test-your-new-annotation)
-* Test your SQL annotation
-  See [SQL integration tests](https://github.com/quick-perf/quickperf/tree/master/sql/sql-integration-test/src/test/java).
-* [Test your new annotation with JUnit 5](#Test-your-new-annotation-with-JUnit-5)
+* [Test your SQL annotation]()
+* [Test your JVM annotation](#Test-your-new-annotation-with-JUnit-5)
 
 [Debug an annotation](#Debug-an-annotation)
 
@@ -112,11 +111,14 @@ You can develop custom QuickPerf annotations and gather them in a Maven module. 
 
 
 # Test your new annotation
-## Test your new annotation with JUnit 4
-[Example of JUnit4 test class](https://github.com/quick-perf/quickperf/blob/master/junit4-sql-test/src/test/java/org/quickperf/sql/DisableExactlySameSqlSelectJUnit4Test.java).
 
-## Test your new annotation with JUnit 5
-[Example of JUnit5 test class](https://github.com/quick-perf/quickperf/blob/master/junit5-sql-test/src/test/java/org/quickperf/sql/QuickPerfJUnit5SqlTest.java)
+## Test your SQL annotation
+  See [SQL integration tests](https://github.com/quick-perf/quickperf/tree/master/sql/sql-integration-test/src/test/java).
+
+## Test your JVM annotation
+ * [With JUnit 4](https://github.com/quick-perf/quickperf/tree/master/junit4/junit4-jvm-test/src/test/java/org/quickperf/jvm)
+ * [With JUnit 5](https://github.com/quick-perf/quickperf/tree/master/junit5/junit5-jvm-test/src/test/java/org/quickperf/junit5/jvm)
+ * [With TestNG](testng)
 
 # Debug an annotation
 You can add [@DebugQuickPerf](https://github.com/quick-perf/doc/wiki/Core-annotations#DebugQuickPerf) on a test method to get debug data.
