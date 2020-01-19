@@ -118,7 +118,7 @@ You can develop custom QuickPerf annotations and gather them in a Maven module. 
 ## Test your JVM annotation
  * [With JUnit 4](https://github.com/quick-perf/quickperf/tree/master/junit4/junit4-jvm-test/src/test/java/org/quickperf/jvm)
  * [With JUnit 5](https://github.com/quick-perf/quickperf/tree/master/junit5/junit5-jvm-test/src/test/java/org/quickperf/junit5/jvm)
- * [With TestNG](testng)
+ * [With TestNG](https://github.com/quick-perf/quickperf/tree/master/testng/testng-jvm-test/src/test/java/org/quickperf/testng/jvm)
 
 # Debug an annotation
 You can add [@DebugQuickPerf](https://github.com/quick-perf/doc/wiki/Core-annotations#DebugQuickPerf) on a test method to get debug data.
