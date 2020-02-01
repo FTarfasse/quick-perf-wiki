@@ -30,17 +30,7 @@ If you seem to have twice more (or several times more) statements than expected,
 ```
 [WARNING] QuickPerf has built several datasource proxies
 ```
-For example, you may have declared twice a QuickPerfProxyBeanPostProcessor bean in your Spring configuration:
-```java   
-    @Bean
-    public QuickPerfProxyBeanPostProcessor quickPerfProxyBeanPostProcessor1() {
-        return new QuickPerfProxyBeanPostProcessor();
-    }
-    @Bean
-    public QuickPerfProxyBeanPostProcessor quickPerfProxyBeanPostProcessor2() {
-        return new QuickPerfProxyBeanPostProcessor();
-    }
-```
+
 ## Use SQL annotations
 Use [global annotations](#Recommended-global-annotations) or [method](#Recommended-method-annotations) annotations. See [the workflow part](#Worflow-with-SQL-annotations) to see ways to work with SQL annotations.
 
