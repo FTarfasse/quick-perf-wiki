@@ -13,6 +13,8 @@ QuickPerf works with a JDK 1.7+.
 
 # Execute QuickPerf
 ## [With JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
+## [With JUnit 5](https://github.com/quick-perf/doc/wiki/JUnit-5)
+## [With TestNG](https://github.com/quick-perf/doc/wiki/TestNG)
 ## [With Spring](https://github.com/quick-perf/doc/wiki/Spring)
 ## Have clickable links in your IDE
 Sometimes, QuickPerf can display a web url in the console. It is useful to have a clickable web url in your IDE, to be able to open it by a simple click.
