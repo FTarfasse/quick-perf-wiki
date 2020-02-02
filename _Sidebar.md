@@ -7,13 +7,11 @@
 :point_right: &nbsp;**[Annotation scopes](https://github.com/quick-perf/doc/wiki/QuickPerf#annotation-scopes)**<br><br>
 :point_right: &nbsp;**[Create an annotation](https://github.com/quick-perf/doc/wiki/Create-an-annotation)**
 
-### **[JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)**
-
-### **[JUnit 5](https://github.com/quick-perf/doc/wiki/JUnit-5)**
-
-### **[TestNG](https://github.com/quick-perf/doc/wiki/TestNG)**
-
-### **[Spring](https://github.com/quick-perf/doc/wiki/Spring)**
+### **Supported frameworks**
+:point_right: &nbsp;**[JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)**<br><br>
+:point_right: &nbsp;**[JUnit 5](https://github.com/quick-perf/doc/wiki/JUnit-5)**<br><br>
+:point_right: &nbsp;**[TestNG](https://github.com/quick-perf/doc/wiki/TestNG)**<br><br>
+:point_right: &nbsp;**[Spring](https://github.com/quick-perf/doc/wiki/Spring)**<br><br>
 
 ### Project examples
 :point_right: &nbsp;**[Maven performance](https://github.com/quick-perf/maven-test-bench)**<br><br>
