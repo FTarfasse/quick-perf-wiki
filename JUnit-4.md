@@ -13,7 +13,7 @@ To use it, you have to this dependency
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-junit4</artifactId>
-  <version>1.0.0-RC5</version>
+  <version>1.0.0-RC6</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -39,7 +39,7 @@ In addition to the dependency mentioned in the [QuickPerfJUnitRunner](#QuickPerf
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-sql-annotations</artifactId>
-  <version>1.0.0-RC5</version>
+  <version>1.0.0-RC6</version>
   <scope>test</scope>
 </dependency>
 ```
