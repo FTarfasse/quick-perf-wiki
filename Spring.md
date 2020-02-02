@@ -1,11 +1,11 @@
 # 🚩 Table of contents
-[QuickPerfSpringRunner](#QuickPerfSpringRunner)<br>
 
-[Configuration for SQL annotations](#Configuration-for-SQL-annotations)<br>
+:point_right: &nbsp;[Spring and JUnit 4](#Spring-and-JUnit-4)<br><br>
+:point_right: &nbsp;[Spring and JUnit 5](#Spring-and-JUnit-5)<br><br>
+:point_right: &nbsp;[Spring and TestNG](#Spring-and-TestNG)<br><br>
 
-[Spring Boot examples](#Spring-Boot-examples)
-
-# QuickPerfSpringRunner
+# Spring and JUnit 4
+## QuickPerfSpringRunner
 **QuickPerfSpringRunner** adds QuickPerf features to *SpringRunner* (also called *SpringJUnit4ClassRunner*). <br>
 
 To use it, following your Spring version, you have to add one of the dependencies below.
@@ -57,7 +57,7 @@ _QuickPerf annotations are executed after the loading of the SpringContext._ So,
 	}
 ```
 
-# Configuration for SQL annotations
+## Configuration for SQL annotations
 
 To can use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations), you have to add a *QuickPerfProxyBeanPostProcessor* bean.<br>
 To do this, you can look at the Java code examples below or [this Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples).<br> 
@@ -86,5 +86,9 @@ After that, you can evaluate the SQL properties of the database repositories, th
 <bean id="QuickPerfProxyBeanPostProcessor" class = "org.quickperf.spring.sql.QuickPerfProxyBeanPostProcessor" />
 ```
 
-# Spring Boot examples
+## Spring Boot examples
 See the code of [this repository](https://github.com/quick-perf/springboot-junit4-examples).
+
+# Spring and JUnit 5
+
+# Spring and TestNG
