@@ -11,6 +11,8 @@
 
 ### **[JUnit 5](https://github.com/quick-perf/doc/wiki/JUnit-5)**
 
+### **[TestNG](https://github.com/quick-perf/doc/wiki/TestNG)**
+
 ### **[Spring](https://github.com/quick-perf/doc/wiki/Spring)**
 
 ### Project examples
