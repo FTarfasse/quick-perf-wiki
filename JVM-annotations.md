@@ -20,7 +20,7 @@ With this annotation, the test is executed in a specific JVM having the given he
    @HeapSize(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
 
-### :point_right: [Fixing maximum heap size as a threshold test](https://github.com/quick-perf/doc/wiki/Fixing-maximum-heap-size-as-a-threshold-test)
+### :bulb: [Fixing maximum heap size as a threshold test](https://github.com/quick-perf/doc/wiki/Fixing-maximum-heap-size-as-a-threshold-test)
 
 ## @Xms
 With this annotation, the test is executed in a specific JVM having the given initial and minimum heap size value.
