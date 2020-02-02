@@ -3,7 +3,7 @@
 [@DisableGlobalAnnotations](#DisableGlobalAnnotations) <br><br>
 [@DisableQuickPerf](#DisableQuickPerf) <br><br>
 [@FunctionalIteration](#FunctionalIteration) <br><br>
-:[@DebugQuickPerf](#DebugQuickPerf) <br><br>
+[@DebugQuickPerf](#DebugQuickPerf) <br><br>
 
 ## @DisplayAppliedAnnotations
 Display applied QuickPerf annotations in console.<br><br>
