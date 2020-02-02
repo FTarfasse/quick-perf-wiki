@@ -92,3 +92,4 @@ See the code of [this repository](https://github.com/quick-perf/springboot-junit
 # Spring and JUnit 5
 
 # Spring and TestNG
+You can't yet use QuickPerf annotations when Spring is used together with TestNG. If you are interested by this feature, you can help us to develop it. Don't hesitate to leave a comment on [this issue](https://github.com/quick-perf/quickperf/issues/44).
