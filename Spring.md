@@ -90,6 +90,8 @@ After that, you can evaluate the SQL properties of the database repositories, th
 See the code of [this repository](https://github.com/quick-perf/springboot-junit4-examples).
 
 # Spring and JUnit 5
+Please read [this](https://github.com/quick-perf/doc/wiki/JUnit-5) to can use JVM and core annotations.
+Documentation to write to use SQL annotations...
 
 # Spring and TestNG
 You can't yet use QuickPerf annotations when Spring is used together with TestNG. If you are interested by this feature, you can help us to develop it. Don't hesitate to leave a comment on [this issue](https://github.com/quick-perf/quickperf/issues/44).
