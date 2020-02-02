@@ -1,9 +1,9 @@
 # 🚩 Table of contents
-:point_right: &nbsp;[@DisplayAppliedAnnotations](#DisplayAppliedAnnotations) <br><br>
-:point_right: &nbsp;[@DisableGlobalAnnotations](#DisableGlobalAnnotations) <br><br>
-:point_right: &nbsp;[@DisableQuickPerf](#DisableQuickPerf) <br><br>
-:point_right: &nbsp;[@FunctionalIteration](#FunctionalIteration) <br><br>
-:point_right: &nbsp;[@DebugQuickPerf](#DebugQuickPerf) <br><br>
+[@DisplayAppliedAnnotations](#DisplayAppliedAnnotations) <br><br>
+[@DisableGlobalAnnotations](#DisableGlobalAnnotations) <br><br>
+[@DisableQuickPerf](#DisableQuickPerf) <br><br>
+[@FunctionalIteration](#FunctionalIteration) <br><br>
+:[@DebugQuickPerf](#DebugQuickPerf) <br><br>
 
 ## @DisplayAppliedAnnotations
 Display applied QuickPerf annotations in console.<br><br>
