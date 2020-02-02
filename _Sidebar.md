@@ -11,7 +11,7 @@
 :point_right: &nbsp;**[JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)**<br><br>
 :point_right: &nbsp;**[JUnit 5](https://github.com/quick-perf/doc/wiki/JUnit-5)**<br><br>
 :point_right: &nbsp;**[TestNG](https://github.com/quick-perf/doc/wiki/TestNG)**<br><br>
-:point_right: &nbsp;**[Spring](https://github.com/quick-perf/doc/wiki/Spring)**<br><br>
+:point_right: &nbsp;**[Spring](https://github.com/quick-perf/doc/wiki/Spring)**
 
 ### Project examples
 :point_right: &nbsp;**[Maven performance](https://github.com/quick-perf/maven-test-bench)**<br><br>
