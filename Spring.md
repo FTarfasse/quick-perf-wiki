@@ -1,8 +1,8 @@
 # 🚩 Table of contents
 
-:point_right: &nbsp;[Spring and JUnit 4](#Spring-and-JUnit-4)<br><br>
-:point_right: &nbsp;[Spring and JUnit 5](#Spring-and-JUnit-5)<br><br>
-:point_right: &nbsp;[Spring and TestNG](#Spring-and-TestNG)<br><br>
+[Spring and JUnit 4](#Spring-and-JUnit-4)<br><br>
+[Spring and JUnit 5](#Spring-and-JUnit-5)<br><br>
+[Spring and TestNG](#Spring-and-TestNG)<br><br>
 
 # Spring and JUnit 4
 ## QuickPerfSpringRunner
