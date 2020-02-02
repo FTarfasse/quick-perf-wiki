@@ -55,7 +55,7 @@ To disable QuickPerf features you can pass *-DdisableQuickPerf=true* to your JVM
 @DisableGlobalAnnotations).
 
 # Project examples
-[Maven performance](https://github.com/quick-perf/maven-test-bench)**<br><br>
-[Spring Boot - JUnit 4](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit4)**<br><br>
-[Spring Boot - JUnit 5](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit5)**<br><br>
+[Maven performance](https://github.com/quick-perf/maven-test-bench)<br><br>
+[Spring Boot - JUnit 4](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit4)<br><br>
+[Spring Boot - JUnit 5](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit5)<br><br>
 [Micronaut - JUnit 5](https://github.com/quick-perf/quickperf-examples/tree/master/micronaut-hibernate-jpa)
