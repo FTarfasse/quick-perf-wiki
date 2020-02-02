@@ -1,3 +1,5 @@
+⚠️ If you use Spring, please go [here](https://github.com/quick-perf/doc/wiki/Spring).
+
 # 🚩 Table of contents
 [QuickPerfJUnitRunner](#QuickPerfJUnitRunner)<br>
 
