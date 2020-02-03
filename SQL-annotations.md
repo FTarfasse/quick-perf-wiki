@@ -3,6 +3,26 @@
 </p>
 
 >**<p align="center">Take control of SQL statements sent to the database</p>**
+---
+[@ExpectSelect](#ExpectSelect) &nbsp;&nbsp; [@ExpectMaxSelect](#ExpectMaxSelect)  &nbsp;&nbsp; [@ExpectSelectedColumn](#ExpectSelectedColumn)  &nbsp;&nbsp; [@ExpectMaxSelectedColumn](#ExpectMaxSelectedColumn) 
+
+[@ExpectInsert](#ExpectInsert) &nbsp;&nbsp;&nbsp; [@ExpectDelete](#ExpectDelete)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [@ExpectUpdate](#ExpectUpdate)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [@ExpectMaxUpdatedColumn](#ExpectMaxUpdatedColumn)
+
+[@DisableLikeWithLeadingWildcard](#DisableLikeWithLeadingWildcard) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[@EnableLikeWithLeadingWildcard](#EnableLikeWithLeadingWildcard)
+
+[@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams)  &nbsp;&nbsp;[@EnableSameSelectTypesWithDifferentParams](#EnableSameSelectTypesWithDifferentParams)
+
+[@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams) &nbsp;&nbsp;[@EnableSameSelectTypesWithDifferentParams](#EnableSameSelectTypesWithDifferentParams) 
+
+[@DisableExactlySameSelects](#DisableExactlySameSelects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [@EnableExactlySameSelects](#EnableExactlySameSelects)
+
+[@ExpectJdbcBatching](#ExpectJdbcBatching)  
+
+[@ExpectMaxQueryExecutionTime](#ExpectMaxQueryExecutionTime)
+
+[@DisplaySql](#DisplaySql)  &nbsp;&nbsp; [@DisplaySqlOfTestMethodBody](#DisplaySqlOfTestMethodBody)
+
+---
 
 # 🚩 Table of contents
 [Quick start](#Quick-start)<br>
