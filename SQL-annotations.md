@@ -32,7 +32,7 @@ For example, the following message is diplayed when a N+1 select is presumed and
 	@EntityGraph(attributePaths = { "..." }) on repository method.
 	https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.entity-graph
 ```
-# Interesting checks
+# What to take care of?
 You can take care of several things about SQL statements to promote performance and scalability at the beginning of application development.
 * JDBC roundtrips
   * Detect N+1 selects by using [@ExpectSelect](#ExpectSelect), [@ExpectMaxSelect](#ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams)<br> 
@@ -54,82 +54,54 @@ You can take care of several things about SQL statements to promote performance 
 # Available SQL annotations
 
 ## SELECT statements
-<table>
-    <tbody>
-        <tr>
-            <td> <a href="../@ExpectSelect">@ExpectSelect</a> </td>
-            <td> <a href="../@ExpectMaxSelect"> @ExpectMaxSelect</a> </td>  
-        </tr>
-        <tr>
-            <td> <a href="../@ExpectSelectedColumn"> @ExpectSelectedColumn</a> </td>
-            <td> <a href="../@ExpectMaxSelectedColumn"> @ExpectMaxSelectedColumn</a> </td>
-       </tr>
-       </tr>
-            <td> <a href="../@DisableSameSelectTypesWithDifferentParams"> @DisableSameSelectTypesWithDifferentParams</a> </td>
-            <td> <a href="../@EnableSameSelectTypesWithDifferentParams"> @EnableSameSelectTypesWithDifferentParams</a> </td>
-       <tr>
-            <td> <a href="../@DisableExactlySameSelects"> @DisableExactlySameSelects</a> </td>
-            <td> <a href="../EnableExactlySameSelects"> @EnableExactlySameSelects</a> </td>
-       </tr>
-    </tbody>
-</table>
+
+|Annotation                                                                                |Short description                                              |
+| -----------------------------------------------------------------------------------------|---------------------------------------------------------------|
+|[@ExpectSelect](./@ExpectSelect)                                                          | SELECT number                                                 |
+|[@ExpectMaxSelect](./@ExpectMaxSelect)                                                    | Max SELECT number                                             |
+|[@ExpectSelectedColumn](./@ExpectSelectedColumn)                                          | Selected columns number                                       |
+|[@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)                                    | Max selected columns number                                   |
+|[@DisableExactlySameSelect](./@DisableExactlySameSelect)                                  | Disable exactly same SELECT statements                        |
+|[@EnableExactlySameSelect](./@EnableExactlySameSelect)                                    | Enable exactly same SELECT statements                         |
+|[@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)| Disable same SELECT statements with different parameter values|
+|[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                  | Enable same SELECT statements with different parameter values |
 
 ## INSERT statements
-<table>
-    <tbody>
-        <tr>
-            <td> <a href="../@ExpectInsert">@ExpectInsert</a> </td>       
-        </tr>
-    </tbody>
-</table>
+
+|Annotation                      |Short description|
+| -------------------------------|-----------------|
+|[@ExpectInsert](./@ExpectInsert)| INSERT number   |
 
 ## DELETE statements
-<table>
-    <tbody>
-        <tr>
-            <td> <a href="../@ExpectDelete">@ExpectDelete</a> </td>       
-        </tr>
-    </tbody>
-</table>
+
+|Annotation                      |Short description|
+| -------------------------------|-----------------|
+|[@ExpectDelete](./@ExpectDelete)| DELETE number   |
 
 ## UPDATE statements
 
-<table>
-    <tbody>
-       <tr>
-            <td> <a href="../@ExpectUpdate"> @ExpectUpdate</a> </td>
-            <td> <a href="../@ExpectMaxUpdatedColumn"> @ExpectMaxUpdatedColumn</a> </td>
-       </tr>
-    </tbody>
-</table>
+|Annotation                                          |Short description   |
+| ---------------------------------------------------|--------------------|
+|[@ExpectUpdate](./@ExpectUpdate)                    | UPDATE number      |
+|[@ExpectMaxUpdatedColumn](./@ExpectMaxUpdatedColumn)| Max updated columns|
 
 ## Debug annotations
 
-<table>
-    <tbody>
-       <tr>
-            <td> <a href="../@DisplaySql"> @DisplaySql</a> </td>
-            <td> <a href="../@DisplaySqlOfTestMethodBody"> @DisplaySqlOfTestMethodBody</a> </td>
-       </tr>
-    </tbody>
-</table>
+|Annotation                                                  |Short description                        |
+| -----------------------------------------------------------|-----------------------------------------|
+|[@DisplaySql](./@DisplaySql)                                | Display SQL                             |
+|[@DisplaySqlOfTestMethodBody](./@DisplaySqlOfTestMethodBody)| Display SQL executed in test method body|
 
 You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/wiki/Core-annotations#DisplayAppliedAnnotations) in debug activity.
 
 ## Other
-<table>
-    <tbody>
-       <tr>
-            <td> <a href="../@ExpectJdbcBatching">@ExpectJdbcBatching</a> </td>
-            <td> <a href="../@ExpectMaxQueryExecutionTime"> @ExpectMaxQueryExecutionTime</a> </td>
-       </tr>
-       <tr>
-            <td> <a href="../@DisableLikeWithLeadingWildcard">@DisableLikeWithLeadingWildcard</a> </td>
-            <td> <a href="../@EnableLikeWithLeadingWildcard"> @EnableLikeWithLeadingWildcard</a> </td>
-       </tr>
-    </tbody>
-</table>
 
+|Annotation                                                          |Short description                  |
+| -------------------------------------------------------------------|-----------------------------------|
+|[@ExpectJdbcBatching](./@ExpectJdbcBatching)                        | JDBC batching is enabled          |
+|[@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)      | Max query execution time          |
+|[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)| Disable like with leading wildcard|
+|[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)  | Enable like with leading wildcard |
 
 # Recommended global annotations
 
@@ -173,28 +145,32 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 ```
 ***The class implementing SpecifiableGlobalAnnotations has to be in org.quickperf package.***
 
-* [@DisableExactlySameSelects](./@DisableExactlySameSelects)
-* [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)
-* [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
-* [@ExpectJdbcBatching](./@ExpectJdbcBatching)
-* [@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)
+|Annotation                                                                                |Short description                                              |
+| -----------------------------------------------------------------------------------------|---------------------------------------------------------------|
+|[@DisableExactlySameSelect](./@DisableExactlySameSelect)                                  | Disable exactly same SELECT statements                        |
+|[@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)| Disable same SELECT statements with different parameter values|
+|[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      | Disable like with leading wildcard                            |
+|[@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              | JDBC batching is enabled                                      |
+|[@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)                            | Max query execution time                                      |
 
 # Cancel the behavior of global annotations at method level
 
-|Annotation                                              |Short description             |
-| -------------------------------------------------------|---------------------------------------------|
-|[@EnableExactlySameSelects](./@EnableExactlySameSelects)|Cancel behavior of [@DisableExactlySameSelects](./@DisableExactlySameSelects)|
+|Annotation                                                                              |Short description             |
+| ---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+|[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                |Cancel behavior of [@DisableExactlySameSelects](./@DisableExactlySameSelects)                                |
 |[@EnableSameSelectTypesWithDifferentParams](./@EnableSameSelectTypesWithDifferentParams)|Cancel behavior of [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)|
-|[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)|Cancel behavior of [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)|
-|[@ExpectJdbcBatching(batchSize=0)](./@ExpectJdbcBatching)|Cancel behavior of [@ExpectJdbcBatching](./@ExpectJdbcBatching)|
+|[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)                      |Cancel behavior of [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      |
+|[@ExpectJdbcBatching(batchSize=0)](./@ExpectJdbcBatching)                               |Cancel behavior of [@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              |
 
 # Recommended method annotations
 
-* [@ExpectSelect](./@ExpectSelect)
-* [@ExpectMaxSelect](./@ExpectMaxSelect)
-* [@ExpectSelectedColumn](./@ExpectSelectedColumn)
-* [@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)
-* [@ExpectInsert](./@ExpectInsert)
-* [@ExpectUpdate](./@ExpectUpdate)
-* [@ExpectMaxUpdatedColumn](./@ExpectMaxUpdatedColumn)
-* [@ExpectDelete](./@ExpectDelete)
+|Annotation                                             |Short description            |
+| ------------------------------------------------------|-----------------------------|
+|[@ExpectSelect](./@ExpectSelect)                       | SELECT number               |
+|[@ExpectMaxSelect](./@ExpectMaxSelect)                 | Max SELECT number           |
+|[@ExpectSelectedColumn](./@ExpectSelectedColumn)       | Selected columns number     |
+|[@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn) | Max selected columns number |
+|[@ExpectInsert](./@ExpectInsert)                       | INSERT number               |
+|[@ExpectUpdate](./@ExpectUpdate)                       | UPDATE number               |
+|[@ExpectMaxUpdatedColumn](./@ExpectMaxUpdatedColumn)   | Max updated columns         |
+|[@ExpectDelete](./@ExpectDelete)                       | DELETE number               |
