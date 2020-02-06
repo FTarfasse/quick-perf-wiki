@@ -181,10 +181,12 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 
 # Cancel the behavior of global annotations at method level
 
-* [@EnableExactlySameSelects](./@EnableExactlySameSelects)
-* [@EnableSameSelectTypesWithDifferentParams](./@EnableSameSelectTypesWithDifferentParams)
-* [@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)
-* [@ExpectJdbcBatching(batchSize=0)](./@ExpectJdbcBatching)
+|Annotation                                              |Short description             |
+| -------------------------------------------------------|---------------------------------------------|
+|[@EnableExactlySameSelects](./@EnableExactlySameSelects)|Cancel behavior of [@DisableExactlySameSelects](./@DisableExactlySameSelects)|
+|[@EnableSameSelectTypesWithDifferentParams](./@EnableSameSelectTypesWithDifferentParams)|Cancel behavior of [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)|
+|[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)|Cancel behavior of [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)|
+|[@ExpectJdbcBatching(batchSize=0)](./@ExpectJdbcBatching)|Cancel behavior of [@ExpectJdbcBatching](./@ExpectJdbcBatching)|
 
 # Recommended method annotations
 
