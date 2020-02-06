@@ -173,26 +173,26 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 ```
 ***The class implementing SpecifiableGlobalAnnotations has to be in org.quickperf package.***
 
-* [@DisableExactlySameSelects](../@DisableExactlySameSelects)
-* [@DisableSameSelectTypesWithDifferentParams](../@DisableSameSelectTypesWithDifferentParams)
-* [@DisableLikeWithLeadingWildcard](../@DisableLikeWithLeadingWildcard)
-* [@ExpectJdbcBatching](../@ExpectJdbcBatching)
-* [@ExpectMaxQueryExecutionTime](../@ExpectMaxQueryExecutionTime)
+* [@DisableExactlySameSelects](./@DisableExactlySameSelects)
+* [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)
+* [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
+* [@ExpectJdbcBatching](./@ExpectJdbcBatching)
+* [@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)
 
 # Cancel the behavior of global annotations at method level
 
-* [@EnableExactlySameSelects](../@EnableExactlySameSelects)
-* [@EnableSameSelectTypesWithDifferentParams](../@EnableSameSelectTypesWithDifferentParams)
-* [@EnableLikeWithLeadingWildcard](../@EnableLikeWithLeadingWildcard)
-* [@ExpectJdbcBatching(batchSize=0)](../@ExpectJdbcBatching)
+* [@EnableExactlySameSelects](./@EnableExactlySameSelects)
+* [@EnableSameSelectTypesWithDifferentParams](./@EnableSameSelectTypesWithDifferentParams)
+* [@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)
+* [@ExpectJdbcBatching(batchSize=0)](./@ExpectJdbcBatching)
 
 # Recommended method annotations
 
 * [@ExpectSelect](./@ExpectSelect)
-* [@ExpectMaxSelect](../@ExpectMaxSelect)
-* [@ExpectSelectedColumn](../@ExpectSelectedColumn)
-* [@ExpectMaxSelectedColumn](../@ExpectMaxSelectedColumn)
-* [@ExpectInsert](../@ExpectInsert)
-* [@ExpectUpdate](../@ExpectUpdate)
-* [@ExpectMaxUpdatedColumn](../@ExpectMaxUpdatedColumn)
-* [@ExpectDelete](../@ExpectDelete)
+* [@ExpectMaxSelect](./@ExpectMaxSelect)
+* [@ExpectSelectedColumn](./@ExpectSelectedColumn)
+* [@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)
+* [@ExpectInsert](./@ExpectInsert)
+* [@ExpectUpdate](./@ExpectUpdate)
+* [@ExpectMaxUpdatedColumn](./@ExpectMaxUpdatedColumn)
+* [@ExpectDelete](./@ExpectDelete)
