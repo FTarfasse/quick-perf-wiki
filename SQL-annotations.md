@@ -146,7 +146,16 @@ You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/
 |[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)  | Enable like with leading wildcard |
 
 # Configure global annotations
-A SqlAnnotationBuilder class is available to easily implement SpecifiableGlobalAnnotations.
+
+_Global annotations_ apply on each test.
+
+Let's suppose that you want that you want to add QuickPerf in ab application having automatic test.
+
+By applying some SQL global annotations you may quickly detect some performance properties that can be improvec.
+
+To do this, you have to create a class implementing _SpecifiableGlobalAnnotations_ interface. ***The class implementing _SpecifiableGlobalAnnotations_ has to be in _org.quickperf_ package***.
+
+A _SqlAnnotationBuilder_ class is available to easily implement _specifyAnnotationsAppliedOnEachTest()_ method.
 
 ```java
 package org.quickperf;
@@ -183,7 +192,8 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
     }
 }
 ```
-***The class implementing SpecifiableGlobalAnnotations has to be in org.quickperf package.***
+
+We recommend to configure the following SQL global annotations:
 
 |Annotation                                                                                |Short description                                              |
 | -----------------------------------------------------------------------------------------|---------------------------------------------------------------|
