@@ -216,6 +216,9 @@ You can use the following annotations to disable the [recommended global annotat
 |[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)                      |Cancel behavior of [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      |
 |[@ExpectJdbcBatching(batchSize=0)](./@ExpectJdbcBatching)                               |Cancel behavior of [@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              |
 
+In the case where you are developing a new feature, perhaps with the help of TDD, your test may fail because the business property is unrespected but also because some performance properties checked by global annotations are unrespected. In order to do one step at a time, you can _temporarely_ disable global annotations by applying [@FunctionalIteration]
+(https://github.com/quick-perf/doc/wiki/core-annotations#disablequickperf) or [@DisableQuickPerf](https://github.com/quick-perf/doc/wiki/core-annotations#disablequickperf) or [@DisableGlobalAnnotations](https://github.com/quick-perf/doc/wiki/core-annotations#disableglobalannotations).
+
 # Apply SQL annotations at method level
 
 |Annotation                                             |Short description            |
