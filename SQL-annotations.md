@@ -85,7 +85,7 @@ You can take care of several things about SQL statements to promote performance 
 |[@ExpectUpdate](./@ExpectUpdate)                    | UPDATE number      |
 |[@ExpectMaxUpdatedColumn](./@ExpectMaxUpdatedColumn)| Max updated columns|
 
-## Debug annotations
+## Debug
 
 |Annotation                                                  |Short description                        |
 | -----------------------------------------------------------|-----------------------------------------|
