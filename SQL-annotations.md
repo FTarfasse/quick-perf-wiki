@@ -35,9 +35,9 @@ For example, the following message is diplayed when a N+1 select is presumed and
 # What to take care of?
 You can take care of several things about SQL statements to promote performance and scalability at the beginning of application development.
 * JDBC roundtrips
-  * Detect N+1 selects by using [@ExpectSelect](#ExpectSelect), [@ExpectMaxSelect](#ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams)<br> 
-  * Detect JDBC batching disabled by using [@ExpectJdbcBatching](#ExpectJdbcBatching)
-  * Detect exactly same selects by using [@DisableExactlySameSelects](#DisableExactlySameSelects)
+  * Detect N+1 selects by using [@ExpectSelect](./@ExpectSelect), [@ExpectMaxSelect](./ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)<br> 
+  * Detect JDBC batching disabled by using [@ExpectJdbcBatching](./@ExpectJdbcBatching)
+  * Detect exactly same selects by using [@DisableExactlySameSelects](./@DisableExactlySameSelects)
 
   *[Why limit JDBC roundtrips?](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/)*
 
@@ -145,7 +145,7 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 
 |Annotation                                                                                |Short description                                              |
 | -----------------------------------------------------------------------------------------|---------------------------------------------------------------|
-|[@DisableExactlySameSelect](./@DisableExactlySameSelect)                                  | Disable exactly same SELECT statements                        |
+|[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                  | Disable exactly same SELECT statements                        |
 |[@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)| Disable same SELECT statements with different parameter values|
 |[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      | Disable like with leading wildcard                            |
 |[@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              | JDBC batching is enabled                                      |
