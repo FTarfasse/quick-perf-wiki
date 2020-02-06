@@ -1,8 +1,8 @@
 # 🚩 Table of contents
 
-[Available SQL annotations](#Available-SQL-annotations)<br>
-
 [Quick start](#Quick-start)<br>
+
+[Available SQL annotations](#Available-SQL-annotations)<br>
 
 [Interesting checks](#Interesting-checks)<br>
 
@@ -13,6 +13,28 @@
 [Recommended method annotations](#Recommended-method-annotations)<br>
 
 [Debug annotations](#Debug-annotations)<br>
+
+# Quick start
+## Add configuration 
+### [Configuration for Spring](https://github.com/quick-perf/doc/wiki/Spring)
+### [Configuration for JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
+
+## Check the configuration
+To check that the configuration is properly done, you can try to add an annotation on a test method in order to make it fail. For example, add @ExpectSelect(0) on a test method that is supposed to send one or several selects to the database.
+
+## Use SQL annotations
+You can use SQL annotations with a [global scope](#Recommended-global-annotations), a class scope or a [method scope](#Recommended-method-annotations).
+
+## Automatic framework detection
+The SQL annotations automatically detect if *Hibernate* or *Spring* frameworks are used. You don't have any configuration to do. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it with these frameworks.
+
+For example, the following message is diplayed when a N+1 select is presumed and Spring Data JPA is detected:
+```
+	* With Spring Data JPA, you may fix it by adding
+	@EntityGraph(attributePaths = { "..." }) on repository method.
+	https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.entity-graph
+```
+
 
 # Available SQL annotations
 
@@ -60,26 +82,6 @@
     </tbody>
 </table>
 
-# Quick start
-## Add configuration 
-### [Configuration for Spring](https://github.com/quick-perf/doc/wiki/Spring)
-### [Configuration for JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
-
-## Check the configuration
-To check that the configuration is properly done, you can try to add an annotation on a test method in order to make it fail. For example, add @ExpectSelect(0) on a test method that is supposed to send one or several selects to the database.
-
-## Use SQL annotations
-You can use SQL annotations with a [global scope](#Recommended-global-annotations), a class scope or a [method scope](#Recommended-method-annotations).
-
-## Automatic framework detection
-The SQL annotations automatically detect if *Hibernate* or *Spring* frameworks are used. You don't have any configuration to do. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it with these frameworks.
-
-For example, the following message is diplayed when a N+1 select is presumed and Spring Data JPA is detected:
-```
-	* With Spring Data JPA, you may fix it by adding
-	@EntityGraph(attributePaths = { "..." }) on repository method.
-	https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.entity-graph
-```
 
 # Interesting checks
 You can take care of several things about SQL statements to promote performance and scalability at the beginning of application development.
