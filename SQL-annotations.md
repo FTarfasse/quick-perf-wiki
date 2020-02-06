@@ -14,7 +14,7 @@
 
 # Quick start
 ## Add configuration 
-### [Configuration for Spring](https://github.com/quick-perf/doc/wiki/Spring)
+### [Configuration for Spring (JUnit 4, JUnit 5, TestNG)](https://github.com/quick-perf/doc/wiki/Spring)
 ### [Configuration for JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
 
 ## Check the configuration
