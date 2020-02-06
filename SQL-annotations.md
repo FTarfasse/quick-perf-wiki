@@ -151,7 +151,7 @@ _Global annotations_ apply on each test.
 
 Let's suppose that you want that you want to add QuickPerf in ab application having automatic test.
 
-By applying some SQL global annotations you may quickly detect some performance properties that can be improvec.
+By applying some SQL global annotations you may quickly detect some performance properties that can be improved.
 
 To do this, you have to create a class implementing _SpecifiableGlobalAnnotations_ interface. ***The class implementing _SpecifiableGlobalAnnotations_ has to be in _org.quickperf_ package***.
 
