@@ -32,7 +32,7 @@ For example, the following message is diplayed when a N+1 select is presumed and
 	@EntityGraph(attributePaths = { "..." }) on repository method.
 	https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.entity-graph
 ```
-# What to take care of?
+# What can affect performance?
 You can take care of several things about SQL statements to promote performance and scalability at the beginning of application development.
 * JDBC roundtrips
   * Detect N+1 selects by using [@ExpectSelect](./@ExpectSelect), [@ExpectMaxSelect](./@ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)<br> 
