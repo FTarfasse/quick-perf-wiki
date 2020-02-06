@@ -149,6 +149,7 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 Verify that SQL statements do not contain LIKE with leading wildcard (% or _).<br>
 You can read this [article](https://use-the-index-luke.com/sql/where-clause/searching-for-ranges/like-performance-tuning) explaining why LIKE with leading wildcard could be a bad idea in term of performance.<br>
 A code sending to the database a like with leading wilcard may be fast in a test having a few data but very slow with the data volume of production.
+
 ## @ExpectJdbcBatching
 Verify that inserts, deletes and updates are processed in JDBC batches having *batchSize* elements.
 You may sometimes think that you are using JDBC batching but in fact not ([Paper 1](https://abramsm.wordpress.com/2008/04/23/hibernate-batch-processing-why-you-may-not-be-using-it-even-if-you-think-you-are/), [Paper 2](https://stackoverflow.com/questions/27697810/hibernate-disabled-insert-batching-when-using-an-identity-identifier))!
@@ -167,6 +168,16 @@ A 0 batch size means that JDBC batching is disabled.
 ```java
     @ExpectJdbcBatching(batchSize = 30)
 ```
+
+## ExpectMaxQueryExecutionTime
+
+With this annotation, the test will fail at least one request exceeds the max expected query execution time.
+
+### :wrench: Parameters 
+|Parameter  |Type                         | Meaning                       | Default value  |
+| -------- |:----------------------------:|:-----------------------------:|:--------------:|
+| value    | int                          |Max query execution time value |      -         |
+| unit     | java.util.concurrent.TimeUnit|Time unit                      |      -         |
 
 # Cancel the behavior of global annotations
 
