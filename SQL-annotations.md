@@ -6,11 +6,11 @@
 
 [Available SQL annotations](#Available-SQL-annotations)<br>
 
-[Recommended global annotations](#Recommended-global-annotations)<br>
+[Configure global annotations](#Configure-global-annotations)<br>
 
-[Cancel the behavior of global annotations](#Cancel-the-behavior-of-global-annotations)<br>
+[Cancel the behavior of global annotations at method level](#Cancel-the-behavior-of-global-annotations-at-method-level)<br>
 
-[Recommended method annotations](#Recommended-method-annotations)<br>
+[Apply SQL annotations at method level](#Apply-SQL-annotations-at-method-level)<br>
 
 # Quick start
 ## Add configuration 
@@ -103,9 +103,7 @@ You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/
 |[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)| Disable like with leading wildcard|
 |[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)  | Enable like with leading wildcard |
 
-# Recommended global annotations
-
-## Configure recommended global annotations
+# Configure global annotations
 A SqlAnnotationBuilder class is available to easily implement SpecifiableGlobalAnnotations.
 
 ```java
@@ -162,7 +160,7 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 |[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)                      |Cancel behavior of [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      |
 |[@ExpectJdbcBatching(batchSize=0)](./@ExpectJdbcBatching)                               |Cancel behavior of [@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              |
 
-# Recommended method annotations
+# Apply SQL annotations at method level
 
 |Annotation                                             |Short description            |
 | ------------------------------------------------------|-----------------------------|
