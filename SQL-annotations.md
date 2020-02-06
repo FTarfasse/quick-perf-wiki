@@ -53,6 +53,48 @@ You can take care of several things about SQL statements to promote performance 
 
 # Available SQL annotations
 
+## All the SQL annotations
+<table>
+    <tbody>
+       <tr>
+            <td> <a href="./@ExpectSelect">@ExpectSelect</a> </td>
+            <td> <a href="./@ExpectMaxSelect"> @ExpectMaxSelect</a> </td>
+       </tr>      
+        <tr>
+            <td> <a href="./@ExpectSelectedColumn">@ExpectSelectedColumn</a> </td>
+            <td> <a href="./@ExpectMaxSelectedColumn"> @ExpectMaxSelectedColumn</a> </td>
+       </tr>     
+       <tr>
+            <td> <a href="./@ExpectUpdate">@ExpectUpdate</a> </td>
+            <td> <a href="./@ExpectMaxUpdatedColumn"> @ExpectMaxUpdatedColumn</a> </td>
+       </tr>       
+       <tr>
+            <td> <a href="./@ExpectInsert">@ExpectInsert</a> </td>
+            <td> <a href="./@ExpectDelete"> @ExpectDelete</a> </td>
+       </tr>      
+       <tr>
+            <td> <a href="./@DisplaySql">@DisplaySql</a> </td>
+            <td> <a href="./@DisplaySqlOfTestMethodBody">@DisplaySqlOfTestMethodBody</a> </td>
+       </tr>       
+       <tr>
+            <td> <a href="./@ExpectJdbcBatching">@ExpectJdbcBatching</a> </td>
+            <td> <a href="./@ExpectMaxQueryExecutionTime">@ExpectMaxQueryExecutionTime</a> </td>
+       </tr>      
+        <tr>
+            <td> <a href="./@DisableExactlySameSelects">@DisableExactlySameSelects</a> </td>
+            <td> <a href="./@EnableExactlySameSelects">@EnableExactlySameSelects</a> </td>
+       </tr>        
+       <tr>
+            <td> <a href="./@DisableSameSelectTypesWithDifferentParams">@DisableSameSelectTypesWithDifferentParams</a> </td>
+            <td> <a href="./@EnableSameSelectTypesWithDifferentParams">@EnableSameSelectTypesWithDifferentParams</a> </td>
+       </tr>       
+       <tr>
+            <td> <a href="./@DisableLikeWithLeadingWildcard">@DisableLikeWithLeadingWildcard</a> </td>
+            <td> <a href="./@EnableLikeWithLeadingWildcard">@EnableLikeWithLeadingWildcard</a> </td>
+       </tr>
+    </tbody>
+</table>
+
 ## SELECT statements
 
 |Annotation                                                                                |Short description                                              |
