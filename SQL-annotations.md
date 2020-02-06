@@ -149,7 +149,7 @@ You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/
 
 _Global annotations_ apply on each test.
 
-Let's suppose that you want that you want to add QuickPerf in ab application having automatic test.
+Let's suppose that you want that you want to add QuickPerf in ab application with automatic tests.
 
 By applying some SQL global annotations you may quickly detect some performance properties that can be improved.
 
