@@ -12,8 +12,6 @@
 
 [Recommended method annotations](#Recommended-method-annotations)<br>
 
-[Debug annotations](#Debug-annotations)<br>
-
 # Quick start
 ## Add configuration 
 ### [Configuration for Spring](https://github.com/quick-perf/doc/wiki/Spring)
@@ -55,146 +53,82 @@ You can take care of several things about SQL statements to promote performance 
 
 # Available SQL annotations
 
+## SELECT statements
 <table>
     <tbody>
         <tr>
-            <td> <a href="#ExpectSelect">@ExpectSelect</a> </td>
-            <td> <a href="#ExpectMaxSelect"> @ExpectMaxSelect</a> </td>  
+            <td> <a href="../@ExpectSelect">@ExpectSelect</a> </td>
+            <td> <a href="../@ExpectMaxSelect"> @ExpectMaxSelect</a> </td>  
         </tr>
         <tr>
-            <td> <a href="#ExpectSelectedColumn"> @ExpectSelectedColumn</a> </td>
-            <td> <a href="#ExpectMaxSelectedColumn"> @ExpectMaxSelectedColumn</a> </td>
+            <td> <a href="../@ExpectSelectedColumn"> @ExpectSelectedColumn</a> </td>
+            <td> <a href="../@ExpectMaxSelectedColumn"> @ExpectMaxSelectedColumn</a> </td>
        </tr>
-        <tr>
-            <td> <a href="#ExpectInsert">@ExpectInsert</a> </td>       
-            <td> <a href="#ExpectDelete"> @ExpectDelete</a> </td>
        </tr>
+            <td> <a href="../@DisableSameSelectTypesWithDifferentParams"> @DisableSameSelectTypesWithDifferentParams</a> </td>
+            <td> <a href="../@EnableSameSelectTypesWithDifferentParams"> @EnableSameSelectTypesWithDifferentParams</a> </td>
        <tr>
-            <td> <a href="#ExpectUpdate"> @ExpectUpdate</a> </td>
-            <td> <a href="#ExpectMaxUpdatedColumn"> @ExpectMaxUpdatedColumn</a> </td>
-       </tr>
-       <tr>
-            <td> <a href="#ExpectJdbcBatching">@ExpectJdbcBatching</a> </td>
-            <td> <a href="#ExpectMaxQueryExecutionTime"> @ExpectMaxQueryExecutionTime</a> </td>
-       </tr>
-       <tr>
-            <td> <a href="#DisplaySql"> @DisplaySql</a> </td>
-            <td> <a href="#DisplaySqlOfTestMethodBody"> @DisplaySqlOfTestMethodBody</a> </td>
-       </tr>
-       <tr>
-            <td> <a href="#DisableLikeWithLeadingWildcard">@DisableLikeWithLeadingWildcard</a> </td>
-            <td> <a href="#EnableLikeWithLeadingWildcard"> @EnableLikeWithLeadingWildcard</a> </td>
-       </tr>
-       </tr>
-            <td> <a href="#DisableSameSelectTypesWithDifferentParams"> @DisableSameSelectTypesWithDifferentParams</a> </td>
-            <td> <a href="#EnableSameSelectTypesWithDifferentParams"> @EnableSameSelectTypesWithDifferentParams</a> </td>
-       <tr>
-            <td> <a href="#DisableExactlySameSelects"> @DisableExactlySameSelects</a> </td>
-            <td> <a href="#EnableExactlySameSelects"> @EnableExactlySameSelects</a> </td>
-       </tr>
-       <tr>
-            <td> <a href="#DisableExactlySameSelects"> @DisableExactlySameSelects</a> </td>
-            <td> <a href="#EnableExactlySameSelects"> @EnableExactlySameSelects</a> </td>
+            <td> <a href="../@DisableExactlySameSelects"> @DisableExactlySameSelects</a> </td>
+            <td> <a href="../EnableExactlySameSelects"> @EnableExactlySameSelects</a> </td>
        </tr>
     </tbody>
 </table>
 
-## @ExpectSelect
+## INSERT statements
+<table>
+    <tbody>
+        <tr>
+            <td> <a href="../@ExpectInsert">@ExpectInsert</a> </td>       
+        </tr>
+    </tbody>
+</table>
 
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
-| -------- |:---:|:-------------------------:|:--------------:|
-| value    | int |Number of select statements|        0       |
+## DELETE statements
+<table>
+    <tbody>
+        <tr>
+            <td> <a href="../@ExpectDelete">@ExpectDelete</a> </td>       
+        </tr>
+    </tbody>
+</table>
 
-### :mag_right: Example
-```java
-    @ExpectSelect(1)
-    @Test
-    public void should_retrieve_all_cars() {	
-     //...
-    }
-```
-## @ExpectMaxSelect
-With this annotation, the test will fail if the number of SELECT statements is greater than expected. 
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
-| -------- |:---:|:-------------------------:|:--------------:|
-| value    | int |Maximum number of selects  |        0       |
+## UPDATE statements
 
-### :mag_right: Example
-```java
-    @ExpectMaxSelect(1)
-    @Test
-    public void should_retrieve_all_cars() {	
-     //...
-    }
-```
+<table>
+    <tbody>
+       <tr>
+            <td> <a href="../@ExpectUpdate"> @ExpectUpdate</a> </td>
+            <td> <a href="../@ExpectMaxUpdatedColumn"> @ExpectMaxUpdatedColumn</a> </td>
+       </tr>
+    </tbody>
+</table>
 
-## @ExpectSelectedColumn
+## Debug annotations
 
-Verifies the number of selected columns. <br>
+<table>
+    <tbody>
+       <tr>
+            <td> <a href="../@DisplaySql"> @DisplaySql</a> </td>
+            <td> <a href="../@DisplaySqlOfTestMethodBody"> @DisplaySqlOfTestMethodBody</a> </td>
+       </tr>
+    </tbody>
+</table>
 
-**_[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)_**
+You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/wiki/Core-annotations#DisplayAppliedAnnotations) in debug activity.
 
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                     | Default value  |
-| --------  |:---:|:--------------------------:|:--------------:|
-| value     | int |Number of selected columns  |        0       |
-
-### :mag_right: Example
-```java
-    @ExpectSelectedColumn(3)
-```
-
-## @ExpectMaxSelectedColumn
-
-With this annotation, the test will fail if the number of returned columns is greater than expected.
-
-**_[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)_**
-
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                             | Default value  |
-| --------  |:---:|:----------------------------------:|:--------------:|
-| value     | int |Maximum number of returned columns  |        0       |
-### :mag_right: Example
-```java
-    @ExpectMaxSelectedColumn(5)
-```
-
-## @ExpectInsert
-
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
-| -------- |:---:|:-------------------------:|:--------------:|
-| value    | int |Number of insert statements  |        0       |
-
-## @ExpectUpdate
-
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
-| -------- |:---:|:-------------------------:|:--------------:|
-| value    | int |Number of update statements|        0       |
-
-## @ExpectMaxUpdatedColumn
-
-With this annotation, the test will fail if the number of updated columns is greater than expected.
-
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                             | Default value  |
-| --------  |:---:|:----------------------------------:|:--------------:|
-| value     | int |Maximum number of updated columns   |        0       |
-
-### :mag_right: Example
-```java
-    @ExpectMaxUpdatedColumn(5)
-```
-
-## @ExpectDelete
-
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
-| -------- |:---:|:-------------------------:|:--------------:|
-| value    | int |Number of delete statements|        0       |
+## Other
+<table>
+    <tbody>
+       <tr>
+            <td> <a href="../@ExpectJdbcBatching">@ExpectJdbcBatching</a> </td>
+            <td> <a href="../@ExpectMaxQueryExecutionTime"> @ExpectMaxQueryExecutionTime</a> </td>
+       </tr>
+       <tr>
+            <td> <a href="../@DisableLikeWithLeadingWildcard">@DisableLikeWithLeadingWildcard</a> </td>
+            <td> <a href="../@EnableLikeWithLeadingWildcard"> @EnableLikeWithLeadingWildcard</a> </td>
+       </tr>
+    </tbody>
+</table>
 
 
 # Recommended global annotations
@@ -239,97 +173,26 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 ```
 ***The class implementing SpecifiableGlobalAnnotations has to be in org.quickperf package.***
 
-## @DisableExactlySameSelects
+* [@DisableExactlySameSelects](../@DisableExactlySameSelects)
+* [@DisableSameSelectTypesWithDifferentParams](../@DisableSameSelectTypesWithDifferentParams)
+* [@DisableLikeWithLeadingWildcard](../@DisableLikeWithLeadingWildcard)
+* [@ExpectJdbcBatching](../@ExpectJdbcBatching)
+* [@ExpectMaxQueryExecutionTime](../@ExpectMaxQueryExecutionTime)
 
-## @DisableSameSelectTypesWithDifferentParams
+# Cancel the behavior of global annotations at method level
 
-## @DisableLikeWithLeadingWildcard
-Verify that SQL statements do not contain LIKE with leading wildcard (% or _).<br>
-You can read this [article](https://use-the-index-luke.com/sql/where-clause/searching-for-ranges/like-performance-tuning) explaining why LIKE with leading wildcard could be a bad idea in term of performance.<br>
-A code sending to the database a like with leading wilcard may be fast in a test having a few data but very slow with the data volume of production.
-
-## @ExpectJdbcBatching
-Verify that inserts, deletes and updates are processed in JDBC batches having *batchSize* elements.
-You may sometimes think that you are using JDBC batching but in fact not ([Paper 1](https://abramsm.wordpress.com/2008/04/23/hibernate-batch-processing-why-you-may-not-be-using-it-even-if-you-think-you-are/), [Paper 2](https://stackoverflow.com/questions/27697810/hibernate-disabled-insert-batching-when-using-an-identity-identifier))!
-*Batching  of inserts, updates and deletes allows to reduce the number of [roundtrips to the database which can dramatically impact application performance](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/).*
-You can decide to batch all inserts, updates, delete. Prior to Hibernate 5.2, batching, when enabled with a hibernate.jdbc.batch_size property stricly positive, was applied to all inserts, updates and deletes (from Hibernate 5.2 it is also possible to override the batch size value for a given session).
-### :wrench: Parameters 
-|Parameter  |Type| Meaning           | Default value  |
-| -------- |:---:|:-----------------:|:--------------:|
-| batchSize| int |JDBC batch size   |      -         |
-
-_batchSize is optional._
-
-A 0 batch size means that JDBC batching is disabled.
-
-### :mag_right: Example
-```java
-    @ExpectJdbcBatching(batchSize = 30)
-```
-
-## @ExpectMaxQueryExecutionTime
-
-With this annotation, the test will fail at least one request exceeds the max expected query execution time.
-
-### :wrench: Parameters 
-|Parameter  |Type                         | Meaning                       | Default value  |
-| -------- |:----------------------------:|:-----------------------------:|:--------------:|
-| value    | int                          |Max query execution time value |      -         |
-| unit     | java.util.concurrent.TimeUnit|Time unit                      |      -         |
-
-# Cancel the behavior of global annotations
-
-## @EnableExactlySameSelects
-Cancel behavior of [@DisableExactlySameSelects](#DisableExactlySameSelects).
-
-### :wrench: Parameters 
-|Parameter|Type    | Meaning                                    | Default value  |
-| --------|:------:|:-------------------------------------------|:--------------:|
-| comment | String |Comment why exactly same selects are enabled|      -         |
-
-## @EnableSameSelectTypesWithDifferentParams
-Cancel behavior of [@DisableSameSelectTypesWithDifferentParams](#DisableSameSelectTypesWithDifferentParams).
-
-### :wrench: Parameters 
-|Parameter|Type    | Meaning                                                               | Default value  |
-| --------|:------:|:----------------------------------------------------------------------|:--------------:|
-| comment | String |Comment why exactly same select types with different parameters are enabled|      -         |
-
-## @EnableLikeWithLeadingWildcard
-Cancel behavior of [@DisableLikeWithLeadingWildcard](#DisableLikeWithLeadingWildcard).
-
-### :wrench: Parameters 
-|Parameter|Type    | Meaning                                         | Default value  |
-| --------|:------:|:------------------------------------------------|:--------------:|
-| comment | String |Comment why like with leading wildcard is enabled|      -         |
-
-## @ExpectJdbcBatching(batchSize=0)
-Indicate disabling of JDBC batching.
+* [@EnableExactlySameSelects](../@EnableExactlySameSelects)
+* [@EnableSameSelectTypesWithDifferentParams](../@EnableSameSelectTypesWithDifferentParams)
+* [@EnableLikeWithLeadingWildcard](../@EnableLikeWithLeadingWildcard)
+* [@ExpectJdbcBatching(batchSize=0)](../@ExpectJdbcBatching)
 
 # Recommended method annotations
 
-* [@ExpectSelect](#ExpectSelect)
-* [@ExpectMaxSelect](#ExpectMaxSelect)
-* [@ExpectSelectedColumn](#ExpectSelectedColumn)
-* [@ExpectMaxSelectedColumn](#ExpectMaxSelectedColumn)
-* [@ExpectInsert](#ExpectInsert)
-* [@ExpectUpdate](#ExpectUpdate)
-* [@ExpectMaxUpdatedColumn](#ExpectMaxUpdatedColumn)
-* [@ExpectDelete](#ExpectDelete)
-
-# Debug annotations
-## [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/wiki/Core-annotations#DisplayAppliedAnnotations)
-
-## @DisplaySqlOfTestMethodBody
-With this annotation the SQL statements are diplayed in the console during the execution of the test method body. <br>
-
-Compared to [@DisplaySql](#DisplaySql), this annotation does not diplay SQL statements before (JUnit 4: @Before, @BeforeClass) and after (JUnit 4: @After, @AfterClass) the execution of the test method body. <br>
-
-⚠️ *It is not recommended to commit your test with this annotation. Indeed, the SQL statements would pollute the logs and may slow down the continuous integration build.*
-
-## @DisplaySql
-With this annotation the SQL statements are diplayed in the console during the test execution.<br>
-
-Compared to [@DisplaySqlOfTestMethodBody](#DisplaySqlOfTestMethodBody), this annotation also diplays SQL statements before (JUnit 4: @Before, @BeforeClass) and after (JUnit 4: @After, @AfterClass) the execution of the test method body. <br>
-
-⚠️ *It is not recommended to commit your test with this annotation. Indeed, the SQL statements would pollute the logs and may slow down the continuous integration build.*
+* [@ExpectSelect](../@ExpectSelect)
+* [@ExpectMaxSelect](../@ExpectMaxSelect)
+* [@ExpectSelectedColumn](../@ExpectSelectedColumn)
+* [@ExpectMaxSelectedColumn](../@ExpectMaxSelectedColumn)
+* [@ExpectInsert](../@ExpectInsert)
+* [@ExpectUpdate](../@ExpectUpdate)
+* [@ExpectMaxUpdatedColumn](../@ExpectMaxUpdatedColumn)
+* [@ExpectDelete](../@ExpectDelete)
