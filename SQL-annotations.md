@@ -222,8 +222,7 @@ In the case where you are developing a new feature, perhaps with the help of TDD
 
 In addition to the performance properties verified by the global annotations, you can check other performance properties at method level.
 
-In addition, the annotations applied at method level can help you to document your code. By example, by reading ```java 
-@ExpectSelect(1)``` annotation applied on a test method you kwow that we expect one select sent to the database.
+In addition, the annotations applied at method level can help you to document your code. By example, by reading ```@ExpectSelect(1)``` annotation applied on a test method you kwow that we expect one select sent to the database.
 
 Among all the SQL annotations, we recommend to use the following at method level: 
 
