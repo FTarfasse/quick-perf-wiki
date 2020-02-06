@@ -286,7 +286,7 @@ With this annotation, the test will fail if the number of returned columns is gr
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Number of update statements|        0       |
 
-## @ExpectMaxSelectedColumn
+## @ExpectMaxUpdatedColumn
 
 With this annotation, the test will fail if the number of updated columns is greater than expected.
 
