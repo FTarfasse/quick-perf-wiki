@@ -169,7 +169,7 @@ A 0 batch size means that JDBC batching is disabled.
     @ExpectJdbcBatching(batchSize = 30)
 ```
 
-## ExpectMaxQueryExecutionTime
+## @ExpectMaxQueryExecutionTime
 
 With this annotation, the test will fail at least one request exceeds the max expected query execution time.
 
