@@ -207,7 +207,8 @@ We recommend to configure the following SQL global annotations:
 
 In some specific cases, you may want to disable global annotations.
 
-You can use the following annotations to disable the [recommended global annotations](Configure global annotations) for some test methods: 
+You can use the following annotations to disable the [recommended global annotations](#Configure-global-annotations) for some test methods: 
+
 |Annotation                                                                              |Short description             |
 | ---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 |[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                |Cancel behavior of [@DisableExactlySameSelects](./@DisableExactlySameSelects)                                |
