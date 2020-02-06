@@ -2,7 +2,7 @@
 
 [Quick start](#Quick-start)<br>
 
-[Interesting checks](#Interesting-checks)<br>
+[What to take care of?](#What-to-take-care-of?)<br>
 
 [Available SQL annotations](#Available-SQL-annotations)<br>
 
