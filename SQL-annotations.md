@@ -61,10 +61,10 @@ You can take care of several things about SQL statements to promote performance 
 |[@ExpectMaxSelect](./@ExpectMaxSelect)                                                    | Max SELECT number                                             |
 |[@ExpectSelectedColumn](./@ExpectSelectedColumn)                                          | Selected columns number                                       |
 |[@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)                                    | Max selected columns number                                   |
-|[@DisableExactlySameSelect](./@DisableExactlySameSelect)                                  | Disable exactly same SELECT statements                        |
-|[@EnableExactlySameSelect](./@EnableExactlySameSelect)                                    | Enable exactly same SELECT statements                         |
+|[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                  | Disable exactly same SELECT statements                        |
+|[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                    | Enable exactly same SELECT statements                         |
 |[@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)| Disable same SELECT statements with different parameter values|
-|[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                  | Enable same SELECT statements with different parameter values |
+|[@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)                                  | Enable same SELECT statements with different parameter values |
 
 ## INSERT statements
 
