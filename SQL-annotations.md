@@ -188,7 +188,7 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 
 # Recommended method annotations
 
-* [@ExpectSelect](../@ExpectSelect)
+* [@ExpectSelect](./@ExpectSelect)
 * [@ExpectMaxSelect](../@ExpectMaxSelect)
 * [@ExpectSelectedColumn](../@ExpectSelectedColumn)
 * [@ExpectMaxSelectedColumn](../@ExpectMaxSelectedColumn)
