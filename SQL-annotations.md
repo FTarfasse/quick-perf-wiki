@@ -2,7 +2,7 @@
 
 [Quick start](#Quick-start)<br>
 
-[What to take care of?](#What-to-take-care-of?)<br>
+[What can affect performance?](#What-can-affect-performance??)<br>
 
 [Available SQL annotations](#Available-SQL-annotations)<br>
 
