@@ -1,9 +1,3 @@
-<p align="center">
-  <a href="https://chanind.github.io/2020/01/13/awesome-orms.html">ORMs Are Awesome</a>
-</p>
-
->**<p align="center">Take control of SQL statements sent to the database</p>**
-
 # 🚩 Table of contents
 [Quick start](#Quick-start)<br>
 
@@ -18,6 +12,17 @@
 [Recommended method annotations](#Recommended-method-annotations)<br>
 
 [Debug annotations](#Debug-annotations)<br>
+
+# Available SQL annotations
+
+<table>
+    <tbody>
+        <tr>
+            <td>   <a href=#ExpectSelect">@ExpectSelect</a></td>
+            <td> <a href=#ExpectMaxSelect"> @ExpectMaxSelect</a> </td>
+        </tr>
+    </tbody>
+</table>
 
 # Quick start
 ## Add configuration 
