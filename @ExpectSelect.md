@@ -1,5 +1,3 @@
-## @ExpectSelect
-
 Verifies the number of SELECT statements. <br>
 
 ### :wrench: Parameters 
