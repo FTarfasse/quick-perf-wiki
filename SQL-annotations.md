@@ -6,8 +6,6 @@
 
 [Interesting checks](#Interesting-checks)<br>
 
-[Worflow with SQL annotations](#Worflow-with-SQL-annotations)<br>
-
 [Recommended global annotations](#Recommended-global-annotations)<br>
 
 [Cancel the behavior of global annotations](#Cancel-the-behavior-of-global-annotations)<br>
@@ -100,8 +98,6 @@ You can take care of several things about SQL statements to promote performance 
 * ...
 
 ⚠️ *Do little configuration described in [**Quick start**](#Quick-start) before using SQL annotations.*
-
-# Worflow with SQL annotations
 
 # Recommended global annotations
 
