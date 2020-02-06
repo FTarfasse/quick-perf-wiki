@@ -70,7 +70,7 @@
 To check that the configuration is properly done, you can try to add an annotation on a test method in order to make it fail. For example, add @ExpectSelect(0) on a test method that is supposed to send one or several selects to the database.
 
 ## Use SQL annotations
-Use [global annotations](#Recommended-global-annotations) or [method](#Recommended-method-annotations) annotations. See [the workflow part](#Worflow-with-SQL-annotations) to see ways to work with SQL annotations.
+You can use SQL annotations with a [global scope](#Recommended-global-annotations), a class scope or a [method scope](#Recommended-method-annotations).<
 
 ## Automatic framework detection
 The SQL annotations automatically detect if *Hibernate* or *Spring* frameworks are used. You don't have any configuration to do. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it with these frameworks.
