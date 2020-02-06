@@ -86,15 +86,15 @@ After that, you can evaluate the SQL properties of the database repositories, th
 <bean id="QuickPerfProxyBeanPostProcessor" class = "org.quickperf.spring.sql.QuickPerfProxyBeanPostProcessor" />
 ```
 
-## Spring Boot examples
-See the code of [this repository](https://github.com/quick-perf/springboot-junit4-examples).
+## Project example with Spring Boot and JUnit 4
+See the code of [this repository](https://github.com/quick-perf/quickperf-examples).
 
 # Spring and JUnit 5
 Please read [this](https://github.com/quick-perf/doc/wiki/JUnit-5) to can use JVM and core annotations.
 Documentation to write to use SQL annotations...
 
-## Spring Boot examples
-See the code of [this repository](https://github.com/quick-perf/springboot-junit5-examples).
+## Project example with Spring Boot and JUnit 5
+See the code of [this repository](https://github.com/quick-perf/quickperf-examples).
 
 # Spring and TestNG
 You can't yet use QuickPerf annotations when Spring is used together with TestNG. If you are interested by this feature, you can help us to develop it. Don't hesitate to leave a comment on [this issue](https://github.com/quick-perf/quickperf/issues/44).
