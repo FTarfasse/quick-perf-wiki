@@ -99,6 +99,104 @@ You can take care of several things about SQL statements to promote performance 
     </tbody>
 </table>
 
+## @ExpectSelect
+
+### :wrench: Parameters 
+|Parameter  |Type| Meaning                   | Default value  |
+| -------- |:---:|:-------------------------:|:--------------:|
+| value    | int |Number of select statements|        0       |
+
+### :mag_right: Example
+```java
+    @ExpectSelect(1)
+    @Test
+    public void should_retrieve_all_cars() {	
+     //...
+    }
+```
+## @ExpectMaxSelect
+With this annotation, the test will fail if the number of SELECT statements is greater than expected. 
+### :wrench: Parameters 
+|Parameter  |Type| Meaning                   | Default value  |
+| -------- |:---:|:-------------------------:|:--------------:|
+| value    | int |Maximum number of selects  |        0       |
+
+### :mag_right: Example
+```java
+    @ExpectMaxSelect(1)
+    @Test
+    public void should_retrieve_all_cars() {	
+     //...
+    }
+```
+
+## @ExpectSelectedColumn
+
+Verifies the number of selected columns. <br>
+
+**_[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)_**
+
+### :wrench: Parameters 
+|Parameter  |Type| Meaning                     | Default value  |
+| --------  |:---:|:--------------------------:|:--------------:|
+| value     | int |Number of selected columns  |        0       |
+
+### :mag_right: Example
+```java
+    @ExpectSelectedColumn(3)
+```
+
+## @ExpectMaxSelectedColumn
+
+With this annotation, the test will fail if the number of returned columns is greater than expected.
+
+**_[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)_**
+
+### :wrench: Parameters 
+|Parameter  |Type| Meaning                             | Default value  |
+| --------  |:---:|:----------------------------------:|:--------------:|
+| value     | int |Maximum number of returned columns  |        0       |
+### :mag_right: Example
+```java
+    @ExpectMaxSelectedColumn(5)
+```
+
+## @ExpectInsert
+
+### :wrench: Parameters 
+|Parameter  |Type| Meaning                   | Default value  |
+| -------- |:---:|:-------------------------:|:--------------:|
+| value    | int |Number of insert statements  |        0       |
+
+## @ExpectUpdate
+
+### :wrench: Parameters 
+|Parameter  |Type| Meaning                   | Default value  |
+| -------- |:---:|:-------------------------:|:--------------:|
+| value    | int |Number of update statements|        0       |
+
+## @ExpectMaxUpdatedColumn
+
+With this annotation, the test will fail if the number of updated columns is greater than expected.
+
+### :wrench: Parameters 
+|Parameter  |Type| Meaning                             | Default value  |
+| --------  |:---:|:----------------------------------:|:--------------:|
+| value     | int |Maximum number of updated columns   |        0       |
+
+### :mag_right: Example
+```java
+    @ExpectMaxUpdatedColumn(5)
+```
+
+## @ExpectDelete
+
+### :wrench: Parameters 
+|Parameter  |Type| Meaning                   | Default value  |
+| -------- |:---:|:-------------------------:|:--------------:|
+| value    | int |Number of delete statements|        0       |
+
+
 # Recommended global annotations
 
 ## Configure recommended global annotations
@@ -210,102 +308,14 @@ Indicate disabling of JDBC batching.
 
 # Recommended method annotations
 
-## @ExpectSelect
-
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
-| -------- |:---:|:-------------------------:|:--------------:|
-| value    | int |Number of select statements|        0       |
-
-### :mag_right: Example
-```java
-    @ExpectSelect(1)
-    @Test
-    public void should_retrieve_all_cars() {	
-     //...
-    }
-```
-## @ExpectMaxSelect
-With this annotation, the test will fail if the number of SELECT statements is greater than expected. 
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
-| -------- |:---:|:-------------------------:|:--------------:|
-| value    | int |Maximum number of selects  |        0       |
-
-### :mag_right: Example
-```java
-    @ExpectMaxSelect(1)
-    @Test
-    public void should_retrieve_all_cars() {	
-     //...
-    }
-```
-
-## @ExpectSelectedColumn
-
-Verifies the number of selected columns. <br>
-
-**_[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)_**
-
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                     | Default value  |
-| --------  |:---:|:--------------------------:|:--------------:|
-| value     | int |Number of selected columns  |        0       |
-
-### :mag_right: Example
-```java
-    @ExpectSelectedColumn(3)
-```
-
-## @ExpectMaxSelectedColumn
-
-With this annotation, the test will fail if the number of returned columns is greater than expected.
-
-**_[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)_**
-
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                             | Default value  |
-| --------  |:---:|:----------------------------------:|:--------------:|
-| value     | int |Maximum number of returned columns  |        0       |
-### :mag_right: Example
-```java
-    @ExpectMaxSelectedColumn(5)
-```
-
-## @ExpectInsert
-
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
-| -------- |:---:|:-------------------------:|:--------------:|
-| value    | int |Number of insert statements  |        0       |
-
-## @ExpectUpdate
-
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
-| -------- |:---:|:-------------------------:|:--------------:|
-| value    | int |Number of update statements|        0       |
-
-## @ExpectMaxUpdatedColumn
-
-With this annotation, the test will fail if the number of updated columns is greater than expected.
-
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                             | Default value  |
-| --------  |:---:|:----------------------------------:|:--------------:|
-| value     | int |Maximum number of updated columns   |        0       |
-
-### :mag_right: Example
-```java
-    @ExpectMaxUpdatedColumn(5)
-```
-
-## @ExpectDelete
-
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
-| -------- |:---:|:-------------------------:|:--------------:|
-| value    | int |Number of delete statements|        0       |
+* [@ExpectSelect](#ExpectSelect)
+* [@ExpectMaxSelect](#ExpectMaxSelect)
+* [@ExpectSelectedColumn](#ExpectSelectedColumn)
+* [@ExpectMaxSelectedColumn](#ExpectMaxSelectedColumn)
+* [@ExpectInsert](#ExpectInsert)
+* [@ExpectUpdate](#ExpectUpdate)
+* [@ExpectMaxUpdatedColumn](#ExpectMaxUpdatedColumn)
+* [@ExpectDelete](#ExpectDelete)
 
 # Debug annotations
 ## [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/wiki/Core-annotations#DisplayAppliedAnnotations)
