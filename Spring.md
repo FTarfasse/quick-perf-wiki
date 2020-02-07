@@ -95,6 +95,31 @@ Documentation to write to use SQL annotations...
 
 ## Dependencies
 
+You can use JUnit 5 and QuickPerf BOM files.
+
+In case of Maven, you can use the following dependency management:
+
+```xml
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>5.6.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.quickperf</groupId>
+                <artifactId>quick-perf-bom</artifactId>
+                <version>1.0.0-RC6</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+```
+
 ## @QuickPerfTest
 
 ## Java configuration to use SQL annotations
