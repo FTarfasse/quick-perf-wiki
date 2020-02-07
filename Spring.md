@@ -120,9 +120,31 @@ In case of Maven, you can use the following dependency management:
     </dependencyManagement>
 ```
 
-## @QuickPerfTest
+Add the following dependency in your project:
+
+```xml
+        <dependency>
+            <groupId>org.quickperf</groupId>
+            <artifactId>quick-perf-junit5</artifactId>
+            <scope>test</scope>
+        </dependency>
+```
+
+After that, you can use JVM annotations by adding @QuickPerfTest annotation on your test class.
+
+See below tu be able to use SQL annotations. 
 
 ## Java configuration to use SQL annotations
+
+
+```xml
+        <dependency>
+            <groupId>org.quickperf</groupId>
+            <artifactId>quick-perf-sql-spring5</artifactId>
+            <scope>test</scope>
+        </dependency>
+```
+
 
 ## Project example with Spring Boot and JUnit 5
 See the code of [this repository](https://github.com/quick-perf/quickperf-examples).
