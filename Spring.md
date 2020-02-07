@@ -93,6 +93,12 @@ See the code of [this repository](https://github.com/quick-perf/quickperf-exampl
 Please read [this](https://github.com/quick-perf/doc/wiki/JUnit-5) to can use JVM and core annotations.
 Documentation to write to use SQL annotations...
 
+## Dependencies
+
+## @QuickPerfTest
+
+## Java configuration to use SQL annotations
+
 ## Project example with Spring Boot and JUnit 5
 See the code of [this repository](https://github.com/quick-perf/quickperf-examples).
 
