@@ -60,7 +60,7 @@ _QuickPerf annotations are executed after the loading of the SpringContext._ So,
 ## Configuration for SQL annotations
 
 To can use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations), you have to add a *QuickPerfProxyBeanPostProcessor* bean.<br>
-To do this, you can look at the Java code examples below or [this Spring Boot project](https://github.com/quick-perf/springboot-junit4-examples).<br> 
+To do this, you can look at the Java code examples below or [this Spring Boot project](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit4).<br> 
 
 After that, you can evaluate the SQL properties of the database repositories, the Spring services or the Spring controller.
 
@@ -87,55 +87,19 @@ After that, you can evaluate the SQL properties of the database repositories, th
 ```
 
 ## Project example with Spring Boot and JUnit 4
-See the code of [this repository](https://github.com/quick-perf/quickperf-examples).
+See the code of [this repository](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit4).
 
 # Spring and JUnit 5
-Please read [this](https://github.com/quick-perf/doc/wiki/JUnit-5) to can use JVM and core annotations.
-Documentation to write to use SQL annotations...
 
-## Dependencies
+## Configure your project for QuickPerf JUnit 5
 
-You can use JUnit 5 and QuickPerf BOM files.
+Please follow the instructions described in [this page](https://github.com/quick-perf/doc/wiki/JUnit-5) to can use [JVM](https://github.com/quick-perf/doc/wiki/JVM-annotations) and [core](https://github.com/quick-perf/doc/wiki/Core-annotations) annotations.
 
-In case of Maven, you can use the following dependency management:
+See the instructions described below to be able to use SQL annotations. 
 
-```xml
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.junit</groupId>
-                <artifactId>junit-bom</artifactId>
-                <version>5.6.0</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.quickperf</groupId>
-                <artifactId>quick-perf-bom</artifactId>
-                <version>1.0.0-RC6</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-```
+## Configure your project to use SQL annotations
 
-Add the following dependency in your project:
-
-```xml
-        <dependency>
-            <groupId>org.quickperf</groupId>
-            <artifactId>quick-perf-junit5</artifactId>
-            <scope>test</scope>
-        </dependency>
-```
-
-After that, you can use JVM annotations by adding @QuickPerfTest annotation on your test class.
-
-See below tu be able to use SQL annotations. 
-
-## Java configuration to use SQL annotations
-
+You have to add the following dependency:
 
 ```xml
         <dependency>
@@ -145,9 +109,30 @@ See below tu be able to use SQL annotations.
         </dependency>
 ```
 
+To can use [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations), you have to add a *QuickPerfProxyBeanPostProcessor* bean.<br>
+To do this, you can look at the code examples below or [this Spring Boot project](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit4).<br> 
+
+After that, you can evaluate the SQL properties of the database repositories, the Spring services or the Spring controller.
+
+*Addition of a QuickPerfProxyBeanPostProcessor bean with @Bean*
+```java
+	import org.springframework.context.annotation.Bean;
+	import org.springframework.context.annotation.Configuration;
+	import quickperf.spring.QuickPerfProxyBeanPostProcessor;
+
+	@Configuration
+	public class Configs {
+
+		@Bean
+		public QuickPerfProxyBeanPostProcessor dataSourceBeanPostProcessor() {
+			return new QuickPerfProxyBeanPostProcessor();
+		}
+
+	}
+```
 
 ## Project example with Spring Boot and JUnit 5
-See the code of [this repository](https://github.com/quick-perf/quickperf-examples).
+See the code of [this repository](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit5).
 
 # Spring and TestNG
 You can't yet use QuickPerf annotations when Spring is used together with TestNG. If you are interested by this feature, you can help us to develop it. Don't hesitate to leave a comment on [this issue](https://github.com/quick-perf/quickperf/issues/44).
