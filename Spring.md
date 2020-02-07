@@ -116,11 +116,11 @@ After that, you can evaluate the SQL properties of the database repositories, th
 
 *Addition of a QuickPerfProxyBeanPostProcessor bean with @Bean*
 ```java
-	import org.springframework.context.annotation.Bean;
-	import org.springframework.context.annotation.Configuration;
-	import quickperf.spring.QuickPerfProxyBeanPostProcessor;
+        import org.quickperf.spring.sql.QuickPerfProxyBeanPostProcessor;
+        import org.springframework.context.annotation.Bean;
+        import org.springframework.context.annotation.Configuration;
 
-	@Configuration
+        @Configuration
 	public class Configs {
 
 		@Bean
