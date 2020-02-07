@@ -1,6 +1,9 @@
 ⚠️ You need JUnit 5.6.0.
 
-You can use the follwing BOM file to configure your project with JUnit 5 and QuickPerf:
+You can use JUnit 5 and QuickPerf [BOM files](https://dzone.com/articles/the-bill-of-materials-in-maven).
+
+In case of Maven, you can use the following dependency management:
+
 ```xml
  <dependencyManagement>
         <dependencies>
