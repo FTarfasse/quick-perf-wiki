@@ -149,13 +149,11 @@ You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/
 
 _Global annotations_ apply on each test.
 
-Let's suppose that you want that you want to add QuickPerf in ab application with automatic tests.
+Let's suppose that you just add QuickPerf to an application having automatic tests. With global annotations, you can quickly apply some performance checks on the existing tests in order to detect some classical performance bottlenecks.
 
-By applying some SQL global annotations you may quickly detect some performance properties that can be improved.
-
-To do this, you have to create a class implementing _SpecifiableGlobalAnnotations_ interface. ***The class implementing _SpecifiableGlobalAnnotations_ has to be in _org.quickperf_ package***.
-
-A _SqlAnnotationBuilder_ class is available to easily implement _specifyAnnotationsAppliedOnEachTest()_ method.
+To apply the global annotations, the test classes have to be annotated with @QuickPerfJUnitRunner or @QuickPerfSpringRunner with JUnit 4 and @QuickPerfTest with JUnit 5. With TestNG, you don't have to add a QuickPerf annotation on the test class.
+Global annotations can be configured by creating a class implementing _SpecifiableGlobalAnnotations_. ***This class has to be in _org.quickperf_ package***.
+A _SqlAnnotationBuilder_ class is available to easily configure SQL global annotations.
 
 ```java
 package org.quickperf;
