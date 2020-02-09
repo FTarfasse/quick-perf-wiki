@@ -203,7 +203,7 @@ We recommend to configure the following SQL global annotations:
 
 # Cancel the behavior of global annotations at method level
 
-In some specific cases, you may want to disable global annotations.
+In some specific cases, you may want to disable dôme global annotations.
 
 You can use the following annotations to disable the [recommended global annotations](#Configure-global-annotations) for some test methods: 
 
