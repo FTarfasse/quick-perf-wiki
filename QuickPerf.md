@@ -6,10 +6,9 @@
 
 <br>
 
-:octocat: **Github repository [here](https://github.com/quick-perf/quickperf)**
-<br><br>
-QuickPerf works with a JDK 1.7+.
-<br>
+**QuickPerf works with JUnit 4, JUnit 5 and a JDK 1.7+.** <br>
+
+:octocat: Github repository [here](https://github.com/quick-perf/quickperf)
 
 # Execute QuickPerf
 ## [With JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
