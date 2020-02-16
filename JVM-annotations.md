@@ -2,7 +2,8 @@
 [One JVM by test method](#One-JVM-by-test-method) <br><br>
 [Configure your test JVM](#Configure-your-test-JVM) <br><br>
 [Verify heap allocation](#Verify-heap-allocation) <br><br>
-[Profile or check your JVM](#Profile-or-check-your-JVM)
+[Profile or check your JVM](#Profile-or-check-your-JVM) <br><br>
+[Test examples](Test-examples)
 
 # One JVM by test method
 ⚠️ *If you use one of the JVM annotations, the test method is executed in a dedicated JVM.*
@@ -158,3 +159,8 @@ then you can increase the stack depth value in this way:
 |Parameter  |Type           | Meaning           | Default value |
 | -------- |:--------------:|:-----------------:|:-------------:|
 | score    | int            |Rule score (<=100) |      60       |
+
+# Test examples
+[Test examples with JUnit 4](https://github.com/quick-perf/quickperf-examples/tree/master/jvm-junit4)<br><br>
+[Test examples with JUnit 5](https://github.com/quick-perf/quickperf-examples/tree/master/jvm-junit5)<br><br>
+[Test examples with JUnit TestNG](https://github.com/quick-perf/quickperf-examples/tree/master/jvm-testng)
