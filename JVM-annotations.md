@@ -3,7 +3,7 @@
 [Configure your test JVM](#Configure-your-test-JVM) <br><br>
 [Verify heap allocation](#Verify-heap-allocation) <br><br>
 [Profile or check your JVM](#Profile-or-check-your-JVM) <br><br>
-[Test examples](Test-examples)
+[Test examples](#Test-examples)
 
 # One JVM by test method
 ⚠️ *If you use one of the JVM annotations, the test method is executed in a dedicated JVM.*
