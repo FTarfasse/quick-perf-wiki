@@ -9,7 +9,9 @@
 **QuickPerf works with JUnit 4, JUnit 5, TestNG and a JDK 1.7+.** <br>
 
 :point_right: &nbsp; **Project examples using QuickPerf available [here](https://github.com/quick-perf/quickperf-examples/blob/master/README.md)** <br>
-:point_right: &nbsp; **Github repository [here](https://github.com/quick-perf/quickperf)**
+:point_right: &nbsp; **Github repository [here](https://github.com/quick-perf/quickperf)**<br>
+:point_right: &nbsp; **Twitter [here](https://twitter.com/QuickPerf)**
+
 
 # Execute QuickPerf
 ## [With JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
