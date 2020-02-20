@@ -6,7 +6,7 @@
 
 <br>
 
-**QuickPerf works with JUnit 4, JUnit 5 and a JDK 1.7+.** <br>
+**QuickPerf works with JUnit 4, JUnit 5, TestNG and a JDK 1.7+.** <br>
 
 :octocat: Github repository [here](https://github.com/quick-perf/quickperf)
 
