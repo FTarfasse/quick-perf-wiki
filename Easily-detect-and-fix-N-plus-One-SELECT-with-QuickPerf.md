@@ -14,7 +14,7 @@ Let's suppose that your project contains a Player JPA entity having a many to on
 ```
 The fetch type is not specified. In JPA, the default fetching policy of @ManyToOne is EAGER.
 
-Now, let's suppose that your application is executing the following a "FROM Player" Java Persistence query:
+And let's suppose that your application is executing the following "FROM Player" Java Persistence query:
 ```java
      TypedQuery<Player> fromPlayer = entityManager.createQuery("FROM Player", Player.class);
      List<Player> players = fromPlayer.getResultList();
@@ -71,6 +71,30 @@ This N+1 select can be fixed by specifying a LAZY fetch type:
 
 
 ## N+1 select with a lazy fetch type...
+
+Now, let's suppose that your project contains a Player JPA entity having a many to one association with a Team entity:
+```java
+    @ManyToOne(targetEntity = Team.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_id")
+    private Team team;
+```
+
+The fetch type is set to lazy.
+
+And let's suppose that your application is executing the following Java code:
+
+```java
+    List<Player> players = fromPlayer.getResultList();
+
+    List<PlayerWithTeamName> playersWithTeamName = players
+                                                  .stream()
+                                                  .map(player -> new PlayerWithTeamName( player.getFirstName()
+                                                                                       , player.getLastName()
+                                                                                       , player.getTeam().getName()
+                                                                                       )
+                                                       )
+                                                  .collect(Collectors.toList());
+```
 
 # Easily detect N+1 selects with QuickPerf
 
