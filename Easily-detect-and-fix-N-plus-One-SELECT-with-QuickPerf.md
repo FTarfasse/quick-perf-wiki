@@ -10,7 +10,7 @@ We are going to see that, with the help of QuickPerf, we can easily detect and f
 
 [Easily detect N+1 selects with QuickPerf](#easily-detect-n1-selects-with-quickperf)<br>
 
-[Easily fix N+1 selects with QuickPerf](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf/_edit#easily-fix-n1-selects-with-quickperf)
+[Easily fix N+1 selects with QuickPerf](#easily-fix-n1-selects-with-quickperf)
 
 # What is an N+1 select?
 
