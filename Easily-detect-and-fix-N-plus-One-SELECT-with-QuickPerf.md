@@ -6,6 +6,70 @@ With QuickPerf you can easily detect and fix this antipattern from your tests.
 
 ## N+1 select coming from an eager fetch type
 
+Let's suppose that your project contains a Player JPA entity having a many to one association with a Team entity:
+```java
+    @ManyToOne(targetEntity = Team.class)
+    @JoinColumn(name = "team_id")
+    private Team team;
+```
+The fetch type is not specified. In JPA, the default fetching policy of @ManyToOne is EAGER.
+
+Now, let's suppose that your application is executing the following a "FROM Player" Java Persistence query:
+```java
+     TypedQuery<Player> fromPlayer = entityManager.createQuery("FROM Player", Player.class);
+     List<Player> players = fromPlayer.getResultList();
+```
+
+The following SQL script was previously executed:
+```sql
+    INSERT INTO TEAM VALUES (1, 'Manchester United');
+    INSERT INTO TEAM VALUES (2, 'Atlético de Madrid');
+
+    INSERT INTO PLAYER VALUES (1, 'Paul', 'Pogba', 1);
+    INSERT INTO PLAYER VALUES (2, 'Antoine', 'Griezmann', 2);
+```
+
+The following SQL statements are then executed:
+```
+    select
+        player0_.id as id1_0_,
+        player0_.firstName as firstNam2_0_,
+        player0_.lastName as lastName3_0_,
+        player0_.team_id as team_id4_0_ 
+    from
+        Player player0_"], Params:[()]
+```
+
+```
+    select
+        team0_.id as id1_1_0_,
+        team0_.name as name2_1_0_ 
+    from
+        Team team0_ 
+    where
+        team0_.id=?"], Params:[(1)]
+```
+
+```
+    select
+        team0_.id as id1_1_0_,
+        team0_.name as name2_1_0_ 
+    from
+        Team team0_ 
+    where
+        team0_.id=?"], Params:[(2)]
+```
+
+Because of the default EAGER fetch type, for each player a SELECT statement is executed to retrieve his team.
+
+This N+1 select can be fixed by specifying a LAZY fetch type:
+```java
+    @ManyToOne(targetEntity = Team.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_id")
+    private Team team;
+```
+
+
 ## N+1 select with a lazy fetch type...
 
 # Easily detect N+1 selects with QuickPerf
