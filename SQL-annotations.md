@@ -1,8 +1,8 @@
 # 🚩 Table of contents
 
-[Quick start](#Quick-start)<br>
-
 [What can affect performance?](#what-can-affect-performance)<br>
+
+[Quick start](#Quick-start)<br>
 
 [Available SQL annotations](#Available-SQL-annotations)<br>
 
@@ -11,6 +11,24 @@
 [Cancel the behavior of global annotations at method level](#Cancel-the-behavior-of-global-annotations-at-method-level)<br>
 
 [Apply SQL annotations at method level](#Apply-SQL-annotations-at-method-level)<br>
+
+# What can affect performance?
+Several things about SQL statements can promote performance and scalability at the beginning of application development.
+* **JDBC roundtrips**
+  * [***Detect N+1 selects***](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf) by using [@ExpectSelect](./@ExpectSelect), [@ExpectMaxSelect](./@ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)<br> 
+  * ***Detect JDBC batching disabled*** by using [@ExpectJdbcBatching](./@ExpectJdbcBatching)
+  * ***Detect exactly same selects*** by using [@DisableExactlySameSelects](./@DisableExactlySameSelects)
+
+  *[Why limit JDBC roundtrips?](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/)*
+
+* **Fetched data**
+  * ***Detect too many selected*** columns by using [@ExpectSelectedColumn](./@ExpectSelectedColumn) or [@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)<br><br>
+*[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)*
+* **SQL statements having a LIKE pattern starting with a wildcard** by using [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
+
+* ...
+
+⚠️ *Do little configuration described in [**Quick start**](#Quick-start) before using SQL annotations.*
 
 # Quick start
 ## Add configuration 
@@ -32,24 +50,6 @@ For example, the following message is diplayed when a N+1 select is presumed and
 	@EntityGraph(attributePaths = { "..." }) on repository method.
 	https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.entity-graph
 ```
-# What can affect performance?
-Several things about SQL statements can promote performance and scalability at the beginning of application development.
-* **JDBC roundtrips**
-  * [***Detect N+1 selects***](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf) by using [@ExpectSelect](./@ExpectSelect), [@ExpectMaxSelect](./@ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)<br> 
-  * ***Detect JDBC batching disabled*** by using [@ExpectJdbcBatching](./@ExpectJdbcBatching)
-  * ***Detect exactly same selects*** by using [@DisableExactlySameSelects](./@DisableExactlySameSelects)
-
-  *[Why limit JDBC roundtrips?](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/)*
-
-* **Fetched data**
-  * ***Detect too many selected*** columns by using [@ExpectSelectedColumn](./@ExpectSelectedColumn) or [@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)<br><br>
-*[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)*
-* **SQL statements having a LIKE pattern starting with a wildcard** by using [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
-
-* ...
-
-⚠️ *Do little configuration described in [**Quick start**](#Quick-start) before using SQL annotations.*
-
 
 # Available SQL annotations
 
