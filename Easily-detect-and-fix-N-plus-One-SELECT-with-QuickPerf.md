@@ -1,7 +1,3 @@
-*N+1* select antipattern can lead to many JDBC roundtrips in production. JDBC roundtrips are harmful for performance as explained in [this paper](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/).
-
-We are going to see that, with the help of QuickPerf, we can easily detect and fix the N+1 select antipattern from our tests.
-
 # 🚩 Table of contents
 
 [What is an N+1 select?](#what-is-an-n1-select)<br>
@@ -172,6 +168,9 @@ With a LEFT JOIN FETCH, the following SQL query is going to be executed:
 ```
 
 # Why N+1 selects can lead to a performance problem?
+*N+1* select antipattern can lead to many JDBC roundtrips in production and JDBC roundtrips are harmful for performance as explained in [this paper](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/).
+
+Hereafter, we show that, with the help of QuickPerf, we can quickly detect and fix the the N+1 select antipattern from tests.
 
 # Easily detect N+1 selects with QuickPerf
 
