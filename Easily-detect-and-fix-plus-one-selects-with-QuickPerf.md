@@ -4,7 +4,15 @@ With QuickPerf you can easily detect and fix this antipattern from your tests.
 
 # What is an N+1 select?
 
+##First example##
+
+##Second example##
+
 # Easily detect N+1 selects with QuickPerf
+
+You can detect N+1 select by adding [@ExpectSelect](./@ExpectSelect) annotation on a test method to check the number of executed SELECT statements.
+
+
 
 # Easily fix N+1 selects with QuickPerf
 
