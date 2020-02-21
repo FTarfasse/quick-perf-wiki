@@ -13,6 +13,9 @@
 :point_right: &nbsp;**[TestNG](https://github.com/quick-perf/doc/wiki/TestNG)**<br><br>
 :point_right: &nbsp;**[Spring](https://github.com/quick-perf/doc/wiki/Spring)**
 
+### **How to**
+:point_right: &nbsp;**[Detect and fix N+1 SELECT](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf)**
+
 ### Project examples
 :point_right: &nbsp;**[Maven performance](https://github.com/quick-perf/maven-test-bench)**<br><br>
 :point_right: &nbsp;**[Spring Boot - JUnit 4](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit4)**<br><br>
