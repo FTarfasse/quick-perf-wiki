@@ -1,4 +1,4 @@
-N+1 select antipattern can lead to many JDBC roundtrips in production.
+*N+1* select antipattern can lead to many JDBC roundtrips in production.
 
 With QuickPerf you can easily detect and fix this antipattern from your tests.
 
