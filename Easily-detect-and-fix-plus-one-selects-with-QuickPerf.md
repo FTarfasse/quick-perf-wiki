@@ -19,7 +19,7 @@ Hibernate code examples are available to play with these two ways of detecting N
 :point_right: &nbsp; [Hibernate JUnit 5 code example](https://github.com/quick-perf/quickperf-examples/blob/master/hibernate-junit5/src/test/java/org/quickperf/sql/HibernateJUnit5Test.java) <br>
 :point_right: &nbsp; [Hibernate TestNG code example](https://github.com/quick-perf/quickperf-examples/blob/master/hibernate-testng/src/test/java/org/quickperf/sql/HibernateTestNGTest.java) <br>
 
-The use of QuickPerf to detect N+1 selects in a pring Boot, a Quarkus or a Micronaut application is demonstrated in [this repository](https://github.com/quick-perf/quickperf-examples).
+The use of QuickPerf to detect N+1 selects in a Spring Boot, a Quarkus or a Micronaut application is demonstrated in [this repository](https://github.com/quick-perf/quickperf-examples).
 
 # Easily fix N+1 selects with QuickPerf
 
