@@ -4,14 +4,19 @@ With QuickPerf you can easily detect and fix this antipattern from your tests.
 
 # What is an N+1 select?
 
-##First example##
+## N+1 select coming from an eager fetch type
 
-##Second example##
+## N+1 select with a lazy fetch type...
 
 # Easily detect N+1 selects with QuickPerf
 
-You can detect N+1 select by adding [@ExpectSelect](./@ExpectSelect) annotation on a test method to check the number of executed SELECT statements.
+You can detect N+1 select by adding ***[@ExpectSelect](./@ExpectSelect) annotation on a test method*** to check the number of executed SELECT statements.
 
+The outcome of an N+1 select is to have the same SELECT statements with different values. You can systematically detect this by configuring ***@DisableSameSelectTypesWithDifferentParams annotation with a [global scope](https://github.com/quick-perf/doc/wiki/QuickPerf#annotation-scopes)***. In the previous examples, the outcome of the N+1 select was to have additional SELECT statements on Team table. These additional SELECT statements are the same apart from the id value of the Team table.
+
+    // With QuickPerf, you can easily detect that the same SELECT statements with different
+    // values are executed, allowing to catch N+1 selects. We are going to see this in the
+    // example.
 
 
 # Easily fix N+1 selects with QuickPerf
