@@ -31,34 +31,37 @@ And let's suppose that your application is executing the following "FROM Player"
 
 
 The following SQL statements are then sent to the database:
-```
+```sql
     select
         player0_.id as id1_0_,
         player0_.firstName as firstNam2_0_,
         player0_.lastName as lastName3_0_,
         player0_.team_id as team_id4_0_ 
     from
-        Player player0_"], Params:[()]
+        Player player0_
 ```
 
+```sql
+    select
+        team0_.id as id1_1_0_,
+        team0_.name as name2_1_0_ 
+    from
+        Team team0_ 
+    where team0_.id=?
+    
+    Params:[(1)]
 ```
+
+```sql
     select
         team0_.id as id1_1_0_,
         team0_.name as name2_1_0_ 
     from
         Team team0_ 
     where
-        team0_.id=?"], Params:[(1)]
-```
-
-```
-    select
-        team0_.id as id1_1_0_,
-        team0_.name as name2_1_0_ 
-    from
-        Team team0_ 
-    where
-        team0_.id=?"], Params:[(2)]
+        team0_.id=?"
+    
+    Params:[(2)]
 ```
 
 Because of the default EAGER fetch type, for each player a SELECT statement is executed to retrieve his team.
@@ -95,6 +98,16 @@ And let's suppose that your application is executing the following Java code:
                                                                                        )
                                                        )
                                                   .collect(Collectors.toList());
+```
+
+Each time the `getName()` method is called, a SELECT... FROM Team statement is sent to the database:
+
+To fix this N+1 SELECT, you can use JOIN FETCH or a LEFT JOIN FETCH:
+```java
+    List<Player> players = fromPlayer.getResultList();
+    TypedQuery<Player> fromPlayer = entityManager.createQuery("FROM Player p LEFT JOIN FETCH p.team"
+                                                            , Player.class);
+
 ```
 
 # Easily detect N+1 selects with QuickPerf
