@@ -4,6 +4,15 @@ With QuickPerf you can easily detect and fix this antipattern from your tests.
 
 # What is an N+1 select?
 
+For the following examples, this SQL script was previously executed: 
+```sql
+    INSERT INTO TEAM VALUES (1, 'Manchester United');
+    INSERT INTO TEAM VALUES (2, 'Atlético de Madrid');
+
+    INSERT INTO PLAYER VALUES (1, 'Paul', 'Pogba', 1);
+    INSERT INTO PLAYER VALUES (2, 'Antoine', 'Griezmann', 2);
+```
+
 ## N+1 select coming from an eager fetch type
 
 Let's suppose that your project contains a Player JPA entity having a many to one association with a Team entity:
@@ -13,15 +22,6 @@ Let's suppose that your project contains a Player JPA entity having a many to on
     private Team team;
 ```
 The fetch type is not specified. In JPA, the default fetching policy of @ManyToOne is EAGER.
-
-The following SQL script was executed: 
-```sql
-    INSERT INTO TEAM VALUES (1, 'Manchester United');
-    INSERT INTO TEAM VALUES (2, 'Atlético de Madrid');
-
-    INSERT INTO PLAYER VALUES (1, 'Paul', 'Pogba', 1);
-    INSERT INTO PLAYER VALUES (2, 'Antoine', 'Griezmann', 2);
-```
 
 And let's suppose that your application is executing the following "FROM Player" Java Persistence query:
 ```java
