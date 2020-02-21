@@ -36,7 +36,7 @@ For example, the following message is diplayed when a N+1 select is presumed and
 Several things about SQL statements can promote performance and scalability at the beginning of application development.
 * **JDBC roundtrips**
   * ***Detect N+1 selects*** by using [@ExpectSelect](./@ExpectSelect), [@ExpectMaxSelect](./@ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)<br> 
- &nbsp; :point_right: &nbsp;[**Easily detect and fix N+1 selects with QuickPerf**](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-plus-one-selects-with-QuickPerf)
+:point_right: &nbsp;[**Easily detect and fix N+1 selects with QuickPerf**](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-plus-one-selects-with-QuickPerf)
   * ***Detect JDBC batching disabled*** by using [@ExpectJdbcBatching](./@ExpectJdbcBatching)
   * ***Detect exactly same selects*** by using [@DisableExactlySameSelects](./@DisableExactlySameSelects)
 
