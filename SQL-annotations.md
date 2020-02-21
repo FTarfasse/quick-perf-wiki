@@ -34,17 +34,18 @@ For example, the following message is diplayed when a N+1 select is presumed and
 ```
 # What can affect performance?
 Several things about SQL statements can promote performance and scalability at the beginning of application development.
-* JDBC roundtrips
-  * Detect N+1 selects by using [@ExpectSelect](./@ExpectSelect), [@ExpectMaxSelect](./@ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)<br> 
-  * Detect JDBC batching disabled by using [@ExpectJdbcBatching](./@ExpectJdbcBatching)
-  * Detect exactly same selects by using [@DisableExactlySameSelects](./@DisableExactlySameSelects)
+* **JDBC roundtrips**
+  * ***Detect N+1 selects*** by using [@ExpectSelect](./@ExpectSelect), [@ExpectMaxSelect](./@ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)<br> 
+ &nbsp; :point_right: &nbsp;[**Easily detect and fix N+1 selects with QuickPerf**](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-plus-one-selects-with-QuickPerf)
+  * ***Detect JDBC batching disabled*** by using [@ExpectJdbcBatching](./@ExpectJdbcBatching)
+  * ***Detect exactly same selects*** by using [@DisableExactlySameSelects](./@DisableExactlySameSelects)
 
   *[Why limit JDBC roundtrips?](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/)*
 
-* Fetched data
-  * Detect too many selected columns by using [@ExpectSelectedColumn](./@ExpectSelectedColumn) or [@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)<br><br>
+* **Fetched data**
+  * ***Detect too many selected*** columns by using [@ExpectSelectedColumn](./@ExpectSelectedColumn) or [@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)<br><br>
 *[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)*
-* SQL statements having a LIKE pattern starting with a wildcard by using [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
+* **SQL statements having a LIKE pattern starting with a wildcard** by using [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
 
 * ...
 
