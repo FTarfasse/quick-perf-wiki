@@ -14,13 +14,7 @@ Let's suppose that your project contains a Player JPA entity having a many to on
 ```
 The fetch type is not specified. In JPA, the default fetching policy of @ManyToOne is EAGER.
 
-And let's suppose that your application is executing the following "FROM Player" Java Persistence query:
-```java
-     TypedQuery<Player> fromPlayer = entityManager.createQuery("FROM Player", Player.class);
-     List<Player> players = fromPlayer.getResultList();
-```
-
-The following SQL script was previously executed:
+The following SQL script was executed: 
 ```sql
     INSERT INTO TEAM VALUES (1, 'Manchester United');
     INSERT INTO TEAM VALUES (2, 'Atlético de Madrid');
@@ -29,7 +23,14 @@ The following SQL script was previously executed:
     INSERT INTO PLAYER VALUES (2, 'Antoine', 'Griezmann', 2);
 ```
 
-The following SQL statements are then executed:
+And let's suppose that your application is executing the following "FROM Player" Java Persistence query:
+```java
+     TypedQuery<Player> fromPlayer = entityManager.createQuery("FROM Player", Player.class);
+     List<Player> players = fromPlayer.getResultList();
+```
+
+
+The following SQL statements are then sent to the database:
 ```
     select
         player0_.id as id1_0_,
@@ -79,7 +80,7 @@ Now, let's suppose that your project contains a Player JPA entity having a many 
     private Team team;
 ```
 
-The fetch type is set to lazy.
+The fetch type is set to LAZY.
 
 And let's suppose that your application is executing the following Java code:
 
