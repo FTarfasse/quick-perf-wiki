@@ -102,12 +102,63 @@ And let's suppose that your application is executing the following Java code:
 
 Each time the `getName()` method is called, a SELECT... FROM Team statement is sent to the database:
 
+```sql
+    select
+        player0_.id as id1_0_,
+        player0_.firstName as firstNam2_0_,
+        player0_.lastName as lastName3_0_,
+        player0_.team_id as team_id4_0_ 
+    from
+        Player player0_
+```
+
+```sql
+    select
+        team0_.id as id1_1_0_,
+        team0_.name as name2_1_0_ 
+    from
+        Team team0_ 
+    where
+        team0_.id=?
+
+    Params:[(1)]
+```
+
+```sql
+    select
+        team0_.id as id1_1_0_,
+        team0_.name as name2_1_0_ 
+    from
+        Team team0_ 
+    where
+        team0_.id=?
+
+   Params:[(2)]
+```
+
 To fix this N+1 SELECT, you can use JOIN FETCH or a LEFT JOIN FETCH:
 ```java
     List<Player> players = fromPlayer.getResultList();
     TypedQuery<Player> fromPlayer = entityManager.createQuery("FROM Player p LEFT JOIN FETCH p.team"
                                                             , Player.class);
 
+```
+
+With a LEFT JOIN FETCH, the following SQL query is going to be executed:
+
+```sql
+    select
+        player0_.id as id1_0_0_,
+        team1_.id as id1_1_1_,
+        player0_.firstName as firstNam2_0_0_,
+        player0_.lastName as lastName3_0_0_,
+        player0_.team_id as team_id4_0_0_,
+        team1_.name as name2_1_1_ 
+    from
+        Player player0_ 
+    left outer join
+        Team team1_ 
+            on player0_.team_id=team1_.id
 ```
 
 # Easily detect N+1 selects with QuickPerf
