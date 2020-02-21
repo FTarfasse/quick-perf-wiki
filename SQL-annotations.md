@@ -12,6 +12,8 @@
 
 [Apply SQL annotations at method level](#Apply-SQL-annotations-at-method-level)<br>
 
+[Easily detect and fix N+1 selects with QuickPerf](#Easilyd-etect-and-fix-N+1-selects-with-QuickPerf)
+
 # Quick start
 ## Add configuration 
 ### [Configuration for Spring (JUnit 4, JUnit 5, TestNG)](https://github.com/quick-perf/doc/wiki/Spring)
@@ -234,3 +236,5 @@ Among all the SQL annotations, we recommend to use the following at method level
 |[@ExpectUpdate](./@ExpectUpdate)                       | UPDATE number               |
 |[@ExpectMaxUpdatedColumn](./@ExpectMaxUpdatedColumn)   | Max updated columns         |
 |[@ExpectDelete](./@ExpectDelete)                       | DELETE number               |
+
+# Easily detect and fix N+1 selects with QuickPerf
