@@ -174,9 +174,15 @@ Hereafter, we show that, with the help of QuickPerf, we can quickly detect and f
 
 # Easily detect N+1 selects with QuickPerf
 
+## Add @ExpectSelect on test method
+
 We can detect N+1 select by adding ***[@ExpectSelect](./@ExpectSelect) annotation on a test method*** to check the number of executed SELECT statements.
 
+## Add @DisableSameSelectTypesWithDifferentParams annotation with a global scope
+
 The outcome of an N+1 select is to have the same SELECT statements with different values. We can systematically detect this by configuring ***@DisableSameSelectTypesWithDifferentParams annotation with a [global scope](https://github.com/quick-perf/doc/wiki/QuickPerf#annotation-scopes)***. In the previous examples, the outcome of the N+1 select was to have additional SELECT statements on Team table. These additional SELECT statements are the same apart from the id value of the Team table.
+
+## Code examples
 
 Hibernate code examples are available to play with these two ways of detecting N+1 selects: <br>
 :point_right: &nbsp; [Hibernate JUnit 4 code example](https://github.com/quick-perf/quickperf-examples/blob/master/hibernate-junit4/src/test/java/org/quickperf/sql/HibernateJUnit4Test.java) <br>
