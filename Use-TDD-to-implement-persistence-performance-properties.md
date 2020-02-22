@@ -161,4 +161,4 @@ If, during an iteration, a functional property is broken, you can temporarily di
 
 The [global performance checks](https://github.com/quick-perf/doc/wiki/SQL-annotations#configure-global-annotations) can be temporarily disabled with the addition of @DisableGlobalAnnotations on the test method. _We have to explain why in the frame of a TDD workflow... Stay tuned!_
 
-Don't hesitate to give feedback: [@jean_bisutti](https://twitter.com/jean_bisutt)
+Don't hesitate to give feedback: [@jean_bisutti](https://twitter.com/jean_bisutti)
