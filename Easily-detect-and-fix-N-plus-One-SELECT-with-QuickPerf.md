@@ -142,7 +142,7 @@ Each time the `getName()` method is called, a SELECT... FROM Team statement is s
    Params:[(2)]
 ```
 
-To fix this N+1 SELECT, we can use JOIN FETCH or a LEFT JOIN FETCH:
+To load the players and their team with one SELECT statement, we can add a JOIN FETCH or a LEFT JOIN FETCH in the JPA query:
 ```java
     List<Player> players = fromPlayer.getResultList();
     TypedQuery<Player> fromPlayer = entityManager.createQuery("FROM Player p LEFT JOIN FETCH p.team"
