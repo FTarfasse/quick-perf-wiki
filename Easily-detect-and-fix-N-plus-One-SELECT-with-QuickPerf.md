@@ -72,14 +72,6 @@ The following SQL statements are then sent to the database:
 
 Because of the default EAGER fetch type, for each player a SELECT statement is executed to retrieve his team.
 
-This N+1 select can be fixed by specifying a LAZY fetch type:
-```java
-    @ManyToOne(targetEntity = Team.class, fetch = FetchType.LAZY)
-    @JoinColumn(name = "team_id")
-    private Team team;
-```
-
-
 ## N+1 select with a lazy fetch type...
 
 Now, let's suppose that our project contains a Player JPA entity having a many to one association with a Team entity:
@@ -142,31 +134,6 @@ Each time the `getName()` method is called, a SELECT... FROM Team statement is s
    Params:[(2)]
 ```
 
-To load the players and their team with one SELECT statement, we can add a JOIN FETCH or a LEFT JOIN FETCH in the JPA query:
-```java
-    List<Player> players = fromPlayer.getResultList();
-    TypedQuery<Player> fromPlayer = entityManager.createQuery("FROM Player p LEFT JOIN FETCH p.team"
-                                                            , Player.class);
-
-```
-
-With a LEFT JOIN FETCH, the following SQL query is going to be executed:
-
-```sql
-    select
-        player0_.id as id1_0_0_,
-        team1_.id as id1_1_1_,
-        player0_.firstName as firstNam2_0_0_,
-        player0_.lastName as lastName3_0_0_,
-        player0_.team_id as team_id4_0_0_,
-        team1_.name as name2_1_1_ 
-    from
-        Player player0_ 
-    left outer join
-        Team team1_ 
-            on player0_.team_id=team1_.id
-```
-
 # Why N+1 selects can lead to a performance problem?
 *N+1* select antipattern can lead to many JDBC roundtrips in production and JDBC roundtrips are harmful for performance as explained in [this paper](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/).
 
@@ -206,3 +173,37 @@ Perhaps you are facing a N+1 select issue
 	* With Spring Data JPA, you may fix it by adding
 		@EntityGraph(attributePaths = { "..." }) on repository method.
 ```
+
+As suggested by QuickPerf, the [first N+1 select example](#n1-select-coming-from-an-eager-fetch-type
+) can be fixed can be fixed by specifying a LAZY fetch type:
+```java
+    @ManyToOne(targetEntity = Team.class, fetch = FetchType.LAZY)
+    @JoinColumn(name = "team_id")
+    private Team team;
+```
+
+With the [second N+1 select example], players and their team can be loaded with one SELECT statement by adding a JOIN FETCH or a LEFT JOIN FETCH in the JPA query:
+```java
+    List<Player> players = fromPlayer.getResultList();
+    TypedQuery<Player> fromPlayer = entityManager.createQuery("FROM Player p LEFT JOIN FETCH p.team"
+                                                            , Player.class);
+
+```
+
+With a LEFT JOIN FETCH, the following SQL query is going to be executed:
+
+```sql
+    select
+        player0_.id as id1_0_0_,
+        team1_.id as id1_1_1_,
+        player0_.firstName as firstNam2_0_0_,
+        player0_.lastName as lastName3_0_0_,
+        player0_.team_id as team_id4_0_0_,
+        team1_.name as name2_1_1_ 
+    from
+        Player player0_ 
+    left outer join
+        Team team1_ 
+            on player0_.team_id=team1_.id
+```
+
