@@ -14,7 +14,8 @@
 :point_right: &nbsp;**[Spring](https://github.com/quick-perf/doc/wiki/Spring)**
 
 ### **How to**
-:point_right: &nbsp;**[Detect and fix N+1 SELECT](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf)**
+:point_right: &nbsp;**[Detect and fix N+1 SELECT](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf)**<br><br>
+:point_right: &nbsp;**[Use TDD to implement <br>persistence performance <br>properties](Use-TDD-to-implement-persistence-performance-properties)**
 
 ### Project examples
 :point_right: &nbsp;**[Maven performance](https://github.com/quick-perf/maven-test-bench)**<br><br>
