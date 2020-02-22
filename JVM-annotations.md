@@ -161,6 +161,6 @@ then you can increase the stack depth value in this way:
 | score    | int            |Rule score (<=100) |      60       |
 
 # Test examples
-[Test examples with JUnit 4](https://github.com/quick-perf/quickperf-examples/tree/master/jvm-junit4)<br><br>
-[Test examples with JUnit 5](https://github.com/quick-perf/quickperf-examples/tree/master/jvm-junit5)<br><br>
-[Test examples with JUnit TestNG](https://github.com/quick-perf/quickperf-examples/tree/master/jvm-testng)
+[With JUnit 4](https://github.com/quick-perf/quickperf-examples/tree/master/jvm-junit4)<br><br>
+[With JUnit 5](https://github.com/quick-perf/quickperf-examples/tree/master/jvm-junit5)<br><br>
+[With TestNG](https://github.com/quick-perf/quickperf-examples/tree/master/jvm-testng)
