@@ -157,4 +157,4 @@ It is worth noting that unlike the functional properties, the performance proper
 
 One performance property is evaluated (and perhaps fix) one after the other.
 
-If, during an iteration, a functional property is broken, you can temporarily disable the verification of the performance properties by adding @FunctionalIteration on your test method. We try do one thing at a time, that is to say fix the performance property and after that check the performance properties.
+If, during an iteration, a functional property is broken, you can temporarily disable the verification of the performance properties by adding _@FunctionalIteration_ on your test method. We try do one thing at a time, that is to say fix the performance property and after that check the performance properties.
