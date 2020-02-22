@@ -152,3 +152,7 @@ After that, we could for example check the query execution time with a productio
 
     }
  ```
+
+It is worth noting that unlike the functional properties, the performance properties do not systematically fail after adding the annotation.
+
+One performance property is evaluated (and perhaps fix) one after the other.
