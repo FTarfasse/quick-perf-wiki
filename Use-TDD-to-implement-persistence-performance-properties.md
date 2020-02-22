@@ -156,3 +156,5 @@ After that, we could for example check the query execution time with a productio
 It is worth noting that unlike the functional properties, the performance properties do not systematically fail after adding the annotation.
 
 One performance property is evaluated (and perhaps fix) one after the other.
+
+If, during an iteration, a functional property is broken, you can temporarily disable the verification of the performance properties by adding @FunctionalIteration on your test method. We try do one thing at a time, that is to say fix the performance property and after that check the performance properties.
