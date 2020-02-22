@@ -157,6 +157,8 @@ It is worth noting that unlike the functional properties, the performance proper
 
 One performance property is evaluated (and perhaps fix) one after the other.
 
+By evaluating and fixing some performance properties we can promote performance and scalability. These performances properties are like quality attributes added to the feature.
+
 If, during an iteration, a functional property is broken, you can temporarily disable the verification of the performance properties by adding _@FunctionalIteration_ on your test method. We try do one thing at a time, that is to say fix the performance property and after that check the performance properties.
 
 The [global performance checks](https://github.com/quick-perf/doc/wiki/SQL-annotations#configure-global-annotations) can be temporarily disabled with the addition of @DisableGlobalAnnotations on the test method. _We have to explain why in the frame of a TDD workflow... Stay tuned!_
