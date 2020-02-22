@@ -160,3 +160,5 @@ One performance property is evaluated (and perhaps fix) one after the other.
 If, during an iteration, a functional property is broken, you can temporarily disable the verification of the performance properties by adding _@FunctionalIteration_ on your test method. We try do one thing at a time, that is to say fix the performance property and after that check the performance properties.
 
 The [global performance checks](https://github.com/quick-perf/doc/wiki/SQL-annotations#configure-global-annotations) can be temporarily disabled with the addition of @DisableGlobalAnnotations on the test method. _We have to explain why in the frame of a TDD workflow... Stay tuned!_
+
+Don't hesitate to give feedback: [@jean_bisutti](https://twitter.com/jean_bisutt)
