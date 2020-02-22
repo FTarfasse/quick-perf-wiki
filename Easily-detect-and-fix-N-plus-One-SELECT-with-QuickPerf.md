@@ -214,7 +214,7 @@ As suggested by QuickPerf, the [first N+1 select example](#n1-select-coming-from
     private Team team;
 ```
 
-With the [second N+1 select example], players and their team can be loaded with one SELECT statement by adding a JOIN FETCH or a LEFT JOIN FETCH in the JPA query:
+With the [second N+1 select example](#n1-select-with-a-lazy-fetch-type), players and their team can be loaded with one SELECT statement by adding a JOIN FETCH or a LEFT JOIN FETCH in the JPA query:
 ```java
     List<Player> players = fromPlayer.getResultList();
     TypedQuery<Player> fromPlayer = entityManager.createQuery("FROM Player p LEFT JOIN FETCH p.team"
