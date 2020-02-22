@@ -130,6 +130,12 @@ The JFR file location is shown in the console. You can open it with Java Mission
 The recording file can be found here: C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-46868616\jvm-profiling.jfr
 You can open it with Java Mission Control (JMC).
 ```
+
+### :bulb: Where to find Java Mission Control (JMC)?
+A _jmc_ executable is available in the _bin _folder of some Oracle JDK (10   >= version >= 1.7u40).
+
+The last JMC release can be found [here](https://adoptopenjdk.net/jmc.html).
+
 ## @ExpectNoJvmIssue
 
 *Today we consider this annotation as experimental.*
