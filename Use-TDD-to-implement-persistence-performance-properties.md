@@ -1,6 +1,6 @@
-_We could add many things to this document! It's a first version. However, we hope that it is interesting!_
+_We could add many things to this document! It's a **draft** version. However, we hope that it is interesting! Don't hesitate to give feedback to jean.bisutti@gmail.com_
 
-At first, we are going to implement the functional behavior with the help of *Test-Driven Development* (TDD). In second step, we are going to use TDD to implement some persistence performance properties.
+At first, we are going to implement the functional behavior with the help of *Test-Driven Development* (TDD). In second step, we will use TDD to implement some persistence performance properties.
 
 Let's imagine that you want to retrieve some data stored in a relational database.
 
@@ -163,5 +163,3 @@ By evaluating and fixing some performance properties we can promote performance 
 If, during an iteration, a functional property is broken, you can temporarily disable the verification of the performance properties by adding _@FunctionalIteration_ on your test method. We try to do one thing at a time, that is to say fix the performance property and after that check the performance properties.
 
 The [global performance checks](https://github.com/quick-perf/doc/wiki/SQL-annotations#configure-global-annotations) can be temporarily disabled with the addition of @DisableGlobalAnnotations on the test method. _We have to explain why in the frame of a TDD workflow... Stay tuned!_
-
-Don't hesitate to give feedback: [@jean_bisutti](https://twitter.com/jean_bisutti)
