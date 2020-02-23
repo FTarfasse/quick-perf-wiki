@@ -178,7 +178,7 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 }
 ```
 
-If a test execute several same select types with different parameter values then it is going to fail.
+If a test executes several same select types with different parameter values then it will fail.
 
 
 ## Code examples
