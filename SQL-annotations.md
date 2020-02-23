@@ -21,11 +21,11 @@ Several things about SQL statements can promote performance and scalability at t
   * ***Detect JDBC batching disabled*** by using [@ExpectJdbcBatching](./@ExpectJdbcBatching)
   * ***Detect exactly same selects*** by using [@DisableExactlySameSelects](./@DisableExactlySameSelects)
 
-  *[Why limit JDBC roundtrips?](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/)*
+     ***[Why limit JDBC roundtrips?](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/)***
 
 * **Fetched data**
   * ***Detect too many selected*** columns by using [@ExpectSelectedColumn](./@ExpectSelectedColumn) or [@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)<br><br>
-*[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)*
+***[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)***
 * **SQL statements having a LIKE pattern starting with a wildcard** by using [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
 
 * ...
