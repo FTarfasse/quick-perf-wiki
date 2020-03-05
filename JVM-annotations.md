@@ -50,6 +50,9 @@ With this annotation, the test is executed in a specific JVM having the given ma
 
 ## @JvmOptions
 With this annotation, the test is executed in a specific JVM having the given JVM options.
+
+A [tool](https://chriswhocodes.com/vm-options-explorer.html) developed by [Chris Newland](https://github.com/chriswhocodes) can be used to explore the available JVM options.
+
 ### :wrench: Parameters 
 |Parameter  |Type           | Meaning       | Default value |
 | -------- |:--------------:|:-------------:|:-------------:|
