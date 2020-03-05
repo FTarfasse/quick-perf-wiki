@@ -108,7 +108,7 @@ For example, the following message is diplayed when a N+1 select is presumed and
 |[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                  | Disable exactly same SELECT statements                        |
 |[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                    | Enable exactly same SELECT statements                         |
 |[@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)| Disable same SELECT statements with different parameter values|
-|[@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)                                  | Enable same SELECT statements with different parameter values |
+|[@EnableSameSelectTypesWithDifferentParams](./@EnableSameSelectTypesWithDifferentParams)                                  | Enable same SELECT statements with different parameter values |
 
 ## INSERT statements
 
