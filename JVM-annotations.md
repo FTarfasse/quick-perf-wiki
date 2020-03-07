@@ -61,9 +61,9 @@ To specify a GC type.
 
 
 The following GC types are available:
-* GC.EPSILON_GC
-* GC.Z_GC
-* GC.SHENANDOAH
+* GC.EPSILON_GC:  [Epsilon GC - Doc 1](https://openjdk.java.net/jeps/318), [Epsilon GC - Doc 2](https://shipilev.net/jvm/diy-gc/#_epsilon_gc)
+* GC.Z_GC: [Epsilon GC - Doc](https://wiki.openjdk.java.net/display/zgc/Main)
+* GC.SHENANDOAH: [Shenandoah - Doc](https://wiki.openjdk.java.net/display/shenandoah/Main)
 
 ### :mag_right: Example
 ```java
