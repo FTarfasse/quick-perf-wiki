@@ -4,14 +4,32 @@
 
 >***QuickPerf is a testing library for Java providing annotations to quickly evaluate some performance properties.***
 
-<br>
+---
+<p align="center">
+  <a href="https://search.maven.org/search?q=org.quickperf">
+    <img src="https://maven-badges.herokuapp.com/maven-central/org.quickperf/quick-perf/badge.svg"
+         alt="Maven Central">
+  </a>
+  <a href="https://github.com/quick-perf/quickperf/blob/master/LICENSE.txt">
+    <img src="https://img.shields.io/badge/license-Apache2-blue.svg"
+         alt = "License">
+  </a>
+  <a href="https://twitter.com/quickperf">
+      <img src="https://img.shields.io/twitter/follow/QuickPerf.svg?label=Follow%20%40QuickPerf&style=social"
+           alt = "Twitter Follow">
+  </a>  
+  <a href="https://gitter.im/quickperf">
+     <img src="https://img.shields.io/gitter/room/quick-perf/quickperf?color=orange"
+          alt = "Gitter">
+  </a>
+</p>
+
+---
 
 **QuickPerf works with JUnit 4, JUnit 5, TestNG and a JDK 1.7+.** <br>
 
 :point_right: &nbsp; **Project examples using QuickPerf available [here](https://github.com/quick-perf/quickperf-examples/blob/master/README.md) and [here](https://github.com/quick-perf/maven-test-bench/blob/master/README.md) (Maven)**<br>
 :point_right: &nbsp; **[Github repository](https://github.com/quick-perf/quickperf)**<br>
-:point_right: &nbsp; **[Twitter ](https://twitter.com/QuickPerf)**
-
 
 # Execute QuickPerf
 ## [With JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
