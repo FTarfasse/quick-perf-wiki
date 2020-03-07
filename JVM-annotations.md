@@ -48,6 +48,28 @@ With this annotation, the test is executed in a specific JVM having the given ma
 
 ### :point_right: [Fixing maximum heap size as a threshold test](https://github.com/quick-perf/doc/wiki/Fixing-maximum-heap-size-as-a-threshold-test)
 
+## @UseGC 
+
+_**Available in next QuickPerf release**_
+
+To specify a GC type.
+
+### :wrench: Parameters 
+|Parameter |Type                       | Meaning    | Default value |
+| -------- |:-------------------------:|:----------:|:-------------:|
+| value    | org.quickperf.jvm.gc.GC   |GC type     | GC.DEFAULT    |
+
+
+The following GC types are available:
+* GC.EPSILON_GC
+* GC.Z_GC
+* GC.SHENANDOAH
+
+### :mag_right: Example
+```java
+@UseGC(GC.EPSILON_GC)
+```
+
 ## @JvmOptions
 With this annotation, the test is executed in a specific JVM having the given JVM options.
 
