@@ -2,7 +2,7 @@
 [One JVM by test method](#One-JVM-by-test-method) <br>
 
 [Configure your test JVM](#Configure-your-test-JVM) <br>
-&nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC](#usegc) &nbsp;|&nbsp; [@JvmOptions](#jvmoption)
+&nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC](#usegc) &nbsp;|&nbsp; [@JvmOptions](#jvmoptions)
 
 [Verify heap allocation](#Verify-heap-allocation) <br>
 &nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
