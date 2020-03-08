@@ -7,8 +7,8 @@
 [Verify heap allocation](#Verify-heap-allocation) <br>
 &nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
 
-Verify RSS (Next release) <br>
-&nbsp;  &nbsp; @MeasureRSS &nbsp;|&nbsp; @ExpectMaxRSS
+Verify RSS (Next release)(#Verify-rss) <br>
+&nbsp;  &nbsp; [@MeasureRSS](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS](#epectmaxrss)
 
 [Profile or check your JVM](#Profile-or-check-your-JVM) <br>
 &nbsp;  &nbsp; [@ProfileJvm](#profilejvm) &nbsp;|&nbsp;[@ExpectNoJvmIssue](#expectnojvmissue)
@@ -148,6 +148,15 @@ With this annotation, the test will fail if heap allocation is greater than expe
   ```
 ## @ExpectNoHeapAllocation
 With this annotation, the test will fail if heap allocation is detected.
+
+
+# [Verify RSS](#Verify-rss) <br>
+
+## @MeasureRSS
+_**Available in next QuickPerf release**_
+
+## @MeasureRSS
+_**Available in next QuickPerf release**_
 
 # Profile or check your JVM
 The following annotations use *Java Flight Recorder* (JFR) under the hood. <br><br>
