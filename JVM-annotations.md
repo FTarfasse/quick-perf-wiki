@@ -7,7 +7,7 @@
 [Verify heap allocation](#Verify-heap-allocation) <br>
 &nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
 
-[Verify RSS](#Verify-rss) <br>
+[Verify Resident set size RSS](#Verify-rss) <br>
 &nbsp;  &nbsp; [@MeasureRSS (Next release)](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS (Next release)](#expectmaxrss)
 
 [Profile or check your JVM](#Profile-or-check-your-JVM) <br>
@@ -156,8 +156,12 @@ With this annotation, the test will fail if heap allocation is detected.
 ## @MeasureRSS
 _**Available in next QuickPerf release**_
 
+⚠️ Today this annotation only woks on Linux.
+
 ## @ExpectMaxRSS
 _**Available in next QuickPerf release**_
+
+⚠️ Today this annotation only woks on Linux.
 
 ### :wrench: Parameters 
 |Parameter  |Type           | Meaning   | 
