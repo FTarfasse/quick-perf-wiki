@@ -56,7 +56,7 @@ With this annotation, the test is executed in a specific JVM having the given ma
    @Xmx(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
 
-### :bulb [Fixing maximum heap size as a threshold test](https://github.com/quick-perf/doc/wiki/Fixing-maximum-heap-size-as-a-threshold-test)
+### :bulb: [Fixing maximum heap size as a threshold test](https://github.com/quick-perf/doc/wiki/Fixing-maximum-heap-size-as-a-threshold-test)
 
 ## @UseGC 
 _**Available in next QuickPerf release**_
