@@ -1,8 +1,15 @@
 # 🚩 Table of contents
-[One JVM by test method](#One-JVM-by-test-method) <br><br>
-[Configure your test JVM](#Configure-your-test-JVM) <br><br>
-[Verify heap allocation](#Verify-heap-allocation) <br><br>
-[Profile or check your JVM](#Profile-or-check-your-JVM) <br><br>
+[One JVM by test method](#One-JVM-by-test-method) <br>
+
+[Configure your test JVM](#Configure-your-test-JVM) <br>
+&nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC](#usegc) &nbsp;|&nbsp; [@JvmOptions](#jvmoption)
+
+[Verify heap allocation](#Verify-heap-allocation) <br>
+&nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
+
+[Profile or check your JVM](#Profile-or-check-your-JVM) <br>
+&nbsp;  &nbsp; [@ProfileJvm](#profilejvm) &nbsp;|&nbsp;[@ExpectNoJvmIssue](#expectnojvmissue)
+
 [Test examples](#Test-examples)
 
 # One JVM by test method
@@ -46,7 +53,7 @@ With this annotation, the test is executed in a specific JVM having the given ma
    @Xmx(value = 20, unit = AllocationUnit.MEGA_BYTE)
   ```
 
-### :point_right: [Fixing maximum heap size as a threshold test](https://github.com/quick-perf/doc/wiki/Fixing-maximum-heap-size-as-a-threshold-test)
+### :bulb [Fixing maximum heap size as a threshold test](https://github.com/quick-perf/doc/wiki/Fixing-maximum-heap-size-as-a-threshold-test)
 
 ## @UseGC 
 
