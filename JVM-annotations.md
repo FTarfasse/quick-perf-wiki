@@ -2,7 +2,7 @@
 [One JVM by test method](#One-JVM-by-test-method) <br>
 
 [Configure your test JVM](#Configure-your-test-JVM) <br>
-&nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC (Next release)](#usegc)  &nbsp;|&nbsp; [@EnableGcLogging](#enablegclogging) &nbsp;|&nbsp; [@JvmOptions](#jvmoptions)
+&nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC (Next release)](#usegc)  &nbsp;|&nbsp; [@EnableGcLogging (Next release)](#enablegclogging) &nbsp;|&nbsp; [@JvmOptions](#jvmoptions)
 
 [Verify heap allocation](#Verify-heap-allocation) <br>
 &nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
@@ -80,6 +80,8 @@ The following GC types are available:
 ```
 
 ## @EnableGcLogging
+_**Available in next QuickPerf release**_
+To enable GC logging.
 
 ## @JvmOptions
 With this annotation, the test is executed in a specific JVM having the given JVM options.
@@ -96,7 +98,7 @@ The following annotations use ByteWatcher under the hood:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
 
-*They measure heap allocation of the thread running the method annotated @Test*.
+*They measure heap allocation of the test method thread*.
 
 You can  for example use @MeasureHeapAllocation and @ExpectMaxHeapAllocation to check the heap allocation cost of a large data structure (containing 1 000 000 elements for example) .<br>
 
