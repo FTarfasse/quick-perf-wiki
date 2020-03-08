@@ -8,7 +8,7 @@
 &nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
 
 [Verify RSS](#Verify-rss) <br>
-&nbsp;  &nbsp; [@MeasureRSS (Next release)](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS (Next release)](#epectmaxrss)
+&nbsp;  &nbsp; [@MeasureRSS (Next release)](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS (Next release)](#expectmaxrss)
 
 [Profile or check your JVM](#Profile-or-check-your-JVM) <br>
 &nbsp;  &nbsp; [@ProfileJvm](#profilejvm) &nbsp;|&nbsp;[@ExpectNoJvmIssue](#expectnojvmissue)
@@ -150,7 +150,7 @@ With this annotation, the test will fail if heap allocation is greater than expe
 With this annotation, the test will fail if heap allocation is detected.
 
 
-# [Verify RSS](#Verify-rss) <br>
+# Verify RSS <br>
 
 ## @MeasureRSS
 _**Available in next QuickPerf release**_
