@@ -155,7 +155,7 @@ With this annotation, the test will fail if heap allocation is detected.
 ## @MeasureRSS
 _**Available in next QuickPerf release**_
 
-## @MeasureRSS
+## @ExpectMaxRSS
 _**Available in next QuickPerf release**_
 
 # Profile or check your JVM
