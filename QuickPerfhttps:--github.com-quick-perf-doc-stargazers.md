@@ -10,17 +10,24 @@
     <img src="https://maven-badges.herokuapp.com/maven-central/org.quickperf/quick-perf/badge.svg"
          alt="Maven Central">
   </a>
+  &nbsp;&nbsp;
   <a href="https://github.com/quick-perf/quickperf/blob/master/LICENSE.txt">
     <img src="https://img.shields.io/badge/license-Apache2-blue.svg"
          alt = "License">
   </a>
+  &nbsp;&nbsp;
   <a href="https://twitter.com/quickperf">
       <img src="https://img.shields.io/twitter/follow/QuickPerf.svg?label=Follow%20%40QuickPerf&style=social"
            alt = "Twitter Follow">
-  </a>  
+  </a>
+  &nbsp;&nbsp;  
   <a href="https://gitter.im/quickperf">
      <img src="https://img.shields.io/gitter/room/quick-perf/quickperf?color=orange"
           alt = "Gitter">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/quick-perf/quickperf">
+   :octocat:
   </a>
 </p>
 
