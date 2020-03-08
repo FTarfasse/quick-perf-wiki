@@ -81,7 +81,19 @@ The following GC types are available:
 
 ## @EnableGcLogging
 _**Available in next QuickPerf release**_
+
 To enable GC logging.
+
+The path of the GC log file is displayed in the console:
+```
+GC log file: C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-1127741195724299919\gc.log
+```
+
+This file can be analysed with the help of a GC log analyzer:
+* [GCViewer](https://github.com/chewiebug/GCViewer), [GCViewer Download 1](https://mvnrepository.com/artifact/com.github.chewiebug/gcviewer), [GCViewer Download 2](https://sourceforge.net/projects/gcviewer/)
+*[Censum](https://www.jclarity.com/censum/)
+*[GCeasy](https://gceasy.io/gc-index.jsp), the GC log file can be downloaded
+* ...
 
 ## @JvmOptions
 With this annotation, the test is executed in a specific JVM having the given JVM options.
