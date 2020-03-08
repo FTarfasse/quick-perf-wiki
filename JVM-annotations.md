@@ -155,16 +155,19 @@ With this annotation, the test will fail if heap allocation is detected.
 
 ## @MeasureRSS
 _**Available in next QuickPerf release**_
+
 You can measure the [Resident Set Size (RSS)](https://en.wikipedia.org/wiki/Resident_set_size) with this annotation. <br><br>
 The measured RSS is displayed in the console.
 
 
-⚠️ Today this annotation only woks on Linux.
+⚠️_ Today this annotation only woks on Linux._
 
 ## @ExpectMaxRSS
 _**Available in next QuickPerf release**_
 
-⚠️ Today this annotation only woks on Linux.
+With this annotation, the test will fail if the [Resident Set Size (RSS)](https://en.wikipedia.org/wiki/Resident_set_size)   is greater than expected.
+
+⚠️_ Today this annotation only woks on Linux._
 
 ### :wrench: Parameters 
 |Parameter  |Type           | Meaning   | 
