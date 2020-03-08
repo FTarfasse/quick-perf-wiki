@@ -150,7 +150,7 @@ With this annotation, the test will fail if heap allocation is greater than expe
 With this annotation, the test will fail if heap allocation is detected.
 
 
-# Verify RSS <br>
+# Verify RSS
 
 ## @MeasureRSS
 _**Available in next QuickPerf release**_
