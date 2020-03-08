@@ -7,7 +7,7 @@
 [Verify heap allocation](#Verify-heap-allocation) <br>
 &nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
 
-[Verify resident set size (RSS)](#Verify-rss) <br>
+[Verify resident set size (RSS)](#verify-resident-set-size-rss) <br>
 &nbsp;  &nbsp; [@MeasureRSS (Next release)](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS (Next release)](#expectmaxrss)
 
 [Profile or check your JVM](#Profile-or-check-your-JVM) <br>
