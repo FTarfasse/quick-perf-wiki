@@ -160,10 +160,10 @@ _**Available in next QuickPerf release**_
 _**Available in next QuickPerf release**_
 
 ### :wrench: Parameters 
-|Parameter  |Type           | Meaning          | 
-| -------- |:--------------:|:----------------:|
-| value    | long           |Allocation value  |   
-| unit     | AllocationUnit |Allocation unit   |
+|Parameter  |Type           | Meaning   | 
+| -------- |:--------------:|:---------:|
+| value    | long           |value      |   
+| unit     | AllocationUnit |RAM unit   |
 
 # Profile or check your JVM
 The following annotations use *Java Flight Recorder* (JFR) under the hood. <br><br>
