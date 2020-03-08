@@ -160,14 +160,14 @@ You can measure the [Resident Set Size (RSS)](https://en.wikipedia.org/wiki/Resi
 The measured RSS is displayed in the console.
 
 
-⚠️ _Today this annotation only woks on Linux._
+⚠️ _Today this annotation only woks on Linux. You can work on this [issue](https://github.com/quick-perf/quickperf/issues/56) to make the RSS annotations work on MacOS._
 
 ## @ExpectMaxRSS
 _**Available in next QuickPerf release**_
 
 With this annotation, the test will fail if the [Resident Set Size (RSS)](https://en.wikipedia.org/wiki/Resident_set_size)   is greater than expected.
 
-⚠️ _Today this annotation only woks on Linux._
+⚠️ _Today this annotation only woks on Linux. You can work on this [issue](https://github.com/quick-perf/quickperf/issues/56) to make the RSS annotations work on MacOS._
 
 ### :wrench: Parameters 
 |Parameter  |Type           | Meaning   | 
