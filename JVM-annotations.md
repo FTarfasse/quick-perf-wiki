@@ -2,7 +2,7 @@
 [One JVM by test method](#One-JVM-by-test-method) <br>
 
 [Configure your test JVM](#Configure-your-test-JVM) <br>
-&nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC](#usegc) &nbsp;|&nbsp; [@JvmOptions](#jvmoptions)
+&nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC (Next release)](#usegc) &nbsp;|&nbsp; [@JvmOptions](#jvmoptions)
 
 [Verify heap allocation](#Verify-heap-allocation) <br>
 &nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
@@ -56,7 +56,6 @@ With this annotation, the test is executed in a specific JVM having the given ma
 ### :bulb [Fixing maximum heap size as a threshold test](https://github.com/quick-perf/doc/wiki/Fixing-maximum-heap-size-as-a-threshold-test)
 
 ## @UseGC 
-
 _**Available in next QuickPerf release**_
 
 To specify a GC type.
