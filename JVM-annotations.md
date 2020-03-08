@@ -102,7 +102,7 @@ You can  for example use @MeasureHeapAllocation and @ExpectMaxHeapAllocation to 
 
 
 ## @MeasureHeapAllocation
-You can measure allocation using this annotation. <br><br>
+You can measure heap allocation with this annotation. <br><br>
 The measured allocation is displayed in the console.
 
 ### :mag_right: Example
