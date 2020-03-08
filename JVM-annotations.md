@@ -7,8 +7,8 @@
 [Verify heap allocation](#Verify-heap-allocation) <br>
 &nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
 
-Verify RSS (Next release)(#Verify-rss) <br>
-&nbsp;  &nbsp; [@MeasureRSS](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS](#epectmaxrss)
+[Verify RSS](#Verify-rss) <br>
+&nbsp;  &nbsp; [@MeasureRSS (Next release)](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS (Next release)](#epectmaxrss)
 
 [Profile or check your JVM](#Profile-or-check-your-JVM) <br>
 &nbsp;  &nbsp; [@ProfileJvm](#profilejvm) &nbsp;|&nbsp;[@ExpectNoJvmIssue](#expectnojvmissue)
