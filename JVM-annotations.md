@@ -202,8 +202,8 @@ The JFR file location is shown in the console. You can open it with Java Mission
 <br>
 ### :mag_right: Example
 ```
-[QUICK PERF] JVM was profiled with Java File Recorder (JFR).
-The recording file can be found here: C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-46868616\jvm-profiling.jfr
+[QUICK PERF] JVM was profiled with Java Flight Recorder (JFR).
+The recording file is available here: C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-46868616\jvm-profiling.jfr
 You can open it with Java Mission Control (JMC).
 ```
 
