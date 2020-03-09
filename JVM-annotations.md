@@ -214,7 +214,7 @@ You can open it with Java Mission Control (JMC).
 ### :bulb: Where to find Java Mission Control (JMC)?
 
 There are several ways to get JMC:
-* A _jmc_ executable is available in the _bin _folder of some Oracle JDK (10   >= version >= 1.7u40)
+* A _jmc_ executable is available in the _bin_ folder of some Oracle JDK (10   >= version >= 1.7u40)
 * With [Oracle](https://jdk.java.net/jmc/)
 * With Azul [Zulu Mission Control](https://www.azul.com/products/zulu-mission-control/)
 * With [Liberica Mission Control](http://www.google.com/search?q=Download+Liberica+Mission+Control)
