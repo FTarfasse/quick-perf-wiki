@@ -192,8 +192,12 @@ With this annotation, the test will fail if the [Resident Set Size (RSS)](https:
 | unit     | AllocationUnit |RAM unit   |
 
 # Profile or check your JVM
-The following annotations use *Java Flight Recorder* (JFR) under the hood. <br><br>
-*JFR profiling works with Oracle JDK >= 1.7u40 and OpenJDK >= 11.*
+The following annotations use *Java Flight Recorder* (JFR) under the hood. <br>
+
+⚠️ JFR profiling works with 
+* Oracle JDK >= 1.7u40 
+* OpenJDK >= 11
+* [OpenJDK 8 with version > 8u262](https://bugs.openjdk.java.net/browse/JDK-8239140)
 
 ## @ProfileJvm
 To profile JVM with Java Flight Recorder (JFR).<br>
