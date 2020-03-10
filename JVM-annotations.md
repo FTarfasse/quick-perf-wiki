@@ -1,6 +1,8 @@
 # 🚩 Table of contents
 [One JVM by test method](#One-JVM-by-test-method) <br>
 
+[How to get the JVM options added by QuickPerf?](#how-to-get-the-jvm-options-added-by-quickperf)
+
 [Configure your test JVM](#Configure-your-test-JVM) <br>
 &nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC (Next release)](#usegc)  &nbsp;|&nbsp; [@EnableGcLogging (Next release)](#enablegclogging) &nbsp;|&nbsp; [@JvmOptions](#jvmoptions)
 
@@ -17,6 +19,28 @@
 
 # One JVM by test method
 ⚠️ *If you use one of the JVM annotations, the test method is executed in a dedicated JVM.*
+
+# How to get the JVM options added by QuickPerf?
+Some JVM annotations configure JVM options.
+
+You can use *@DebugQuickPerf* to get the JVM options added by QuickPerf.
+
+### :mag_right: Example
+```java
+ @DebugQuickPerf
+```
+
+```
+JVM OPTIONS
+-Xms20m
+-Xmx20m
+-XX:+UnlockExperimentalVMOptions
+-XX:+AlwaysPreTouch
+-XX:+UseEpsilonGC
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:HeapDumpPath=C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-16618400885811126911\heapDump.hprof
+
+```
 
 # Configure your test JVM
 ## @HeapSize
