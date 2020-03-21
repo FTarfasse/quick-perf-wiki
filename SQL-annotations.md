@@ -127,10 +127,11 @@ For example, the following message is diplayed when a N+1 select is presumed and
 
 ## UPDATE statements
 
-|Annotation                                          |Short description   |
-| ---------------------------------------------------|--------------------|
-|[@ExpectUpdate](./@ExpectUpdate)                    | UPDATE number      |
-|[@ExpectMaxUpdatedColumn](./@ExpectMaxUpdatedColumn)| Max updated columns|
+|Annotation                                          |Short description          | 
+| ---------------------------------------------------|---------------------------|
+|[@ExpectUpdate](./@ExpectUpdate)                    | UPDATE number             |
+|[@ExpectMaxUpdatedColumn](./@ExpectMaxUpdatedColumn)| Updated columns number    |
+|[@ExpectUpdatedColumn](./@ExpectUpdatedColumn)| Max updated columns number|
 
 ## Debug
 
