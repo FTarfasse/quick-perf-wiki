@@ -1,0 +1,11 @@
+With this annotation, the test will fail if the number of updated columns is not equal to this expected.
+
+### :wrench: Parameters 
+|Parameter  |Type| Meaning                             | Default value  |
+| --------  |:---:|:----------------------------------:|:--------------:|
+| value     | int |Expected number of updated columns  |        0       |
+
+### :mag_right: Example
+```java
+    @ExpectUpdatedColumn(3)
+```
