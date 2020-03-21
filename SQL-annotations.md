@@ -68,8 +68,11 @@ For example, the following message is diplayed when a N+1 select is presumed and
        </tr>     
        <tr>
             <td> <a href="./@ExpectUpdate">@ExpectUpdate</a> </td>
+       </tr>    
+       <tr>
+            <td> <a href="./@ExpectUpdatedColumn">@ExpectUpdatedColumn</a> </td>
             <td> <a href="./@ExpectMaxUpdatedColumn"> @ExpectMaxUpdatedColumn</a> </td>
-       </tr>       
+       </tr>    
        <tr>
             <td> <a href="./@ExpectInsert">@ExpectInsert</a> </td>
             <td> <a href="./@ExpectDelete"> @ExpectDelete</a> </td>
