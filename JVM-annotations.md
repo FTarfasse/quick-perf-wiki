@@ -256,6 +256,8 @@ There are several ways to get JMC:
 
 ## @DisplayJvmProfilingValue
 
+_**Available in next QuickPerf release**_
+
 Display JVM profiling values from Java Flight Recording.
 
 ### :wrench: Parameters 
