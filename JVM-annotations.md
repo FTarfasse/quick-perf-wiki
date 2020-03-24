@@ -13,7 +13,7 @@
 &nbsp;  &nbsp; [@MeasureRSS (*Next release*)](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS (*Next release*)](#expectmaxrss)
 
 [Profile or check your JVM](#Profile-or-check-your-JVM) <br>
-&nbsp;  &nbsp; [@ProfileJvm](#profilejvm) &nbsp;|&nbsp; [@DisplayJvmProfilingValue (*Next release*)](#disaplyjvmprofilingvalue) &nbsp;|&nbsp;[@ExpectNoJvmIssue](#expectnojvmissue)
+&nbsp;  &nbsp; [@ProfileJvm](#profilejvm) &nbsp;|&nbsp; [@DisplayJvmProfilingValue (*Next release*)](#displayjvmprofilingvalue) &nbsp;|&nbsp;[@ExpectNoJvmIssue](#expectnojvmissue)
 
 [Test examples](#Test-examples)
 
