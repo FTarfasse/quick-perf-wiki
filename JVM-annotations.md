@@ -4,16 +4,16 @@
 [How to get the JVM options added by QuickPerf?](#how-to-get-the-jvm-options-added-by-quickperf)
 
 [Configure your test JVM](#Configure-your-test-JVM) <br>
-&nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC (Next release)](#usegc)  &nbsp;|&nbsp; [@EnableGcLogging (Next release)](#enablegclogging) &nbsp;|&nbsp; [@JvmOptions](#jvmoptions)
+&nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC (*Next release*)](#usegc)  &nbsp;|&nbsp; [@EnableGcLogging (*Next release*)](#enablegclogging) &nbsp;|&nbsp; [@JvmOptions](#jvmoptions)
 
 [Verify heap allocation](#Verify-heap-allocation) <br>
 &nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
 
 [Verify resident set size (RSS)](#verify-resident-set-size-rss) <br>
-&nbsp;  &nbsp; [@MeasureRSS (Next release)](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS (Next release)](#expectmaxrss)
+&nbsp;  &nbsp; [@MeasureRSS (*Next release*)](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS (*Next release*)](#expectmaxrss)
 
 [Profile or check your JVM](#Profile-or-check-your-JVM) <br>
-&nbsp;  &nbsp; [@ProfileJvm](#profilejvm) &nbsp;|&nbsp;[@ExpectNoJvmIssue](#expectnojvmissue)
+&nbsp;  &nbsp; [@ProfileJvm](#profilejvm) &nbsp;|&nbsp; [@DisplayJvmProfilingValue (*Next release*)](#disaplyjvmprofilingvalue) &nbsp;|&nbsp;[@ExpectNoJvmIssue](#expectnojvmissue)
 
 [Test examples](#Test-examples)
 
