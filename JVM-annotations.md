@@ -251,6 +251,15 @@ There are several ways to get JMC:
 
 ## @DisplayJvmProfilingValue
 
+Display JVM profiling values from Java Flight Recording.
+
+### :wrench: Parameters 
+|Parameter  |      Type                                         | Meaning                                      |  Default value |
+| --------- |:---------------------------------------------------:|:--------------------------------------------:|:---------------------:|
+| valueType | org.quickperf.jvm.jmc.value.ProfilingValueType[]|Value types to display|ProfilingValueType.ALL|
+
+With ProfilingValueType.ALL, all the profiling values are displayed?
+
 ### :mag_right: Example 1
 
 ```java
