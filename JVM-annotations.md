@@ -249,6 +249,8 @@ There are several ways to get JMC:
 ```
 * The last JMC release can be found [here (AdoptOpenJDK)](https://adoptopenjdk.net/jmc.html) 
 
+## @DisplayJvmProfilingValue
+
 ## @ExpectNoJvmIssue
 
 *Today we consider this annotation as experimental.*
