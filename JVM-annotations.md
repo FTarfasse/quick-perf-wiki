@@ -47,6 +47,12 @@ JVM OPTIONS
 
 ```
 
+Another possibility is to use *@DisplayJvmProfilingValue* annotation:
+
+```java
+@DisplayJvmProfilingValue(valueType = ProfilingValueType.JVM_ARGUMENTS)
+```
+
 # Configure your test JVM
 ## @HeapSize
 With this annotation, the test is executed in a specific JVM having the given heap size.
