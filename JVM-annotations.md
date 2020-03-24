@@ -251,6 +251,69 @@ There are several ways to get JMC:
 
 ## @DisplayJvmProfilingValue
 
+### :mag_right: Example 1
+
+```java
+@DisplayJvmProfilingValue
+```
+
+```
+[QUICK PERF] JVM profiling values
+	 * The total duration of all GC pauses: 1,082 s
+	 * The duration of the longest GC pause: 169,547 ms
+	 * An estimate of the total allocation. This is not an exact value.: 3,68 GiB
+	 * The estimated allocation size in TLABs: 3,67 GiB
+	 * The total size of allocations outside TLABs: 12,4 MiB
+	 * The number of non-error throwables created: 0
+	 * The number of created errors: 36
+	 * The number of created throwables: 36
+	 * The number of compilations: 131
+	 * Longest compilation: 1,264 s
+	 * The number of full code cache events: 0
+	 * JVM Name: OpenJDK 64-Bit Server VM
+	 * JVM Version: OpenJDK 64-Bit Server VM (11.0.1+13) for windows-amd64 JRE (11.0.1+13), built on Oct  6 2018 13:18:13 by "mach5one" with MS VC++ 15.5 (VS2017)
+	 * JVM Arguments: -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -XX:FlightRecorderOptions=stackdepth=128 -Xms6g -Xmx6g -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-13786478919350756048\heapDump.hprof -DquickPerfToExecInASpecificJvm=true -DquickPerfWorkingFolder=C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-13786478919350756048
+	 * Number of Hardware Threads: 8
+	 * Number of Cores: 4
+	 * Number of Sockets: 1
+	 * CPU Description
+		Brand: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, Vendor: GenuineIntel
+		Family: <unknown> (0x6), Model: <unknown> (0x8e), Stepping: 0xa
+		Ext. family: 0x0, Ext. model: 0x8, Type: 0x0, Signature: 0x000806ea
+		Features: ebx: 0x03100800, ecx: 0x7ffafbbf, edx: 0xbfebfbff
+		Ext. features: eax: 0x00000000, ebx: 0x00000000, ecx: 0x00000121, edx: 0x2c100800
+		Supports: On-Chip FPU, Virtual Mode Extensions, Debugging Extensions, Page Size Extensions, Time Stamp Counter, Model Specific Registers, Physical Address Extension, Machine Check Exceptions, CMPXCHG8B Instruction, On-Chip APIC, Fast System Call, Memory Type Range Registers, Page Global Enable, Machine Check Architecture, Conditional Mov Instruction, Page Attribute Table, 36-bit Page Size Extension, CLFLUSH Instruction, Debug Trace Store feature, ACPI registers in MSR space, Intel Architecture MMX Technology, Fast Float Point Save and Restore, Streaming SIMD extensions, Streaming SIMD extensions 2, Self-Snoop, Hyper Threading, Thermal Monitor, Streaming SIMD Extensions 3, PCLMULQDQ, 64-bit DS Area, MONITOR/MWAIT instructions, CPL Qualified Debug Store, Virtual Machine Extensions, Enhanced Intel SpeedStep technology, Thermal Monitor 2, Supplemental Streaming SIMD Extensions 3, Fused Multiply-Add, CMPXCHG16B, xTPR Update Control, Perfmon and Debug Capability, Process-context identifiers, Streaming SIMD extensions 4.1, Streaming SIMD extensions 4.2, x2APIC, MOVBE, Popcount instruction, TSC-Deadline, AESNI, XSAVE, OSXSAVE, AVX, F16C, LAHF/SAHF instruction support, Advanced Bit Manipulations: LZCNT, SYSCALL/SYSRET, Execute Disable Bit, RDTSCP, Intel 64 Architecture, Invariant TSC
+	 * OS Version: OS: Windows 10 , 64 bit Build 18362 (10.0.18362.329)
+```
+
+### :mag_right: Example 2
+
+```java
+@DisplayJvmProfilingValue(valueType = ProfilingValueType.TOTAL_GC_PAUSE)
+```
+
+```
+[QUICK PERF] JVM profiling values
+	 * The total duration of all GC pauses: 946,397 ms
+```
+
+### :mag_right: Example 3
+```java
+    @DisplayJvmProfilingValue(valueType = {  ProfilingValueType.ALLOCATION_TOTAL
+                                           , ProfilingValueType.ALLOC_INSIDE_TLAB_SUM
+                                           , ProfilingValueType.ALLOC_OUTSIDE_TLAB_SUM
+                                          }
+                              )
+```
+
+```
+[QUICK PERF] JVM profiling values
+	 * An estimate of the total allocation. This is not an exact value.: 3,74 GiB
+	 * The estimated allocation size in TLABs: 3,73 GiB
+	 * The total size of allocations outside TLABs: 11,3 MiB
+
+```
+
 ## @ExpectNoJvmIssue
 
 *Today we consider this annotation as experimental.*
