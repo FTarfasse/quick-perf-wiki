@@ -2,7 +2,7 @@
 <img src="https://pbs.twimg.com/profile_banners/926219963333038086/1518645789" alt="QuickPerf"/>
 </div><br>
 
->***QuickPerf is a testing library for Java providing annotations to quickly evaluate some performance properties.***
+>***QuickPerf is a testing library for Java to quickly evaluate some performance properties.***
 
 ---
 <p align="center">
