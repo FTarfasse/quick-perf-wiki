@@ -213,11 +213,11 @@ You can use the two following methods of `org.quickperf.jvm.heap.HeapDumper` cla
 
 ### :bulb: How to analyze the heap dump?
 Several tools can be used to analyze the heap dump:
-* [Memory Analyzer Tool (Memory Analyzer Tool)](https://www.eclipse.org/mat/downloads.php)
+* [Memory Analyzer Tool (MAT)](https://www.eclipse.org/mat/downloads.php)
 * [JOverflow JMC plugin](http://hirt.se/blog/?p=854)
 * [VisualVM](https://visualvm.github.io/)
-* YourKit (commercial)
-* JProfiler (commercial)
+* YourKit (*commercial*)
+* JProfiler (*commercial*)
 * ...
 
 ### :mag_right: Example
