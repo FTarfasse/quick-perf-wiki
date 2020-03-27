@@ -204,6 +204,7 @@ With this annotation, the test will fail if heap allocation is detected.
 
 # Dump the heap
 _**Available in next QuickPerf release**_
+
 You can use the two following methods of `org.quickperf.jvm.heap.HeapDumper` class to dump the Java heap:
 * `public static void dumpHeap(String fileName)`
 * `public static void dumpHeapWithOnlyLiveObjects(String fileName)`
