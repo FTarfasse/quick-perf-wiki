@@ -203,11 +203,22 @@ With this annotation, the test will fail if heap allocation is greater than expe
 With this annotation, the test will fail if heap allocation is detected.
 
 # Dump the heap
+
+## HeapDumper
 _**Available in next QuickPerf release**_
 
 You can use the two following methods of `org.quickperf.jvm.heap.HeapDumper` class to dump the Java heap:
 * `public static void dumpHeap(String fileName)`
 * `public static void dumpHeapWithOnlyLiveObjects(String fileName)`
+
+### :bulb: How to analyze the heap dump?
+Several tools can be used to analyze the heap dump:
+* [Memory Analyzer Tool (Memory Analyzer Tool)](https://www.eclipse.org/mat/downloads.php)
+* [JOverflow JMC plugin](http://hirt.se/blog/?p=854)
+* [VisualVM](https://visualvm.github.io/)
+* YourKit (commercial)
+* JProfiler (commercial)
+* ...
 
 ### :mag_right: Example
 
