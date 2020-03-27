@@ -146,7 +146,7 @@ The following annotations use ByteWatcher under the hood:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
 
-*They measure heap allocation of the test method thread*.
+⚠️  *They measure heap allocation of the test method thread*.
 
 You can  for example use @MeasureHeapAllocation and @ExpectMaxHeapAllocation to check the heap allocation cost of a large data structure (containing 1 000 000 elements for example) .<br>
 
@@ -202,6 +202,32 @@ With this annotation, the test will fail if heap allocation is greater than expe
 ## @ExpectNoHeapAllocation
 With this annotation, the test will fail if heap allocation is detected.
 
+# Dump the heap
+_**Available in next QuickPerf release**_
+You can use the two following methods of `org.quickperf.jvm.heap.HeapDumper` class to dump the Java heap:
+* `public static void dumpHeap(String fileName)`
+* `public static void dumpHeapWithOnlyLiveObjects(String fileName)`
+
+### :mag_right: Example
+
+```java
+        @HeapSize(value = 50, unit = AllocationUnit.MEGA_BYTE)
+        @Test
+        public void do_something_and_dump_heap() {
+
+            IntegerAccumulator integerAccumulator = new IntegerAccumulator();
+            integerAccumulator.accumulateInteger(3_000_000);
+
+            HeapDumper.dumpHeap("C:\\Users\\Jean Bisutti\\heap-dump.hprof");
+
+        }
+```
+
+In console:
+```
+[QUICK PERF] Heap dump file 
+👉 C:\Users\Jean Bisutti\heap-dump.hprof
+```
 
 # Verify resident set size (RSS)
 
