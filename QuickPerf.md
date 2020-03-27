@@ -69,11 +69,11 @@ An annotation having a test method scope overrides the configuration of the same
 **[Example illustrating how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-illustrating-how-annotation-scopes-work)**
 
 ## [Core annotations](https://github.com/quick-perf/doc/wiki/core-annotations)
-## [JVM annotations](https://github.com/quick-perf/doc/wiki/JVM-annotations)
+## [JVM](https://github.com/quick-perf/doc/wiki/JVM-annotations)
 [**Configure your test JVM**](JVM-annotations#Configure-your-test-JVM)<br><br>
 [**Verify heap allocation**](JVM-annotations#Verify-heap-allocation)<br><br>
 [**Profile or check your JVM**](JVM-annotations#Profile-or-check-your-JVM)
-## [SQL annotations](https://github.com/quick-perf/doc/wiki/SQL-annotations)
+## [SQL](https://github.com/quick-perf/doc/wiki/SQL-annotations)
 Easily [**detect N+1 select**](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf), JDBC batching disabled and other things.
 
 # Disable QuickPerf
