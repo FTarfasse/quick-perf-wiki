@@ -12,9 +12,10 @@
 [Verify heap allocation](#Verify-heap-allocation) <br>
 &nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
 
+[Dump the heap (*Next release*)](#dump-the-heap) <br>
+
 [Verify resident set size (RSS)](#verify-resident-set-size-rss) <br>
 &nbsp;  &nbsp; [@MeasureRSS (*Next release*)](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS (*Next release*)](#expectmaxrss)
-
 
 [Profile or check your JVM](#Profile-or-check-your-JVM) <br>
 &nbsp;  &nbsp; [@ProfileJvm](#profilejvm) &nbsp;|&nbsp; [@DisplayJvmProfilingValue (*Next release*)](#displayjvmprofilingvalue) &nbsp;|&nbsp;[@ExpectNoJvmIssue](#expectnojvmissue)
