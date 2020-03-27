@@ -223,16 +223,16 @@ Several tools can be used to analyze the heap dump:
 ### :mag_right: Example
 
 ```java
-        @HeapSize(value = 50, unit = AllocationUnit.MEGA_BYTE)
-        @Test
-        public void do_something_and_dump_heap() {
+@HeapSize(value = 50, unit = AllocationUnit.MEGA_BYTE)
+@Test
+public void do_something_and_dump_heap() {
 
-            IntegerAccumulator integerAccumulator = new IntegerAccumulator();
-            integerAccumulator.accumulateInteger(3_000_000);
+  IntegerAccumulator integerAccumulator = new IntegerAccumulator();
+  integerAccumulator.accumulateInteger(3_000_000);
 
-            HeapDumper.dumpHeap("C:\\Users\\Jean Bisutti\\heap-dump.hprof");
+  HeapDumper.dumpHeap("C:\\Users\\Jean Bisutti\\heap-dump.hprof");
 
-        }
+}
 ```
 
 In console:
