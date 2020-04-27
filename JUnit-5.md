@@ -1,4 +1,4 @@
-⚠️ You need JUnit 5.6.0.
+⚠️ You need JUnit >= 5.6.0.
 
 You can use JUnit 5 and QuickPerf [BOM files](https://dzone.com/articles/the-bill-of-materials-in-maven).
 
