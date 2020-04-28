@@ -280,7 +280,6 @@ The JFR file location is shown in the console. You can open it with Java Mission
 
 From next QuickPerf release, @ProfileJvm will also display some JVM profiling data (GC times, heap allocation estimation, exception numbers, ...) in standard output.
 
-<br>
 ### :mag_right: Example
 ```
 [QUICK PERF] JVM was profiled with Java Flight Recorder (JFR).
@@ -289,7 +288,7 @@ You can open it with Java Mission Control (JMC).
 Where to find Java Mission Control? 👉 https://tinyurl.com/find-jmc
 ```
 
-### :mag_right: Example (from next QuickPerf release)
+From next QuickPerf release:
 ```
 -----------------------------------------------------------------------------
  ALLOCATION (estimations)  |   GARBAGE COLLECTION           | THROWABLE
