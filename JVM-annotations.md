@@ -285,19 +285,19 @@ Where to find Java Mission Control? 👉 https://tinyurl.com/find-jmc
 From next QuickPerf release:
 ```
 -----------------------------------------------------------------------------
- ALLOCATION (estimations)  |   GARBAGE COLLECTION           | THROWABLE
- Total:         3,7 GiB    |   Total pause: 1,087 s         | Exception: 0
- Inside TLAB:  3,69 GiB    |   Longest GC pause: 160,438 ms | Error: 36
- Outside TLAB: 10,3 MiB    |                                | Throwable: 36
+ ALLOCATION (estimations)   |   GARBAGE COLLECTION           |  THROWABLE
+ Total:        3,78 GiB     |   Total pause: 1,085 s         |  Exception: 0
+ Inside TLAB:  3,77 GiB     |   Longest GC pause: 166,248 ms |  Error: 38
+ Outside TLAB: 12 MiB       |                                |  Throwable: 38
 -----------------------------------------------------------------------------
- COMPILATION              | CODE CACHE
- Number: 136              | The number of full code cache events: 0
- Longest: 1,796 s         |   
+ COMPILATION                |   CODE CACHE
+ Number: 146                |   The number of full code cache events: 0
+ Longest: 1,013 s           |
 -----------------------------------------------------------------------------
  JVM
  Name: : OpenJDK 64-Bit Server VM
  Version: : OpenJDK 64-Bit Server VM (11.0.1+13) for windows-amd64 JRE (11.0.1+13), built on Oct  6 2018 13:18:13 by "mach5one" with MS VC++ 15.5 (VS2017)
- Arguments: : -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -Xms6g -Xmx6g -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-11541425778994567005\heap-dump.hprof -DquickPerfToExecInASpecificJvm=true -DquickPerfWorkingFolder=C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-11541425778994567005
+ Arguments: : -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -Xms6g -Xmx6g -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-5454447162909375173\heap-dump.hprof -DquickPerfToExecInASpecificJvm=true -DquickPerfWorkingFolder=C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-5454447162909375173
 -----------------------------------------------------------------------------
  HARDWARE
  Hardware threads: 8
@@ -307,7 +307,7 @@ From next QuickPerf release:
 		Brand: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, Vendor: GenuineIntel
 		Family: <unknown> (0x6), Model: <unknown> (0x8e), Stepping: 0xa
 		Ext. family: 0x0, Ext. model: 0x8, Type: 0x0, Signature: 0x000806ea
-		Features: ebx: 0x04100800, ecx: 0x7ffafbbf, edx: 0xbfebfbff
+		Features: ebx: 0x03100800, ecx: 0x7ffafbbf, edx: 0xbfebfbff
 		Ext. features: eax: 0x00000000, ebx: 0x00000000, ecx: 0x00000121, edx: 0x2c100800
 		Supports: On-Chip FPU, Virtual Mode Extensions, Debugging Extensions, Page Size Extensions, Time Stamp Counter, Model Specific Registers, Physical Address Extension, Machine Check Exceptions, CMPXCHG8B Instruction, On-Chip APIC, Fast System Call, Memory Type Range Registers, Page Global Enable, Machine Check Architecture, Conditional Mov Instruction, Page Attribute Table, 36-bit Page Size Extension, CLFLUSH Instruction, Debug Trace Store feature, ACPI registers in MSR space, Intel Architecture MMX Technology, Fast Float Point Save and Restore, Streaming SIMD extensions, Streaming SIMD extensions 2, Self-Snoop, Hyper Threading, Thermal Monitor, Streaming SIMD Extensions 3, PCLMULQDQ, 64-bit DS Area, MONITOR/MWAIT instructions, CPL Qualified Debug Store, Virtual Machine Extensions, Enhanced Intel SpeedStep technology, Thermal Monitor 2, Supplemental Streaming SIMD Extensions 3, Fused Multiply-Add, CMPXCHG16B, xTPR Update Control, Perfmon and Debug Capability, Process-context identifiers, Streaming SIMD extensions 4.1, Streaming SIMD extensions 4.2, x2APIC, MOVBE, Popcount instruction, TSC-Deadline, AESNI, XSAVE, OSXSAVE, AVX, F16C, LAHF/SAHF instruction support, Advanced Bit Manipulations: LZCNT, SYSCALL/SYSRET, Execute Disable Bit, RDTSCP, Intel 64 Architecture, Invariant TSC
 -----------------------------------------------------------------------------
@@ -315,6 +315,7 @@ From next QuickPerf release:
 : OS: Windows 10 , 64 bit Build 18362 (10.0.18362.778)
 
 -----------------------------------------------------------------------------
+
 ```
 
 ### :bulb: Where to find Java Mission Control (JMC)?
