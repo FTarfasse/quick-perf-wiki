@@ -1,4 +1,4 @@
-⚠️ You need JUnit >= 5.6.0.
+⚠️ **_You need JUnit 5 >= 5.6.0._**
 
 You can use JUnit 5 and QuickPerf [BOM files](https://dzone.com/articles/the-bill-of-materials-in-maven).
 
@@ -10,7 +10,7 @@ In case of Maven, you can use the following dependency management:
             <dependency>
                 <groupId>org.junit</groupId>
                 <artifactId>junit-bom</artifactId>
-                <version>5.6.0</version>
+                <version>5.6.2</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
