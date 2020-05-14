@@ -262,6 +262,7 @@ With this annotation, the test will fail if the [Resident Set Size (RSS)](https:
 # Profile or check your JVM
 With the following annotations, the JVM is profiled with the [JDK Flight Recorder](https://en.wikipedia.org/wiki/JDK_Flight_Recorder) (JFR), an event recorder built into the JVM.
 
+The profiling content is saved in a _.jfr_ file.
 
 ⚠️ JFR profiling works with 
 * Oracle JDK >= 1.7u40 
@@ -269,7 +270,7 @@ With the following annotations, the JVM is profiled with the [JDK Flight Recorde
 * [OpenJDK 8 with version >= 8u262](https://bugs.openjdk.java.net/browse/JDK-8239140)
 
 ## @ProfileJvm
-To profile JVM with Java Flight Recorder (JFR).<br>
+To profile the JVM with the [JDK Flight Recorder](https://en.wikipedia.org/wiki/JDK_Flight_Recorder) (JFR).<br>
 
 The JFR file location is shown in the console. You can open it with Java Mission Control.
 
