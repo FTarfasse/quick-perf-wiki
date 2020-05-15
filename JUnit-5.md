@@ -24,7 +24,7 @@ In case of Maven, you can use the following dependency management:
         </dependencies>
 ```
 
-Add the following QuickPerf dependency in your POM file:
+Then, add the following QuickPerf dependency in your POM file:
 ```xml
  <dependency>
      <groupId>org.quickperf</groupId>
@@ -32,6 +32,7 @@ Add the following QuickPerf dependency in your POM file:
      <scope>test</scope>
  </dependency>
 ```
+
 By adding `@QuickPerfTest` on the test class, [core](https://github.com/quick-perf/doc/wiki/Core-annotations) and [JVM](https://github.com/quick-perf/doc/wiki/JVM-annotations) annotations should work.
 
-A project example with JUnit 5 and Spring Boot is available [here](https://github.com/quick-perf/quickperf-examples).
+A project example with JUnit 5 and Spring Boot is available [here](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit5).

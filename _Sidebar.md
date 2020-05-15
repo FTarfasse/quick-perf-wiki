@@ -22,6 +22,7 @@
 :point_right: &nbsp;**[Spring Boot - JUnit 4](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit4)**<br><br>
 :point_right: &nbsp;**[Spring Boot - JUnit 5](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit5)**<br><br>
 :point_right: &nbsp;**[Micronaut - JUnit 5](https://github.com/quick-perf/quickperf-examples/tree/master/micronaut-hibernate-jpa)**
+:point_right: &nbsp;**[Quarkus - JUnit 5](https://github.com/quick-perf/quickperf-examples/tree/master/quarkus)**
 
 ### **Miscellaneous**
 :point_right: &nbsp;**[QuickPerf code](https://github.com/quick-perf/quickperf)**<br><br>
