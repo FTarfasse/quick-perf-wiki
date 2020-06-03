@@ -288,29 +288,29 @@ From next QuickPerf release:
 ```
 ------------------------------------------------------------------------------
  ALLOCATION (estimations)     |   GARBAGE COLLECTION           |  THROWABLE
- Total       : 3,83 GiB       |   Total pause: 1,311 s         |  Exception: 0
- Inside TLAB : 3,81 GiB       |   Longest GC pause: 222,009 ms |  Error: 38
- Outside TLAB: 12,4 MiB       |   Old: 3                       |  Throwable: 38
- Allocation rate: 92.2 MiB/s  |   Young: 14                    |
+ Total       : 3,68 GiB       |   Total pause     : 1,264 s    |  Exception: 0
+ Inside TLAB : 3,67 GiB       |   Longest GC pause: 206,519 ms |  Error    : 36
+ Outside TLAB: 12,7 MiB       |   Young: 13                    |  Throwable: 36
+ Allocation rate: 108.1 MiB/s |   Old  : 3                     |
 ------------------------------------------------------------------------------
  COMPILATION                  |   CODE CACHE
- Number: 164                  |   The number of full code cache events: 0
- Longest: 1,645 s             |   
+ Number : 157                 |   The number of full code cache events: 0
+ Longest: 1,615 s             |   
 ------------------------------------------------------------------------------
  JVM
- Name: : OpenJDK 64-Bit Server VM
- Version: : OpenJDK 64-Bit Server VM (11.0.1+13) for windows-amd64 JRE (11.0.1+13), built on Oct  6 2018 13:18:13 by "mach5one" with MS VC++ 15.5 (VS2017)
- Arguments: : -Xms6g -Xmx6g -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-6442158693301747299\heap-dump.hprof -DquickPerfToExecInASpecificJvm=true -DquickPerfWorkingFolder=C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-6442158693301747299
+ Name     : OpenJDK 64-Bit Server VM
+ Version  : OpenJDK 64-Bit Server VM (11.0.1+13) for windows-amd64 JRE (11.0.1+13), built on Oct  6 2018 13:18:13 by "mach5one" with MS VC++ 15.5 (VS2017)
+ Arguments: -Xms6g -Xmx6g -XX:+FlightRecorder -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-1155358826815951142\heap-dump.hprof -DquickPerfToExecInASpecificJvm=true -DquickPerfWorkingFolder=C:\Users\JEANBI~1\AppData\Local\Temp\QuickPerf-1155358826815951142
 ------------------------------------------------------------------------------
  HARDWARE
  Hardware threads: 8
- Cores: 4
- Sockets: 1
- CPU: 
+ Cores           : 4
+ Sockets         : 1
+ CPU
 		Brand: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, Vendor: GenuineIntel
 		Family: <unknown> (0x6), Model: <unknown> (0x8e), Stepping: 0xa
 		Ext. family: 0x0, Ext. model: 0x8, Type: 0x0, Signature: 0x000806ea
-		Features: ebx: 0x07100800, ecx: 0xfedaf387, edx: 0xbfebfbff
+		Features: ebx: 0x03100800, ecx: 0xfedaf387, edx: 0xbfebfbff
 		Ext. features: eax: 0x00000000, ebx: 0x00000000, ecx: 0x00000121, edx: 0x2c100800
 		Supports: On-Chip FPU, Virtual Mode Extensions, Debugging Extensions, Page Size Extensions, Time Stamp Counter, Model Specific Registers, Physical Address Extension, Machine Check Exceptions, CMPXCHG8B Instruction, On-Chip APIC, Fast System Call, Memory Type Range Registers, Page Global Enable, Machine Check Architecture, Conditional Mov Instruction, Page Attribute Table, 36-bit Page Size Extension, CLFLUSH Instruction, Debug Trace Store feature, ACPI registers in MSR space, Intel Architecture MMX Technology, Fast Float Point Save and Restore, Streaming SIMD extensions, Streaming SIMD extensions 2, Self-Snoop, Hyper Threading, Thermal Monitor, Streaming SIMD Extensions 3, PCLMULQDQ, 64-bit DS Area, Enhanced Intel SpeedStep technology, Thermal Monitor 2, Supplemental Streaming SIMD Extensions 3, Fused Multiply-Add, CMPXCHG16B, xTPR Update Control, Perfmon and Debug Capability, Process-context identifiers, Streaming SIMD extensions 4.1, Streaming SIMD extensions 4.2, MOVBE, Popcount instruction, AESNI, XSAVE, OSXSAVE, AVX, F16C, LAHF/SAHF instruction support, Advanced Bit Manipulations: LZCNT, SYSCALL/SYSRET, Execute Disable Bit, RDTSCP, Intel 64 Architecture, Invariant TSC
 ------------------------------------------------------------------------------
