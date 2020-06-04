@@ -14,19 +14,7 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 
     public Collection<Annotation> specifyAnnotationsAppliedOnEachTest() {
 
-        /* To build an instance of ExpectSelectNumber annotation without SqlAnnotationBuilder
-        ExpectSelectNumber expectedSelectNumber = new ExpectSelectNumber() {
-            @Override
-            public Class<? extends Annotation> annotationType() {
-                return ExpectSelectNumber.class;
-            }
-            @Override
-            public int value() {
-                return 3;
-            }
-        };
-        */
-
+        // SqlAnnotationBuilder and JvmAnnotationBuilder help to build and configure global annotations
         Annotation expectedSelectNumber = SqlAnnotationBuilder.expectSelectNumber(3);
 
         return Collections.singletonList(expectedSelectNumber);
