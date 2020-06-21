@@ -17,6 +17,8 @@ Measure execution time of test method.
 
 ## @ExpectMaxExecutionTime
 
+The test will fail if the execution time is greater than expected.
+
 ### :wrench: Parameters 
 |Parameter |Type                       | Meaning    | Default value |
 | --------   |:-------------------------:|:----------:|:-------------:|
