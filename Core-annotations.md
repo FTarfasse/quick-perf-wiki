@@ -4,6 +4,8 @@
 [@DisableQuickPerf](#DisableQuickPerf) <br><br>
 [@FunctionalIteration](#FunctionalIteration) <br><br>
 [@DebugQuickPerf](#DebugQuickPerf) <br><br>
+[@MeasureExecutionTime](#MeasureExecutionTime) <br><br>
+[@ExpectMaxExecutionTime](#ExpectMaxExecutionTime) <br><br>
 
 ## @DisplayAppliedAnnotations
 Display applied QuickPerf annotations in console.<br><br>
@@ -38,3 +40,8 @@ Disable QuickPerf features.
 ## @DebugQuickPerf
 This annotation is addressed to developers working on QuickPerf annotations.<br>
 It displays information in console for debugging purpose.
+
+## @MeasureExecutionTime
+
+
+## @ExpectMaxExecutionTime
