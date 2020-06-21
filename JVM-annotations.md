@@ -334,8 +334,20 @@ With this annotation, JVM is profiled with Java Flight Recorder (JFR).<br>
 
 Based on the profiling, some [JMC rules](http://hirt.se/blog/?p=920) are evaluated. For each rule a score is attributed. The maximum score value is 100. The test will fail if one rule has a score greater than this expected (by default 60)<br><br> 
 Things like significant primitives to object conversions can be detected:
-<p align="center">
-<img src="https://github.com/quick-perf/doc/blob/master/doc/images/JMC-PrimitiveToObjectConversion.PNG" width="944" heigth="191"></p>
+```
+[PERF] JMC rules are expected to have score less than <50>.
+
+Rule: Primitive To Object Conversion
+Severity: INFO
+Score: 74
+Message: 79 % of the total allocation (45,6 MiB) is caused by conversion from primitive 
+types to object types.
+
+The most common object type that primitives are converted into is 
+'java.lang.Integer', which causes 45,6 MiB to be allocated. The most common 
+call site is 
+'org.quickperf.jvm.jmc.JmcJUnit4Tests$ClassWithFailingJmcRules$IntegerAccumulator.accumulateInteger(int):40'.
+```
 
 :bulb: With this annotation you can also detect that most of the time is spent to do garbage collection in your test.
 
