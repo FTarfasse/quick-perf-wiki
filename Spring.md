@@ -15,7 +15,7 @@ To use it, following your Spring version, you have to add one of the dependencie
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-junit4-spring5</artifactId>
-  <version>1.0.0-RC6</version>
+  <version>1.0.0-RC7</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -25,7 +25,7 @@ To use it, following your Spring version, you have to add one of the dependencie
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-junit4-spring4</artifactId>
-  <version>1.0.0-RC6</version>
+  <version>1.0.0-RC7</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -35,7 +35,7 @@ To use it, following your Spring version, you have to add one of the dependencie
 <dependency>
   <groupId>org.quickperf</groupId>
   <artifactId>quick-perf-junit4-spring3</artifactId>
-  <version>1.0.0-RC6</version>
+  <version>1.0.0-RC7</version>
   <scope>test</scope>
 </dependency>
 ```
