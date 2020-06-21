@@ -172,7 +172,7 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
 ```
 In console:
 ```
-Measured heap allocation: 440.0 bytes
+[QUICK PERF] Measured heap allocation (test method thread): 440 bytes
 ```
 ## @ExpectMaxHeapAllocation
 With this annotation, the test will fail if heap allocation is greater than expected.
