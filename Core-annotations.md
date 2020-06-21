@@ -10,6 +10,9 @@
 ## @MeasureExecutionTime
 
 ### :mag_right: Example
+```
+[QUICK PERF] Execution time of test method: 1 s 1 ms (1 001 016 700 ns)
+```
 
 ## @ExpectMaxExecutionTime
 
