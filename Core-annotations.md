@@ -20,14 +20,14 @@ Measure execution time of test method.
 The test will fail if the execution time is greater than expected.
 
 ### :wrench: Parameters 
-|Parameter |Type                       | Meaning    | Default value |
-| --------   |:-------------------------:|:----------:|:-------------:|
-| nanoSeconds| long                    |   |  0   |
-| microSeconds| long                    |   |  0   |
-| milliSeconds| int|   |  0   |
-| seconds| int|   |  0   |
-| minutes| int|   |  0   |
-| hours| int|   |  0   |
+|Parameter     |Type    | Meaning                 | Default value |
+| ------------ |:------:|-----------------------|:-------------:|
+| nanoSeconds  | long   | Number of nano seconds  |  0            |
+| microSeconds | long   | Number of micro seconds |  0            |
+| milliSeconds | int    | Number of milli seconds |  0            |
+| seconds      | int    | Number of seconds       |  0            |
+| minutes      | int    | Number of minutes       |  0            |
+| hours        | int    | Nuumber of hours        |  0            |
 
 ### :mag_right: Example
 ```java
