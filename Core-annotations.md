@@ -1,11 +1,12 @@
 # 🚩 Table of contents
+[@MeasureExecutionTime](#MeasureExecutionTime) <br><br>
+[@ExpectMaxExecutionTime](#ExpectMaxExecutionTime) <br><br>
 [@DisplayAppliedAnnotations](#DisplayAppliedAnnotations) <br><br>
 [@DisableGlobalAnnotations](#DisableGlobalAnnotations) <br><br>
 [@DisableQuickPerf](#DisableQuickPerf) <br><br>
 [@FunctionalIteration](#FunctionalIteration) <br><br>
 [@DebugQuickPerf](#DebugQuickPerf) <br><br>
-[@MeasureExecutionTime](#MeasureExecutionTime) <br><br>
-[@ExpectMaxExecutionTime](#ExpectMaxExecutionTime) <br><br>
+
 
 ## @DisplayAppliedAnnotations
 Display applied QuickPerf annotations in console.<br><br>
