@@ -8,6 +8,7 @@
 [@DebugQuickPerf](#DebugQuickPerf) <br><br>
 
 ## @MeasureExecutionTime
+Measure execution time of test method.
 
 ### :mag_right: Example
 ```
