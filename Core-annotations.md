@@ -9,7 +9,21 @@
 
 ## @MeasureExecutionTime
 
+### :mag_right: Example
+
 ## @ExpectMaxExecutionTime
+
+### :wrench: Parameters 
+|Parameter |Type                       | Meaning    | Default value |
+| --------   |:-------------------------:|:----------:|:-------------:|
+| nanoSeconds| long                    |   |  0   |
+| microSeconds| long                    |   |  0   |
+| milliSeconds| int|   |  0   |
+| seconds| int|   |  0   |
+| minutes| int|   |  0   |
+| hours| int|   |  0   |
+
+### :mag_right: Example
 
 ## @DisplayAppliedAnnotations
 Display applied QuickPerf annotations in console.<br><br>
