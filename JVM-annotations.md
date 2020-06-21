@@ -6,16 +6,16 @@
 
 
 [Configure your test JVM](#Configure-your-test-JVM) <br>
-&nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC (*Next release*)](#usegc)  &nbsp;|&nbsp; [@EnableGcLogging (*Next release*)](#enablegclogging) &nbsp;|&nbsp; [@JvmOptions](#jvmoptions)
+&nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC](#usegc)  &nbsp;|&nbsp; [@EnableGcLogging](#enablegclogging) &nbsp;|&nbsp; [@JvmOptions](#jvmoptions)
 
 
 [Verify heap allocation](#Verify-heap-allocation) <br>
 &nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
 
-[Dump the heap (*Next release*)](#dump-the-heap) <br>
+[Dump the heap](#dump-the-heap) <br>
 
 [Verify resident set size (RSS)](#verify-resident-set-size-rss) <br>
-&nbsp;  &nbsp; [@MeasureRSS (*Next release*)](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS (*Next release*)](#expectmaxrss)
+&nbsp;  &nbsp; [@MeasureRSS)](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS](#expectmaxrss)
 
 [Profile or check your JVM](#Profile-or-check-your-JVM) <br>
 &nbsp;  &nbsp; [@ProfileJvm](#profilejvm) &nbsp;|&nbsp; [@ExpectNoJvmIssue](#expectnojvmissue)
@@ -89,7 +89,6 @@ With this annotation, the test is executed in a specific JVM having the given ma
 ### :bulb: [Fixing maximum heap size as a threshold test](https://github.com/quick-perf/doc/wiki/Fixing-maximum-heap-size-as-a-threshold-test)
 
 ## @UseGC 
-_**Available in next QuickPerf release**_
 
 To specify a GC type.
 
@@ -110,7 +109,6 @@ The following GC types are available:
 ```
 
 ## @EnableGcLogging
-_**Available in next QuickPerf release**_
 
 To enable GC logging.
 
@@ -199,7 +197,6 @@ With this annotation, the test will fail if heap allocation is detected.
 # Dump the heap
 
 ## HeapDumper
-_**Available in next QuickPerf release**_
 
 You can use the two following methods of `org.quickperf.jvm.heap.HeapDumper` class to dump the Java heap:
 * `public static void dumpHeap(String fileName)`
@@ -238,7 +235,6 @@ In console:
 # Verify resident set size (RSS)
 
 ## @MeasureRSS
-_**Available in next QuickPerf release**_
 
 You can measure the [Resident Set Size (RSS)](https://en.wikipedia.org/wiki/Resident_set_size) with this annotation. <br><br>
 The measured RSS is displayed in the console.
@@ -247,7 +243,6 @@ The measured RSS is displayed in the console.
 ⚠️ _Today this annotation only woks on Linux. You can work on this [issue](https://github.com/quick-perf/quickperf/issues/56) to make the RSS annotations work on MacOS._
 
 ## @ExpectMaxRSS
-_**Available in next QuickPerf release**_
 
 With this annotation, the test will fail if the [Resident Set Size (RSS)](https://en.wikipedia.org/wiki/Resident_set_size)   is greater than expected.
 
@@ -274,7 +269,7 @@ To profile the JVM with the [JDK Flight Recorder](https://en.wikipedia.org/wiki/
 
 The JFR file location is shown in the console. You can open it with Java Mission Control.
 
-From next QuickPerf release, @ProfileJvm will also display some JVM profiling data (GC times, heap allocation estimation, exception numbers, ...) in standard output.
+ @ProfileJvm also displays some JVM profiling data (GC times, heap allocation estimation, exception numbers, ...) in standard output.
 
 ### :mag_right: Example
 ```
@@ -284,7 +279,6 @@ You can open it with Java Mission Control (JMC).
 Where to find Java Mission Control? 👉 https://tinyurl.com/find-jmc
 ```
 
-From next QuickPerf release:
 ```
 ------------------------------------------------------------------------------
  ALLOCATION (estimations)     |   GARBAGE COLLECTION           |  THROWABLE
