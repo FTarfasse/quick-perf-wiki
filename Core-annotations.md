@@ -30,6 +30,13 @@ The test will fail if the execution time is greater than expected.
 | hours| int|   |  0   |
 
 ### :mag_right: Example
+```java
+@ExpectMaxExecutionTime(seconds = 1, milliSeconds = 10)
+```     
+
+```
+[PERF] Execution time of test method expected to be less than <1 s 10 ms> but is <10 s 1 ms (10 000 831 400 ns)>
+```  
 
 ## @DisplayAppliedAnnotations
 Display applied QuickPerf annotations in console.<br><br>
