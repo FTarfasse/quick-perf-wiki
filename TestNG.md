@@ -3,7 +3,7 @@ Add the following dependency:
  <dependency>
    <groupId>org.quickperf</groupId>
    <artifactId>quick-perf-testng</artifactId>
-   <version>1.0.0-RC6</version>
+   <version>1.0.0-RC7</version>
    <scope>test</scope>
  </dependency>
 ```
