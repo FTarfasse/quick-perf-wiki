@@ -29,6 +29,9 @@ The test will fail if the execution time is greater than expected.
 | minutes      | int    | Number of minutes       |  0            |
 | hours        | int    | Nuumber of hours        |  0            |
 
+
+You can use several parameters together, as shown in the following example.
+
 ### :mag_right: Example
 ```java
 @ExpectMaxExecutionTime(seconds = 1, milliSeconds = 10)
