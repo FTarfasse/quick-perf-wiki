@@ -29,7 +29,7 @@ It can be useful to [configure this annotation with a global scope](https://gith
 | milliSeconds | int    | Number of milli seconds |  0            |
 | seconds      | int    | Number of seconds       |  0            |
 | minutes      | int    | Number of minutes       |  0            |
-| hours        | int    | Nuumber of hours        |  0            |
+| hours        | int    | Number of hours        |  0            |
 
 
 You can use several parameters together, as shown in the following example.
