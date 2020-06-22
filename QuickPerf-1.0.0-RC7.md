@@ -31,6 +31,7 @@ Example:
 * Display information on where to find JMC in console @jeanbisutti 
 
 ## SQL
+* Add [@ExpectUpdatedColumn](https://github.com/quick-perf/doc/wiki/@ExpectUpdatedColumn) @fabfas
 
 ## JUnit 5
 * Display an error message if JUnit 5 version is less than 5.6.0  @jeanbisutti 
