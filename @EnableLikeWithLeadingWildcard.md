@@ -1,4 +1,4 @@
-Cancel behavior of [@DisableLikeWithLeadingWildcard](../DisableLikeWithLeadingWildcard).
+Cancel behavior of [@DisableLikeWithLeadingWildcard](./DisableLikeWithLeadingWildcard).
 
 ### :wrench: Parameters 
 |Parameter|Type    | Meaning                                         | Default value  |
