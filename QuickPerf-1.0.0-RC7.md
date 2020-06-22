@@ -37,10 +37,8 @@ Example:
 
 
 ## Build
-* 
-
-
-# Improvements
+* QuickPerf build is [reproducible](https://github.com/jvm-repo-rebuild/reproducible-central) @Minh-Trieu
+* Add JDK 14 builds @jeanbisutti  
 
 
 # 🐛 Bug fixes
