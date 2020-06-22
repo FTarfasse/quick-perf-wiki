@@ -1,4 +1,4 @@
-With this annotation, the test will fail if the number of updated columns is not equal to this expected.
+With this annotation, the test will fail if the number of updated columns is not equal to the one expected.
 
 ### :wrench: Parameters 
 |Parameter  |Type| Meaning                             | Default value  |
