@@ -6,7 +6,7 @@
 [@DisableQuickPerf](#DisableQuickPerf) <br><br>
 [@FunctionalIteration](#FunctionalIteration) <br><br>
 [@DebugQuickPerf](#DebugQuickPerf) <br><br>
-
+[Configure core annotations with a global scope](#Configure-core-annotations-with-a-global-scope)
 ## @MeasureExecutionTime
 Measure execution time of test method.
 
@@ -74,3 +74,35 @@ Disable QuickPerf features.
 ## @DebugQuickPerf
 This annotation is addressed to developers working on QuickPerf annotations.<br>
 It displays information in console for debugging purpose.
+
+## Configure core annotations with a global scope
+Annotations having a [global scope](https://github.com/quick-perf/doc/wiki/QuickPerf#annotation-scopes) apply on each test.  `org.quickperf.annotation.CoreAnnotationBuilder` helps configure core annotations with a global scope.
+
+### :mag_right: Example
+
+```java
+package org.quickperf;
+
+import org.quickperf.annotation.CoreAnnotationBuilder;
+import org.quickperf.config.SpecifiableGlobalAnnotations;
+
+import java.lang.annotation.Annotation;
+import java.util.Arrays;
+import java.util.Collection;
+
+public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
+
+    public Collection<Annotation> specifyAnnotationsAppliedOnEachTest() {
+
+        return Arrays.asList(
+          
+                CoreAnnotationBuilder.expectMaxExecutionTimeOfMilliSeconds(500)
+
+        );
+
+    }
+
+}
+```
+
+***The class implementing `SpecifiableGlobalAnnotations` has to be in org.quickperf package.***
