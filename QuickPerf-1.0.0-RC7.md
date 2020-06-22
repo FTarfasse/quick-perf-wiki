@@ -11,6 +11,7 @@
 * Add [@EnableGcLogging](https://github.com/quick-perf/doc/wiki/JVM-annotations#enablegclogging) @jeanbisutti 
 * Add [heap dumper](https://github.com/quick-perf/doc/wiki/JVM-annotations#heapdumper) @jeanbisutti
 * Add Resident Set Size (RSS) annotations: [@MeasureRSS](https://github.com/quick-perf/doc/wiki/JVM-annotations#measurerss) and [@ExpectMaxRSS](https://github.com/quick-perf/doc/wiki/JVM-annotations#expectmaxrss) @loicmathieu 
+* Improve allocation display @jeanbisutti  
 * Improve reporting in case of JVM issue @jeanbisutti 
 * Display information on where to find JMC in console @jeanbisutti 
 
