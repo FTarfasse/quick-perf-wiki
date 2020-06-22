@@ -6,7 +6,7 @@
 * Add [`CoreAnnotationBuilder` to configure core annotations with a global scope](https://github.com/quick-perf/doc/wiki/core-annotations#configure-core-annotations-with-a-global-scope) @jeanbisutti
 
 ## JVM
-* @ProfileJvm also displays some JVM profiling data (GC times, heap allocation estimation, exception numbers, ...) in standard output. @jeanbisutti & edwardrose946 (allocation rate) & UbaidurRehman1 (young and old gc counts)
+* @ProfileJvm also displays some JVM profiling data @jeanbisutti & edwardrose946 (allocation rate) & UbaidurRehman1 (young and old gc counts)
 
 Example:
 ```
