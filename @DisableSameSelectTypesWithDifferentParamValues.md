@@ -1,0 +1,1 @@
+The test will fail if at least two SELECT statements have the same structure but have different parameter values.
