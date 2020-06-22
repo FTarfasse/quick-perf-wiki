@@ -19,7 +19,7 @@ Measure execution time of test method.
 
 The test will fail if the execution time is greater than expected.
 
-It can be useful to [configure this annotation with a global scope](https://github.com/quick-perf/doc/wiki/Core-annotations/_edit#mag_right-example-3).
+It can be useful to [configure this annotation with a global scope](https://github.com/quick-perf/doc/wiki/Core-annotations#mag_right-example-3).
 
 ### :wrench: Parameters 
 |Parameter     |Type    | Meaning                 | Default value |
@@ -78,7 +78,9 @@ This annotation is addressed to developers working on QuickPerf annotations.<br>
 It displays information in console for debugging purpose.
 
 ## Configure core annotations with a global scope
-Annotations having a [global scope](https://github.com/quick-perf/doc/wiki/QuickPerf#annotation-scopes) apply on each test.  `org.quickperf.annotation.CoreAnnotationBuilder` helps configure core annotations with a global scope.
+Annotations having a [global scope](https://github.com/quick-perf/doc/wiki/QuickPerf#annotation-scopes) apply on each test.
+
+`org.quickperf.annotation.CoreAnnotationBuilder` helps configure core annotations with a global scope.
 
 ### :mag_right: Example
 
