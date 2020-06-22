@@ -1,4 +1,4 @@
-Cancel behavior of [@DisableSameSelectTypesWithDifferentParams](../DisableSameSelectTypesWithDifferentParams).
+Cancel behavior of [@DisableSameSelectTypesWithDifferentParamValues](../DisableSameSelectTypesWithDifferentParamValues).
 
 ### :wrench: Parameters 
 |Parameter|Type    | Meaning                                                               | Default value  |
