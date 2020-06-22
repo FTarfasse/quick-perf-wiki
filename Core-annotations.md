@@ -19,6 +19,8 @@ Measure execution time of test method.
 
 The test will fail if the execution time is greater than expected.
 
+It can be useful to [configure this annotation with a global scope](https://github.com/quick-perf/doc/wiki/Core-annotations/_edit#mag_right-example-3).
+
 ### :wrench: Parameters 
 |Parameter     |Type    | Meaning                 | Default value |
 | ------------ |:------:|-----------------------|:-------------:|
