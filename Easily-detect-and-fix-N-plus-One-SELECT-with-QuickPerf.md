@@ -159,9 +159,9 @@ We can detect N+1 select by adding ***[@ExpectSelect](./@ExpectSelect) annotatio
 💣  You may have even more select statements with production data.
 ```
 
-## Configure @DisableSameSelectTypesWithDifferentParams annotation with a global scope
+## Configure @DisableSameSelectTypesWithDifferentParamValues annotation with a global scope
 
-The outcome of an N+1 select is to have the same SELECT statements with different values. We can systematically detect this by configuring ***@DisableSameSelectTypesWithDifferentParams annotation with a [global scope](https://github.com/quick-perf/doc/wiki/QuickPerf#annotation-scopes)***. In the previous examples, the outcome of the N+1 select was to have additional SELECT statements on Team table. These additional SELECT statements are the same apart from the id value of the Team table.
+The outcome of an N+1 select is to have the same SELECT statements with different values. We can systematically detect this by configuring ***@DisableSameSelectTypesWithDifferentParamValues annotation with a [global scope](https://github.com/quick-perf/doc/wiki/QuickPerf#annotation-scopes)***. In the previous examples, the outcome of the N+1 select was to have additional SELECT statements on Team table. These additional SELECT statements are the same apart from the id value of the Team table.
 
 *Configuration of global annotation: this class has to be in org.org.quickperf package*
 ```java
