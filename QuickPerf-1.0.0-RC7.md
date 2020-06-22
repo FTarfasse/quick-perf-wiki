@@ -6,7 +6,22 @@
 * Add [`CoreAnnotationBuilder` to configure core annotations with a global scope](https://github.com/quick-perf/doc/wiki/core-annotations#configure-core-annotations-with-a-global-scope) @jeanbisutti
 
 ## JVM
+* @ProfileJvm also displays some JVM profiling data (GC times, heap allocation estimation, exception numbers, ...) in standard output. @jeanbisutti & edwardrose946 (allocation rate) & UbaidurRehman1 (young and old gc counts)
 
+Example:
+```
+------------------------------------------------------------------------------
+ ALLOCATION (estimations)     |   GARBAGE COLLECTION           |  THROWABLE
+ Total       : 3,68 GiB       |   Total pause     : 1,264 s    |  Exception: 0
+ Inside TLAB : 3,67 GiB       |   Longest GC pause: 206,519 ms |  Error    : 36
+ Outside TLAB: 12,7 MiB       |   Young: 13                    |  Throwable: 36
+ Allocation rate: 108.1 MiB/s |   Old  : 3                     |
+------------------------------------------------------------------------------
+ COMPILATION                  |   CODE CACHE
+ Number : 157                 |   The number of full code cache events: 0
+ Longest: 1,615 s             |   
+------------------------------------------------------------------------------
+```
 * Add [@UseGC](https://github.com/quick-perf/doc/wiki/JVM-annotations#usegc) @jeanbisutti
 * Add [@EnableGcLogging](https://github.com/quick-perf/doc/wiki/JVM-annotations#enablegclogging) @jeanbisutti 
 * Add [heap dumper](https://github.com/quick-perf/doc/wiki/JVM-annotations#heapdumper) @jeanbisutti
