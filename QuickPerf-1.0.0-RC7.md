@@ -53,3 +53,6 @@ Example:
 *  Should not suspect N+1 select if less than two select statements are executed @jeanbisutti 
 
 #  ⚠️ Breaking change
+## SQL
+* @DisableSameSelectTypesWithDifferentParams renamed into @DisableSameSelectTypesWithDifferentParamValues 
+* @EnableSameSelectTypesWithDifferentParams renamed into @EnableSameSelectTypesWithDifferentParamValues
