@@ -17,7 +17,7 @@
 # What can affect performance?
 Several things about SQL statements can promote performance and scalability at the beginning of application development.
 * **JDBC roundtrips**
-  * [***Detect N+1 selects***](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf) by using [@ExpectSelect](./@ExpectSelect), [@ExpectMaxSelect](./@ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)<br> 
+  * [***Detect N+1 selects***](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf) by using [@ExpectSelect](./@ExpectSelect), [@ExpectMaxSelect](./@ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)<br> 
   * ***Detect JDBC batching disabled*** by using [@ExpectJdbcBatching](./@ExpectJdbcBatching)
   * ***Detect exactly same selects*** by using [@DisableExactlySameSelects](./@DisableExactlySameSelects)
 
