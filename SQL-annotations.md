@@ -91,7 +91,7 @@ For example, the following message is diplayed when a N+1 select is presumed and
        </tr>        
        <tr>
             <td> <a href="./@DisableSameSelectTypesWithDifferentParamValues">@DisableSameSelectTypesWithDifferentParamValues</a> </td>
-            <td> <a href="./@EnableSameSelectTypesWithDifferentParams">@EnableSameSelectTypesWithDifferentParams</a> </td>
+            <td> <a href="./@EnableSameSelectTypesWithDifferentParamValues">@EnableSameSelectTypesWithDifferentParamValues</a> </td>
        </tr>       
        <tr>
             <td> <a href="./@DisableLikeWithLeadingWildcard">@DisableLikeWithLeadingWildcard</a> </td>
@@ -111,7 +111,7 @@ For example, the following message is diplayed when a N+1 select is presumed and
 |[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                  | Disable exactly same SELECT statements                        |
 |[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                    | Enable exactly same SELECT statements                         |
 |[@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)| Disable same SELECT statements with different parameter values|
-|[@EnableSameSelectTypesWithDifferentParams](./@EnableSameSelectTypesWithDifferentParams)                                  | Enable same SELECT statements with different parameter values |
+|[@EnableSameSelectTypesWithDifferentParamValues](./@EnableSameSelectTypesWithDifferentParamValues)                                  | Enable same SELECT statements with different parameter values |
 
 ## INSERT statements
 
@@ -216,7 +216,7 @@ You can use the following annotations to disable the [recommended global annotat
 |Annotation                                                                              |Short description             |
 | ---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 |[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                |Cancel behavior of [@DisableExactlySameSelects](./@DisableExactlySameSelects)                                |
-|[@EnableSameSelectTypesWithDifferentParams](./@EnableSameSelectTypesWithDifferentParams)|Cancel behavior of [@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)|
+|[@EnableSameSelectTypesWithDifferentParamValues](./@EnableSameSelectTypesWithDifferentParamValues)|Cancel behavior of [@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)|
 |[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)                      |Cancel behavior of [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      |
 |[@ExpectJdbcBatching(batchSize=0)](./@ExpectJdbcBatching)                               |Cancel behavior of [@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              |
 
