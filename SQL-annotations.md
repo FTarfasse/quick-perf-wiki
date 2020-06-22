@@ -90,7 +90,7 @@ For example, the following message is diplayed when a N+1 select is presumed and
             <td> <a href="./@EnableExactlySameSelects">@EnableExactlySameSelects</a> </td>
        </tr>        
        <tr>
-            <td> <a href="./@DisableSameSelectTypesWithDifferentParams">@DisableSameSelectTypesWithDifferentParams</a> </td>
+            <td> <a href="./@DisableSameSelectTypesWithDifferentParamValues">@DisableSameSelectTypesWithDifferentParamValues</a> </td>
             <td> <a href="./@EnableSameSelectTypesWithDifferentParams">@EnableSameSelectTypesWithDifferentParams</a> </td>
        </tr>       
        <tr>
@@ -110,7 +110,7 @@ For example, the following message is diplayed when a N+1 select is presumed and
 |[@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)                                    | Max selected columns number                                   |
 |[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                  | Disable exactly same SELECT statements                        |
 |[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                    | Enable exactly same SELECT statements                         |
-|[@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)| Disable same SELECT statements with different parameter values|
+|[@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)| Disable same SELECT statements with different parameter values|
 |[@EnableSameSelectTypesWithDifferentParams](./@EnableSameSelectTypesWithDifferentParams)                                  | Enable same SELECT statements with different parameter values |
 
 ## INSERT statements
@@ -202,7 +202,7 @@ We recommend to configure the following SQL global annotations:
 |Annotation                                                                                |Short description                                              |
 | -----------------------------------------------------------------------------------------|---------------------------------------------------------------|
 |[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                  | Disable exactly same SELECT statements                        |
-|[@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)| Disable same SELECT statements with different parameter values|
+|[@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)| Disable same SELECT statements with different parameter values|
 |[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      | Disable like with leading wildcard                            |
 |[@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              | JDBC batching is enabled                                      |
 |[@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)                            | Max query execution time                                      |
@@ -216,7 +216,7 @@ You can use the following annotations to disable the [recommended global annotat
 |Annotation                                                                              |Short description             |
 | ---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 |[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                |Cancel behavior of [@DisableExactlySameSelects](./@DisableExactlySameSelects)                                |
-|[@EnableSameSelectTypesWithDifferentParams](./@EnableSameSelectTypesWithDifferentParams)|Cancel behavior of [@DisableSameSelectTypesWithDifferentParams](./@DisableSameSelectTypesWithDifferentParams)|
+|[@EnableSameSelectTypesWithDifferentParams](./@EnableSameSelectTypesWithDifferentParams)|Cancel behavior of [@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)|
 |[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)                      |Cancel behavior of [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      |
 |[@ExpectJdbcBatching(batchSize=0)](./@ExpectJdbcBatching)                               |Cancel behavior of [@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              |
 
