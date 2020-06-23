@@ -57,7 +57,7 @@ An annotation having a test method scope overrides the configuration of the same
 
 💡 **[Examples illustrating how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-illustrating-how-annotation-scopes-work)**
 
-## [Core annotations](https://github.com/quick-perf/doc/wiki/core-annotations)
+## [Core](https://github.com/quick-perf/doc/wiki/core-annotations)
 Execution time, ...
 ## [JVM](https://github.com/quick-perf/doc/wiki/JVM-annotations)
 Heap allocation, profiling, ...
