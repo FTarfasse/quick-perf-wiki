@@ -80,7 +80,7 @@ It displays information in console for debugging purpose.
 ## Configure core annotations with a global scope
 Annotations having a [global scope](https://github.com/quick-perf/doc/wiki/QuickPerf#annotation-scopes) apply on each test.
 
-`org.quickperf.annotation.CoreAnnotationBuilder` helps configure core annotations with a global scope.
+`org.quickperf.annotation.CoreAnnotationBuilder` helps to configure core annotations with a global scope.
 
 ### :mag_right: Example
 
@@ -109,4 +109,4 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 }
 ```
 
-⚠️ ***The class implementing `SpecifiableGlobalAnnotations` has to be in org.quickperf package.***
+⚠️ **The class implementing `SpecifiableGlobalAnnotations` has to be in org.quickperf package.**
