@@ -52,7 +52,7 @@ JVM OPTIONS
 ## @HeapSize
 With this annotation, the test is executed in a specific JVM having the given heap size.
 ### :wrench: Parameters 
-|Parameter  |Type           | Meaning                  |
+|Name      |Type           | Meaning                  |
 | -------- |:--------------:|--------------------------|
 | value    | long           |Heap size value (Xms=Xmx) |
 | unit     | AllocationUnit |Allocation unit           |
@@ -66,7 +66,7 @@ With this annotation, the test is executed in a specific JVM having the given he
 ## @Xms
 With this annotation, the test is executed in a specific JVM having the given initial and minimum heap size value.
 ### :wrench: Parameters 
-|Parameter  |Type           | Meaning                            |
+|Name      |Type           | Meaning                            |
 | -------- |:--------------:|------------------------------------|
 | value    | long           |Initial and minimum heap size value |
 | unit     | AllocationUnit |Allocation unit                     |
@@ -77,7 +77,7 @@ With this annotation, the test is executed in a specific JVM having the given in
 ## @Xmx
 With this annotation, the test is executed in a specific JVM having the given maximum heap size value.
 ### :wrench: Parameters 
-|Parameter  |Type           | Meaning                 |
+|Name      |Type           | Meaning                 |
 | -------- |:--------------:|-------------------------|
 | value    | long           |Maximum heap size value  |
 | unit     | AllocationUnit |Allocation unit          |
@@ -93,7 +93,7 @@ With this annotation, the test is executed in a specific JVM having the given ma
 To specify a GC type.
 
 ### :wrench: Parameters 
-|Parameter |Type                       | Meaning    | Default value |
+|Name      |Type                       | Meaning    | Default value |
 | -------- |:-------------------------:|:----------:|:-------------:|
 | value    | org.quickperf.jvm.gc.GC   |GC type     | GC.DEFAULT    |
 
@@ -129,7 +129,7 @@ With this annotation, the test is executed in a specific JVM having the given JV
 A [tool](https://chriswhocodes.com/vm-options-explorer.html) developed by [Chris Newland](https://github.com/chriswhocodes) can be used to explore the available JVM options.
 
 ### :wrench: Parameters 
-|Parameter  |Type           | Meaning       |
+|Name      |Type           | Meaning       |
 | -------- |:--------------:|:-------------:|
 | value    | String           |JVM options  |
 
@@ -150,7 +150,7 @@ You can measure heap allocation with this annotation. <br><br>
 The measured allocation is displayed in the console.
 
 ### :wrench: Parameters 
-|Parameter  |Type           | Meaning                  | Default value |
+|Name      |Type           | Meaning                  | Default value |
 | -------- |--------------|------------------------|-------------|
 | format| java.lang.String|     Provides the format used to print the measured heap allocation on the console. This format will be called with a preformatted allocation as a String. So the only element you can use in this format is `%s`. |[QUICK PERF] Measured heap allocation (test method thread): %s|
 | writerFactory|Class<? extends WriterFactory> |  Allows you to provide a way to build a `Writer` instance to print your messages. The `WriterFactory`class is used to built this `Writer`. This `WriterFactory` class is constructed using reflection, so it should have an empty constructor. If it does not an exception will be raised and the default `Writer` will be used. The default value `DefaultWriterFactory` builds a `Writer`that writes to `System.out`. In case an exception is raised in the use of a provided factory, the system falls back on this default value. |DefaultWriterFactory.class|
@@ -184,7 +184,7 @@ In console:
 With this annotation, the test will fail if heap allocation is greater than expected.
 
 ### :wrench: Parameters 
-|Parameter  |Type           | Meaning          | 
+|Name      |Type           | Meaning          | 
 | -------- |:--------------:|------------------|
 | value    | long           |Allocation value  |   
 | unit     | AllocationUnit |Allocation unit   |
@@ -260,7 +260,7 @@ With this annotation, the test will fail if the [Resident Set Size (RSS)](https:
 ⚠️ _Today this annotation only woks on Linux. You can work on this [issue](https://github.com/quick-perf/quickperf/issues/56) to make the RSS annotations work on MacOS._
 
 ### :wrench: Parameters 
-|Parameter  |Type           | Meaning   | 
+|Name      |Type           | Meaning   | 
 | -------- |:--------------:|:---------:|
 | value    | long           |value      |   
 | unit     | AllocationUnit |RAM unit   |
@@ -372,7 +372,7 @@ then you can increase the stack depth value in this way:
 ```
 
 ### :wrench: Parameters 
-|Parameter  |Type           | Meaning           | Default value |
+|Name      |Type           | Meaning           | Default value |
 | -------- |:--------------:|:-----------------:|:-------------:|
 | score    | int            |Rule score (<=100) |      60       |
 
