@@ -51,7 +51,7 @@ JVM OPTIONS
 # Configure your test JVM
 ## @HeapSize
 With this annotation, the test is executed in a specific JVM having the given heap size.
-### :wrench: Parameters 
+### :wrench: Elements
 |Name      |Type           | Meaning                  |
 | -------- |:--------------:|--------------------------|
 | value    | long           |Heap size value (Xms=Xmx) |
@@ -65,7 +65,7 @@ With this annotation, the test is executed in a specific JVM having the given he
 
 ## @Xms
 With this annotation, the test is executed in a specific JVM having the given initial and minimum heap size value.
-### :wrench: Parameters 
+### :wrench: Elements
 |Name      |Type           | Meaning                            |
 | -------- |:--------------:|------------------------------------|
 | value    | long           |Initial and minimum heap size value |
@@ -76,7 +76,7 @@ With this annotation, the test is executed in a specific JVM having the given in
   ```
 ## @Xmx
 With this annotation, the test is executed in a specific JVM having the given maximum heap size value.
-### :wrench: Parameters 
+### :wrench: Elements
 |Name      |Type           | Meaning                 |
 | -------- |:--------------:|-------------------------|
 | value    | long           |Maximum heap size value  |
@@ -92,7 +92,7 @@ With this annotation, the test is executed in a specific JVM having the given ma
 
 To specify a GC type.
 
-### :wrench: Parameters 
+### :wrench: Elements
 |Name      |Type                       | Meaning    | Default value |
 | -------- |:-------------------------:|:----------:|:-------------:|
 | value    | org.quickperf.jvm.gc.GC   |GC type     | GC.DEFAULT    |
@@ -128,7 +128,7 @@ With this annotation, the test is executed in a specific JVM having the given JV
 
 A [tool](https://chriswhocodes.com/vm-options-explorer.html) developed by [Chris Newland](https://github.com/chriswhocodes) can be used to explore the available JVM options.
 
-### :wrench: Parameters 
+### :wrench: Elements
 |Name      |Type           | Meaning       |
 | -------- |:--------------:|:-------------:|
 | value    | String           |JVM options  |
@@ -149,7 +149,7 @@ You can  for example use @MeasureHeapAllocation and @ExpectMaxHeapAllocation to 
 You can measure heap allocation with this annotation. <br><br>
 The measured allocation is displayed in the console.
 
-### :wrench: Parameters 
+### :wrench: Elements
 |Name      |Type           | Meaning                  | Default value |
 | -------- |--------------|------------------------|-------------|
 | format| java.lang.String|     Provides the format used to print the measured heap allocation on the console. This format will be called with a preformatted allocation as a String. So the only element you can use in this format is `%s`. |[QUICK PERF] Measured heap allocation (test method thread): %s|
@@ -183,7 +183,7 @@ Console:
 ## @ExpectMaxHeapAllocation
 With this annotation, the test will fail if heap allocation is greater than expected.
 
-### :wrench: Parameters 
+### :wrench: Elements
 |Name      |Type           | Meaning          | 
 | -------- |:--------------:|------------------|
 | value    | long           |Allocation value  |   
@@ -259,7 +259,7 @@ With this annotation, the test will fail if the [Resident Set Size (RSS)](https:
 
 ⚠️ _Today this annotation only woks on Linux. You can work on this [issue](https://github.com/quick-perf/quickperf/issues/56) to make the RSS annotations work on MacOS._
 
-### :wrench: Parameters 
+### :wrench: Elements
 |Name      |Type           | Meaning   | 
 | -------- |:--------------:|:---------:|
 | value    | long           |value      |   
@@ -371,7 +371,7 @@ then you can increase the stack depth value in this way:
 @JvmOptions("-XX:FlightRecorderOptions=stackdepth=128")
 ```
 
-### :wrench: Parameters 
+### :wrench: Elements
 |Name      |Type           | Meaning           | Default value |
 | -------- |:--------------:|:-----------------:|:-------------:|
 | score    | int            |Rule score (<=100) |      60       |
