@@ -40,6 +40,8 @@
 ## [With JUnit 5](https://github.com/quick-perf/doc/wiki/JUnit-5)
 ## [With TestNG](https://github.com/quick-perf/doc/wiki/TestNG)
 ## [With Spring](https://github.com/quick-perf/doc/wiki/Spring)
+## [With Micronaut (*experimental*)](https://github.com/quick-perf/quickperf-examples#micronaut)
+## [With Quarkus(*experimental*)](https://github.com/quick-perf/quickperf-examples#quarkus)
 ## [Have clickable links in your IDE](https://github.com/quick-perf/doc/wiki/Have-clickable-links-in-your-IDE)
 
 # Use QuickPerf features
