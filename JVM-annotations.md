@@ -53,7 +53,7 @@ JVM OPTIONS
 With this annotation, the test is executed in a specific JVM having the given heap size.
 ### :wrench: Parameters 
 |Parameter  |Type           | Meaning                  |
-| -------- |:--------------:|:------------------------:|
+| -------- |:--------------:|--------------------------|
 | value    | long           |Heap size value (Xms=Xmx) |
 | unit     | AllocationUnit |Allocation unit           |
 ### :mag_right: Example
@@ -67,7 +67,7 @@ With this annotation, the test is executed in a specific JVM having the given he
 With this annotation, the test is executed in a specific JVM having the given initial and minimum heap size value.
 ### :wrench: Parameters 
 |Parameter  |Type           | Meaning                            |
-| -------- |:--------------:|:----------------------------------:|
+| -------- |:--------------:|------------------------------------|
 | value    | long           |Initial and minimum heap size value |
 | unit     | AllocationUnit |Allocation unit                     |
 ### :mag_right: Example
@@ -78,7 +78,7 @@ With this annotation, the test is executed in a specific JVM having the given in
 With this annotation, the test is executed in a specific JVM having the given maximum heap size value.
 ### :wrench: Parameters 
 |Parameter  |Type           | Meaning                 |
-| -------- |:--------------:|:-----------------------:|
+| -------- |:--------------:|-------------------------|
 | value    | long           |Maximum heap size value  |
 | unit     | AllocationUnit |Allocation unit          |
 ### :mag_right: Example
@@ -185,7 +185,7 @@ With this annotation, the test will fail if heap allocation is greater than expe
 
 ### :wrench: Parameters 
 |Parameter  |Type           | Meaning          | 
-| -------- |:--------------:|:----------------:|
+| -------- |:--------------:|------------------|
 | value    | long           |Allocation value  |   
 | unit     | AllocationUnit |Allocation unit   |
 
