@@ -21,8 +21,8 @@ The test will fail if the execution time is greater than expected.
 
 It can be useful to [configure this annotation with a global scope](https://github.com/quick-perf/doc/wiki/Core-annotations#mag_right-example-3).
 
-### :wrench: Parameters 
-|Parameter     |Type    | Meaning                 | Default value |
+### :wrench: Elements
+|Name          |Type    | Meaning                 | Default value |
 | ------------ |:------:|-----------------------|:-------------:|
 | nanoSeconds  | long   | Number of nano seconds  |  0            |
 | microSeconds | long   | Number of micro seconds |  0            |
@@ -32,7 +32,7 @@ It can be useful to [configure this annotation with a global scope](https://gith
 | hours        | int    | Number of hours        |  0            |
 
 
-You can use several parameters together, as shown in the following example.
+You can use several elements together, as shown in the following example.
 
 ### :mag_right: Example
 ```java
@@ -49,15 +49,15 @@ An annotation can have three [scopes](https://github.com/quick-perf/doc/wiki/Qui
 
 ### :mag_right: Example
 ```
-[QUICK PERF] Applied annotations: @JdbcBatches(batchSize=30), @DisableSameSelectTypesWithDifferentParams
+[QUICK PERF] Applied annotations: @JdbcBatches(batchSize=30), @DisableSameSelectTypesWithDifferentParamValues
              Class specifying global annotations: org.quickperf.QuickPerfConfiguration
 ```
 
 ## @DisableGlobalAnnotations
 Disable global annotations on test method or test class.
 
-### :wrench:  Parameters 
-|Parameter|Type    | Meaning                                   | Default value  |
+### :wrench:  Elements
+|Name     |Type    | Meaning                                   | Default value  |
 | --------|:------:|:----------------------------------------  |:--------------:|
 | comment | String |Comment why global annotations are disabled|      -         |
 
@@ -65,8 +65,8 @@ Disable global annotations on test method or test class.
 ## @DisableQuickPerf
 Disable QuickPerf features.
 
-### :wrench: Parameters 
-|Parameter|Type    | Meaning                         | Default value  |
+### :wrench: Elements
+|Name     |Type    | Meaning                         | Default value  |
 | --------|:------:|:--------------------------------|:--------------:|
 | comment | String |Comment why QuickPerf is disabled|      -         |
 
