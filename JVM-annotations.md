@@ -155,7 +155,7 @@ The measured allocation is displayed in the console.
 | format| java.lang.String|     Provides the format used to print the measured heap allocation on the console. This format will be called with a preformatted allocation as a String. So the only element you can use in this format is `%s`. |[QUICK PERF] Measured heap allocation (test method thread): %s|
 | writerFactory|Class<? extends WriterFactory> |  Allows you to provide a way to build a `Writer` instance to print your messages. The `WriterFactory`class is used to built this `Writer`. This `WriterFactory` class is constructed using reflection, so it should have an empty constructor. If it does not an exception will be raised and the default `Writer` will be used. The default value `DefaultWriterFactory` builds a `Writer`that writes to `System.out`. In case an exception is raised in the use of a provided factory, the system falls back on this default value. |DefaultWriterFactory.class|
 
-### :mag_right: Example
+### :mag_right: Example 1
 ```java
 @RunWith(QuickPerfJUnitRunner.class)
 public class ClassWithMethodAnnotatedWithMeasureAllocation {
@@ -180,6 +180,32 @@ Console:
 ```
 [QUICK PERF] Measured heap allocation (test method thread): 440 bytes
 ```
+
+### :mag_right: Example 2 (*writerFactory* and *format*)
+```java
+@QuickPerfTest
+public class TestClass {
+
+
+    @MeasureHeapAllocation(writerFactory = FileWriterBuilder.class, format = "Heap allocation: %s\n")
+    @Test
+    public void test_method() {
+        //...
+    }
+
+    public static class FileWriterBuilder implements WriterFactory {
+
+        @Override
+        public Writer buildWriter() throws IOException {
+            return new FileWriter("C:\\Users\\UserName\\Allocation.txt", true);
+        }
+    }
+
+}
+
+
+```
+
 ## @ExpectMaxHeapAllocation
 With this annotation, the test will fail if heap allocation is greater than expected.
 
@@ -227,7 +253,7 @@ public void do_something_and_dump_heap() {
   IntegerAccumulator integerAccumulator = new IntegerAccumulator();
   integerAccumulator.accumulateInteger(3_000_000);
 
-  HeapDumper.dumpHeap("C:\\Users\\Jean Bisutti\\heap-dump.hprof");
+  HeapDumper.dumpHeap("C:\\Users\\UserName\heap-dump.hprof");
 
 }
 ```
@@ -235,7 +261,7 @@ public void do_something_and_dump_heap() {
 Console:
 ```
 [QUICK PERF] Heap dump file 
-👉 C:\Users\Jean Bisutti\heap-dump.hprof
+👉 C:\Users\UserName\heap-dump.hprof
 ```
 
 # Verify resident set size (RSS)
