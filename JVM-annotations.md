@@ -152,7 +152,7 @@ The measured allocation is displayed in the console.
 ### :wrench: Parameters 
 |Parameter  |Type           | Meaning                  | Default value |
 | -------- |--------------|------------------------|-------------|
-| format| java.lang.String|     Provides the format used to print the measured heap allocation on the console. This format will be called with a preformatted allocation as a String. So the only element you can use in this format is %s. |[QUICK PERF] Measured heap allocation (test method thread): %s|
+| format| java.lang.String|     Provides the format used to print the measured heap allocation on the console. This format will be called with a preformatted allocation as a String. So the only element you can use in this format is `%s`. |[QUICK PERF] Measured heap allocation (test method thread): %s|
 | writerFactory|Class<? extends WriterFactory> |  Allows you to provide a way to build a `Writer` instance to print your messages. The `WriterFactory`class is used to built this `Writer`. This `WriterFactory` class is constructed using reflection, so it should have an empty constructor. If it does not an exception will be raised and the default `Writer` will be used. The default value `DefaultWriterFactory` builds a `Writer`that writes to `System.out`. In case an exception is raised in the use of a provided factory, the system falls back on this default value. |DefaultWriterFactory.class|
 
 ### :mag_right: Example
