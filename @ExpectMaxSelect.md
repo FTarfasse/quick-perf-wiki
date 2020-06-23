@@ -1,6 +1,6 @@
 With this annotation, the test will fail if the number of SELECT statements is greater than expected. 
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
+### :wrench: Elements 
+|Name      |Type | Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Maximum number of selects  |        0       |
 

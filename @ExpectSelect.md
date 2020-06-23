@@ -1,7 +1,7 @@
 Verifies the number of SELECT statements. <br>
 
-### :wrench: Parameters 
-|Parameter  |Type| Meaning                   | Default value  |
+### :wrench: Elements 
+|Name      |Type | Meaning                   | Default value  |
 | -------- |:---:|:-------------------------:|:--------------:|
 | value    | int |Number of select statements|        0       |
 
