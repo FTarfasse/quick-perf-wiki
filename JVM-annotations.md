@@ -176,7 +176,7 @@ public class ClassWithMethodAnnotatedWithMeasureAllocation {
 
 }
 ```
-In console:
+Console:
 ```
 [QUICK PERF] Measured heap allocation (test method thread): 440 bytes
 ```
@@ -232,7 +232,7 @@ public void do_something_and_dump_heap() {
 }
 ```
 
-In console:
+Console:
 ```
 [QUICK PERF] Heap dump file 
 👉 C:\Users\Jean Bisutti\heap-dump.hprof
