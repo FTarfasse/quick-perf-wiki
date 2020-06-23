@@ -55,10 +55,10 @@ An annotation having a test class scope overrides the configuration of the same 
 * **Test method scope** <br>
 An annotation having a test method scope overrides the configuration of the same annotation with test class and global scopes.
 
-**[Example illustrating how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-illustrating-how-annotation-scopes-work)**
+💡 **[Examples illustrating how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-illustrating-how-annotation-scopes-work)**
 
 ## [Core annotations](https://github.com/quick-perf/doc/wiki/core-annotations)
-Execution, time, ...
+Execution time, ...
 ## [JVM](https://github.com/quick-perf/doc/wiki/JVM-annotations)
 Heap allocation, profiling, ...
 ## [SQL](https://github.com/quick-perf/doc/wiki/SQL-annotations)
