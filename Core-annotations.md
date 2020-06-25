@@ -29,13 +29,10 @@ It can be useful to [configure this annotation with a global scope](https://gith
 ### :wrench: Elements
 |Name          |Type    | Meaning                 | Default value |
 | ------------ |:------:|-----------------------|:-------------:|
-| nanoSeconds  | long   | Number of nano seconds  |  0            |
-| microSeconds | long   | Number of micro seconds |  0            |
-| milliSeconds | int    | Number of milli seconds |  0            |
-| seconds      | int    | Number of seconds       |  0            |
-| minutes      | int    | Number of minutes       |  0            |
 | hours        | int    | Number of hours        |  0            |
-
+| minutes      | int    | Number of minutes       |  0            |
+| seconds      | int    | Number of seconds       |  0            |
+| milliSeconds | int    | Number of milli seconds |  0            |
 
 You can use several elements together, as shown in the following example.
 
