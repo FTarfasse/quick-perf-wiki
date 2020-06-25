@@ -102,7 +102,7 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 
         return Arrays.asList(
           
-                CoreAnnotationBuilder.expectMaxExecutionTimeOfMilliSeconds(500)
+                CoreAnnotationBuilder.expectMaxExecutionTimeOfSeconds(1)
 
         );
 
