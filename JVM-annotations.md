@@ -15,7 +15,7 @@
 [Dump the heap](#dump-the-heap) <br>
 
 [Verify resident set size (RSS)](#verify-resident-set-size-rss) <br>
-&nbsp;  &nbsp; [@MeasureRSS)](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS](#expectmaxrss)
+&nbsp;  &nbsp; [@MeasureRSS](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS](#expectmaxrss)
 
 [Profile or check your JVM](#Profile-or-check-your-JVM) <br>
 &nbsp;  &nbsp; [@ProfileJvm](#profilejvm) &nbsp;|&nbsp; [@ExpectNoJvmIssue](#expectnojvmissue)
