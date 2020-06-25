@@ -42,7 +42,7 @@ You can use several elements together, as shown in the following example.
 ```     
 
 ```
-[PERF] Execution time of test method expected to be less than <2 s> but is <5 s 286 ms (5 285 734 000
+[PERF] Execution time of test method expected to be less than <2 s> but is <5 s 286 ms (5 285 734 000 ns)>
 ```  
 
 ## @DisplayAppliedAnnotations
