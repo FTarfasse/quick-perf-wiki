@@ -15,11 +15,16 @@ Measure execution time of test method.
 [QUICK PERF] Execution time of test method: 1 s 1 ms (1 001 016 700 ns)
 ```
 
+⚠️ *Be cautious  with time measurement results. It is a rough and first level result. Data has no meaning below the seconde / millisecond. JIT warm up, GC or safe points can impact the measure and its reproducibility. We recommend [JMH](https://openjdk.java.net/projects/code-tools/jmh/) to do more in depth experiments.* 
+
+
 ## @ExpectMaxExecutionTime
 
 The test will fail if the execution time is greater than expected.
 
 It can be useful to [configure this annotation with a global scope](https://github.com/quick-perf/doc/wiki/Core-annotations#mag_right-example-3).
+
+⚠️ *Be cautious  with time measurement results. It is a rough and first level result. Data has no meaning below the seconde / millisecond. JIT warm up, GC or safe points can impact the measure and its reproducibility. We recommend [JMH](https://openjdk.java.net/projects/code-tools/jmh/) to do more in depth experiments.* 
 
 ### :wrench: Elements
 |Name          |Type    | Meaning                 | Default value |
