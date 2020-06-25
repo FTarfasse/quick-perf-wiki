@@ -12,7 +12,7 @@ Measure execution time of test method.
 
 ### :mag_right: Example
 ```
-[QUICK PERF] Execution time of test method: 1 s 1 ms (1 001 016 700 ns)
+[QUICK PERF] Execution time of test method: 5 s 289 ms (5 289 245 600 ns)
 ```
 
 ⚠️ *Be cautious  with time measurement results. It is a rough and first level result. Data has no meaning below the seconde / millisecond. JIT warm up, GC or safe points can impact the measure and its reproducibility. We recommend [JMH](https://openjdk.java.net/projects/code-tools/jmh/) to do more in depth experiments.* 
