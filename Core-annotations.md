@@ -38,11 +38,11 @@ You can use several elements together, as shown in the following example.
 
 ### :mag_right: Example
 ```java
-@ExpectMaxExecutionTime(seconds = 1, milliSeconds = 10)
+@ExpectMaxExecutionTime(seconds = 2)
 ```     
 
 ```
-[PERF] Execution time of test method expected to be less than <1 s 10 ms> but is <9 s 502 ms (9 501 875 600 ns)>
+[PERF] Execution time of test method expected to be less than <2 s> but is <5 s 286 ms (5 285 734 000
 ```  
 
 ## @DisplayAppliedAnnotations
