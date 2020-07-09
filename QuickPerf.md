@@ -35,35 +35,34 @@
 
 **QuickPerf works with JUnit 4, JUnit 5, TestNG and a JDK 1.7+.** <br>
 
-:point_right: &nbsp; Project examples using QuickPerf available [here](https://github.com/quick-perf/quickperf-examples/blob/master/README.md) and [here](https://github.com/quick-perf/maven-test-bench/blob/master/README.md) (Maven)<br>
-<br>
 # Execute QuickPerf
 ## [With JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
 ## [With JUnit 5](https://github.com/quick-perf/doc/wiki/JUnit-5)
 ## [With TestNG](https://github.com/quick-perf/doc/wiki/TestNG)
 ## [With Spring](https://github.com/quick-perf/doc/wiki/Spring)
+## [With Micronaut (*experimental*)](https://github.com/quick-perf/quickperf-examples#micronaut)
+## [With Quarkus (*experimental*)](https://github.com/quick-perf/quickperf-examples#quarkus)
 ## [Have clickable links in your IDE](https://github.com/quick-perf/doc/wiki/Have-clickable-links-in-your-IDE)
 
-# Use QuickPerf annotations
+# Use QuickPerf features
 ## Annotation scopes
 An annotation can have three scopes:
 * **Global scope** <br>
-An annotation having a global scope applies on each test.<br>
-You can define annotations with global scope by creating a class implementing SpecifiableGlobalAnnotations interface. This class has to be in org.quickperf package.
-* **Test class scope** <br>
-An annotation having a test class scope overrides the configuration of the same annotation with global scope.
+The annotation applies on each [QuickPerf test](https://github.com/quick-perf/doc/wiki/QuickPerf-test).<br>
+You can configure global scope annotations with a class implementing `SpecifiableGlobalAnnotations`interface and located in `org.quickperf` package. `CoreAnnotationBuilder`, `SqlAnnotationBuilder` and `JvmAnnotationBuilder`are available to help building global scope annotations.
+* **Test scope** <br>
+The annotation is used on the test class. It overrides the configuration of the same annotation with global scope.
 * **Test method scope** <br>
-An annotation having a test method scope overrides the configuration of the same annotation with test class and global scopes.
+The annotation is used on the test method. It overrides the configuration of the same annotation with test class and global scopes.
 
-**[Example illustrating how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-illustrating-how-annotation-scopes-work)**
+💡 **[Examples illustrating how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-illustrating-how-annotation-scopes-work)**
 
-## [Core annotations](https://github.com/quick-perf/doc/wiki/core-annotations)
+## [Core](https://github.com/quick-perf/doc/wiki/core-annotations)
+Execution time, debugging, ...
 ## [JVM](https://github.com/quick-perf/doc/wiki/JVM-annotations)
-[**Configure your test JVM**](JVM-annotations#Configure-your-test-JVM)<br><br>
-[**Verify heap allocation**](JVM-annotations#Verify-heap-allocation)<br><br>
-[**Profile or check your JVM**](JVM-annotations#Profile-or-check-your-JVM)
+Heap allocation, profiling, ...
 ## [SQL](https://github.com/quick-perf/doc/wiki/SQL-annotations)
-Easily [**detect N+1 select**](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf), JDBC batching disabled and other things.
+Easily [**detect N+1 select**](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf), JDBC batching disabled, ...
 
 # Disable QuickPerf
 To disable QuickPerf features you can pass *-DdisableQuickPerf=true* to your JVM or use [some core annotations](https://github.com/quick-perf/doc/wiki/core-annotations) (@DisableQuickPerf, @FunctionalIteration, 
@@ -71,7 +70,4 @@ To disable QuickPerf features you can pass *-DdisableQuickPerf=true* to your JVM
 
 # Project examples
 [Maven performance](https://github.com/quick-perf/maven-test-bench)<br><br>
-[Spring Boot - JUnit 4](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit4)<br><br>
-[Spring Boot - JUnit 5](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit5)<br><br>
-[Micronaut - JUnit 5](https://github.com/quick-perf/quickperf-examples/tree/master/micronaut-hibernate-jpa)<br><br>
-[Quarkus - JUnit 5](https://github.com/quick-perf/quickperf-examples/tree/master/quarkus)
+[QuickPerf examples (*JUnit 4*, *JUnit 5*, *TestNG*, *Hibernate*, *Spring*, *Spring Boot*, *Micronaut*, *Quarkus*, *...*)](https://github.com/quick-perf/quickperf-examples)
