@@ -9,12 +9,12 @@
 &nbsp;  &nbsp; [@HeapSize](#heapsize) &nbsp;|&nbsp; [@Xms](#xms) &nbsp;|&nbsp;[@Xmx](#xmx) &nbsp;|&nbsp; [@UseGC](#usegc)  &nbsp;|&nbsp; [@EnableGcLogging](#enablegclogging) &nbsp;|&nbsp; [@JvmOptions](#jvmoptions)
 
 
-[Verify heap allocation](#Verify-heap-allocation) <br>
+[Verifies heap allocation](#Verifies-heap-allocation) <br>
 &nbsp;  &nbsp; [@MeasureHeapAllocation](#measureheapallocation) &nbsp;|&nbsp;[@ExpectMaxHeapAllocation](#expectmaxheapallocation) &nbsp;|&nbsp; [@ExpectNoHeapAllocation](#expectnoheapallocation)
 
 [Dump the heap](#dump-the-heap) <br>
 
-[Verify resident set size (RSS)](#verify-resident-set-size-rss) <br>
+[Verifies resident set size (RSS)](#Verifies-resident-set-size-rss) <br>
 &nbsp;  &nbsp; [@MeasureRSS](#measurerss) &nbsp;|&nbsp; [@ExpectMaxRSS](#expectmaxrss)
 
 [Profile or check your JVM](#Profile-or-check-your-JVM) <br>
@@ -133,7 +133,7 @@ A [tool](https://chriswhocodes.com/vm-options-explorer.html) developed by [Chris
 | -------- |:--------------:|:-------------:|
 | value    | String           |JVM options  |
 
-# Verify heap allocation
+# Verifies heap allocation
 The following annotations use ByteWatcher under the hood:
 * https://github.com/danielshaya/ByteWatcher
 * https://www.javaspecialists.eu/archive/Issue232.html
@@ -142,7 +142,7 @@ The following annotations use ByteWatcher under the hood:
 
 You can  for example use @MeasureHeapAllocation and @ExpectMaxHeapAllocation to check the heap allocation cost of a large data structure (containing 1 000 000 elements for example) .<br>
 
-@ExpectNoHeapAllocation can be used to verify that the tested code does not allocate on heap.
+@ExpectNoHeapAllocation can be used to Verifies that the tested code does not allocate on heap.
 
 
 ## @MeasureHeapAllocation
@@ -264,7 +264,7 @@ Console:
 👉 C:\Users\UserName\heap-dump.hprof
 ```
 
-# Verify resident set size (RSS)
+# Verifies resident set size (RSS)
 
 ## @MeasureRSS
 

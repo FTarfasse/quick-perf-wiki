@@ -1,6 +1,6 @@
-Cancels behavior of [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard).
+Cancels behavior of [@DisableQueriesWithoutBindParameters.md](./@DisableQueriesWithoutBindParameters.md).
 
 ### :wrench: Elements 
 |Name     |Type    | Meaning                                         | Default value  |
 | --------|:------:|:------------------------------------------------|:--------------:|
-| comment | String |Comment why like with leading wildcard is enabled|      -         |
+| comment | String |Comment why bind parameters are enabled|      -         |

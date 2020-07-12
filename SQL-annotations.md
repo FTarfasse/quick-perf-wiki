@@ -68,6 +68,7 @@ For example, the following message is diplayed when a N+1 select is presumed and
        </tr>     
        <tr>
             <td> <a href="./@ExpectUpdate">@ExpectUpdate</a> </td>
+            <td> <a href="./@ExpectMaxUpdate">@ExpectMaxUpdate</a> </td>
        </tr>    
        <tr>
             <td> <a href="./@ExpectUpdatedColumn">@ExpectUpdatedColumn</a> </td>
@@ -75,8 +76,12 @@ For example, the following message is diplayed when a N+1 select is presumed and
        </tr>    
        <tr>
             <td> <a href="./@ExpectInsert">@ExpectInsert</a> </td>
-            <td> <a href="./@ExpectDelete"> @ExpectDelete</a> </td>
-       </tr>      
+            <td> <a href="./@ExpectMaxInsert"> @ExpectMaxInsert</a> </td>
+       </tr>   
+       <tr>
+           <td> <a href="./@ExpectDelete">@ExpectDelete</a> </td>
+           <td></td>
+       </tr>   
        <tr>
             <td> <a href="./@DisplaySql">@DisplaySql</a> </td>
             <td> <a href="./@DisplaySqlOfTestMethodBody">@DisplaySqlOfTestMethodBody</a> </td>
@@ -96,6 +101,14 @@ For example, the following message is diplayed when a N+1 select is presumed and
        <tr>
             <td> <a href="./@DisableLikeWithLeadingWildcard">@DisableLikeWithLeadingWildcard</a> </td>
             <td> <a href="./@EnableLikeWithLeadingWildcard">@EnableLikeWithLeadingWildcard</a> </td>
+       </tr>       
+       <tr>
+            <td> <a href="./@DisableCrossJoin">@DisableCrossJoin</a> </td>
+            <td> <a href="./@EnableCrossJoin">@EnableCrossJoin</a> </td>
+       </tr>       
+       <tr>
+            <td> <a href="./@DisableQueriesWithoutBindParameters">@DisableQueriesWithoutBindParameters</a> </td>
+            <td> <a href="./@EnableQueriesWithoutBindParameters">@EnableQueriesWithoutBindParameters</a> </td>
        </tr>
     </tbody>
 </table>
@@ -108,16 +121,17 @@ For example, the following message is diplayed when a N+1 select is presumed and
 |[@ExpectMaxSelect](./@ExpectMaxSelect)                                                    | Max SELECT number                                             |
 |[@ExpectSelectedColumn](./@ExpectSelectedColumn)                                          | Selected columns number                                       |
 |[@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)                                    | Max selected columns number                                   |
-|[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                | To disable exactly same SELECT statements                     |
-|[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                  | To enable exactly same SELECT statements                      |
-|[@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)| To disable same SELECT statements with different parameter values|
-|[@EnableSameSelectTypesWithDifferentParamValues](./@EnableSameSelectTypesWithDifferentParamValues)                                  | To enable same SELECT statements with different parameter values |
+|[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                  | Disable exactly same SELECT statements                        |
+|[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                    | Enable exactly same SELECT statements                         |
+|[@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)| Disable same SELECT statements with different parameter values|
+|[@EnableSameSelectTypesWithDifferentParamValues](./@EnableSameSelectTypesWithDifferentParamValues)                                  | Enable same SELECT statements with different parameter values |
 
 ## INSERT statements
 
-|Annotation                      |Short description|
-| -------------------------------|-----------------|
-|[@ExpectInsert](./@ExpectInsert)| INSERT number   |
+|Annotation                      |Short description       |
+| -------------------------------|------------------------|
+|[@ExpectInsert](./@ExpectInsert)| INSERT number          |
+|[@ExpectMaxInsert](./@ExpectMaxInsert)| Max INSERT number|
 
 ## DELETE statements
 
@@ -130,26 +144,31 @@ For example, the following message is diplayed when a N+1 select is presumed and
 |Annotation                                          |Short description          | 
 | ---------------------------------------------------|---------------------------|
 |[@ExpectUpdate](./@ExpectUpdate)                    | UPDATE number             |
+|[@ExpectMaxUpdate](./@ExpectMaxUpdate)              | Max UPDATE number         |
 |[@ExpectMaxUpdatedColumn](./@ExpectMaxUpdatedColumn)| Updated columns number    |
 |[@ExpectUpdatedColumn](./@ExpectUpdatedColumn)      | Max updated columns number|
 
 ## Debug
 
-|Annotation                                                  |Short description                           |
-| -----------------------------------------------------------|--------------------------------------------|
-|[@DisplaySql](./@DisplaySql)                                | To display SQL                             |
-|[@DisplaySqlOfTestMethodBody](./@DisplaySqlOfTestMethodBody)| To display SQL executed in test method body|
+|Annotation                                                  |Short description                        |
+| -----------------------------------------------------------|-----------------------------------------|
+|[@DisplaySql](./@DisplaySql)                                | Display SQL                             |
+|[@DisplaySqlOfTestMethodBody](./@DisplaySqlOfTestMethodBody)| Display SQL executed in test method body|
 
 You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/wiki/Core-annotations#DisplayAppliedAnnotations) in debug activity.
 
 ## Other
 
-|Annotation                                                          |Short description                     |
-| -------------------------------------------------------------------|--------------------------------------|
-|[@ExpectJdbcBatching](./@ExpectJdbcBatching)                        | JDBC batching is enabled             |
-|[@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)      | Max query execution time             |
-|[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)| To disable like with leading wildcard|
-|[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)  | To enable like with leading wildcard |
+|Annotation                                                          |Short description                  |
+| -------------------------------------------------------------------|-----------------------------------|
+|[@ExpectJdbcBatching](./@ExpectJdbcBatching)                        | JDBC batching is enabled          |
+|[@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)      | Max query execution time          |
+|[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)| Disable like with leading wildcard|
+|[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)  | Enable like with leading wildcard |
+|[@DisableCrossJoin](./@DisableCrossJoin)                            | Disable CROSS JOIN queries |
+|[@EnableCrossJoin](./@EnableCrossJoin)                              | Enable CROSS JOIN queries |
+|[@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)  | Disable queries without bind variables |
+|[@EnableQueriesWithoutBindParameters](./@EnableQueriesWithoutBindParameters)  | Enable queries without bind variables |
 
 # Configure global annotations
 
@@ -199,13 +218,13 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 
 We recommend to configure the following SQL global annotations:
 
-|Annotation                                                                                          |Short description                                                 |
-| ---------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-|[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                          | To disable exactly same SELECT statements                        |
-|[@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)| To disable same SELECT statements with different parameter values|
-|[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                                | To disable like with leading wildcard                            |
-|[@ExpectJdbcBatching](./@ExpectJdbcBatching)                                                        | JDBC batching is enabled                                         |
-|[@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)                                      | Max query execution time                                         |
+|Annotation                                                                                |Short description                                              |
+| -----------------------------------------------------------------------------------------|---------------------------------------------------------------|
+|[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                  | Disable exactly same SELECT statements                        |
+|[@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)| Disable same SELECT statements with different parameter values|
+|[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      | Disable like with leading wildcard                            |
+|[@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              | JDBC batching is enabled                                      |
+|[@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)                            | Max query execution time                                      |
 
 # Cancel the behavior of global annotations at method level
 
@@ -215,10 +234,10 @@ You can use the following annotations to disable the [recommended global annotat
 
 |Annotation                                                                              |Short description             |
 | ---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-|[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                |To cancel the behavior of [@DisableExactlySameSelects](./@DisableExactlySameSelects)                                |
-|[@EnableSameSelectTypesWithDifferentParamValues](./@EnableSameSelectTypesWithDifferentParamValues)|To cancel the behavior of [@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)|
-|[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)                      |To cancel the behavior of [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      |
-|[@ExpectJdbcBatching(batchSize=0)](./@ExpectJdbcBatching)                               |To cancel the behavior of [@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              |
+|[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                |Cancels behavior of [@DisableExactlySameSelects](./@DisableExactlySameSelects)                                |
+|[@EnableSameSelectTypesWithDifferentParamValues](./@EnableSameSelectTypesWithDifferentParamValues)|Cancels behavior of [@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)|
+|[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)                      |Cancels behavior of [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      |
+|[@ExpectJdbcBatching(batchSize=0)](./@ExpectJdbcBatching)                               |Cancels behavior of [@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              |
 
 In the case where you are developing a new feature, perhaps with the help of *Test-Driven Development* (TDD), your test may fail because the business property is unrespected but also because some performance properties checked by global annotations are unrespected. In order to do one step at a time, you can _temporarily_ disable global annotations by applying [@FunctionalIteration](https://github.com/quick-perf/doc/wiki/core-annotations#disablequickperf) or [@DisableQuickPerf](https://github.com/quick-perf/doc/wiki/core-annotations#disablequickperf) or [@DisableGlobalAnnotations](https://github.com/quick-perf/doc/wiki/core-annotations#disableglobalannotations) at method level.
 

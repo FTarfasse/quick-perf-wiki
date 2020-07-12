@@ -1,4 +1,4 @@
-Cancel behavior of [@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues).
+Cancels behavior of [@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues).
 
 ### :wrench: Elements 
 |Name     |Type    | Meaning                                                               | Default value  |

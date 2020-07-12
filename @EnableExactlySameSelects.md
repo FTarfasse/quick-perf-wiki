@@ -1,4 +1,4 @@
-Cancel behavior of [@DisableExactlySameSelects](#DisableExactlySameSelects).
+Cancels behavior of [@DisableExactlySameSelects](#DisableExactlySameSelects).
 
 ### :wrench: Elements 
 |Name     |Type    | Meaning                                    | Default value  |
