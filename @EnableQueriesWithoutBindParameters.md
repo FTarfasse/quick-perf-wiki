@@ -1,4 +1,4 @@
-Cancels behavior of [@DisableQueriesWithoutBindParameters.md](./@DisableQueriesWithoutBindParameters.md).
+Cancels behavior of [@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters).
 
 ### :wrench: Elements 
 |Name     |Type    | Meaning                                         | Default value  |
