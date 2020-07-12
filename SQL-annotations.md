@@ -26,7 +26,8 @@ Several things about SQL statements can promote performance and scalability at t
 * **Fetched data**
   * ***Detect too many selected*** columns by using [@ExpectSelectedColumn](./@ExpectSelectedColumn) or [@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)<br><br>
 ***[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)***
-* **SQL statements having a LIKE pattern starting with a wildcard** by using [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
+* **SQL statements without bind parameters**, detect them by using [@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)
+* **SQL statements having a LIKE pattern starting with a wildcard**, detect them by using [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
 
 * ...
 
