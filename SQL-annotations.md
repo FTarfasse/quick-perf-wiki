@@ -103,10 +103,6 @@ For example, the following message is diplayed when a N+1 select is presumed and
             <td> <a href="./@EnableLikeWithLeadingWildcard">@EnableLikeWithLeadingWildcard</a> </td>
        </tr>       
        <tr>
-            <td> <a href="./@DisableCrossJoin">@DisableCrossJoin</a> </td>
-            <td> <a href="./@EnableCrossJoin">@EnableCrossJoin</a> </td>
-       </tr>       
-       <tr>
             <td> <a href="./@DisableQueriesWithoutBindParameters">@DisableQueriesWithoutBindParameters</a> </td>
             <td> <a href="./@EnableQueriesWithoutBindParameters">@EnableQueriesWithoutBindParameters</a> </td>
        </tr>
@@ -165,8 +161,6 @@ You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/
 |[@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)      | Max query execution time          |
 |[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)| Disable like with leading wildcard|
 |[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)  | Enable like with leading wildcard |
-|[@DisableCrossJoin](./@DisableCrossJoin)                            | Disable CROSS JOIN queries |
-|[@EnableCrossJoin](./@EnableCrossJoin)                              | Enable CROSS JOIN queries |
 |[@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)  | Disable queries without bind variables |
 |[@EnableQueriesWithoutBindParameters](./@EnableQueriesWithoutBindParameters)  | Enable queries without bind variables |
 
