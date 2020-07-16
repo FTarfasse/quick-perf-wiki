@@ -46,8 +46,8 @@ You can use several elements together, as shown in the following example.
 ```  
 
 ## @DisplayAppliedAnnotations
-Display applied QuickPerf annotations in console.<br><br>
-An annotation can have three [scopes](https://github.com/quick-perf/doc/wiki/QuickPerf#Use-QuickPerf-annotations) (*gobal*, *test class*, *test method*). This annotation is useful to see which annotations are applied on a test method.
+Display applied QuickPerf annotations in the console.<br><br>
+An annotation can have three [scopes](https://github.com/quick-perf/doc/wiki/QuickPerf#Use-QuickPerf-annotations) (*global*, *test class*, *test method*). _@DisplayAppliedAnnotations_ is useful to see which annotations are applied on a test method.
 
 ### :mag_right: Example
 ```
