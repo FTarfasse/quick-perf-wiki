@@ -52,9 +52,9 @@ The annotation applies on each [QuickPerf test](https://github.com/quick-perf/do
 To configure global scope annotations, create a class implementing `SpecifiableGlobalAnnotations` interface in an `org.quickperf` package.  <br>
 `CoreAnnotationBuilder`, `SqlAnnotationBuilder`, and `JvmAnnotationBuilder`are available to help to build global scope annotations.
 * **Test scope** <br>
-The annotation is used on the test class. It overrides the configuration of the same annotation with global scope.
+The annotation is on the test class. It overrides the configuration of the same annotation with global scope.
 * **Test method scope** <br>
-The annotation is used on the test method. It overrides the configuration of the same annotation with test class and global scopes.
+The annotation is on the test method. It overrides the configuration of the same annotation with test class and global scopes.
 
 💡 **[Examples illustrating how annotation scopes work](https://github.com/quick-perf/doc/wiki/Example-illustrating-how-annotation-scopes-work)**
 
