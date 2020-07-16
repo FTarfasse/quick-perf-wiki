@@ -1,4 +1,4 @@
-A class implementing SpecifiableGlobalAnnotations provides global annotations, that is to say annotations applying on each test.
+To configure global annotations, i.e., annotations applying on each test, create a class implementing `SpecifiableGlobalAnnotations` and locate it in `org.quickperf` package:
 ```java
 package org.quickperf;
 
@@ -23,8 +23,6 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 
 }
 ```
-
-**The class implementing SpecifiableGlobalAnnotations has to be in org.quickperf package.**
 
 <p><img src="https://github.com/quick-perf/doc/blob/master/doc/images/Scopes.PNG"</p>
 
