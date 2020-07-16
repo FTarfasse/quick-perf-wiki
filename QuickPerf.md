@@ -49,7 +49,8 @@
 An annotation can have three scopes:
 * **Global scope** <br>
 The annotation applies on each [QuickPerf test](https://github.com/quick-perf/doc/wiki/QuickPerf-test).<br>
-You can configure global scope annotations with a class implementing `SpecifiableGlobalAnnotations`interface and located in `org.quickperf` package. `CoreAnnotationBuilder`, `SqlAnnotationBuilder` and `JvmAnnotationBuilder`are available to help to build global scope annotations.
+To configure global scope annotations, create a class implementing `SpecifiableGlobalAnnotations` interface in an `org.quickperf` package.  <br>
+`CoreAnnotationBuilder`, `SqlAnnotationBuilder`, and `JvmAnnotationBuilder`are available to help to build global scope annotations.
 * **Test scope** <br>
 The annotation is used on the test class. It overrides the configuration of the same annotation with global scope.
 * **Test method scope** <br>
