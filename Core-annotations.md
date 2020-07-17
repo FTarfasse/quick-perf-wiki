@@ -8,7 +8,7 @@
 [@DebugQuickPerf](#DebugQuickPerf) <br><br>
 [Configure core annotations with a global scope](#Configure-core-annotations-with-a-global-scope)
 ## @MeasureExecutionTime
-Measure execution time of test method.
+Measures the execution time of the test method.
 
 ### :mag_right: Example
 ```
