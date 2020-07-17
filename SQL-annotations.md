@@ -10,7 +10,7 @@
 
 [Cancel the behavior of global annotations at method level](#Cancel-the-behavior-of-global-annotations-at-method-level)<br>
 
-[Apply SQL annotations at method level](#https://github.com/quick-perf/doc/wiki/Use-TDD-to-implement-persistence-performance-properties)<br>
+[Apply SQL annotations at method level](#apply-sql-annotations-at-method-level)<br>
 
 [Use TDD to implement persistence performance properties](https://github.com/quick-perf/doc/wiki/Use-TDD-to-implement-persistence-performance-properties)
 
