@@ -2,7 +2,7 @@
 
 You can use JUnit 5 and QuickPerf [BOM files](https://dzone.com/articles/the-bill-of-materials-in-maven).
 
-In case of Maven, you can use the following dependency management:
+In the case of Maven, you can use the following dependency management:
 
 ```xml
  <dependencyManagement>
@@ -33,6 +33,13 @@ Then, add the following QuickPerf dependency in your POM file:
  </dependency>
 ```
 
-By adding `@QuickPerfTest` on the test class, [core](https://github.com/quick-perf/doc/wiki/Core-annotations) and [JVM](https://github.com/quick-perf/doc/wiki/JVM-annotations) annotations should work.
+You can use the [core](https://github.com/quick-perf/doc/wiki/Core-annotations) and [JVM](https://github.com/quick-perf/doc/wiki/JVM-annotations) annotations by adding `@QuickPerfTest` on the test class.
 
-A project example with JUnit 5 and Spring Boot is available [here](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit5).
+QuickPerf / JUnit 5 project examples:
+* [jvm-junit5](https://github.com/quick-perf/quickperf-examples/tree/master/jvm-junit5)
+* [hibernate-junit5](https://github.com/quick-perf/quickperf-examples/tree/master/hibernate-junit5)
+* [springboot-junit5](https://github.com/quick-perf/quickperf-examples/tree/master/springboot-junit5)
+* [testcontainers-springboot-junit5](https://github.com/quick-perf/quickperf-examples/tree/master/tc-springboot-junit5)
+* [micronaut-hibernate-jpa](https://github.com/quick-perf/quickperf-examples/tree/master/micronaut-hibernate-jpa)
+* [micronaut-data-jdbc](https://github.com/quick-perf/quickperf-examples/tree/master/micronaut-data-jdbc)
+* [quarkus](https://github.com/quick-perf/quickperf-examples/tree/master/quarkus)
