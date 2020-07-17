@@ -12,7 +12,7 @@ Measures the execution time of the test method.
 
 ### :mag_right: Example
 ```
-[QUICK PERF] Execution time of test method: 5 s 289 ms (5 289 245 600 ns)
+[QUICK PERF] Execution time of the test method: 5 s 289 ms (5 289 245 600 ns)
 ```
 
 ⚠️ *Be cautious  with time measurement results. It is a rough and first level result. Data has no meaning below the ~second/millisecond. JIT warm-up, GC, or [safe points](https://loonytek.com/2020/01/20/long-jvm-pauses-without-gc/) can impact the measure and its reproducibility. We recommend [JMH](https://openjdk.java.net/projects/code-tools/jmh/) to do more in-depth experiments.* 
@@ -42,7 +42,7 @@ You can use several @ExpectMaxExecutionTime elements together, as shown in the f
 ```     
 
 ```
-[PERF] Execution time of test method expected to be less than <2 s> but is <5 s 286 ms (5 285 734 000 ns)>
+[PERF] Execution time of the test method expected to be less than <2 s> but is <5 s 286 ms (5 285 734 000 ns)>
 ```  
 
 ## @DisplayAppliedAnnotations
