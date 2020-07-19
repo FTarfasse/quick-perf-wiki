@@ -110,4 +110,4 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 }
 ```
 
-⚠️ **The class implementing `SpecifiableGlobalAnnotations` has to be in org.quickperf package.**
+⚠️ *Reminder: the class implementing `SpecifiableGlobalAnnotations` has to be in org.quickperf package.*
