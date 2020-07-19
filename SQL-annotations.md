@@ -1,8 +1,8 @@
 # 🚩 Table of contents
 
-[What can affect performance?](#what-can-affect-performance)<br>
+[How to promote performance and scalability?](#how-to-promote-performance-and-scalability)<br>
 
-[Quick start](#Quick-start)<br>
+[Quickstart](#Quickstart)<br>
 
 [Available SQL annotations](#Available-SQL-annotations)<br>
 
@@ -10,30 +10,30 @@
 
 [Cancel the behavior of global annotations at method level](#Cancel-the-behavior-of-global-annotations-at-method-level)<br>
 
-[Apply SQL annotations at method level](#apply-sql-annotations-at-method-level)<br>
+[Apply SQL annotations on methods](#apply-sql-annotations-on-test-methods)<br>
 
 [Use TDD to implement persistence performance properties](https://github.com/quick-perf/doc/wiki/Use-TDD-to-implement-persistence-performance-properties)
 
-# What can affect performance?
-Several things about SQL statements can promote performance and scalability at the beginning of application development.
-* **JDBC roundtrips**
+# How to promote performance and scalability?
+To promote performance and scalability at the beginning of application development, we can
+* **Limit JDBC roundtrips**
   * [***Detect N+1 selects***](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf) by using [@ExpectSelect](./@ExpectSelect), [@ExpectMaxSelect](./@ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)<br> 
   * ***Detect JDBC batching disabled*** by using [@ExpectJdbcBatching](./@ExpectJdbcBatching)
   * ***Detect exactly same selects*** by using [@DisableExactlySameSelects](./@DisableExactlySameSelects)
 
      ***[Why limit JDBC roundtrips?](https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/)***
 
-* **Fetched data**
+* **Limit fetched data**
   * ***Detect too many selected*** columns by using [@ExpectSelectedColumn](./@ExpectSelectedColumn) or [@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)<br><br>
 ***[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)***
-* **SQL statements without bind parameters**, detect them by using [@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)
-* **SQL statements having a LIKE pattern starting with a wildcard**, detect them by using [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
+* **Avoid SQL statements without bind parameters**, detect them by using [@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)
+* **Avoid SQL statements having a LIKE pattern starting with a wildcard**, identify them by using [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
 
 * ...
 
-⚠️ *Do little configuration described in [**Quick start**](#Quick-start) before using SQL annotations.*
+⚠️ *Do little configuration described in [**Quickstart**](#Quickstart) before using SQL annotations.*
 
-# Quick start
+# Quickstart
 ## Add configuration 
 ### [Configuration for Spring (JUnit 4, JUnit 5, TestNG)](https://github.com/quick-perf/doc/wiki/Spring)
 ### [Configuration for JUnit 4](https://github.com/quick-perf/doc/wiki/JUnit-4)
@@ -45,9 +45,9 @@ To check that the configuration is properly done, you can try to add an annotati
 You can use SQL annotations with a [global scope](#Recommended-global-annotations), a class scope or a [method scope](#Recommended-method-annotations).
 
 ## Automatic framework detection
-The SQL annotations automatically detect if *Hibernate* or *Spring* frameworks are used. You don't have any configuration to do. If a SQL property is not respected, the SQL annotations can suggest you solutions to fix it with these frameworks.
+The SQL annotations automatically detect the presence of *Hibernate* and *Spring* frameworks. These annotations can propose solutions to get the expected behavior with these frameworks.
 
-For example, the following message is diplayed when a N+1 select is presumed and Spring Data JPA is detected:
+For example, QuickPerf displays the following message when an N+1 select is presumed, and Spring Data JPA is detected:
 ```
 	* With Spring Data JPA, you may fix it by adding
 	@EntityGraph(attributePaths = { "..." }) on repository method.
@@ -236,13 +236,13 @@ You can use the following annotations to disable the [recommended global annotat
 
 In the case where you are developing a new feature, perhaps with the help of *Test-Driven Development* (TDD), your test may fail because the business property is unrespected but also because some performance properties checked by global annotations are unrespected. In order to do one step at a time, you can _temporarily_ disable global annotations by applying [@FunctionalIteration](https://github.com/quick-perf/doc/wiki/core-annotations#disablequickperf) or [@DisableQuickPerf](https://github.com/quick-perf/doc/wiki/core-annotations#disablequickperf) or [@DisableGlobalAnnotations](https://github.com/quick-perf/doc/wiki/core-annotations#disableglobalannotations) at method level.
 
-# Apply SQL annotations at method level
+# Apply SQL annotations on test methods
 
-In addition to the performance properties verified by the global annotations, you can check other performance properties at method level.
+In addition to the performance properties verified by the global annotations, others can be checked for some test methods.
 
-In addition, the annotations applied at method level can help you to document your code. By example, by reading ```@ExpectSelect(1)``` annotation applied on a test method, you kwow that we expect one select sent to the database.
+The annotations added on the test methods can help to document the code. For example, by reading ```@ExpectSelect(1)``` annotation applied on a test method, we know that we expect exactly one select sent to the database.
 
-Among all the SQL annotations, we recommend to use the following at method level: 
+Among all the SQL annotations, we recommend using the following on test methods: 
 
 |Annotation                                             |Short description            |
 | ------------------------------------------------------|-----------------------------|
