@@ -1,6 +1,6 @@
 # 🚩 Table of contents
 
-[How to promote performance and scalability?](#how-to-promote-performance-and-scalability)<br>
+[How to promote performance and scalability with SQL annotations?](#how-to-promote-performance-and-scalability-with-SQL-annotations)<br>
 
 [Quickstart](#Quickstart)<br>
 
@@ -14,7 +14,7 @@
 
 [Use TDD to promote performance and scalability](Use-SQL-annotations-and-TDD-to-promote-performance-and-scalability)
 
-# How to promote performance and scalability?
+# How to promote performance and scalability with SQL annotations?
 To promote performance and scalability at the beginning of application development, we can
 * **Limit JDBC roundtrips**
   * [***Detect N+1 selects***](https://github.com/quick-perf/doc/wiki/Easily-detect-and-fix-N-plus-One-SELECT-with-QuickPerf) by using [@ExpectSelect](./@ExpectSelect), [@ExpectMaxSelect](./@ExpectMaxSelect) or [@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)<br> 
