@@ -159,7 +159,7 @@ You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/
 |[@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)  | Disables queries without bind variables |
 |[@EnableQueriesWithoutBindParameters](./@EnableQueriesWithoutBindParameters)    | Enables queries without bind variables |
 
-#Guidelines to use the SQL annotations
+# Guidelines to use the SQL annotations
 [Configure global annotations](#Configure-global-annotations)<br>
 
 [Cancel the behavior of global annotations at method level](##Cancel-the-behavior-of-global-annotations-at-method-level)<br>
