@@ -20,7 +20,7 @@ To promote performance and scalability at the beginning of application developme
 * **Limit fetched data**
   * ***Detect too many selected*** columns by using [@ExpectSelectedColumn](./@ExpectSelectedColumn) or [@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)<br><br>
 ***[Why limit the number of selected columns?](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns)***
-* **Avoid long SQL queries**, detect them by using [@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)
+* **Reduce SQL queries execution time**, detect long queries with [@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)
 * **Avoid SQL statements without bind parameters**, detect them by using [@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)
 * **Avoid SQL statements having a LIKE pattern starting with a wildcard**, identify them by using [@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)
 
