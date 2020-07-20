@@ -6,13 +6,7 @@
 
 [Available SQL annotations](#Available-SQL-annotations)<br>
 
-[Configure global annotations](#Configure-global-annotations)<br>
-
-[Cancel the behavior of global annotations at method level](#Cancel-the-behavior-of-global-annotations-at-method-level)<br>
-
-[Apply SQL annotations on methods](#apply-sql-annotations-on-test-methods)<br>
-
-[Use TDD to promote performance and scalability](Use-SQL-annotations-and-TDD-to-promote-performance-and-scalability)
+[Guidelines to use the SQL annotations](#Guidelines-to-use-the-SQL-annotations)
 
 # How to promote performance and scalability with SQL annotations?
 To promote performance and scalability at the beginning of application development, we can
@@ -165,7 +159,16 @@ You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/
 |[@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)  | Disables queries without bind variables |
 |[@EnableQueriesWithoutBindParameters](./@EnableQueriesWithoutBindParameters)    | Enables queries without bind variables |
 
-# Configure global annotations
+#Guidelines to use the SQL annotations
+[Configure global annotations](#Configure-global-annotations)<br>
+
+[Cancel the behavior of global annotations at method level](##Cancel-the-behavior-of-global-annotations-at-method-level)<br>
+
+[Apply SQL annotations on methods](##apply-sql-annotations-on-test-methods)<br>
+
+[Use TDD to promote performance and scalability](Use-SQL-annotations-and-TDD-to-promote-performance-and-scalability)
+
+## Configure global annotations
 
 Annotations with a [*global scope*](https://github.com/quick-perf/doc/wiki/QuickPerf#annotation-scopes), also called *global annotations*, apply on each test.
 
@@ -222,7 +225,7 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 ⚠ *Reminder: The class implementing `SpecifiableGlobalAnnotations` has to be in org.quickperf package.*
 
 
-# Cancel the behavior of global annotations at method level
+## Cancel the behavior of global annotations at method level
 
 In some specific cases, you may want to disable dôme global annotations.
 
@@ -237,7 +240,7 @@ You can use the following annotations to disable the [recommended global annotat
 
 In the case where you are developing a new feature, perhaps with the help of *Test-Driven Development* (TDD), your test may fail because the business property is unrespected but also because some performance properties checked by global annotations are unrespected. In order to do one step at a time, you can _temporarily_ disable global annotations by applying [@FunctionalIteration](https://github.com/quick-perf/doc/wiki/core-annotations#disablequickperf) or [@DisableQuickPerf](https://github.com/quick-perf/doc/wiki/core-annotations#disablequickperf) or [@DisableGlobalAnnotations](https://github.com/quick-perf/doc/wiki/core-annotations#disableglobalannotations) at method level.
 
-# Apply SQL annotations on test methods
+## Apply SQL annotations on test methods
 
 In addition to the performance properties verified by the global annotations, others can be checked for some test methods.
 
@@ -255,3 +258,5 @@ Among all the SQL annotations, we recommend using the following on test methods:
 |[@ExpectUpdate](./@ExpectUpdate)                       | UPDATE number               |
 |[@ExpectMaxUpdatedColumn](./@ExpectMaxUpdatedColumn)   | Max updated columns         |
 |[@ExpectDelete](./@ExpectDelete)                       | DELETE number               |
+
+## [Use TDD to promote performance and scalability](Use-SQL-annotations-and-TDD-to-promote-performance-and-scalability)
