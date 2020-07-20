@@ -12,7 +12,7 @@
 
 [Apply SQL annotations on methods](#apply-sql-annotations-on-test-methods)<br>
 
-[Use TDD to implement persistence performance properties](https://github.com/quick-perf/doc/wiki/Use-TDD-to-implement-persistence-performance-properties)
+[Use TDD to promote performance and scalability](https://github.com/quick-perf/doc/wiki/Use-TDD-to-implement-persistence-performance-properties)
 
 # How to promote performance and scalability?
 To promote performance and scalability at the beginning of application development, we can
@@ -118,10 +118,10 @@ For example, QuickPerf displays the following message when an N+1 select is pres
 |[@ExpectMaxSelect](./@ExpectMaxSelect)                                                    | Max SELECT number                                             |
 |[@ExpectSelectedColumn](./@ExpectSelectedColumn)                                          | Selected columns number                                       |
 |[@ExpectMaxSelectedColumn](./@ExpectMaxSelectedColumn)                                    | Max selected columns number                                   |
-|[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                  | Disable exactly same SELECT statements                        |
-|[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                    | Enable exactly same SELECT statements                         |
-|[@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)| Disable same SELECT statements with different parameter values|
-|[@EnableSameSelectTypesWithDifferentParamValues](./@EnableSameSelectTypesWithDifferentParamValues)                                  | Enable same SELECT statements with different parameter values |
+|[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                | Disables exactly same SELECT statements                        |
+|[@EnableExactlySameSelects](./@EnableExactlySameSelects)                                  | Enables exactly same SELECT statements                         |
+|[@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)| Disables same SELECT statements with different parameter values|
+|[@EnableSameSelectTypesWithDifferentParamValues](./@EnableSameSelectTypesWithDifferentParamValues)  | Enables same SELECT statements with different parameter values |
 
 ## INSERT statements
 
@@ -149,8 +149,8 @@ For example, QuickPerf displays the following message when an N+1 select is pres
 
 |Annotation                                                  |Short description                        |
 | -----------------------------------------------------------|-----------------------------------------|
-|[@DisplaySql](./@DisplaySql)                                | Display SQL                             |
-|[@DisplaySqlOfTestMethodBody](./@DisplaySqlOfTestMethodBody)| Display SQL executed in test method body|
+|[@DisplaySql](./@DisplaySql)                                | Displays SQL                             |
+|[@DisplaySqlOfTestMethodBody](./@DisplaySqlOfTestMethodBody)| Displays SQL executed in test method body|
 
 You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/wiki/Core-annotations#DisplayAppliedAnnotations) in debug activity.
 
@@ -160,20 +160,28 @@ You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/
 | -------------------------------------------------------------------|-----------------------------------|
 |[@ExpectJdbcBatching](./@ExpectJdbcBatching)                        | JDBC batching is enabled          |
 |[@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)      | Max query execution time          |
-|[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)| Disable like with leading wildcard|
-|[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)  | Enable like with leading wildcard |
-|[@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)  | Disable queries without bind variables |
-|[@EnableQueriesWithoutBindParameters](./@EnableQueriesWithoutBindParameters)  | Enable queries without bind variables |
+|[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)| Disables like with leading wildcard|
+|[@EnableLikeWithLeadingWildcard](./@EnableLikeWithLeadingWildcard)  | Enables like with leading wildcard |
+|[@DisableQueriesWithoutBindParameters](./@DisableQueriesWithoutBindParameters)  | Disables queries without bind variables |
+|[@EnableQueriesWithoutBindParameters](./@EnableQueriesWithoutBindParameters)    | Enables queries without bind variables |
 
 # Configure global annotations
 
-_Global annotations_ apply on each test.
+Annotations with a [*global scope*](https://github.com/quick-perf/doc/wiki/QuickPerf#annotation-scopes), also called *global annotations*, apply on each test.
 
-Let's suppose that you just add QuickPerf to an application having automatic tests. With global annotations, you can quickly apply some performance checks on the existing tests in order to detect some classical performance bottlenecks.
+Let's suppose that we add QuickPerf to an application having automatic tests. Configuring global annotations can allow us to detect some performance bottlenecks rapidly. 
 
-To apply the global annotations, the test classes have to be annotated with @QuickPerfJUnitRunner or @QuickPerfSpringRunner with JUnit 4 and @QuickPerfTest with JUnit 5. With TestNG, you don't have to add a QuickPerf annotation on the test class.
-Global annotations can be configured by creating a class implementing _SpecifiableGlobalAnnotations_. ***This class has to be in _org.quickperf_ package***.
-A _SqlAnnotationBuilder_ class is available to easily configure SQL global annotations.
+We recommend to configure the following SQL global annotations:
+
+|Annotation                                                                                |Short description                                              |
+| -----------------------------------------------------------------------------------------|---------------------------------------------------------------|
+|[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                  | Disable exactly same SELECT statements                        |
+|[@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)| Disable same SELECT statements with different parameter values|
+|[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      | Disable like with leading wildcard                            |
+|[@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              | JDBC batching is enabled                                      |
+|[@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)                            | Max query execution time                                      |
+
+A _SqlAnnotationBuilder_ class is available to configure SQL global annotations easily.
 
 ```java
 package org.quickperf;
@@ -211,15 +219,8 @@ public class QuickPerfConfiguration implements SpecifiableGlobalAnnotations {
 }
 ```
 
-We recommend to configure the following SQL global annotations:
+⚠ *Reminder: The class implementing `SpecifiableGlobalAnnotations` has to be in org.quickperf package.*
 
-|Annotation                                                                                |Short description                                              |
-| -----------------------------------------------------------------------------------------|---------------------------------------------------------------|
-|[@DisableExactlySameSelects](./@DisableExactlySameSelects)                                  | Disable exactly same SELECT statements                        |
-|[@DisableSameSelectTypesWithDifferentParamValues](./@DisableSameSelectTypesWithDifferentParamValues)| Disable same SELECT statements with different parameter values|
-|[@DisableLikeWithLeadingWildcard](./@DisableLikeWithLeadingWildcard)                      | Disable like with leading wildcard                            |
-|[@ExpectJdbcBatching](./@ExpectJdbcBatching)                                              | JDBC batching is enabled                                      |
-|[@ExpectMaxQueryExecutionTime](./@ExpectMaxQueryExecutionTime)                            | Max query execution time                                      |
 
 # Cancel the behavior of global annotations at method level
 
