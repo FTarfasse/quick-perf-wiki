@@ -166,7 +166,7 @@ You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/
 
 [Apply SQL annotations on methods](##apply-sql-annotations-on-test-methods)<br>
 
-[Use TDD to promote performance and scalability](Use-SQL-annotations-and-TDD-to-promote-performance-and-scalability)
+[Use SQL annotations and TDD to promote performance and scalability](Use-SQL-annotations-and-TDD-to-promote-performance-and-scalability)
 
 ## Configure global annotations
 
@@ -259,4 +259,4 @@ Among all the SQL annotations, we recommend using the following on test methods:
 |[@ExpectMaxUpdatedColumn](./@ExpectMaxUpdatedColumn)   | Max updated columns         |
 |[@ExpectDelete](./@ExpectDelete)                       | DELETE number               |
 
-## [Use TDD to promote performance and scalability](Use-SQL-annotations-and-TDD-to-promote-performance-and-scalability)
+## [Use SQL annotations and TDD to promote performance and scalability](Use-SQL-annotations-and-TDD-to-promote-performance-and-scalability)
