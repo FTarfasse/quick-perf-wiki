@@ -12,7 +12,7 @@
 
 [Apply SQL annotations on methods](#apply-sql-annotations-on-test-methods)<br>
 
-[Use TDD to promote performance and scalability](https://github.com/quick-perf/doc/wiki/Use-TDD-to-implement-persistence-performance-properties)
+[Use TDD to promote performance and scalability](Use-SQL-annotations-and-TDD-to-promote-performance-and-scalability)
 
 # How to promote performance and scalability?
 To promote performance and scalability at the beginning of application development, we can
