@@ -265,7 +265,6 @@ Among all the SQL annotations, we recommend using the following on test methods:
 
 _Documentation under progress_
 
-
-![](https://github.com/quick-perf/doc/upload/master/doc/images/Execution-time.jpg)
+![](https://github.com/quick-perf/doc/blob/master/doc/images/Execution-time.jpg)
 
 ## [Use SQL annotations and TDD to promote performance and scalability](Use-SQL-annotations-and-TDD-to-promote-performance-and-scalability)
