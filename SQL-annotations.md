@@ -164,11 +164,11 @@ You can also use [@DisplayAppliedAnnotations](https://github.com/quick-perf/doc/
 # Guidelines to use the SQL annotations
 [Configure global annotations](#Configure-global-annotations)<br>
 
-[Cancel the behavior of global annotations at method level](##Cancel-the-behavior-of-global-annotations-at-method-level)<br>
+[Cancel the behavior of global annotations at method level](#Cancel-the-behavior-of-global-annotations-at-method-level)<br>
 
-[Apply SQL annotations on methods](##apply-sql-annotations-on-test-methods)<br>
+[Apply SQL annotations on methods](#apply-sql-annotations-on-test-methods)<br>
 
-[Test early, test often](##test-early-test-often)<br>
+[Test early, test often](#test-early-test-often)<br>
 
 [Use SQL annotations and TDD to promote performance and scalability](Use-SQL-annotations-and-TDD-to-promote-performance-and-scalability)
 
