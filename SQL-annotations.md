@@ -261,4 +261,11 @@ Among all the SQL annotations, we recommend using the following on test methods:
 |[@ExpectMaxUpdatedColumn](./@ExpectMaxUpdatedColumn)   | Max updated columns         |
 |[@ExpectDelete](./@ExpectDelete)                       | DELETE number               |
 
+## Test early, test often
+
+_Documentation under progress_
+
+
+![](https://github.com/quick-perf/doc/upload/master/doc/images/Execution-time.jpg)
+
 ## [Use SQL annotations and TDD to promote performance and scalability](Use-SQL-annotations-and-TDD-to-promote-performance-and-scalability)
