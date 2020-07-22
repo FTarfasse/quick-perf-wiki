@@ -1,4 +1,4 @@
-_We could add many things to this document! It's a **draft** version. However, we hope that it is interesting! Don't hesitate to give feedback to jean.bisutti@gmail.com_.
+_We could add many things to this document! It's a **draft** version. Don't hesitate to give feedback to jean.bisutti@gmail.com_.
 
 At first, we will implement functional behavior with the help of *Test-Driven Development* (TDD). In a second step, we will use TDD to implement some persistence performance properties.
 
