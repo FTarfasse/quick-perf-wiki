@@ -47,7 +47,7 @@ public class PlayerRepository {
 
 <br>
 
-**Implement the business behavior**
+**Implement business behavior**
 
 Now let's write code to have a green test and to have a working business behavior:
 
@@ -139,7 +139,7 @@ The code should be modified to have only one select sent to the database and get
 
 <br>
 
-**Evaluate other performance related properties**
+**Evaluate other performance-related properties**
 
 After, we could check other performance properties, as [the number of selected columns](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns): 
 
@@ -186,7 +186,7 @@ _It is worth noting that the performance properties do not systematically fail a
 
 _Performance properties are evaluated (and perhaps fixed) one after the other._
 
-By evaluating and fixing some performance properties, we can promote performance and scalability at the beginning of application development. These performance properties are like quality attributes added to the feature. In the previous example, we could think that @ExpectSelect(1) and @ExpectMaxQueryExecutionTime are more priority performance quality attributes than @ExpectSelectedColumn. Indeed, @ExpectSelect(1) allows detecting N+1 selects that could lead to many JDBC roundtrips with production data. @ExpectMaxQueryExecutionTime is essential to avoid long queries. Later, we could decrease the maximum permitted query execution time. The number of selected columns can [make the query execution time greater](https://use-the-index-luke.com/sql/clustering/index-only-scan-covering-index) and increase the memory consumed and the IO. In some situations, these two last things could be considered at first with a low priority even though it is a waste of resources.  
+By assessing and fixing some performance properties, we can promote performance and scalability at the beginning of application development. These performance properties are like quality attributes added to the feature. In the previous example, we could think that @ExpectSelect(1) and @ExpectMaxQueryExecutionTime are more priority performance quality attributes than @ExpectSelectedColumn. Indeed, @ExpectSelect(1) allows detecting N+1 selects that could lead to many JDBC roundtrips with production data. @ExpectMaxQueryExecutionTime is essential to avoid long queries. Later, we could decrease the maximum permitted query execution time. The number of selected columns can [make the query execution time greater](https://use-the-index-luke.com/sql/clustering/index-only-scan-covering-index) and increase the memory consumed and the IO. In some situations, these two last things could be considered at first with a low priority even though it is a waste of resources.  
     
 If a functional property is broken during an iteration, you can temporarily disable the verification of the performance properties by adding _@FunctionalIteration_ on your test method. We try to do one thing at a time; that is to say, we fix the functional property, and after that, we check the performance properties.
 
