@@ -73,7 +73,7 @@ Now we have a green test! :)
 
 **Refactor the code**
 
-Let's clean up a little the code to have something a little more readable:
+[Let's clean up a little the code to have something a little more readable](https://blog.cleancoder.com/uncle-bob/2014/12/17/TheCyclesOfTDD.html):
 
 ```java
 public class PlayerRepository {
@@ -93,6 +93,8 @@ public class PlayerRepository {
 ```
 
 The test is still green!
+
+<br>
 
 **Evaluate a resource usage property: number of JDBC roundtrips**
 
@@ -127,7 +129,13 @@ Let's restart the test. Now the test is failing!
 Be careful with the cost of JDBC server roundtrips: https://blog.jooq.org/2017/12/18/the-cost-of-jdbc-server-roundtrips/
 ```
 
+**Implement a resource usage property: number of JDBC roundtrips**
+
 The code should be modified to have only one select sent to the database and get a green test.
+
+<br>
+
+**Refactor**
 
 <br>
 
