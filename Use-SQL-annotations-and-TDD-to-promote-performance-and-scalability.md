@@ -2,6 +2,10 @@ _We could add many things to this document! It's a **draft** version. However, w
 
 At first, we will implement functional behavior with the help of *Test-Driven Development* (TDD). In a second step, we will use TDD to implement some persistence performance properties.
 
+<br>
+
+**Write a failing test on business behavior**
+
 Let's imagine that you want to retrieve some data stored in a database.
 
 Let's write a failing test!
@@ -41,7 +45,11 @@ public class PlayerRepository {
 }
 ```
 
-Now let's write code to have a green test and to have a working functional behavior:
+<br>
+
+**Implement the business behavior**
+
+Now let's write code to have a green test and to have a working business behavior:
 
 ```java
 public class PlayerRepository {
@@ -60,6 +68,10 @@ public class PlayerRepository {
 ```
 
 Now we have a green test! :)
+
+<br>
+
+**Refactor the code**
 
 Let's clean up a little the code to have something a little more readable:
 
@@ -82,8 +94,10 @@ public class PlayerRepository {
 
 The test is still green!
 
+**Evaluate a resource usage property: number of JDBC roundtrips**
+
 Let's now evaluate a performance property!
-We expect to retrieve the data with one select statement.
+We expect to retrieve the data with one select statement, and so one JDBC roundtrip.
 
 Let's check this with the help of an `ExpectSelect(1)` QuickPerf annotation:
 
@@ -115,6 +129,10 @@ Be careful with the cost of JDBC server roundtrips: https://blog.jooq.org/2017/1
 
 The code should be modified to have only one select sent to the database and get a green test.
 
+<br>
+
+**Evaluate other performance related properties**
+
 After, we could check other performance properties, as [the number of selected columns](https://github.com/quick-perf/doc/wiki/Why-limit-the-number-of-selected-columns): 
 
 ```java
@@ -135,6 +153,7 @@ public class PlayerRepositoryTest {
     }
 ```
 
+
 After that, we could for example check the query execution time with a production-like database:
 
 ``` java
@@ -153,10 +172,11 @@ After that, we could for example check the query execution time with a productio
     }
  ```
 
-It is worth noting that the performance properties do not systematically fail after adding the annotation, unlike the functional properties.
+_It is worth noting that the performance properties do not systematically fail after adding the annotation, unlike the functional properties._
 
 
-Performance properties are evaluated (and perhaps fixed) one after the other.
+
+_Performance properties are evaluated (and perhaps fixed) one after the other._
 
 By evaluating and fixing some performance properties, we can promote performance and scalability at the beginning of application development. These performance properties are like quality attributes added to the feature. In the previous example, we could think that @ExpectSelect(1) and @ExpectMaxQueryExecutionTime are more priority performance quality attributes than @ExpectSelectedColumn. Indeed, @ExpectSelect(1) allows detecting N+1 selects that could lead to many JDBC roundtrips with production data. @ExpectMaxQueryExecutionTime is essential to avoid long queries. Later, we could decrease the maximum permitted query execution time. The number of selected columns can [make the query execution time greater](https://use-the-index-luke.com/sql/clustering/index-only-scan-covering-index) and increase the memory consumed and the IO. In some situations, these two last things could be considered at first with a low priority even though it is a waste of resources.  
     
