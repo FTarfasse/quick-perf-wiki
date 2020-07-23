@@ -165,7 +165,7 @@ public class PlayerRepositoryTest {
 After that, we could for example check the query execution time with a production-like database:
 
 ``` java
-    @ExpectMaxQueryExecutionTime(value = 20, unit = TimeUnit.MILLISECONDS)
+    @ExpectMaxQueryExecutionTime(thresholdInMilliSeconds = 20)
     @ExpectSelectedColumn(3)
     @ExpectSelect(1)
     @Test
